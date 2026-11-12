@@ -1,21 +1,34 @@
 import { BOOK_STATUSES, ES_EDITION_STATUSES, FORMATS, WORLD_KEYS } from './types'
 import { STORED_ID } from '../state/merge'
-import type { Book, Catalog, Connection, Problem, ProblemCode } from './types'
+import type { Book, Catalog, Connection, Note, Problem, ProblemCode, Synopsis } from './types'
 import {
+  bookMap,
   connectionProblems,
   isBlank,
   isBookId,
   isCalendarDate,
   isConnectionId,
+  isNoteId,
   isObject,
   isOneOf,
   knownBookIds,
+  noteProblems,
   repeatedIds,
+  synopsisProblems,
 } from './soundness'
 
 /** An id can be arbitrary text, or absent, so a malformed one is named by its position. */
 export function connectionLabel(c: Connection, index: number): string {
   return isObject(c) && isConnectionId(c.id) ? c.id : `conn#${index}`
+}
+
+/** A synopsis is named by its work, `syn:<book>`, or by its position when the work is not a valid id. */
+export function synopsisLabel(s: Synopsis, index: number): string {
+  return isObject(s) && isBookId(s.book) ? `syn:${s.book}` : `syn#${index}`
+}
+
+export function noteLabel(n: Note, index: number): string {
+  return isObject(n) && isNoteId(n.id) ? n.id : `note#${index}`
 }
 
 function bookLabel(b: Book, index: number): string {
@@ -128,6 +141,30 @@ function catalogueConnectionProblems(connections: Connection[], known: ReadonlyS
   })
 }
 
+/** Each synopsis's own problems, and one work carried by two synopses. */
+function catalogueSynopsisProblems(synopses: unknown, books: unknown, add: Add): void {
+  const list: Synopsis[] = Array.isArray(synopses) ? synopses : []
+  const map = bookMap(books)
+  const perBook = new Map<unknown, number>()
+  for (const s of list) if (isObject(s)) perBook.set(s.book, (perBook.get(s.book) ?? 0) + 1)
+  list.forEach((s, index) => {
+    const id = synopsisLabel(s, index)
+    for (const code of synopsisProblems(s, map)) add(code, id)
+    if (isObject(s) && (perBook.get(s.book) ?? 0) > 1) add('DUPLICATE_ID', id)
+  })
+}
+
+/** Each note's own problems, and one id carried by two notes. */
+function catalogueNoteProblems(notes: unknown, known: ReadonlySet<string>, add: Add): void {
+  const list: Note[] = Array.isArray(notes) ? notes : []
+  const repeated = repeatedIds(list)
+  list.forEach((n, index) => {
+    const id = noteLabel(n, index)
+    for (const code of noteProblems(n, known)) add(code, id)
+    if (isObject(n) && repeated.has(n.id)) add('DUPLICATE_ID', id)
+  })
+}
+
 /** Returns codes and ids only, never text from the data. */
 export function validateCatalog(catalog: Catalog, previous?: Pick<Catalog, 'books'>): Problem[] {
   const problems: Problem[] = []
@@ -139,6 +176,8 @@ export function validateCatalog(catalog: Catalog, previous?: Pick<Catalog, 'book
   if (!isObject(catalog.meta) || !isCalendarDate(catalog.meta.updatedOn)) add('BAD_META', 'meta')
   bookProblems(catalog.books, add)
   catalogueConnectionProblems(catalog.connections, knownBookIds(catalog.books), add)
+  catalogueSynopsisProblems(catalog.synopses, catalog.books, add)
+  catalogueNoteProblems(catalog.notes, knownBookIds(catalog.books), add)
 
   if (previous) {
     const aliases = (b: Book): unknown[] => (Array.isArray(b.aliases) ? b.aliases : [])
@@ -155,13 +194,19 @@ export function validateCatalog(catalog: Catalog, previous?: Pick<Catalog, 'book
   return problems
 }
 
-export function pruneInvalid(
-  connections: Connection[],
+/** The entries no problem names, and the labels of those it does. Works for connections, synopses and notes. */
+export function pruneBy<T>(
+  entries: readonly T[],
   problems: Problem[],
-): { kept: Connection[]; dropped: string[] } {
+  label: (entry: T, index: number) => string,
+): { kept: T[]; dropped: string[] } {
   const bad = new Set(problems.map((p) => p.id))
-  const isBad = (c: Connection, i: number) => bad.has(connectionLabel(c, i))
-  const kept = connections.filter((c, i) => !isBad(c, i))
-  const dropped = [...new Set(connections.flatMap((c, i) => (isBad(c, i) ? [connectionLabel(c, i)] : [])))]
+  const isBad = (e: T, i: number) => bad.has(label(e, i))
+  const kept = entries.filter((e, i) => !isBad(e, i))
+  const dropped = [...new Set(entries.flatMap((e, i) => (isBad(e, i) ? [label(e, i)] : [])))]
   return { kept, dropped }
+}
+
+export function pruneInvalid(connections: Connection[], problems: Problem[]): { kept: Connection[]; dropped: string[] } {
+  return pruneBy(connections, problems, connectionLabel)
 }

@@ -5,6 +5,7 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { afterEach, beforeEach, describe, expect, test } from 'vitest'
 import { fixtureCatalog } from '../fixtures/catalog'
+import { fixtureNotes, fixtureSynopses } from '../fixtures/content'
 
 const TSX = join(process.cwd(), 'node_modules', 'tsx', 'dist', 'cli.mjs')
 const SCRIPT = join(process.cwd(), 'scripts', 'validate-data.ts')
@@ -257,5 +258,59 @@ describe('--prune with --against', () => {
     expect(r.code).toBe(1)
     expect(readFileSync(join(dir, 'data/connections/batch-001.json'), 'utf8')).toBe(before)
     expect(existsSync(join(dir, '.quarantine'))).toBe(false)
+  })
+})
+
+describe('synopses and notes', () => {
+  const today = () => new Date().toISOString().slice(0, 10)
+  const readJson = (rel: string) => JSON.parse(readFileSync(join(dir, rel), 'utf8')) as { book?: string; id?: string }[]
+
+  test('build writes synopses.json and notes.json, and prints no text', () => {
+    write('data/synopses/batch-001.json', fixtureSynopses())
+    write('data/notes/batch-001.json', fixtureNotes())
+    const r = run(BUILD)
+    expect(r.code).toBe(0)
+    expect(readJson('public/data/synopses.json')).toHaveLength(3)
+    expect(readJson('public/data/notes.json')).toHaveLength(2)
+    expect(r.out).not.toContain('LEAK')
+  })
+  test('with no folders, build writes empty lists', () => {
+    expect(run(BUILD).code).toBe(0)
+    expect(readJson('public/data/synopses.json')).toEqual([])
+    expect(readJson('public/data/notes.json')).toEqual([])
+  })
+  test('validate reports an unsound synopsis by its label and code, and never its text', () => {
+    const s = fixtureSynopses()
+    s[1]!.requires = ['ash-road']
+    write('data/synopses/batch-001.json', s)
+    const r = run(SCRIPT)
+    expect(r.code).toBe(1)
+    expect(r.out).toContain('SYNOPSIS_OUTSIDE_SERIES')
+    expect(r.out).toContain('syn:orchard-dusk')
+    expect(r.out).not.toContain('LEAK')
+  })
+  test('--prune moves an unsound synopsis to the quarantine and prints only its label', () => {
+    const s = fixtureSynopses()
+    s[1]!.requires = ['ash-road']
+    write('data/synopses/batch-001.json', s)
+    write('data/notes/batch-001.json', fixtureNotes())
+    const r = run(SCRIPT, '--prune')
+    expect(r.code).toBe(0)
+    expect(r.out).toContain('syn:orchard-dusk')
+    expect(r.out).not.toContain('LEAK')
+    expect(readJson('data/synopses/batch-001.json').map((x) => x.book)).toEqual(['copper-orchard', 'glass-harbour'])
+    expect(readJson(`.quarantine/synopses-${today()}.json`).map((x) => x.book)).toEqual(['orchard-dusk'])
+    expect(readJson('data/notes/batch-001.json')).toHaveLength(2)
+  })
+  test('--prune moves an unsound note to the quarantine the same way', () => {
+    const n = fixtureNotes()
+    n[0]!.quote = undefined
+    write('data/notes/batch-001.json', n)
+    const r = run(SCRIPT, '--prune')
+    expect(r.code).toBe(0)
+    expect(r.out).toContain('n-0001')
+    expect(r.out).not.toContain('LEAK')
+    expect(readJson('data/notes/batch-001.json').map((x) => x.id)).toEqual(['n-0002'])
+    expect(readJson(`.quarantine/notes-${today()}.json`).map((x) => x.id)).toEqual(['n-0001'])
   })
 })

@@ -1,6 +1,7 @@
 import { describe, expect, test } from 'vitest'
 import { pruneInvalid, validateCatalog } from '../../src/data/validate'
-import type { Catalog, Connection, ProblemCode } from '../../src/data/types'
+import type { Catalog, Connection, Note, ProblemCode, Synopsis } from '../../src/data/types'
+import { fixtureNotes, fixtureSynopses } from '../fixtures/content'
 import { titleOf } from '../../src/i18n'
 import { fixtureCatalog } from '../fixtures/catalog'
 import { MALFORMED_FIELDS, MISSING_FIELDS, ONLY_ONE_PROBLEM, STILL_SOUND } from '../fixtures/malformed-connections'
@@ -490,5 +491,58 @@ describe('output and pruning', () => {
     const { kept, dropped } = pruneInvalid(c.connections, validateCatalog(c))
     expect(dropped.sort()).toEqual(['c-0002', 'c-0004'])
     expect(kept.map((x) => x.id)).toEqual(['c-0001', 'c-0003', 'c-0005'])
+  })
+})
+
+describe('synopses and notes in the catalogue', () => {
+  const withContent = (): Catalog => ({ ...fixtureCatalog(), synopses: fixtureSynopses(), notes: fixtureNotes() })
+
+  test('a catalogue with clean fixture synopses and notes has no problems', () => {
+    expect(validateCatalog(withContent())).toEqual([])
+  })
+  test('an unsound synopsis is reported as syn:<book> with its code', () => {
+    const c = withContent()
+    c.synopses[1]!.requires = ['ash-road']
+    expect(validateCatalog(c)).toEqual([{ code: 'SYNOPSIS_OUTSIDE_SERIES', id: 'syn:orchard-dusk' }])
+  })
+  test('a malformed synopsis is named by position', () => {
+    const c = withContent()
+    c.synopses.push(null as unknown as Synopsis, { ...fixtureSynopses()[0]!, book: 'Not An Id' })
+    const problems = validateCatalog(c)
+    expect(problems).toContainEqual({ code: 'NOT_AN_OBJECT', id: 'syn#3' })
+    expect(problems).toContainEqual({ code: 'REF_UNKNOWN', id: 'syn#4' })
+  })
+  test('two synopses for one book: DUPLICATE_ID', () => {
+    const c = withContent()
+    c.synopses.push(fixtureSynopses()[0]!)
+    expect(validateCatalog(c)).toEqual([{ code: 'DUPLICATE_ID', id: 'syn:copper-orchard' }])
+  })
+  test('an unsound note is reported by its id', () => {
+    const c = withContent()
+    c.notes[1]!.sources = []
+    expect(validateCatalog(c)).toEqual([{ code: 'NO_SOURCE', id: 'n-0002' }])
+  })
+  test('a malformed note is named by position', () => {
+    const c = withContent()
+    c.notes.push('x' as unknown as Note)
+    expect(validateCatalog(c)).toEqual([{ code: 'NOT_AN_OBJECT', id: 'note#2' }])
+  })
+  test('two notes with one id: DUPLICATE_ID', () => {
+    const c = withContent()
+    c.notes.push({ ...fixtureNotes()[1]! })
+    expect(validateCatalog(c)).toEqual([{ code: 'DUPLICATE_ID', id: 'n-0002' }])
+  })
+  test('a catalogue without the new fields, or with them malformed, still validates its books', () => {
+    const old: Partial<Catalog> = withContent()
+    delete old.synopses
+    delete old.notes
+    expect(validateCatalog(old as Catalog)).toEqual([])
+    expect(validateCatalog({ ...withContent(), synopses: 'x', notes: null } as unknown as Catalog)).toEqual([])
+  })
+  test('problems never carry the text of a synopsis or a note', () => {
+    const c = withContent()
+    c.synopses.forEach((s) => (s.sources = []))
+    c.notes.forEach((n) => (n.sources = []))
+    expect(JSON.stringify(validateCatalog(c))).not.toContain('LEAK')
   })
 })

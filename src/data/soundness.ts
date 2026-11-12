@@ -51,6 +51,14 @@ export function knownBookIds(books: unknown): Set<BookId> {
   return known
 }
 
+/** The well-formed books by id: what a synopsis's series rule reads. */
+export function bookMap(books: unknown): Map<BookId, Book> {
+  const map = new Map<BookId, Book>()
+  if (!Array.isArray(books)) return map
+  for (const book of books) if (isObject(book) && isBookId(book.id)) map.set(book.id, book as unknown as Book)
+  return map
+}
+
 /** The ids carried by more than one entry, of books or of connections. */
 export function repeatedIds(entries: readonly unknown[]): Set<string> {
   const seen = new Set<string>()

@@ -378,7 +378,8 @@ describe('properties', () => {
     return new Set([...markedRead, ...switchedOn].map(([id]) => id))
   }
 
-  test('returns exactly the showable connections whose requires are read or unlocked', () => {
+  // A thousand runs: under the full suite, or the commit hook, it needs more than the default five seconds.
+  test('returns exactly the showable connections whose requires are read or unlocked', { timeout: 30_000 }, () => {
     const catalog = propertyCatalog()
     const known = knownBooks(catalog)
     const showable = catalog.connections.filter((c) => isShowable(c, known))

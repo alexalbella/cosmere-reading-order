@@ -17,8 +17,12 @@ function main(): number {
     writeFileSync(join(out, name), JSON.stringify(value) + '\n')
   write('books.json', catalog.books)
   write('connections.json', catalog.connections)
+  write('synopses.json', catalog.synopses)
+  write('notes.json', catalog.notes)
   write('meta.json', catalog.meta)
-  console.log(`data ok: ${catalog.books.length} books, ${catalog.connections.length} connections`)
+  console.log(
+    `data ok: ${catalog.books.length} books, ${catalog.connections.length} connections, ${catalog.synopses.length} synopses, ${catalog.notes.length} notes`,
+  )
   return 0
 }
 

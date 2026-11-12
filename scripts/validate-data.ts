@@ -3,8 +3,8 @@ import { existsSync, mkdirSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import type { Book, Connection } from '../src/data/types'
 import { isObject, knownBookIds } from '../src/data/soundness'
-import { connectionLabel, pruneInvalid, validateCatalog } from '../src/data/validate'
-import { loadData, readJson, ROOT } from './lib/load-data'
+import { connectionLabel, noteLabel, pruneBy, synopsisLabel, validateCatalog } from '../src/data/validate'
+import { loadData, readJson, ROOT, type FileOf } from './lib/load-data'
 import { reportProblems, runMain } from './lib/run'
 
 class BadRef extends Error {}
@@ -48,8 +48,29 @@ function previousBooks(ref: string): { books: Book[] } | undefined {
   return { books: books as Book[] }
 }
 
-function citesAlias(c: Connection, aliases: ReadonlySet<unknown>): boolean {
-  return isObject(c) && [c.from, c.to, ...(Array.isArray(c.requires) ? c.requires : [])].some((ref) => aliases.has(ref))
+/** Whether an entry of any kind names an id now held as an alias: its ends, its work or works, its requirements. */
+function citesAlias(entry: unknown, aliases: ReadonlySet<unknown>): boolean {
+  if (!isObject(entry)) return false
+  const list = (v: unknown): unknown[] => (Array.isArray(v) ? v : [])
+  return [entry.from, entry.to, entry.book, ...list(entry.books), ...list(entry.requires)].some((ref) => ref !== undefined && aliases.has(ref))
+}
+
+/** The entries a prune takes out, appended to what the quarantine file already holds. Reading it may throw. */
+function quarantined<T>(file: string, all: readonly T[], kept: readonly T[]): { file: string; entries: T[] } | null {
+  const keptSet = new Set(kept)
+  const out = all.filter((e) => !keptSet.has(e))
+  if (out.length === 0) return null
+  const before = existsSync(file) ? readJson<T[]>(file) : []
+  return { file, entries: [...before, ...out] }
+}
+
+/** Writes back each file that lost an entry. */
+function rewrite<T>(files: readonly FileOf<T>[], kept: readonly T[]): void {
+  const keptSet = new Set(kept)
+  for (const f of files) {
+    const keep = f.entries.filter((e) => keptSet.has(e))
+    if (keep.length !== f.entries.length) writeFileSync(f.file, JSON.stringify(keep, null, 2) + '\n')
+  }
 }
 
 function main(): number {
@@ -64,7 +85,7 @@ function main(): number {
   }
   const previous = against ? previousBooks(against) : undefined
 
-  const { catalog, batches } = loadData()
+  const { catalog, batches, synopsisBatches, noteBatches } = loadData()
   let problems = validateCatalog(catalog, previous)
 
   if (prune && problems.length > 0) {
@@ -72,33 +93,36 @@ function main(): number {
     // A connection that cites an id now held as an alias is a rename the batches have not followed: pruning it
     // would quietly drop that book's connections. It stays a problem, and the run fails.
     const aliases = new Set(catalog.books.filter(isObject).flatMap((b) => (Array.isArray(b.aliases) ? b.aliases : [])))
-    const renamed = new Set(
-      problems
-        .filter((p) => p.code === 'REF_UNKNOWN')
-        .filter((p) => catalog.connections.some((c, i) => connectionLabel(c, i) === p.id && citesAlias(c, aliases)))
-        .map((p) => p.id),
-    )
-    const { kept, dropped } = pruneInvalid(
-      catalog.connections,
-      problems.filter((p) => !bookIds.has(p.id) && !renamed.has(p.id)),
-    )
+    const cited = (id: string): boolean =>
+      catalog.connections.some((c, i) => connectionLabel(c, i) === id && citesAlias(c, aliases)) ||
+      catalog.synopses.some((s, i) => synopsisLabel(s, i) === id && citesAlias(s, aliases)) ||
+      catalog.notes.some((n, i) => noteLabel(n, i) === id && citesAlias(n, aliases))
+    const renamed = new Set(problems.filter((p) => p.code === 'REF_UNKNOWN' && cited(p.id)).map((p) => p.id))
+    const prunable = problems.filter((p) => !bookIds.has(p.id) && !renamed.has(p.id))
+    const conns = pruneBy(catalog.connections, prunable, connectionLabel)
+    const syns = pruneBy(catalog.synopses, prunable, synopsisLabel)
+    const notes = pruneBy(catalog.notes, prunable, noteLabel)
+    const dropped = [...conns.dropped, ...syns.dropped, ...notes.dropped]
     // Decided before anything is written: a run that will fail leaves the tree as it found it.
-    problems = validateCatalog({ ...catalog, connections: kept }, previous)
+    problems = validateCatalog({ ...catalog, connections: conns.kept, synopses: syns.kept, notes: notes.kept }, previous)
     if (problems.length === 0 && dropped.length > 0) {
-      const keptSet = new Set(kept)
-      const quarantined = catalog.connections.filter((c) => !keptSet.has(c))
-      // Quarantine first: if it fails, nothing has left its batch yet.
       const dir = join(ROOT, quarantine)
+      const date = new Date().toISOString().slice(0, 10)
+      // Every quarantine file is read before any is written, and all are written before a batch changes:
+      // if one fails, nothing has left its batch yet.
+      const held = [
+        quarantined(join(dir, `${date}.json`), catalog.connections, conns.kept),
+        quarantined(join(dir, `synopses-${date}.json`), catalog.synopses, syns.kept),
+        quarantined(join(dir, `notes-${date}.json`), catalog.notes, notes.kept),
+      ]
       mkdirSync(dir, { recursive: true })
-      const file = join(dir, `${new Date().toISOString().slice(0, 10)}.json`)
-      const before = existsSync(file) ? readJson<Connection[]>(file) : []
-      writeFileSync(file, JSON.stringify([...before, ...quarantined], null, 2) + '\n')
-      for (const batch of batches) {
-        const keep = batch.connections.filter((c) => keptSet.has(c))
-        if (keep.length !== batch.connections.length) {
-          writeFileSync(batch.file, JSON.stringify(keep, null, 2) + '\n')
-        }
-      }
+      for (const h of held) if (h) writeFileSync(h.file, JSON.stringify(h.entries, null, 2) + '\n')
+      rewrite<Connection>(
+        batches.map((b) => ({ file: b.file, entries: b.connections })),
+        conns.kept,
+      )
+      rewrite(synopsisBatches, syns.kept)
+      rewrite(noteBatches, notes.kept)
     }
     if (problems.length === 0) {
       console.log(`pruned ${dropped.length}`)

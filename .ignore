@@ -1,3 +1,7 @@
 data/connections/
 public/data/connections.json
 .e2e-dist/
+data/synopses/
+data/notes/
+public/data/synopses.json
+public/data/notes.json
