@@ -1,5 +1,5 @@
-import { CONNECTION_TIERS, CONNECTION_TYPES, SOURCE_KINDS } from './types'
-import type { BookId, ProblemCode } from './types'
+import { CONNECTION_TIERS, CONNECTION_TYPES, NOTE_KINDS, SOURCE_KINDS } from './types'
+import type { Book, BookId, ProblemCode } from './types'
 
 // The one definition of a sound connection. `isShowable` is "no problems here", and the validator
 // reports the same codes, so passing the validator and being able to appear cannot drift apart.
@@ -7,6 +7,7 @@ import type { BookId, ProblemCode } from './types'
 
 const BOOK_ID = /^[a-z0-9]+(?:-[a-z0-9]+)*$/
 const CONNECTION_ID = /^c-\d{4}$/
+const NOTE_ID = /^n-\d{4}$/
 const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/
 const INVISIBLE = /[\p{C}\p{Default_Ignorable_Code_Point}]/gu
 // `new URL` repairs `https:a`, `https:/a`, `https:///a` and `https:\\a` into a host of its own guess.
@@ -34,6 +35,10 @@ export function isBookId(value: unknown): value is BookId {
 
 export function isConnectionId(value: unknown): value is string {
   return typeof value === 'string' && CONNECTION_ID.test(value)
+}
+
+export function isNoteId(value: unknown): value is string {
+  return typeof value === 'string' && NOTE_ID.test(value)
 }
 
 /** The ids a connection may refer to. Only well-formed books count. */
@@ -118,7 +123,6 @@ export function connectionProblems(c: unknown, known: ReadonlySet<BookId>): Prob
   const requires: unknown[] = Array.isArray(c.requires) ? Array.from(c.requires) : []
   const sources: unknown[] = Array.isArray(c.sources) ? Array.from(c.sources) : []
   const ends = c.to === null ? [c.from] : [c.from, c.to]
-  const verifier = readable(c.verifiedBy)
 
   when(!isConnectionId(c.id), 'BAD_ID')
 
@@ -127,24 +131,84 @@ export function connectionProblems(c: unknown, known: ReadonlySet<BookId>): Prob
   when(c.to === c.from, 'SELF_LOOP')
   when((c.to === null) !== (c.type === 'appearance'), 'APPEARANCE_MISMATCH')
 
-  when(
-    !isOneOf(CONNECTION_TIERS, c.tier) ||
-      !isOneOf(CONNECTION_TYPES, c.type) ||
-      sources.some((s) => !isOneOf(SOURCE_KINDS, field(s, 'kind'))),
-    'BAD_ENUM',
-  )
+  when(!isOneOf(CONNECTION_TIERS, c.tier) || !isOneOf(CONNECTION_TYPES, c.type), 'BAD_ENUM')
 
-  when(sources.length === 0, 'NO_SOURCE')
-  when(sources.some((s) => httpUrl(field(s, 'url')) === null), 'BAD_SOURCE_URL')
   when(sources.length > 0 && c.tier !== 'theory' && !strongEnough(c.author, sources), 'CONFIRMED_WEAK_SOURCE')
   when(sources.some((s) => field(s, 'kind') === 'upstream') && c.author !== 'upstream', 'UPSTREAM_SOURCE_ON_NEW')
+  provenance(c, sources, when)
+  when(!bothLanguages(c.description), 'MISSING_LANGUAGE')
 
-  when(isBlank(c.author), 'NO_AUTHOR')
-  when(verifier === '' || isBlank(c.verifiedOn), 'UNVERIFIED')
-  when(!isBlank(c.verifiedOn) && !isCalendarDate(c.verifiedOn), 'BAD_DATE')
-  when(verifier !== '' && verifier === readable(c.author), 'SELF_VERIFIED')
+  return [...problems]
+}
 
-  when(isBlank(field(c.description, 'en')) || isBlank(field(c.description, 'es')), 'MISSING_LANGUAGE')
+type When = (failed: boolean, code: ProblemCode) => void
 
+/** Sources, author and verification: the same rules for connections, synopses and notes. */
+function provenance(entry: Record<string, unknown>, sources: readonly unknown[], when: When): void {
+  const verifier = readable(entry.verifiedBy)
+  when(sources.some((s) => !isOneOf(SOURCE_KINDS, field(s, 'kind'))), 'BAD_ENUM')
+  when(sources.length === 0, 'NO_SOURCE')
+  when(sources.some((s) => httpUrl(field(s, 'url')) === null), 'BAD_SOURCE_URL')
+  when(isBlank(entry.author), 'NO_AUTHOR')
+  when(verifier === '' || isBlank(entry.verifiedOn), 'UNVERIFIED')
+  when(!isBlank(entry.verifiedOn) && !isCalendarDate(entry.verifiedOn), 'BAD_DATE')
+  when(verifier !== '' && verifier === readable(entry.author), 'SELF_VERIFIED')
+}
+
+function collector(): { problems: Set<ProblemCode>; when: When } {
+  const problems = new Set<ProblemCode>()
+  const when: When = (failed, code) => {
+    if (failed) problems.add(code)
+  }
+  return { problems, when }
+}
+
+// Array.from turns holes into undefined: `includes` would match a hole and `every` would skip it.
+const list = (value: unknown): unknown[] => (Array.isArray(value) ? Array.from(value) : [])
+const bothLanguages = (value: unknown): boolean => !isBlank(field(value, 'en')) && !isBlank(field(value, 'es'))
+
+/**
+ * Everything wrong with one synopsis. It waits only on works of its own series, so a lock never tells a reader
+ * that two series are linked; a work with no series has nothing to wait for and must be open.
+ */
+export function synopsisProblems(s: unknown, books: ReadonlyMap<BookId, Book>): ProblemCode[] {
+  if (!isObject(s)) return ['NOT_AN_OBJECT']
+  const { problems, when } = collector()
+  const requires = list(s.requires)
+  const open = s.open === true
+  const book = typeof s.book === 'string' ? books.get(s.book) : undefined
+  const other = (ref: unknown): Book | undefined => (typeof ref === 'string' ? books.get(ref) : undefined)
+
+  when(!book || requires.some((ref) => !other(ref)), 'REF_UNKNOWN')
+  when(open && requires.length > 0, 'SYNOPSIS_OPEN_AND_REQUIRES')
+  when(!open && requires.length === 0, 'SYNOPSIS_NOT_GATED')
+  if (book) {
+    when(book.series === null && !open, 'SYNOPSIS_NO_SERIES_NOT_OPEN')
+    when(book.series !== null && requires.some((ref) => other(ref) !== undefined && other(ref)!.series !== book.series), 'SYNOPSIS_OUTSIDE_SERIES')
+    when(open && typeof book.seriesIndex === 'number' && book.seriesIndex > 1, 'SYNOPSIS_OPEN_LATER')
+  }
+  provenance(s, list(s.sources), when)
+  when(!bothLanguages(s.text), 'MISSING_LANGUAGE')
+  return [...problems]
+}
+
+/** Everything wrong with one note. It hangs on works without linking two of them: links are connections. */
+export function noteProblems(n: unknown, known: ReadonlySet<BookId>): ProblemCode[] {
+  if (!isObject(n)) return ['NOT_AN_OBJECT']
+  const { problems, when } = collector()
+  const books = list(n.books)
+  const requires = list(n.requires)
+  const sources = list(n.sources)
+  const primary = sources.some((x) => field(x, 'kind') === 'word-of-brandon' || field(x, 'kind') === 'official')
+
+  when(!isNoteId(n.id), 'BAD_ID')
+  when(!isOneOf(NOTE_KINDS, n.kind), 'BAD_ENUM')
+  when(books.length === 0, 'NOTE_NO_BOOKS')
+  when([...books, ...requires].some((ref) => !known.has(ref as BookId)), 'REF_UNKNOWN')
+  when(books.some((b) => !requires.includes(b)), 'NOTE_REQUIRES_MISSING_BOOK')
+  when(n.kind === 'wob' && !bothLanguages(n.quote), 'NOTE_QUOTE_MISSING')
+  when((n.kind === 'wob' || n.kind === 'confirmed-theory') && !primary, 'NOTE_WEAK_SOURCE')
+  provenance(n, sources, when)
+  when(!bothLanguages(n.text), 'MISSING_LANGUAGE')
   return [...problems]
 }

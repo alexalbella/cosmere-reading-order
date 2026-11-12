@@ -971,7 +971,7 @@ describe('the circle', () => {
   })
 
   test('with the catalogue at 105 works the ring draws without a broken number', () => {
-    const catalog: Catalog = { books: works(105, everyOtherWorld), connections: [], meta: { updatedOn: '2026-11-04' } }
+    const catalog: Catalog = { books: works(105, everyOtherWorld), connections: [], synopses: [], notes: [], meta: { updatedOn: '2026-11-04' } }
     const app = useApp({ initial: { catalog, connectionsAvailable: true }, storage: fakeStorage() })
     app.lang.value = 'es'
     app.view.value = 'circle'

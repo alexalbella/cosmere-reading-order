@@ -33,5 +33,5 @@ export function loadData(root = ROOT): Loaded {
     connections: readJson<Connection[]>(join(dir, f)),
   }))
   const connections = batches.flatMap((b) => b.connections)
-  return { catalog: { books, connections, meta }, batches }
+  return { catalog: { books, connections, synopses: [], notes: [], meta }, batches }
 }

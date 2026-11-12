@@ -27,6 +27,9 @@ export type ConnectionType = (typeof CONNECTION_TYPES)[number]
 export const CONNECTION_TIERS = ['confirmed', 'theory'] as const
 export type ConnectionTier = (typeof CONNECTION_TIERS)[number]
 
+export const NOTE_KINDS = ['wob', 'egg', 'confirmed-theory', 'relation'] as const
+export type NoteKind = (typeof NOTE_KINDS)[number]
+
 export const MARK_STATUSES = ['read', 'reading', 'skipped', 'none'] as const
 export type MarkStatus = (typeof MARK_STATUSES)[number]
 
@@ -60,6 +63,15 @@ export const PROBLEM_CODES = [
   'ALIAS_MISMATCH',
   'EMPTY_CATALOGUE',
   'BAD_META',
+  'SYNOPSIS_OUTSIDE_SERIES',
+  'SYNOPSIS_NOT_GATED',
+  'SYNOPSIS_OPEN_AND_REQUIRES',
+  'SYNOPSIS_OPEN_LATER',
+  'SYNOPSIS_NO_SERIES_NOT_OPEN',
+  'NOTE_NO_BOOKS',
+  'NOTE_REQUIRES_MISSING_BOOK',
+  'NOTE_QUOTE_MISSING',
+  'NOTE_WEAK_SOURCE',
 ] as const
 export type ProblemCode = (typeof PROBLEM_CODES)[number]
 
@@ -101,7 +113,44 @@ export interface Connection {
   tier: ConnectionTier
   description: { en: string; es: string }
   requires: BookId[]
-  sources: { url: string; kind: SourceKind; cites?: string }[]
+  sources: Source[]
+  author: string
+  verifiedBy: string
+  verifiedOn: string
+}
+
+export interface Source {
+  url: string
+  kind: SourceKind
+  /** The chapter or passage a wiki page cites. */
+  cites?: string
+}
+
+/** Our own words about a work. It shows once its `requires` are read, or at once when `open`. */
+export interface Synopsis {
+  book: BookId
+  text: { en: string; es: string }
+  /** Earlier works of the same series only. */
+  requires?: BookId[]
+  /** Nothing to wait for: a series opener or a work with no series. */
+  open?: true
+  sources: Source[]
+  author: string
+  verifiedBy: string
+  verifiedOn: string
+}
+
+/** A Word of Brandon, an easter egg, a confirmed theory or a relation, hanging on one or more works. */
+export interface Note {
+  id: string
+  kind: NoteKind
+  books: BookId[]
+  text: { en: string; es: string }
+  /** For a Word of Brandon: the literal English quote and our Spanish translation. */
+  quote?: { en: string; es: string }
+  /** Every work in `books`, and any other it would give away. */
+  requires: BookId[]
+  sources: Source[]
   author: string
   verifiedBy: string
   verifiedOn: string
@@ -110,6 +159,8 @@ export interface Connection {
 export interface Catalog {
   books: Book[]
   connections: Connection[]
+  synopses: Synopsis[]
+  notes: Note[]
   meta: { updatedOn: string }
 }
 

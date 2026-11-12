@@ -125,6 +125,8 @@ export function fixtureCatalog(): Catalog {
         ],
       }),
     ],
+    synopses: [],
+    notes: [],
     meta: { updatedOn: '2026-11-04' },
   }
 }

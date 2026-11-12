@@ -136,7 +136,7 @@ export function useApp(options: UseAppOptions = {}): UseAppResult {
   /** Books that came but cannot be used fail like books that never came. */
   function applyBooks(books: Book[]): boolean {
     try {
-      setCatalog({ books, connections: [], meta: { updatedOn: '' } })
+      setCatalog({ books, connections: [], synopses: [], notes: [], meta: { updatedOn: '' } })
       return true
     } catch {
       catalog.value = null
