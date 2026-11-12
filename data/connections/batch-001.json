@@ -1,0 +1,704 @@
+[
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0020",
+    "from": "mb1",
+    "to": "yumi",
+    "type": "egg",
+    "description": {
+      "en": "Hoid suggests that tin Allomancy would allow someone to see through the shroud.",
+      "es": "Hoid sugiere que la alomancia del estaño permitiría ver a través de la Mortaja."
+    },
+    "requires": [
+      "mb1",
+      "yumi"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Tin",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Allomancy",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Shroud",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0021",
+    "from": "mb1",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Kelsier meets with Hoid in Chapter 19.",
+      "es": "Kelsier se reúne con Hoid en el capítulo 19."
+    },
+    "requires": [
+      "mb1"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Kelsier",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:Mistborn:_The_Final_Empire#Chapter_19",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0022",
+    "from": "mb1",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Annotations by Nazh can be found on the map of Luthadel.",
+      "es": "En el mapa de Luthadel pueden encontrarse anotaciones de Nazh."
+    },
+    "requires": [
+      "mb1"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Nazrilof",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Luthadel",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0023",
+    "from": "mb1",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Ars Arcanum",
+      "es": "Ars Arcanum"
+    },
+    "requires": [
+      "mb1"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Ars_Arcanum",
+        "kind": "wiki"
+      },
+      {
+        "url": "https://17thshard.github.io/reading-order/",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0024",
+    "from": "mb2",
+    "to": "wb",
+    "type": "egg",
+    "description": {
+      "en": "Lemex's nurse is a Terriswoman.",
+      "es": "La enfermera de Lemex es una mujer de Terris."
+    },
+    "requires": [
+      "mb2",
+      "wb",
+      "mb1"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Lemex%27s_nurse",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Terris",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0025",
+    "from": "mb2",
+    "to": "sa4",
+    "type": "minor",
+    "description": {
+      "en": "Ati speaks to Vin and others with Ruin's Pure Tone. The Well of Ascension pulses with Preservation's Pure Tone.",
+      "es": "Ati habla con Vin y otros con el Tono Puro de Ruina. El Pozo de la Ascensión late con el Tono Puro de Conservación."
+    },
+    "requires": [
+      "mb2",
+      "sa4",
+      "mb1",
+      "mb3",
+      "sa1",
+      "sa2",
+      "sa3"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Ati",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Vin",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Ruin",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Rhythm#The_Pure_Tones",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Well_of_Ascension",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Preservation",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0026",
+    "from": "mb2",
+    "to": "tress",
+    "type": "egg",
+    "description": {
+      "en": "Ulaam credits 'the Father' for the invention of the scalpel.",
+      "es": "Ulaam atribuye a «el Padre» la invención del escalpelo."
+    },
+    "requires": [
+      "mb2",
+      "tress",
+      "mb1"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Ulaam",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Rashek",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0027",
+    "from": "mb2",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Hoid is among the Terris refugees in Chapter 56, according to Brandon.",
+      "es": "Hoid está entre los refugiados de Terris en el capítulo 56, según Brandon."
+    },
+    "requires": [
+      "mb2",
+      "mb1"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Terris",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:The_Well_of_Ascension#Chapter_56",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://wob.coppermind.net/events/130/#e1552",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0028",
+    "from": "mb2",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Annotations by Nazh can be found on the map of Luthadel.",
+      "es": "En el mapa de Luthadel pueden encontrarse anotaciones de Nazh."
+    },
+    "requires": [
+      "mb2",
+      "mb1"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Nazrilof",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Luthadel",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0029",
+    "from": "mb2",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Ars Arcanum",
+      "es": "Ars Arcanum"
+    },
+    "requires": [
+      "mb2",
+      "mb1"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Ars_Arcanum",
+        "kind": "wiki"
+      },
+      {
+        "url": "https://17thshard.github.io/reading-order/",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0030",
+    "from": "mb3",
+    "to": "sa1",
+    "type": "egg",
+    "description": {
+      "en": "Demoux appears in Interlude I-1 as 'Thinker'; Ishikk mishears his name as 'Temoo'. Ruin's vessel, Ati, is mentioned in the Chapter 18 epigraph.",
+      "es": "Demoux aparece en el Interludio I-1 como «Pensador»; Ishikk oye mal su nombre y entiende «Temoo». Ati, el Recipiente de Ruina, se menciona en el epígrafe del capítulo 18."
+    },
+    "requires": [
+      "mb3",
+      "sa1",
+      "mb1",
+      "mb2"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Demoux",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:The_Way_of_Kings#Interlude_I-1:_Ishikk",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Ishikk",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Ruin",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/vessel",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Ati",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/The_Way_of_Kings/Epigraphs#The_Letter",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0031",
+    "from": "mb3",
+    "to": "sa2",
+    "type": "egg",
+    "description": {
+      "en": "Wit appears to use emotional Allomancy in Chapter 45.",
+      "es": "Sagaz parece usar alomancia emocional en el capítulo 45."
+    },
+    "requires": [
+      "mb3",
+      "sa2",
+      "mb1",
+      "mb2",
+      "sa1"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Allomancy",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:Words_of_Radiance#Chapter_45:_Middlefest",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0032",
+    "from": "mb3",
+    "to": "sa3",
+    "type": "significant",
+    "description": {
+      "en": "The Part 2 epigraphs include a letter from Sazed to Hoid. Felt reveals he is from another world.",
+      "es": "Los epígrafes de la Parte 2 incluyen una carta de Sazed a Hoid. Felt revela que es de otro mundo."
+    },
+    "requires": [
+      "mb3",
+      "sa3",
+      "mb1",
+      "mb2",
+      "sa1",
+      "sa2"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Oathbringer/Epigraphs#Letters",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Letters#Third_Oathbringer_Letter",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Sazed",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Felt",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0033",
+    "from": "mb3",
+    "to": "au",
+    "type": "major",
+    "description": {
+      "en": "The Scadrian system essay discusses the events that occurred in The Hero of Ages.",
+      "es": "El ensayo sobre el sistema scadriano trata los sucesos ocurridos en El héroe de las eras."
+    },
+    "requires": [
+      "mb3",
+      "au",
+      "mb1",
+      "mb2"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Scadrian_system",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/The_Hero_of_Ages",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0034",
+    "from": "mb3",
+    "to": "sa4",
+    "type": "significant",
+    "description": {
+      "en": "The Part 2 Epigraphs are a letter from Harmony. Fabrial metals have similar effects as in the Metallic Arts. Gereh is a Feruchemist. Raysium is associated with Odium as atium is associated with Ruin.",
+      "es": "Los epígrafes de la Parte 2 son una carta de Armonía. Los metales de los fabriales tienen efectos similares a los de las Artes Metálicas. Gereh es feruquimista. El raysio se asocia con Odium como el atium se asocia con Ruina."
+    },
+    "requires": [
+      "mb3",
+      "sa4",
+      "mb1",
+      "mb2",
+      "sa1",
+      "sa2",
+      "sa3"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Rhythm_of_War/Epigraphs",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Harmony",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Fabrial",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Metallic_Arts",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Gereh",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Feruchemy",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Raysium",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Odium",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/atium",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Ruin",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0035",
+    "from": "mb3",
+    "to": "tsm",
+    "type": "minor",
+    "description": {
+      "en": "The Beaconites are searching for a Scadrian spaceship. The Scadrian spaceship has an Awakened steelmind on board. Nomad compares the prospector ships to the abilities of Seekers. The Night Brigade knows how to use a Hemalurgic spike made from one person to track a Dawnshard to a different holder.",
+      "es": "Los beaconitas buscan una nave espacial scadriana. La nave espacial scadriana lleva a bordo una mente de acero Despertada. Nómada compara las naves de los prospectores con las habilidades de los buscadores. La Brigada Nocturna sabe usar un clavo hemalúrgico hecho a partir de una persona para rastrear una Esquirla del Amanecer hasta un portador distinto."
+    },
+    "requires": [
+      "mb3",
+      "tsm",
+      "mb1",
+      "mb2",
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa3-5",
+      "mb7",
+      "wb",
+      "mb4",
+      "mb5",
+      "mb6"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Beacon",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Scadrial",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Awakening",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Steelmind",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Sigzil",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Seeker",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Night_Brigade",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Hemalurgy",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Dawnshard",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0036",
+    "from": "mb3",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Hoid is the informant that Vin was supposed to meet with in Chapter 27.",
+      "es": "Hoid es el informante con el que Vin debía reunirse en el capítulo 27."
+    },
+    "requires": [
+      "mb3",
+      "mb1",
+      "mb2"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Vin",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:The_Hero_of_Ages#Chapter_27",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0037",
+    "from": "mb3",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Annotations by Nazh can be found on the map of Luthadel.",
+      "es": "En el mapa de Luthadel pueden encontrarse anotaciones de Nazh."
+    },
+    "requires": [
+      "mb3",
+      "mb1",
+      "mb2"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Nazrilof",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Luthadel",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0038",
+    "from": "mb3",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Ars Arcanum",
+      "es": "Ars Arcanum"
+    },
+    "requires": [
+      "mb3",
+      "mb1",
+      "mb2"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Ars_Arcanum",
+        "kind": "wiki"
+      },
+      {
+        "url": "https://17thshard.github.io/reading-order/",
+        "kind": "upstream"
+      }
+    ]
+  }
+]

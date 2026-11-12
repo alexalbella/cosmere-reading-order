@@ -1,0 +1,715 @@
+[
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-000",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0001",
+    "from": "elantris",
+    "to": "tes",
+    "type": "minor",
+    "description": {
+      "en": "The map in Elantris refers to 'Rose Barbarians'. There are mentions of Svorden, Teod, and Sycla. When escaping the palace, Shai runs into a Derethi priest (wearing red armor). When she steals the painting she inscribes an Aon Reo in its place.",
+      "es": "El mapa de Elantris menciona a los «bárbaros de la Rosa». Se mencionan Svorden, Teod y Sycla. Al huir del palacio, Shai se topa con un sacerdote derethi (con armadura roja). Cuando roba el cuadro, inscribe un Aon Reo en su lugar."
+    },
+    "requires": [
+      "elantris",
+      "tes"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Elantris",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Rose_Empire",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Svorden",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Teod",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Sycla",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Shai",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Shu-Dereth",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Aon",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-000",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0002",
+    "from": "elantris",
+    "to": "msh",
+    "type": "significant",
+    "description": {
+      "en": "The Ire are Elantrians. Their symbol is Aon Ire.",
+      "es": "Los Ire son elantrinos. Su símbolo es el Aon Ire."
+    },
+    "requires": [
+      "elantris",
+      "msh",
+      "mb1",
+      "mb2",
+      "mb3"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Ire",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Elantrian",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Aon",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-000",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0003",
+    "from": "elantris",
+    "to": "sa1",
+    "type": "egg",
+    "description": {
+      "en": "Galladon appears in Interlude I-1 as 'Grump'. Note his use of 'sule' (friend) and 'kolo' (understand) as well as the Dula word 'kayana' (crazy). Also, Aona and Skai are mentioned in the Chapter 22 epigraph.",
+      "es": "Galladon aparece en el Interludio I-1 como «Gruñón». Fíjate en su uso de «sule» (amigo) y «kolo» (entender), así como de la palabra dula «kayana» (loco). Además, Aona y Skai se mencionan en el epígrafe del capítulo 22."
+    },
+    "requires": [
+      "elantris",
+      "sa1"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Galladon",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:The_Way_of_Kings#Interlude_I-1:_Ishikk",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Duladel",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Aona",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Skai",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/The_Way_of_Kings/Epigraphs#The_Letter",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-000",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0004",
+    "from": "elantris",
+    "to": "sa3",
+    "type": "minor",
+    "description": {
+      "en": "Riino, the lighthouse owner in Chapter 97, is the Hoed Raoden and Galladon lowered into the mountain lake.",
+      "es": "Riino, el dueño del faro del capítulo 97, es el hoed que Raoden y Galladon bajaron al lago de la montaña."
+    },
+    "requires": [
+      "elantris",
+      "sa3",
+      "sa1",
+      "sa2"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Riino",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:Oathbringer#Chapter_97:_Riino",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Hoed",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Raoden",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Galladon",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Devotion",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-000",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0005",
+    "from": "elantris",
+    "to": "au",
+    "type": "minor",
+    "description": {
+      "en": "The nature of Sel's magic is discussed in the Selish system essay.",
+      "es": "La naturaleza de la magia de Sel se trata en el ensayo sobre el sistema de Sel."
+    },
+    "requires": [
+      "elantris",
+      "au"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Sel",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Selish_system",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-000",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0006",
+    "from": "elantris",
+    "to": "sa4",
+    "type": "minor",
+    "description": {
+      "en": "The communication box used by Shallan to communicate with Mraize and Hoid contains a Seon.",
+      "es": "La caja de comunicación que Shallan usa para comunicarse con Mraize y Hoid contiene un seon."
+    },
+    "requires": [
+      "elantris",
+      "sa4",
+      "sa1",
+      "sa2",
+      "sa3"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Shallan",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Mraize",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Seon",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-000",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0007",
+    "from": "elantris",
+    "to": "mb7",
+    "type": "significant",
+    "description": {
+      "en": "'Codenames Are Stupid' is Kaise; she communicates with Kelsier using the seon Dao in Chapter 40. Shay-I (Moonlight) uses AonDor in Chapter 54.",
+      "es": "«Los-Nombres-En-Código-Son-Una-Idiotez» es Kaise; se comunica con Kelsier mediante el seon Dao en el capítulo 40. Shei-ai (Luzdeluna) usa el AonDor en el capítulo 54."
+    },
+    "requires": [
+      "elantris",
+      "mb7",
+      "tes",
+      "mb1",
+      "mb2",
+      "mb3",
+      "mb4",
+      "mb5",
+      "mb6",
+      "msh"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Kaise",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Kelsier",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Seon",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:The_Lost_Metal#Chapter_40",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Shay-I",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/AonDor",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:The_Lost_Metal#Chapter_54",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-000",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0008",
+    "from": "elantris",
+    "to": "tress",
+    "type": "significant",
+    "description": {
+      "en": "The Sorceress is an Elantrian, and Aonic text is found in her tower's corridor. Hoid finally succeeds in becoming an Elantrian after failing to do so in the Elantris postscript. Hoid and the Sorceress both use AonDor.",
+      "es": "La hechicera es una elantrina, y hay texto aónico en el pasillo de su torre. Hoid consigue por fin convertirse en elantrino, tras fracasar en la posdata de Elantris. Hoid y la hechicera usan el AonDor."
+    },
+    "requires": [
+      "elantris",
+      "tress"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Riina",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Elantrian",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Aon",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Elantris_(book)",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/AonDor",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-000",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0009",
+    "from": "elantris",
+    "to": "yumi",
+    "type": "egg",
+    "description": {
+      "en": "Design says that Yumi is Invested to the same level as an Elantrian. Hoid compares the hijo to seons.",
+      "es": "Diseño dice que Yumi está investida al mismo nivel que un elantrino. Hoid compara a los «hijo» con los seones."
+    },
+    "requires": [
+      "elantris",
+      "yumi"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Design",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Yumi",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Investiture",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Elantrian",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/hijo",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Seon",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-000",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0010",
+    "from": "elantris",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Hoid appears: he is the beggar who works with Sarene in Chapter 58. The tenth anniversary edition includes a postscript with Hoid in it.",
+      "es": "Hoid aparece: es el mendigo que trabaja con Sarene en el capítulo 58. La edición del décimo aniversario incluye una posdata con Hoid."
+    },
+    "requires": [
+      "elantris"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Sarene",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:Elantris#Chapter_58",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:Elantris#Postscript",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-000",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0011",
+    "from": "elantris",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Nazh's annotations can be found on the map of Sycla.",
+      "es": "Las anotaciones de Nazh se encuentran en el mapa de Sycla."
+    },
+    "requires": [
+      "elantris",
+      "sa1",
+      "sa2"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Nazrilof",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Sycla",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-000",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0012",
+    "from": "elantris",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Ars Arcanum",
+      "es": "Ars Arcanum"
+    },
+    "requires": [
+      "elantris"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Ars_Arcanum",
+        "kind": "wiki"
+      },
+      {
+        "url": "https://17thshard.github.io/reading-order/",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-000",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0013",
+    "from": "tes",
+    "to": "imperial-fool",
+    "type": "major",
+    "description": {
+      "en": "A deleted prologue that contains some canonical elements.",
+      "es": "Un prólogo descartado que contiene algunos elementos canónicos."
+    },
+    "requires": [
+      "tes",
+      "imperial-fool"
+    ],
+    "sources": [
+      {
+        "url": "https://www.brandonsanderson.com/the-emperors-soul-deleted-prologue-imperial-fool/",
+        "kind": "official"
+      },
+      {
+        "url": "https://17thshard.github.io/reading-order/",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-000",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0014",
+    "from": "tes",
+    "to": "au",
+    "type": "minor",
+    "description": {
+      "en": "The nature of Sel's magic is discussed in the Selish system essay.",
+      "es": "La naturaleza de la magia de Sel se trata en el ensayo sobre el sistema de Sel."
+    },
+    "requires": [
+      "tes",
+      "au"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Sel",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Selish_system",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-000",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0015",
+    "from": "tes",
+    "to": "sa4",
+    "type": "egg",
+    "description": {
+      "en": "The Fused refer to aluminum as Ralkalest.",
+      "es": "Los Fusionados llaman al aluminio «ralkalest»."
+    },
+    "requires": [
+      "tes",
+      "sa4",
+      "sa1",
+      "sa2",
+      "sa3"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Fused",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/aluminum",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-000",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0016",
+    "from": "tes",
+    "to": "mb7",
+    "type": "major",
+    "description": {
+      "en": "Moonlight is Shai; she uses Forgery on several occasions and takes on the name 'Shay-I' after using her Essence Mark to become an Elantrian.",
+      "es": "Luzdeluna es Shai; usa la Falsificación en varias ocasiones y adopta el nombre «Shei-ai» tras usar su Marca de Esencia para convertirse en elantrina."
+    },
+    "requires": [
+      "tes",
+      "mb7",
+      "mb1",
+      "mb2",
+      "mb3",
+      "mb4",
+      "mb5",
+      "mb6",
+      "msh",
+      "elantris"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Shai",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Forgery",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Essence_Mark",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Elantrian",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-000",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0017",
+    "from": "tes",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "The 'Imperial Fool' is Hoid.",
+      "es": "El «Bufón Imperial» es Hoid."
+    },
+    "requires": [
+      "tes",
+      "elantris"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-000",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0018",
+    "from": "mb1",
+    "to": "wsgn",
+    "type": "minor",
+    "description": {
+      "en": "'Kenton Street' in Chapter 17 (also mentioned in The Well of Ascension) is a reference to Kenton.",
+      "es": "La «calle Kenton», en el capítulo 17 (mencionada también en El pozo de la ascensión), es una referencia a Kenton."
+    },
+    "requires": [
+      "mb1",
+      "wsgn",
+      "mb2"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Summary:The_Well_of_Ascension#Chapter_17",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/The_Well_of_Ascension",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Kenton",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-000",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0019",
+    "from": "mb1",
+    "to": "tress",
+    "type": "egg",
+    "description": {
+      "en": "Steel and iron tools are used to 'push' and 'pull' on aether. The 'Push for every Pull' quote in Tress of the Emerald Sea Chapter 63 is attributed to Kelsier.",
+      "es": "Las herramientas de acero y hierro se usan para «empujar» y «tirar» del éter. La frase «Un empujón por cada tirón» del capítulo 63 de Trenza del mar Esmeralda se atribuye a Kelsier."
+    },
+    "requires": [
+      "mb1",
+      "tress",
+      "mb2",
+      "mb3"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Steel",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Iron",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Aether",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:Tress_of_the_Emerald_Sea#Chapter_63",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Kelsier",
+        "kind": "upstream"
+      }
+    ]
+  }
+]

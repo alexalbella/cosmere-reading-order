@@ -1,0 +1,670 @@
+[
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0039",
+    "from": "mb4",
+    "to": "wsgn",
+    "type": "significant",
+    "description": {
+      "en": "Trell the foreman is connected to the god Trell.",
+      "es": "El capataz Trell está relacionado con el dios Trell."
+    },
+    "requires": [
+      "mb4",
+      "wsgn",
+      "mb5",
+      "mb6",
+      "mb7"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Trell_(Taldain)",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Trellism",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0040",
+    "from": "mb4",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Hoid is the beggar speaking with Lord Joshin and Lady Mi'chelle in Chapter 4.",
+      "es": "Hoid es el mendigo que habla con lord Joshin y lady Mi'chelle en el capítulo 4."
+    },
+    "requires": [
+      "mb4"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Joshin_Yomen",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Mi%27chelle_Yomen",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:The_Alloy_of_Law#Chapter_4",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0041",
+    "from": "mb4",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Annotations by Nazh can be found on the map of Elendel.",
+      "es": "En el mapa de Elendel se pueden ver anotaciones de Nazh."
+    },
+    "requires": [
+      "mb4"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Nazrilof",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Elendel",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0042",
+    "from": "mb4",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Ars Arcanum",
+      "es": "Ars Arcanum"
+    },
+    "requires": [
+      "mb4"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Ars_Arcanum",
+        "kind": "wiki"
+      },
+      {
+        "url": "https://17thshard.github.io/reading-order/",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0043",
+    "from": "mb5",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Hoid is Wax's coachman, named in Chapter 7.",
+      "es": "Hoid es el cochero de Wax, mencionado por su nombre en el capítulo 7."
+    },
+    "requires": [
+      "mb5"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Waxillium_Ladrian",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:Shadows_of_Self#Chapter_7",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0044",
+    "from": "mb5",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Ars Arcanum",
+      "es": "Ars Arcanum"
+    },
+    "requires": [
+      "mb5"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Ars_Arcanum",
+        "kind": "wiki"
+      },
+      {
+        "url": "https://17thshard.github.io/reading-order/",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0045",
+    "from": "mb6",
+    "to": "msh",
+    "type": "major",
+    "description": {
+      "en": "Kelsier's survival is revealed in The Bands of Mourning.",
+      "es": "La supervivencia de Kelsier se revela en Brazales de duelo."
+    },
+    "requires": [
+      "mb1",
+      "mb2",
+      "mb3",
+      "mb4",
+      "mb5",
+      "mb6",
+      "msh"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Kelsier",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/The_Bands_of_Mourning",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0046",
+    "from": "mb6",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Hoid is the beggar who gives Wax a special coin in Chapter 11.",
+      "es": "Hoid es el mendigo que le da a Wax una moneda especial en el capítulo 11."
+    },
+    "requires": [
+      "mb6"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Waxillium_Ladrian",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:The_Bands_of_Mourning#Chapter_11",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0047",
+    "from": "mb6",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Khriss is the woman who dances with Wax in Chapter 12. Khriss and Nazh are also the 'K or N' referred to in the 'Do your metal tools speak to you?' ad in The New Ascendancy broadsheet.",
+      "es": "Khriss es la mujer que baila con Wax en el capítulo 12. Khriss y Nazh son también la «K o N» a la que se refiere el anuncio «¿Le hablan sus herramientas metálicas?» en el periódico El Nuevo Ascendiente."
+    },
+    "requires": [
+      "mb6",
+      "wsgn"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Khrissalla",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Waxillium_Ladrian",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:The_Bands_of_Mourning#Chapter_12",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Nazrilof",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/The_New_Ascendancy",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0048",
+    "from": "mb6",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Nazh is 'the haunted man' in 'The Ghastly Gondola!' story in The New Ascendancy broadsheet. Khriss and Nazh are also the 'K or N' referred to in the 'Do your metal tools speak to you?' ad in the broadsheet.",
+      "es": "Nazh es «el hombre encantado» en el relato «¡El funesto funicular!» del periódico El Nuevo Ascendiente. Khriss y Nazh son también la «K o N» a la que se refiere el anuncio «¿Le hablan sus herramientas metálicas?» en el mismo periódico."
+    },
+    "requires": [
+      "mb6",
+      "wsgn"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Nazrilof",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/The_New_Ascendancy",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Khrissalla",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0049",
+    "from": "mb6",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Ars Arcanum",
+      "es": "Ars Arcanum"
+    },
+    "requires": [
+      "mb6"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Ars_Arcanum",
+        "kind": "wiki"
+      },
+      {
+        "url": "https://17thshard.github.io/reading-order/",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0050",
+    "from": "msh",
+    "to": "traveler",
+    "type": "major",
+    "description": {
+      "en": "Hoid and Frost discuss the events of The Hero of Ages (and Mistborn: Secret History).",
+      "es": "Hoid y Escarcha hablan de los acontecimientos de El héroe de las eras (y de Mistborn. Historia secreta)."
+    },
+    "requires": [
+      "mb1",
+      "mb2",
+      "mb3",
+      "mb4",
+      "mb5",
+      "mb6",
+      "msh",
+      "traveler"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Frost",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/The_Hero_of_Ages",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Mistborn:_Secret_History",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0051",
+    "from": "msh",
+    "to": "sa4",
+    "type": "significant",
+    "description": {
+      "en": "Thaidakar, leader of the Ghostbloods, is Kelsier, with the fight between him and Hoid in Secret History specifically referenced. Scadrial is referenced in Ialai's notes. The device used by the honorspren to store Stormlight came from the Ire.",
+      "es": "Thaidakar, el líder de Sangre Espectral, es Kelsier, y se hace referencia concreta a la pelea entre él y Hoid en Historia secreta. En las notas de Ialai se menciona Scadrial. El dispositivo que usan los honorspren para almacenar luz tormentosa procede de los Ire."
+    },
+    "requires": [
+      "mb1",
+      "mb2",
+      "mb3",
+      "mb4",
+      "mb5",
+      "mb6",
+      "msh",
+      "sa1",
+      "sa2",
+      "sa2-5",
+      "sa3",
+      "sa3-5",
+      "sa4"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Ghostbloods",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Kelsier",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Mistborn:_Secret_History",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Scadrial",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Ialai",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/honorspren",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Stormlight",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Ire",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0052",
+    "from": "msh",
+    "to": "tress",
+    "type": "minor",
+    "description": {
+      "en": "Riina, the Sorceress, is a member of the Ire. Hoid refers to Kelsier as an old adversary in Tress of the Emerald Sea Chapter 63.",
+      "es": "Riina, la Hechicera, es miembro de los Ire. Hoid se refiere a Kelsier como un viejo adversario en el capítulo 63 de Trenza del mar Esmeralda."
+    },
+    "requires": [
+      "mb1",
+      "mb2",
+      "mb3",
+      "mb4",
+      "mb5",
+      "mb6",
+      "msh",
+      "tress"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Riina",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Ire",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Kelsier",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:Tress_of_the_Emerald_Sea#Chapter_63",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0053",
+    "from": "msh",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Hoid is 'Drifter'.",
+      "es": "Hoid es «Vagabundo»."
+    },
+    "requires": [
+      "mb1",
+      "mb2",
+      "mb3",
+      "mb4",
+      "mb5",
+      "mb6",
+      "msh"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0054",
+    "from": "msh",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Kelsier meets Khriss and Nazh in the Cognitive Realm.",
+      "es": "Kelsier conoce a Khriss y a Nazh en el Reino Cognitivo."
+    },
+    "requires": [
+      "mb1",
+      "mb2",
+      "mb3",
+      "mb4",
+      "mb5",
+      "mb6",
+      "msh"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Kelsier",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Khrissalla",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Nazrilof",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Cognitive_Realm",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0056",
+    "from": "mb7",
+    "to": "dsp",
+    "type": "egg",
+    "description": {
+      "en": "Jan Ven, mentioned in the 6th Epilogue, is a Sho Del, a species of beings known from Dragonsteel Prime.",
+      "es": "Jan Ven, mencionada en el 6.º epílogo, es una sho del, una especie de seres conocida por Dragonsteel Prime."
+    },
+    "requires": [
+      "mb1",
+      "mb2",
+      "mb3",
+      "mb4",
+      "mb5",
+      "mb6",
+      "msh",
+      "mb7",
+      "dsp"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Jan_Ven",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:The_Lost_Metal#Epilogue_6",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Sho_Del",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Dragonsteel_Prime",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0057",
+    "from": "mb7",
+    "to": "tress",
+    "type": "minor",
+    "description": {
+      "en": "Ulaam was first mentioned in The Lost Metal. 'Death himself, with nails in his eyes' refers to Marsh, whose personification as 'Death' is spreading across the cosmere according to the Ars Arcanum of The Lost Metal. Roseite is used by TwinSoul. Sazed is said to have 'released' the kandra, seemingly sometime after The Lost Metal.",
+      "es": "Ulaam se mencionó por primera vez en El metal perdido. «La Muerte en persona, con clavos en los ojos» se refiere a Marsh, cuya personificación como «Muerte» se está extendiendo por el cosmere según el Ars Arcanum de El metal perdido. AlmaDoble usa rosaíta. Se dice que Sazed «liberó» a los kandra, al parecer algún tiempo después de El metal perdido."
+    },
+    "requires": [
+      "mb1",
+      "mb2",
+      "mb3",
+      "mb4",
+      "mb5",
+      "mb6",
+      "msh",
+      "mb7",
+      "tress"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Ulaam",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/The_Lost_Metal",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Marsh",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Cosmere",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Roseite",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Prasanva",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Sazed",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Kandra",
+        "kind": "upstream"
+      }
+    ]
+  }
+]

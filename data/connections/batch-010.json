@@ -1,0 +1,125 @@
+[
+  {
+    "id": "c-0400",
+    "from": "yumi",
+    "to": "tsm",
+    "type": "significant",
+    "tier": "confirmed",
+    "description": {
+      "en": "Brandon has verified that Yumi is set after The Sunlit Man on the Cosmere timeline, though it may not seem so since Komashi lags behind technologically.",
+      "es": "Según confirmó Brandon, Yumi y el pintor de pesadillas sucede tras El Hombre Iluminado dentro de la cronología del Cosmere; la impresión contraria surge porque Komashi tiene un nivel tecnológico inferior."
+    },
+    "requires": [
+      "yumi",
+      "tsm"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/api/entry/16524/",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:research-batch-010",
+    "verifiedBy": "agent:verify-batch-010",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0401",
+    "from": "yumi",
+    "to": "iote",
+    "type": "minor",
+    "tier": "confirmed",
+    "description": {
+      "en": "On the Cosmere timeline, Brandon puts Isles of the Emberdark further along than Yumi.",
+      "es": "En la cronología del Cosmere, Brandon coloca Islas de la Ascuaoscura en un punto posterior a Yumi y el pintor de pesadillas."
+    },
+    "requires": [
+      "yumi",
+      "iote"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/api/entry/16524/",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:research-batch-010",
+    "verifiedBy": "agent:verify-batch-010",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0402",
+    "from": "yumi",
+    "to": "iote",
+    "type": "minor",
+    "tier": "confirmed",
+    "description": {
+      "en": "Within Isles of the Emberdark, the Arcanist Ed remarks that nobody knows where Virtuosity resides; she is the Shard who fractured herself close to Komashi in Yumi.",
+      "es": "El arcanista Ed, en Islas de la Ascuaoscura, comenta que se desconoce dónde está Virtuosismo, la Esquirla que se fragmentó junto a Komashi en el relato de Yumi y el pintor de pesadillas."
+    },
+    "requires": [
+      "yumi",
+      "iote"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Virtuosity",
+        "kind": "wiki",
+        "cites": "Isles of the Emberdark, chapter 42"
+      }
+    ],
+    "author": "agent:research-batch-010",
+    "verifiedBy": "agent:verify-batch-010",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0403",
+    "from": "yumi",
+    "to": "iote",
+    "type": "minor",
+    "tier": "confirmed",
+    "description": {
+      "en": "Hoid's partner Design in Yumi accompanies him toward the Spirit Shores, which lie in Isles of the Emberdark, yet remains silent during their encounter there.",
+      "es": "Diseño, que acompaña a Hoid por Yumi y el pintor de pesadillas, lo sigue hasta las Costas del Espíritu, situadas en Islas de la Ascuaoscura, pero guarda silencio durante la reunión que se celebra allí."
+    },
+    "requires": [
+      "yumi",
+      "iote"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Design",
+        "kind": "wiki",
+        "cites": "Isles of the Emberdark, chapter 51"
+      }
+    ],
+    "author": "agent:research-batch-010",
+    "verifiedBy": "agent:verify-batch-010",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0404",
+    "from": "yumi",
+    "to": "sa3",
+    "type": "minor",
+    "tier": "confirmed",
+    "description": {
+      "en": "Design, a Cryptic joined to Hoid who travels with him in Yumi, first appears in Oathbringer's epilogue.",
+      "es": "Diseño, una críptica ligada a Hoid que viaja con él por Yumi y el pintor de pesadillas, hace su debut en el epílogo de Juramentada."
+    },
+    "requires": [
+      "yumi",
+      "sa3"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Design",
+        "kind": "wiki",
+        "cites": "Oathbringer, epilogue"
+      }
+    ],
+    "author": "agent:research-batch-010",
+    "verifiedBy": "agent:verify-batch-010",
+    "verifiedOn": "2026-11-04"
+  }
+]

@@ -1,0 +1,688 @@
+[
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-005",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0096",
+    "from": "sa3",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Several drawings and sketches include Nazh's annotations. Most notably, the glyphs page is entirely written by him.",
+      "es": "Varios dibujos y bocetos incluyen anotaciones de Nazh. En especial, la página de glifos está escrita por completo por él."
+    },
+    "requires": [
+      "sa3"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Nazrilof",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Glyphs",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-005",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0097",
+    "from": "sa3",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Ars Arcanum",
+      "es": "Ars Arcanum"
+    },
+    "requires": [
+      "sa3"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Ars_Arcanum",
+        "kind": "wiki"
+      },
+      {
+        "url": "https://17thshard.github.io/reading-order/",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-005",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0098",
+    "from": "sa3-5",
+    "to": "tsm",
+    "type": "significant",
+    "description": {
+      "en": "The Sleepless first explained the nature of Dawnshards to Rysn, including the danger they present to the cosmere and the care with which they must be protected. She was specifically warned against bonding a spren and becoming a Knight Radiant, perhaps in part to prevent something like what happened to Aux.",
+      "es": "Los Insomnes explicaron por primera vez a Rysn la naturaleza de las Esquirlas del Amanecer, incluido el peligro que suponen para el Cosmere y el cuidado con el que deben protegerse. Se le advirtió de forma expresa que no se vinculara con un spren ni se convirtiera en Caballero Radiante, quizá en parte para evitar algo como lo ocurrido a Aux."
+    },
+    "requires": [
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa3-5",
+      "sa4",
+      "tsm"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Sleepless",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Dawnshard",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Rysn",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Cosmere",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Spren",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Knights_Radiant",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Auxiliary",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-005",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0099",
+    "from": "sa4",
+    "to": "dsp",
+    "type": "egg",
+    "description": {
+      "en": "Microkinesis refers to a type of magic from Yolen in Dragonsteel Prime.",
+      "es": "La microquinesis alude a un tipo de magia de Yolen en Dragonsteel Prime."
+    },
+    "requires": [
+      "sa4",
+      "dsp"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Microkinesis",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Yolen",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Dragonsteel_Prime",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-005",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0100",
+    "from": "sa4",
+    "to": "tress",
+    "type": "egg",
+    "description": {
+      "en": "Xisis is almost certainly the 'Foil' mentioned in the Ars Arcanum who is described as 'deep within his ocean' and wishing 'to achieve control over the aethers.'",
+      "es": "Es casi seguro que Xisis es el «Foil» mencionado en el Ars Arcanum, descrito como «en lo profundo de su océano» y deseoso de «lograr el control sobre los éteres»."
+    },
+    "requires": [
+      "sa4",
+      "tress"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Xisisrefliel",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Foil",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Aether",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-005",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0101",
+    "from": "sa4",
+    "to": "yumi",
+    "type": "major",
+    "description": {
+      "en": "Design plays a significant role in the story, having been given the appearance and semblance of a body with a complex Lightweaving. Hoid says 'we all kind of learned our lesson' on giving actual bodies to spren, which likely refers to Ishar's experiments on spren. Hoid's 'protections' that turned him into a statue seem to have been created in response to what happened when Odium tampered with his memories in the Rhythm of War epilogue. The spirits can be bound into devices like spren into fabrials.",
+      "es": "Diseño tiene un papel importante en la historia: se le ha dado la apariencia y la semblanza de un cuerpo mediante un complejo tejido de luz. Hoid dice «más o menos, todos aprendimos la lección» sobre dar cuerpos de verdad a los spren, lo que probablemente se refiere a los experimentos de Ishar con los spren. Las «protecciones» de Hoid que lo convirtieron en una estatua parecen haberse creado en respuesta a lo que ocurrió cuando Odium manipuló sus recuerdos en el epílogo de El ritmo de la guerra. Los espíritus pueden ligarse a dispositivos, como los spren a los fabriales."
+    },
+    "requires": [
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa4",
+      "yumi"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Design",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Lightweaving",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Spren",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Ishar",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Odium",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:Rhythm_of_War#Epilogue:_Dirty_Tricks",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/hijo",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Fabrial",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-005",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0102",
+    "from": "sa4",
+    "to": "tsm",
+    "type": "major",
+    "description": {
+      "en": "Nomad/Zellion is Sigzil, a member of Bridge Four and a Knight Radiant. He mentions several events from his training with Kaladin while they are bridgemen, and later while he is Kaladin's squire. The Knights Radiant and their spren are detailed over the opening books of The Stormlight Archive, including the way they develop their powers through the swearing of oaths and the nature of their Shardblades and Shardplate. Nomad considers the use of tones and vibrations to manipulate Investiture, as one can do with Stormlight.",
+      "es": "Nómada/Zellion es Sigzil, miembro del Puente Cuatro y Caballero Radiante. Menciona varios sucesos de su entrenamiento con Kaladin cuando eran hombres del puente y, más tarde, cuando era su escudero. Los Caballeros Radiantes y sus spren se detallan a lo largo de los primeros libros de El Archivo de las Tormentas, incluido el modo en que desarrollan sus poderes mediante la pronunciación de juramentos y la naturaleza de sus hojas esquirladas y sus armaduras esquirladas. Nómada se plantea el uso de tonos y vibraciones para manipular la Investidura, como se hace con la luz tormentosa."
+    },
+    "requires": [
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa4",
+      "tsm"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Sigzil",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Bridge_Four",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Knights_Radiant",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Kaladin",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Squire",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Spren",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/The_Stormlight_Archive",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Shardblade",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Shardplate",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Investiture",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Stormlight",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-005",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0103",
+    "from": "sa4",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Hoid is 'Wit'.",
+      "es": "Hoid es «Sagaz»."
+    },
+    "requires": [
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa4"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-005",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0104",
+    "from": "sa4",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Several drawings and sketches include Nazh's annotations. Most notably, the glyphs page is entirely written by him.",
+      "es": "Varios dibujos y bocetos incluyen anotaciones de Nazh. En especial, la página de glifos está escrita por completo por él."
+    },
+    "requires": [
+      "sa4"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Nazrilof",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Glyphs",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-005",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0105",
+    "from": "sa4",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Ars Arcanum",
+      "es": "Ars Arcanum"
+    },
+    "requires": [
+      "sa4"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Ars_Arcanum",
+        "kind": "wiki"
+      },
+      {
+        "url": "https://17thshard.github.io/reading-order/",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-005",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0106",
+    "from": "wsgn",
+    "to": "sa3",
+    "type": "egg",
+    "description": {
+      "en": "Wit has a jar of black sand from Taldain in Chapter 67, which turns white after Shallan Lightweaves.",
+      "es": "Sagaz tiene un tarro de arena negra de Taldain en el capítulo 67, que se vuelve blanca después de que Shallan teja luz."
+    },
+    "requires": [
+      "wsgn",
+      "sa1",
+      "sa2",
+      "sa3"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Taldain",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:Oathbringer#Chapter_67:_Mishim",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Shallan",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Lightweaving",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-005",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0107",
+    "from": "wsgn",
+    "to": "sa4",
+    "type": "minor",
+    "description": {
+      "en": "Taldain is referenced in Ialai's notes. Navani uses sand from Taldain to measure Investiture in her experiments.",
+      "es": "Taldain se menciona en las notas de Ialai. Navani usa arena de Taldain para medir la Investidura en sus experimentos."
+    },
+    "requires": [
+      "wsgn",
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa4"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Taldain",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Ialai",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Navani_Kholin",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Sand_(Taldain)",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Investiture",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-005",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0108",
+    "from": "wsgn",
+    "to": "au",
+    "type": "minor",
+    "description": {
+      "en": "The Taldain system essay discusses Taldain and sand mastery.",
+      "es": "El ensayo sobre el sistema de Taldain trata de Taldain y de la maestría de la arena."
+    },
+    "requires": [
+      "wsgn",
+      "au"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Taldain_system",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Taldain",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Sand_mastery",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-005",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0109",
+    "from": "wsgn",
+    "to": "tsm",
+    "type": "egg",
+    "description": {
+      "en": "Canticle's sun is Invested similar to Taldain's.",
+      "es": "El sol de Cántico está Investido de forma similar al de Taldain."
+    },
+    "requires": [
+      "wsgn",
+      "tsm",
+      "au"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Canticle",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Investiture",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Taldain_system",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-005",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0110",
+    "from": "wsgn",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Hoid is the hooded man with a stringed instrument who first appears in Ais's first scene in the middle of Chapter 4. He plays a song in the Epilogue.",
+      "es": "Hoid es el hombre encapuchado con un instrumento de cuerda que aparece por primera vez en la primera escena de Ais, a mitad del capítulo 4. Toca una canción en el epílogo."
+    },
+    "requires": [
+      "wsgn"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Ais",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:White_Sand#Chapter_4:_Divides",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:White_Sand#Epilogue",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-005",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0111",
+    "from": "wsgn",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Khriss is a main character.",
+      "es": "Khriss es un personaje principal."
+    },
+    "requires": [
+      "wsgn"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Khrissalla",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-005",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0112",
+    "from": "sfs",
+    "to": "sa2",
+    "type": "egg",
+    "description": {
+      "en": "Mraize's collection in Chapter 43 includes a silver knife from Threnody.",
+      "es": "La colección de Mraize en el capítulo 43 incluye un cuchillo de plata de Treno."
+    },
+    "requires": [
+      "sfs",
+      "sa2"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Mraize",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:Words_of_Radiance#Chapter_43:_The_Ghostbloods",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Threnody",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-005",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0113",
+    "from": "sfs",
+    "to": "sa3",
+    "type": "egg",
+    "description": {
+      "en": "The silvery chain in Celebrant is from Threnody.",
+      "es": "La cadena plateada de Celebrant procede de Treno."
+    },
+    "requires": [
+      "sfs",
+      "sa3"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Celebrant",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Threnody",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-005",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0114",
+    "from": "sfs",
+    "to": "msh",
+    "type": "minor",
+    "description": {
+      "en": "Kelsier causes the Ire to suspect Shades from Threnody are nearby.",
+      "es": "Kelsier hace que los Ire sospechen que hay umbras de Treno cerca."
+    },
+    "requires": [
+      "sfs",
+      "msh",
+      "mb1",
+      "mb2",
+      "mb3",
+      "mb4",
+      "mb5",
+      "mb6"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Kelsier",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Ire",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Shade",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Threnody",
+        "kind": "upstream"
+      }
+    ]
+  }
+]

@@ -1,0 +1,133 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  # Never on main: a second push must not cancel a deploy in progress.
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npm test
+      # What the catalogue must not lose is what the push replaces. On main, `origin/main` is the commit under test,
+      # so the comparison there is against the push's own `before`, handed in through env and never spliced into the
+      # script. A `before` that cannot be reached (a force push) is BAD_REF and fails closed. All zeros is a new
+      # branch: there is nothing before it to compare with. A `before` that holds no catalogue (the first merge,
+      # over upstream's tree) compares with nothing and passes.
+      - name: Validate the data
+        env:
+          EVENT: ${{ github.event_name }}
+          REF: ${{ github.ref }}
+          BEFORE: ${{ github.event.before }}
+        run: |
+          against=origin/main
+          if [ "$EVENT" = push ] && [ "$REF" = refs/heads/main ]; then against="$BEFORE"; fi
+          if [ "$against" = 0000000000000000000000000000000000000000 ]; then
+            npm run validate:data
+          else
+            npm run validate:data -- --against "$against"
+          fi
+      - run: npm run build
+      # The runner sometimes cannot resolve Ubuntu's mirror for a while: try three times before failing.
+      - run: for i in 1 2 3; do npx playwright install --with-deps chromium && break; [ "$i" = 3 ] && exit 1; sleep 30; done
+      - run: npm run e2e
+
+  deploy:
+    # Only a push to main, and only after every check passed.
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: [check]
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    # A running deploy is never cancelled. One waiting behind it is replaced by a newer one, which is harmless:
+    # the newer commit holds the older.
+    concurrency:
+      group: deploy-cosmere
+      cancel-in-progress: false
+    steps:
+      # Until the deployer has set up Access and added the token, merging to main succeeds and deploys nothing.
+      - id: gate
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
+            echo "::notice::CLOUDFLARE_API_TOKEN is not set: nothing is deployed. See docs/DEPLOY.md."
+            echo "go=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "go=true" >> "$GITHUB_OUTPUT"
+          fi
+      - if: steps.gate.outputs.go == 'true'
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - if: steps.gate.outputs.go == 'true'
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - if: steps.gate.outputs.go == 'true'
+        run: npm ci
+      # The hostname, the Access team and audience, and the KV id live in the repository's secrets, never in the
+      # repository: the logs of a public repository are public, and secrets are masked in them.
+      - if: steps.gate.outputs.go == 'true'
+        env:
+          SITE_HOSTNAME: ${{ secrets.SITE_HOSTNAME }}
+          ACCESS_TEAM: ${{ secrets.ACCESS_TEAM }}
+          ACCESS_AUD: ${{ secrets.ACCESS_AUD }}
+          KV_ID: ${{ secrets.KV_ID }}
+        run: npx tsx scripts/fill-deploy-config.ts
+      - if: steps.gate.outputs.go == 'true'
+        run: npx tsx scripts/check-deploy-config.ts
+      # A fresh build in this job: dist holds only what this build produced.
+      - if: steps.gate.outputs.go == 'true'
+        run: npm run build
+      # No new content goes to an open site: when the host answers and is not behind Access, stop. A host that does
+      # not resolve (a first deploy, before the route exists) carries on, and the probe after the deploy stays.
+      # Nothing that answers is printed.
+      - if: steps.gate.outputs.go == 'true'
+        env:
+          SITE_HOSTNAME: ${{ secrets.SITE_HOSTNAME }}
+        run: |
+          code=0
+          answer=$(curl -s -o /dev/null --max-time 20 -w '%{http_code} %{redirect_url}' "https://$SITE_HOSTNAME/data/connections.json") || code=$?
+          if [ "$code" = 6 ]; then
+            echo "::notice::The site does not resolve yet: first deploy, nothing to protect."
+          elif ! printf '%s' "$answer" | grep -Eq '^302 https://[^/]+\.cloudflareaccess\.com/'; then
+            echo "::error::The site answers without Access in front. Nothing was deployed. See docs/DEPLOY.md."
+            exit 1
+          fi
+      - if: steps.gate.outputs.go == 'true'
+        # The token is visible to this step only, not to npm ci or the build.
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx wrangler deploy
+      # If Access were ever removed, the site must not sit open with nobody knowing. It needs no token, and the
+      # body of what answers is thrown away, whatever it is.
+      - if: steps.gate.outputs.go == 'true'
+        env:
+          SITE_HOSTNAME: ${{ secrets.SITE_HOSTNAME }}
+        run: |
+          answer=$(curl -s -o /dev/null --max-time 20 --retry 5 --retry-delay 10 --retry-all-errors -w '%{http_code} %{redirect_url}' "https://$SITE_HOSTNAME/data/connections.json") || true
+          if ! printf '%s' "$answer" | grep -Eq '^302 https://[^/]+\.cloudflareaccess\.com/'; then
+            echo "::error::Access is not answering for the site. Got: ${answer%% *}. See docs/DEPLOY.md."
+            exit 1
+          fi

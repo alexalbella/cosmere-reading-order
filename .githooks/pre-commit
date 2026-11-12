@@ -1,0 +1,35 @@
+#!/bin/sh
+# Before every commit: look for secrets in what is staged, then run the tests.
+# Armed per clone with: git config core.hooksPath .githooks
+
+# A shell opened before winget installed it does not have it on PATH yet.
+if ! command -v gitleaks >/dev/null 2>&1 && command -v cygpath >/dev/null 2>&1; then
+  for dir in "$(cygpath -u "$LOCALAPPDATA")"/Microsoft/WinGet/Packages/Gitleaks.Gitleaks_*; do
+    PATH="$PATH:$dir"
+  done
+fi
+
+if ! command -v gitleaks >/dev/null 2>&1; then
+  echo "pre-commit: falta gitleaks. Instálalo con: winget install --id Gitleaks.Gitleaks -e" >&2
+  exit 1
+fi
+
+gitleaks git --pre-commit --redact --staged --no-banner --log-level=warn || {
+  echo "pre-commit: gitleaks ha encontrado un posible secreto. Commit cancelado." >&2
+  exit 1
+}
+
+# Commits that only touch documentation do not need the suite.
+if git diff --cached --name-only | grep -qvE '\.md$'; then
+  # Git exports these to hooks. Tests that create temporary repos must not inherit them.
+  output=$(env -u GIT_INDEX_FILE -u GIT_DIR -u GIT_WORK_TREE -u GIT_PREFIX npm test --silent 2>&1) || {
+    printf '%s\n' "$output" | grep -E ' FAIL |AssertionError|Error:|Cannot find module|Test Files |Tests  ' | sort -u | head -20 >&2
+    echo "pre-commit: las pruebas fallan (npm test). Commit cancelado." >&2
+    exit 1
+  }
+  output=$(npm run lint --silent 2>&1) || {
+    printf '%s\n' "$output" | head -20 >&2
+    echo "pre-commit: el linter falla (npm run lint). Commit cancelado." >&2
+    exit 1
+  }
+fi

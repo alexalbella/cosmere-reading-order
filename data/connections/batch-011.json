@@ -1,0 +1,180 @@
+[
+  {
+    "id": "c-0500",
+    "from": "tsm",
+    "to": "sa3",
+    "type": "significant",
+    "tier": "confirmed",
+    "description": {
+      "en": "Auxiliary, the spren linked to Nomad, is a highspren initially spotted in Oathbringer as Szeth's companion, first designated 12124. The Coppermind names Oathbringer as its debut and follows its movement from Szeth over to Nomad.",
+      "es": "Auxiliar, el spren unido a Nómada, es un altospren avistado por vez primera en Juramentada como compañero de Szeth, al que inicialmente se denominó 12124. La Coppermind señala Juramentada como su debut y traza su recorrido desde Szeth hasta Nómada."
+    },
+    "requires": [
+      "tsm",
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa4",
+      "sa5"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Auxiliary",
+        "kind": "wiki",
+        "cites": "Oathbringer chapter 121; The Sunlit Man chapters 1, 20 and 26; Wind and Truth chapter 147"
+      }
+    ],
+    "author": "agent:research-batch-011",
+    "verifiedBy": "agent:verify-batch-011",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0501",
+    "from": "tsm",
+    "to": "sa5",
+    "type": "major",
+    "tier": "confirmed",
+    "description": {
+      "en": "The Dawnshard that Nomad once possessed carries the Intent Exist, the same one Wit kept for years before handing it to Sigzil. The Torment preventing Nomad from hurting anyone, along with his capacity to Skip across worlds, stems from being its keeper.",
+      "es": "La Esquirla del Amanecer que Nómada tuvo en su poder encarna la Intención Existe: es la misma que Sagaz conservó largo tiempo hasta cederla a Sigzil. El Tormento que evita que Nómada dañe a cualquiera, junto con su habilidad para Saltar entre mundos, procede de haberla retenido."
+    },
+    "requires": [
+      "tsm",
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa3-5",
+      "sa4",
+      "sa5"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Dawnshard",
+        "kind": "wiki",
+        "cites": "The Sunlit Man chapters 1 and 21; Wind and Truth chapter 146; Secret Project #4 Reveal and Livestream, Arcanum-15626"
+      }
+    ],
+    "author": "agent:research-batch-011",
+    "verifiedBy": "agent:verify-batch-011",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0502",
+    "from": "tsm",
+    "to": "mb3",
+    "type": "significant",
+    "tier": "confirmed",
+    "description": {
+      "en": "When asked if the particular Investiture that turns sunhearts into cinderhearts falls under Hemalurgy or Connected to Ruin, Brandon replied affirmatively. The Coppermind counts the Charred among Hemalurgic creations: Scadrian scholars showed the Cinder King the process, and since the Charred lose most of their recollections when made, they bear a faint resemblance to Steel Inquisitors.",
+      "es": "Brandon contestó afirmativamente al ser interrogado sobre si la Investidura particular que convierte soles corazón en ascuas corazón entra en la hemalurgia o en lo Conectado con Ruina. La Coppermind cuenta a los chamuscados entre las creaciones hemalúrgicas: el Rey Incandescente recibió el procedimiento de investigadores scadrianos y, dado que los chamuscados pierden casi todos sus recuerdos al ser creados, guardan un parecido leve con los Inquisidores de Acero."
+    },
+    "requires": [
+      "tsm",
+      "mb1",
+      "mb2",
+      "mb3"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/api/entry/17072/",
+        "kind": "word-of-brandon"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Hemalurgy",
+        "kind": "wiki",
+        "cites": "The Sunlit Man chapters 44 and 50"
+      }
+    ],
+    "author": "agent:research-batch-011",
+    "verifiedBy": "agent:verify-batch-011",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0503",
+    "from": "tsm",
+    "to": "sa3",
+    "type": "minor",
+    "tier": "confirmed",
+    "description": {
+      "en": "According to Brandon, cinderhearts follow the identical fundamental Cosmere law that befell Amaram: the force draws on someone's Identity and Connection, gradually transforming them into a spren, just as the Unmade seize control of individuals. He notes that magically the pair share no lineage.",
+      "es": "Según Brandon, las ascuas corazón obedecen al mismo fundamento del Cosmere que sufrió Amaram: la fuerza extrae su Identidad y su Conexión, transformando poco a poco a la víctima en un spren, igual que los Deshechos toman el control de alguien. Señala que ambos casos no comparten linaje a nivel mágico."
+    },
+    "requires": [
+      "tsm",
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa4"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/api/entry/16297/",
+        "kind": "word-of-brandon"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Sunheart",
+        "kind": "wiki",
+        "cites": "Dragonsteel 2023 Q&A, Arcanum-16297, Coppermind note 23"
+      }
+    ],
+    "author": "agent:research-batch-011",
+    "verifiedBy": "agent:verify-batch-011",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0504",
+    "from": "tsm",
+    "to": "sa1",
+    "type": "significant",
+    "tier": "confirmed",
+    "description": {
+      "en": "In The Way of Kings, Sigzil appears as the bridge crewman whom Hoid once mentored as a Worldsinger trainee, and Hoid conveys that the young man has completed his training. Nomad, identical to that Sigzil, despises Hoid in The Sunlit Man because Hoid stood idle while Nomad was held captive on the Shattered Plains.",
+      "es": "En El camino de los reyes, Sigzil figura como el encargado del puente a quien Hoid tomó bajo su tutela como aprendiz de cantamundos; luego Hoid informa de que el joven ha completado su formación. Nómada, que es ese mismo Sigzil, guarda rencor a Hoid en El Hombre Iluminado por permanecer inactivo mientras él estaba cautivo en las Llanuras Quebradas."
+    },
+    "requires": [
+      "tsm",
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa4",
+      "sa5"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Nomad",
+        "kind": "wiki",
+        "cites": "The Way of Kings chapter 57; Oathbringer chapter 35; The Sunlit Man chapter 10"
+      }
+    ],
+    "author": "agent:research-batch-011",
+    "verifiedBy": "agent:verify-batch-011",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0506",
+    "from": "tsm",
+    "to": "iote",
+    "type": "minor",
+    "tier": "confirmed",
+    "description": {
+      "en": "Dragons guarded one of the four Dawnshards in an ancestral cave on Yolen until they relocated it. Afterward the Malwish forced open the lock that remained and started following the Connection the Dawnshard had left. Isles of the Emberdark depicts this and adds another Dawnshard next to the one Nomad possessed in The Sunlit Man.",
+      "es": "De las cuatro Esquirlas del Amanecer, una estaba bajo la custodia de los dragones en una cueva ancestral de Yolen, hasta el día en que la reubicaron. Después, los malwish reventaron el cierre que había quedado allí y comenzaron a seguir el rastro de la Conexión que la Esquirla del Amanecer había dejado atrás. Islas de la Ascuaoscura lo refleja e incorpora una Esquirla del Amanecer adicional junto a la que Nómada tuvo en El Hombre Iluminado."
+    },
+    "requires": [
+      "tsm",
+      "iote",
+      "sa3-5",
+      "mb7"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Dawnshard",
+        "kind": "wiki",
+        "cites": "Isles of the Emberdark chapter 40; Dawnshard Annotations Reddit Q&A 2020-11-09, Arcanum-14364"
+      }
+    ],
+    "author": "agent:research-batch-011",
+    "verifiedBy": "agent:verify-batch-011",
+    "verifiedOn": "2026-11-04"
+  }
+]

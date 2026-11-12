@@ -1,0 +1,341 @@
+[
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-007",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0134",
+    "from": "tsm",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Hoid is 'Wit'.",
+      "es": "Hoid es «Sagaz»."
+    },
+    "requires": [
+      "tsm",
+      "sa1",
+      "sa2"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-007",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0135",
+    "from": "tsm",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Nomad refers to a law of nature known as 'Khriss's Second Law'.",
+      "es": "Nómada se refiere a una ley de la naturaleza conocida como «Segunda Ley de Khriss»."
+    },
+    "requires": [
+      "tsm",
+      "sa1",
+      "sa2",
+      "sa3",
+      "wsp"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Sigzil",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Khriss",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-007",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0136",
+    "from": "tsd",
+    "to": "sa3",
+    "type": "minor",
+    "description": {
+      "en": "The Silence Divine is set on Ashyn, the world that the humans fled to Roshar from.",
+      "es": "The Silence Divine transcurre en Ashyn, el mundo del que los humanos huyeron a Roshar."
+    },
+    "requires": [
+      "tsd",
+      "sa3",
+      "sa1",
+      "sa2"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Ashyn",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Roshar",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-007",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0137",
+    "from": "wsp",
+    "to": "wsgn",
+    "type": "minor",
+    "description": {
+      "en": "The White Sand graphic novels are based on the prose version.",
+      "es": "Las novelas gráficas de Arena blanca están basadas en la versión en prosa."
+    },
+    "requires": [
+      "wsp",
+      "wsgn"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/White_Sand",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-007",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0138",
+    "from": "wsp",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Khriss is a main character.",
+      "es": "Khriss es un personaje principal."
+    },
+    "requires": [
+      "wsp"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Khrissalla",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-007",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0139",
+    "from": "aon",
+    "to": "sa2",
+    "type": "egg",
+    "description": {
+      "en": "Mraize's collection in Chapter 43 includes pink aether.",
+      "es": "La colección de Mraize en el capítulo 43 incluye éter rosa."
+    },
+    "requires": [
+      "aon",
+      "sa2",
+      "sa1"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Mraize",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:Words_of_Radiance#Chapter_43:_The_Ghostbloods",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Aether",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-007",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0140",
+    "from": "aon",
+    "to": "sa3",
+    "type": "egg",
+    "description": {
+      "en": "Mraize mentions his suit was stained with aether.",
+      "es": "Mraize menciona que su traje se manchó de éter."
+    },
+    "requires": [
+      "aon",
+      "sa3",
+      "sa1",
+      "sa2"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Mraize",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Aether",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-007",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0141",
+    "from": "aon",
+    "to": "sa4",
+    "type": "egg",
+    "description": {
+      "en": "Foil is said to be seeking 'control over the aethers'.",
+      "es": "Se dice que Foil busca «el control sobre los éteres»."
+    },
+    "requires": [
+      "aon",
+      "sa4",
+      "sa1",
+      "sa2",
+      "sa3"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Foil",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Aether",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-007",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0142",
+    "from": "aon",
+    "to": "mb7",
+    "type": "egg",
+    "description": {
+      "en": "TwinSoul can manipulate the aethers.",
+      "es": "AlmaDoble puede manipular los éteres."
+    },
+    "requires": [
+      "aon",
+      "mb7",
+      "mb1",
+      "mb2",
+      "mb3",
+      "mb4",
+      "mb5",
+      "mb6"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/TwinSoul",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Aether",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-007",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0143",
+    "from": "aon",
+    "to": "tress",
+    "type": "egg",
+    "description": {
+      "en": "Lumar's oceans consist of aether spores.",
+      "es": "Los océanos de Lumar están formados por esporas de éter."
+    },
+    "requires": [
+      "aon",
+      "tress"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Lumar",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Aether_spores",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-007",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0144",
+    "from": "imperial-fool",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Hoid is the 'Imperial Fool'.",
+      "es": "Hoid es el «bufón imperial»."
+    },
+    "requires": [
+      "imperial-fool",
+      "tes"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-007",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0145",
+    "from": "traveler",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Hoid is 'the Traveler'.",
+      "es": "Hoid es «el Viajero»."
+    },
+    "requires": [
+      "traveler",
+      "mb1",
+      "mb2",
+      "mb3"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      }
+    ]
+  }
+]

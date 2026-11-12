@@ -1,0 +1,224 @@
+[
+  {
+    "id": "c-0800",
+    "from": "thoe",
+    "to": "elantris",
+    "type": "major",
+    "tier": "confirmed",
+    "description": {
+      "en": "A supplementary tale that takes place at the novel's peak; Brandon cautions that it contains heavy spoilers and will not land for readers who have not gone through Elantris beforehand.",
+      "es": "Relato complementario que transcurre en el punto álgido de la novela; Brandon avisa de que incluye spoilers de peso y de que no surte efecto para quien no haya leído Elantris previamente."
+    },
+    "requires": [
+      "thoe",
+      "elantris"
+    ],
+    "sources": [
+      {
+        "url": "https://brandonsanderson.com/the-hope-of-elantris/",
+        "kind": "official"
+      },
+      {
+        "url": "https://coppermind.net/wiki/The_Hope_of_Elantris",
+        "kind": "wiki",
+        "cites": "The Hope of Elantris, Brandon's website, 2006-01 (his introduction to the story)"
+      }
+    ],
+    "author": "agent:research-batch-014",
+    "verifiedBy": "agent:verify-batch-014",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0801",
+    "from": "11m",
+    "to": "mb3",
+    "type": "significant",
+    "tier": "confirmed",
+    "description": {
+      "en": "In his afterword, Brandon explains that the tale depicts Ruin steering Kelsier toward fixating on the eleventh metal as a potential means of attacking the Lord Ruler.",
+      "es": "En su nota final, Brandon señala que la historia retrata la forma en que Ruina llevó a Kelsier a obsesionarse con el undécimo metal, al que consideraba un posible instrumento contra el lord Legislador."
+    },
+    "requires": [
+      "11m",
+      "mb1",
+      "mb2",
+      "mb3",
+      "msh",
+      "au"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/The_Eleventh_Metal",
+        "kind": "wiki",
+        "cites": "Postscript to The Eleventh Metal, Arcanum Unbounded"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Gemmel",
+        "kind": "wiki",
+        "cites": "The Eleventh Metal postscript, Arcanum Unbounded"
+      }
+    ],
+    "author": "agent:research-batch-014",
+    "verifiedBy": "agent:verify-batch-014",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0802",
+    "from": "11m",
+    "to": "mb1",
+    "type": "minor",
+    "tier": "confirmed",
+    "description": {
+      "en": "A precursor to The Final Empire, this piece portrays Kelsier three months after acquiring his abilities, learning from his tutor Gemmel prior to scheming the downfall of the Lord Ruler.",
+      "es": "Antecedente de Nacidos de la bruma: retrata a Kelsier tres meses después de hacerse con sus facultades, instruyéndose bajo la tutela de Gemmel antes de idear la caída del lord Legislador."
+    },
+    "requires": [
+      "11m",
+      "mb1"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/The_Eleventh_Metal",
+        "kind": "wiki"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Gemmel",
+        "kind": "wiki",
+        "cites": "The Eleventh Metal, Summary: The Eleventh Metal"
+      }
+    ],
+    "author": "agent:research-batch-014",
+    "verifiedBy": "agent:verify-batch-014",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0803",
+    "from": "jak",
+    "to": "mb4",
+    "type": "minor",
+    "tier": "confirmed",
+    "description": {
+      "en": "The piece is presented as installments 28-30 of a serialized work, and of the prior installments, merely one brief unnumbered fragment came out, printed in a broadsheet called the Elendel Daily that appears inside The Alloy of Law.",
+      "es": "La narración figura como los episodios 28-30 de una publicación por entregas; de los anteriores, únicamente salió a la luz un fragmento breve sin numeración, impreso en El Diario de Elendel, que aparece dentro de Aleación de ley."
+    },
+    "requires": [
+      "jak",
+      "mb4"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Allomancer_Jak_and_the_Pits_of_Eltania",
+        "kind": "wiki",
+        "cites": "The Elendel Daily Broadsheet, in The Alloy of Law (Publication History)"
+      }
+    ],
+    "author": "agent:research-batch-014",
+    "verifiedBy": "agent:verify-batch-014",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0804",
+    "from": "jak",
+    "to": "mb3",
+    "type": "minor",
+    "tier": "confirmed",
+    "description": {
+      "en": "Aimed at seasoned Mistborn fans, this piece discloses the process behind creating koloss following the Catacendre.",
+      "es": "Pensado para seguidores experimentados de Nacidos de la bruma, esta pieza desvela el procedimiento para forjar koloss a raíz del Catacendro."
+    },
+    "requires": [
+      "jak",
+      "mb1",
+      "mb2",
+      "mb3",
+      "mb4",
+      "au"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Allomancer_Jak_and_the_Pits_of_Eltania",
+        "kind": "wiki",
+        "cites": "Postscript to Allomancer Jak and the Pits of Eltania, Arcanum Unbounded"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Koloss",
+        "kind": "wiki",
+        "cites": "Allomancer Jak and the Pits of Eltania"
+      }
+    ],
+    "author": "agent:research-batch-014",
+    "verifiedBy": "agent:verify-batch-014",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0805",
+    "from": "mb5",
+    "to": "mb3",
+    "type": "significant",
+    "tier": "confirmed",
+    "description": {
+      "en": "Harmony, the divine force Sazed turned into, addresses Wax straight through his earring and requests his assistance.",
+      "es": "Armonía, la fuerza divina en la que se transformó Sazed, se dirige a Wax en persona por medio de su pendiente y le solicita auxilio."
+    },
+    "requires": [
+      "mb1",
+      "mb2",
+      "mb3",
+      "mb4",
+      "mb5"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Harmony",
+        "kind": "wiki",
+        "cites": "Shadows of Self chapter 7"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Waxillium_Ladrian",
+        "kind": "wiki",
+        "cites": "Shadows of Self chapter 7"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:Shadows_of_Self",
+        "kind": "wiki",
+        "cites": "Shadows of Self chapter 7"
+      }
+    ],
+    "author": "agent:research-batch-014",
+    "verifiedBy": "agent:verify-batch-014",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0806",
+    "from": "mb5",
+    "to": "mb3",
+    "type": "minor",
+    "tier": "confirmed",
+    "description": {
+      "en": "TenSoon, a kandra, reappears working for Harmony now, and Wax travels to the kandra Homeland.",
+      "es": "TenSoon, un kandra, vuelve a aparecer y ahora trabaja para Armonía; además, Wax se dirige a la Tierra Natal kandra."
+    },
+    "requires": [
+      "mb1",
+      "mb2",
+      "mb3",
+      "mb4",
+      "mb5"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/TenSoon",
+        "kind": "wiki",
+        "cites": "Shadows of Self chapter 21"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:Shadows_of_Self",
+        "kind": "wiki",
+        "cites": "Shadows of Self chapter 21"
+      }
+    ],
+    "author": "agent:research-batch-014",
+    "verifiedBy": "agent:verify-batch-014",
+    "verifiedOn": "2026-11-04"
+  }
+]

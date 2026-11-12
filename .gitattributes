@@ -1,0 +1,9 @@
+* text=auto eol=lf
+
+*.gif binary
+*.png binary
+*.webp binary
+
+# Published originals kept only to compare against, and saved pages: not ours to review line by line.
+scripts/*/upstream/** linguist-vendored
+scripts/*/tests/fixtures/** linguist-generated

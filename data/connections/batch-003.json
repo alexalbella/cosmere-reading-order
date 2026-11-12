@@ -1,0 +1,813 @@
+[
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-003",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0058",
+    "from": "mb7",
+    "to": "yumi",
+    "type": "egg",
+    "description": {
+      "en": "The aliens living on UTol are Sho Del, beings which made their first canonical appearance in MeLaan's epilogue in The Lost Metal.",
+      "es": "Los alienígenas que viven en UTol son los sho del, seres que hicieron su primera aparición canónica en el epílogo de MeLaan en El metal perdido."
+    },
+    "requires": [
+      "mb7",
+      "yumi"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/UTol",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Sho_Del",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:The_Lost_Metal#Epilogue_6",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-003",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0059",
+    "from": "mb7",
+    "to": "tsm",
+    "type": "significant",
+    "description": {
+      "en": "The TimeTellers are a Scadrian political faction who seem to primarily speak Malwish. Nomad considers stealing a jar of purified Dor from them. The Cinder King uses Scadrian technology similar to an ironmind to weigh Nomad down.",
+      "es": "Los TimeTellers son una facción política de Scadrial que parece hablar sobre todo malwish. Nómada se plantea robarles un frasco de Dor purificado. El Rey Incandescente usa tecnología scadriana parecida a una mente de hierro para lastrar a Nómada."
+    },
+    "requires": [
+      "mb7",
+      "tsm",
+      "mb1",
+      "mb2",
+      "mb3",
+      "elantris"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/TimeTellers",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Scadrial",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Malwish",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Sigzil",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Dor",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Cinder_King",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/metalmind",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-003",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0060",
+    "from": "mb7",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Hoid is Wax's coachman, named for the first time in Chapter 7.",
+      "es": "Hoid es el cochero de Wax y recibe nombre por primera vez en el capítulo 7."
+    },
+    "requires": [
+      "mb7"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Waxillium_Laddrian",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:The_Lost_Metal#Chapter_7",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-003",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0061",
+    "from": "mb7",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Nazh is 'the haunted man' in 'Nicki Savage and The Compass of Spirits' story in The Two Seasons broadsheet.",
+      "es": "Nazh es «el Hombre Encantado» en la historia «Nicki Savage y la Brújula de los Espíritus» del periódico Dos Estaciones."
+    },
+    "requires": [
+      "mb7",
+      "mb6"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Nazrilof",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/The_Two_Seasons",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-003",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0062",
+    "from": "mb7",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Ars Arcanum",
+      "es": "Ars Arcanum"
+    },
+    "requires": [
+      "mb7"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Ars_Arcanum",
+        "kind": "wiki"
+      },
+      {
+        "url": "https://17thshard.github.io/reading-order/",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-003",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0063",
+    "from": "wb",
+    "to": "sa2",
+    "type": "significant",
+    "description": {
+      "en": "Zahel is Vasher. Szeth's new Shardblade is Nightblood. Mraize's collection in Chapter 43 includes a Tear of Edgli flower.",
+      "es": "Zahel es Vasher. La nueva hoja esquirlada de Szeth es Sangre Nocturna. La colección de Mraize en el capítulo 43 incluye una flor de lágrimas de Edgli."
+    },
+    "requires": [
+      "wb",
+      "sa2",
+      "sa1"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Vasher",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Szeth",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Shardblade",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Nightblood",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Mraize",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:Words_of_Radiance#Chapter_43:_The_Ghostbloods",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Tears_of_Edgli",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-003",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0064",
+    "from": "wb",
+    "to": "sa3",
+    "type": "major",
+    "description": {
+      "en": "Azure is Vivenna; she uses Awakening on several occasions and has an Awakened sword. Nightblood and Vasher make significant appearances. Nightblood mentions Denth, Shashara, and Vivenna by name. A painting from the Court of Gods appears in Chapter 102. Riino mentions Heightenings. Hoid uses Awakening in the Epilogue.",
+      "es": "Celeste es Vivenna; usa el Despertar en varias ocasiones y tiene una espada despertada. Sangre Nocturna y Vasher aparecen de forma destacada. Sangre Nocturna menciona por su nombre a Denth, Shashara y Vivenna. En el capítulo 102 aparece un cuadro de la Corte de los Dioses. Riino menciona las Elevaciones. Hoid usa el Despertar en el epílogo."
+    },
+    "requires": [
+      "wb",
+      "sa3",
+      "sa1",
+      "sa2"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Vivenna",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Awakening",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Nightblood",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Vasher",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Denth",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Shashara",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Court_of_Gods",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:Oathbringer#Chapter_102:_Celebrant",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Riino",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Heightening",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:Oathbringer#Epilogue:_Great_Art",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-003",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0065",
+    "from": "wb",
+    "to": "sa3-5",
+    "type": "minor",
+    "description": {
+      "en": "The Dawnshard causes Rysn to experience several effects similar to the Heightenings associated with Breath.",
+      "es": "La Esquirla del Amanecer hace que Rysn experimente varios efectos parecidos a las Elevaciones asociadas al Aliento."
+    },
+    "requires": [
+      "wb",
+      "sa3-5",
+      "sa1",
+      "sa2",
+      "sa3"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Dawnshard",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Rysn_Ftori",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/BioChromatic_Breath",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-003",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0066",
+    "from": "wb",
+    "to": "sa4",
+    "type": "major",
+    "description": {
+      "en": "Nightblood is used to kill Rayse. Ialai's notes mention Nalthis. Zahel uses Awakening in his fight against Kaladin and explains that he is a Cognitive Shadow. The coin Adolin gives to Kaladin and some merchants in Lasting Integrity are from Nalthis. Endowment is referenced in the Chapter 24 epigraph. Odium tampers with Hoid's Breath in the Epilogue.",
+      "es": "Sangre Nocturna se usa para matar a Rayse. Las notas de Ialai mencionan Nalthis. Zahel usa el Despertar en su pelea contra Kaladin y explica que es una sombra cognitiva. La moneda que Adolin le da a Kaladin y algunos mercaderes de Integridad Duradera proceden de Nalthis. Dotación se menciona en el epígrafe del capítulo 24. Odium manipula el Aliento de Hoid en el epílogo."
+    },
+    "requires": [
+      "wb",
+      "sa4",
+      "sa1",
+      "sa2",
+      "sa3"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Nightblood",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Rayse",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Ialai",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Nalthis",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Zahel",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Awakening",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Kaladin",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Cognitive_Shadow",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Adolin",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Lasting_Integrity",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Endowment",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Rhythm_of_War/Epigraphs",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Odium",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/BioChromatic_Breath",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-003",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0067",
+    "from": "wb",
+    "to": "mb7",
+    "type": "minor",
+    "description": {
+      "en": "Nalthis is mentioned in Chapter 39. Moonlight describes an Awakened lock in Chapter 40.",
+      "es": "Nalthis se menciona en el capítulo 39. Luzdeluna describe una cerradura despertada en el capítulo 40."
+    },
+    "requires": [
+      "wb",
+      "mb7"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Nalthis",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:The_Lost_Metal#Chapter_39",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Moonlight",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Awakening",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:The_Lost_Metal#Chapter_40",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-003",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0068",
+    "from": "wb",
+    "to": "tress",
+    "type": "minor",
+    "description": {
+      "en": "Fort's tablet is Nalthian technology that utilizes Awakened predictive Connection circuits. The Sorceress's metal soldiers are Awakened. Ulaam mentions the use of 'Awakener's arts' to make animals talk. Xisis the dragon uses Awakening.",
+      "es": "La tableta de Fortín es tecnología de Nalthis que usa circuitos predictivos de Conexión despertados. Los soldados de metal de la hechicera están despertados. Ulaam menciona el uso de «las artes del Despertante» para hacer hablar a los animales. Xisis, el dragón, usa el Despertar."
+    },
+    "requires": [
+      "wb",
+      "tress"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Fort",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Nalthis",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Awakening",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Connection",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Riina",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Ulaam",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Xisisrefliel",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-003",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0069",
+    "from": "wb",
+    "to": "yumi",
+    "type": "egg",
+    "description": {
+      "en": "Design compares Yumi's level of Investiture to that of a Returned. Hoid says the machine was Awakened (though it's unclear if Breath was involved). The black smoke from the shroud is reminiscent of the black smoke that bleeds from Nightblood.",
+      "es": "Diseño compara el nivel de Investidura de Yumi con el de un Retornado. Hoid dice que la máquina fue despertada (aunque no está claro si intervino el Aliento). El humo negro de la mortaja recuerda al humo negro que brota de Sangre Nocturna."
+    },
+    "requires": [
+      "wb",
+      "yumi"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Design",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Yumi",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Investiture",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Returned",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/father_machine",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Awakening",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Breath",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Shroud",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Nightblood",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-003",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0070",
+    "from": "wb",
+    "to": "tsm",
+    "type": "minor",
+    "description": {
+      "en": "'Breath Equivalent Units' are a measurement system for Investiture based on BioChromatic Breath. Breath is mentioned, and Nomad attempts to use an altered version of 'my Breath become yours' to transfer Investiture. A steelmind is described as Awakened (though it's unclear if Breath is involved).",
+      "es": "Las «unidades equivalentes al Aliento» son un sistema de medida de la Investidura basado en el Aliento biocromático. Se menciona el Aliento, y Nómada intenta usar una versión alterada de «mi aliento es tuyo» para transferir Investidura. Una mente de acero se describe como despertada (aunque no está claro si interviene el Aliento)."
+    },
+    "requires": [
+      "wb",
+      "tsm",
+      "mb1",
+      "mb2",
+      "mb3"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Breath_Equivalent_Unit",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Investiture",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/BioChromatic_Breath",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Sigzil",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Metalmind",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Awakening",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-003",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0071",
+    "from": "wb",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Hoid is the master storyteller in Chapter 32.",
+      "es": "Hoid es el maestro narrador en el capítulo 32."
+    },
+    "requires": [
+      "wb"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:Warbreaker#Chapter_32",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-003",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0072",
+    "from": "wb",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Ars Arcanum",
+      "es": "Ars Arcanum"
+    },
+    "requires": [
+      "wb"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Ars_Arcanum",
+        "kind": "wiki"
+      },
+      {
+        "url": "https://17thshard.github.io/reading-order/",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-003",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0073",
+    "from": "sa1",
+    "to": "msh",
+    "type": "egg",
+    "description": {
+      "en": "In Part 5 Chapter 2 Kelsier sees a fabrial (the glowing yellow gemstone in a golden metal lattice).",
+      "es": "En la parte 5, capítulo 2, Kelsier ve un fabrial (la gema amarilla brillante dentro de una red de metal dorado)."
+    },
+    "requires": [
+      "sa1",
+      "msh",
+      "mb1",
+      "mb2",
+      "mb3"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Summary:Mistborn:_Secret_History#Chapter_2_5",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Kelsier",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Fabrial",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-003",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0074",
+    "from": "sa1",
+    "to": "wsgn",
+    "type": "egg",
+    "description": {
+      "en": "Baon appeared in The Way of Kings Interlude I-1 as 'Blunt'.",
+      "es": "Baon apareció en el interludio I-1 de El camino de los reyes como «Brusco»."
+    },
+    "requires": [
+      "sa1",
+      "wsgn"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Baon",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/The_Way_of_Kings",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:The_Way_of_Kings#Interlude_I-1:_Ishikk",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-003",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0075",
+    "from": "sa1",
+    "to": "mb7",
+    "type": "significant",
+    "description": {
+      "en": "The Ghostbloods were first seen in The Way of Kings. Moonlight mentions Odium in Chapter 20. Codenames mentions Roshar and the Thaylen script in Chapter 39.",
+      "es": "Los Sangre Espectral se vieron por primera vez en El camino de los reyes. Luzdeluna menciona a Odium en el capítulo 20. Los-Nombres-en-Código-Son-Una-Idiotez menciona Roshar y la escritura thayleña en el capítulo 39."
+    },
+    "requires": [
+      "sa1",
+      "mb7"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Ghostbloods",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Moonlight",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Odium",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:The_Lost_Metal#Chapter_20",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Codenames",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Roshar",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Thaylen_script",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:The_Lost_Metal#Chapter_39",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-003",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0076",
+    "from": "sa1",
+    "to": "tress",
+    "type": "minor",
+    "description": {
+      "en": "Midnight Essence was first seen in The Way of Kings. Nahel bond is referenced in Tress of the Emerald Sea chapter 31.",
+      "es": "La Esencia de Medianoche se vio por primera vez en El camino de los reyes. El vínculo Nahel se menciona en el capítulo 31 de Trenza del mar Esmeralda."
+    },
+    "requires": [
+      "sa1",
+      "tress"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Midnight_Essence",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/The_Way_of_Kings",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Nahel_bond",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:Tress_of_the_Emerald_Sea#Chapter_31",
+        "kind": "upstream"
+      }
+    ]
+  }
+]

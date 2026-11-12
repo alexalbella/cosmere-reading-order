@@ -1,0 +1,681 @@
+[
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0077",
+    "from": "sa1",
+    "to": "yumi",
+    "type": "significant",
+    "description": {
+      "en": "Hoid narrates the story to Rosharans: Painter is described as looking Veden but with paler skin than you would find on Roshar, rice grains are compared to those on Roshar, he mentions being on Komashi for three Rosharan years, he mentions chulls and chasmfiends, he compares the heat of the ground to the beaches of the Reshi Isles, compares the spirit lights to using spheres for light, mentions Cultivation, mentions a plant native to Roshar called a duluko, and uses the Shin honorific suffix '-nimi'. A fabrial is used to measure Yumi and Nikaro's levels of Investiture, with results that seem to display in women's script. The spirits and nightmares are similar to spren in the way they respond to humans.",
+      "es": "Hoid narra la historia a los rosharianos: se describe al Pintor con aspecto veden pero con la piel más pálida de lo que se vería en Roshar, se comparan los granos de arroz con los de Roshar, menciona haber pasado tres años rosharianos en Komashi, habla de chulls y de abismoides, compara el calor del suelo con las playas de las Islas Reshi, compara las luces de los espíritus con usar esferas para iluminar, menciona a Cultivación, menciona una planta autóctona de Roshar llamada duluko y usa el sufijo honorífico shin «-nimi». Se emplea un fabrial para medir los niveles de Investidura de Yumi y Nikaro, con resultados que parecen mostrarse en escritura femenina. Los espíritus y las pesadillas se parecen a los spren en cómo responden a los humanos."
+    },
+    "requires": [
+      "sa1",
+      "yumi"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Roshar",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Nikaro",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Veden",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Komashi",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/chull",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Chasmfiend",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Reshi_Isles",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Hijo",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Spheres",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Cultivation",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Duluko",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Shin",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Fabrial",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Yumi",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Investiture",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/women%27s_script",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Nightmares",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/spren",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0078",
+    "from": "sa1",
+    "to": "tsm",
+    "type": "significant",
+    "description": {
+      "en": "Roshar and various nationalities, including the Azish, Alethi, Veden, and Thaylen, including their cultures and customs, are featured prominently. Nomad looked for Taln's Scar, a Rosharan constellation, in Chapter 28.",
+      "es": "Roshar y varias nacionalidades, entre ellas la azishiana, la alezi, la veden y la thayleña, con sus culturas y costumbres, tienen mucho protagonismo. Nómada buscó la Cicatriz de Taln, una constelación roshariana, en el capítulo 28."
+    },
+    "requires": [
+      "sa1",
+      "tsm",
+      "sa2",
+      "sa3"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Roshar",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Azir",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Alethkar",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Jah_Keved",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Thaylenah",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Sigzil",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Scar",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0079",
+    "from": "sa1",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Hoid is 'Wit'.",
+      "es": "Hoid es «Sagaz»."
+    },
+    "requires": [
+      "sa1",
+      "sa2"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0080",
+    "from": "sa1",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Ars Arcanum",
+      "es": "Ars Arcanum"
+    },
+    "requires": [
+      "sa1"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Ars_Arcanum",
+        "kind": "wiki"
+      },
+      {
+        "url": "https://17thshard.github.io/reading-order/",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0081",
+    "from": "sa2",
+    "to": "mb6",
+    "type": "egg",
+    "description": {
+      "en": "Iyatil is of Southern Scadrian descent, made apparent by the mask she wears, and was the first appearance of their people in the books.",
+      "es": "Iyatil es de ascendencia del sur de Scadrial, algo que deja ver la máscara que lleva, y fue la primera aparición de su pueblo en los libros."
+    },
+    "requires": [
+      "sa2",
+      "mb6"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Iyatil",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Southern_Scadrial",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0082",
+    "from": "sa2",
+    "to": "msh",
+    "type": "egg",
+    "description": {
+      "en": "With powers gained from the lerasium he took, Hoid used emotional Allomancy in Chapter 45.",
+      "es": "Con los poderes obtenidos del lerasium que tomó, Hoid usó alomancia emocional en el capítulo 45."
+    },
+    "requires": [
+      "sa2",
+      "msh",
+      "mb1",
+      "mb2",
+      "mb3"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/lerasium",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Allomancy",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:Words_of_Radiance#Chapter_45:_Middlefest",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0083",
+    "from": "sa2",
+    "to": "wsgn",
+    "type": "egg",
+    "description": {
+      "en": "Mraize's collection in Chapter 43 includes a vial of sand from Taldain.",
+      "es": "La colección de Mraize en el capítulo 43 incluye un frasco con arena de Taldain."
+    },
+    "requires": [
+      "sa2",
+      "wsgn"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Mraize",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:Words_of_Radiance#Chapter_43:_The_Ghostbloods",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Taldain",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0084",
+    "from": "sa2",
+    "to": "traveler",
+    "type": "minor",
+    "description": {
+      "en": "The man Hoid speaks with is the author of the letter in the Words of Radiance Part 4 epigraphs, which voices similar opinions.",
+      "es": "El hombre con quien habla Hoid es el autor de la carta de los epígrafes de la cuarta parte de Palabras radiantes, que expresa opiniones similares."
+    },
+    "requires": [
+      "sa2",
+      "traveler"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Frost",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Words_of_Radiance/Epigraphs#The_Second_Letter",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0085",
+    "from": "sa2",
+    "to": "au",
+    "type": "minor",
+    "description": {
+      "en": "The Rosharan system essay covers details about Roshar and makes mentions of Odium's past.",
+      "es": "El ensayo sobre el sistema de Roshar trata detalles de Roshar y menciona el pasado de Odium."
+    },
+    "requires": [
+      "sa2",
+      "au",
+      "sa3"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Rosharan_system",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Roshar",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Odium",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0086",
+    "from": "sa2",
+    "to": "mb7",
+    "type": "egg",
+    "description": {
+      "en": "Wayne buys some chouta from a street vendor in Chapter 32. Dlavil is Iyatil's brother.",
+      "es": "Wayne compra chouta a un vendedor ambulante en el capítulo 32. Dlavil es el hermano de Iyatil."
+    },
+    "requires": [
+      "sa2",
+      "mb7",
+      "mb6"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Wayne",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Chouta",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:The_Lost_Metal#Chapter_32",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Dlavil",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Iyatil",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0087",
+    "from": "sa2",
+    "to": "tress",
+    "type": "egg",
+    "description": {
+      "en": "Lumar is a stop on the Iriali 'Long Trail'. Hoid states that the weather patterns on Lumar 'aren't specifically Invested' and 'aren't self-aware' in the way that highstorms are. Hoid makes a metaphor about loaning one's best flute only to people who can be trusted with it, seeming to make a gibe at Kaladin for losing his.",
+      "es": "Lumar es una parada del «Largo Sendero» de los iriali. Hoid afirma que los patrones climáticos de Lumar «no están específicamente investidos» y «no son conscientes de sí mismos» como lo son las altas tormentas. Hoid hace una metáfora sobre prestar la mejor flauta solo a quienes merecen confianza, que parece una pulla a Kaladin por haber perdido la suya."
+    },
+    "requires": [
+      "sa2",
+      "tress",
+      "sa3",
+      "sa1"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Lumar",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Iriali",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Roshar",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Investiture",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/highstorm",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Kaladin",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0088",
+    "from": "sa2",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Hoid is 'Wit'.",
+      "es": "Hoid es «Sagaz»."
+    },
+    "requires": [
+      "sa2"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0089",
+    "from": "sa2",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Nazh is the ardent trying to get a sketch of Bridge Four's tattoo in Chapter 31. Several drawings and sketches also include his annotations.",
+      "es": "Nazh es el fervoroso que intenta obtener un boceto del tatuaje del Puente Cuatro en el capítulo 31. Varios dibujos y bocetos incluyen también sus anotaciones."
+    },
+    "requires": [
+      "sa2"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Nazrilof",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Ardent",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Bridge_Four",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:Words_of_Radiance#Chapter_31:_The_Stillness_Before",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0090",
+    "from": "sa2",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Ars Arcanum",
+      "es": "Ars Arcanum"
+    },
+    "requires": [
+      "sa2"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Ars_Arcanum",
+        "kind": "wiki"
+      },
+      {
+        "url": "https://17thshard.github.io/reading-order/",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0091",
+    "from": "sa2-5",
+    "to": "yumi",
+    "type": "minor",
+    "description": {
+      "en": "Masaka is a Sleepless.",
+      "es": "Masaka es una Insomne."
+    },
+    "requires": [
+      "sa2-5",
+      "yumi",
+      "sa2"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Masaka",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Sleepless",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0092",
+    "from": "sa2-5",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Hoid is 'Ol' Whitehair', mentioned in Chapter 12.",
+      "es": "Hoid es «Viejo Peloblanco», mencionado en el capítulo 12."
+    },
+    "requires": [
+      "sa2-5"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:Edgedancer#Chapter_12",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0093",
+    "from": "sa3",
+    "to": "twokp",
+    "type": "minor",
+    "description": {
+      "en": "The Way of Kings Prime, written in 2002, is the original draft of The Way of Kings. Only small excerpts were released prior to Oathbringer as Brandon felt it contained spoilers for certain ideas through that book. It was self-published as a Sanderson Curiosity in July 2020.",
+      "es": "El camino de los reyes Prime, escrito en 2002, es el borrador original de El camino de los reyes. Solo se publicaron pequeños fragmentos antes de Juramentada porque Brandon consideraba que contenía spoilers de ciertas ideas hasta ese libro. Se autopublicó como Curiosidad Sanderson en julio de 2020."
+    },
+    "requires": [
+      "sa3",
+      "twokp"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/The_Way_of_Kings_Prime",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/The_Way_of_Kings",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0094",
+    "from": "sa3",
+    "to": "yumi",
+    "type": "egg",
+    "description": {
+      "en": "The nightmares, and to some degree the shroud, appear similar to Midnight Essence.",
+      "es": "Las pesadillas, y en cierta medida la mortaja, se parecen a la Esencia de Medianoche."
+    },
+    "requires": [
+      "sa3",
+      "yumi",
+      "mb3",
+      "msh"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Nightmares",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Shroud",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Midnight_Essence",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0095",
+    "from": "sa3",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Hoid is 'Wit'.",
+      "es": "Hoid es «Sagaz»."
+    },
+    "requires": [
+      "sa3",
+      "sa2"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      }
+    ]
+  }
+]

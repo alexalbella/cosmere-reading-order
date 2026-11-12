@@ -1,0 +1,2691 @@
+{
+  "elantris": {
+    "world": "sel",
+    "system": "selish-system",
+    "series": "elantris",
+    "subseries": null,
+    "seriesIndex": 1,
+    "publication": "2005-04-21",
+    "year": 2005,
+    "pages": 592,
+    "words": 201372,
+    "format": "novel",
+    "status": "published",
+    "phase": 1,
+    "es": {
+      "title": "Elantris",
+      "publisher": "Nova",
+      "year": 2006,
+      "pages": 800,
+      "editionYear": 2025
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": [
+      "https://coppermind.net/wiki/Elantris_(book)",
+      "https://www.casadellibro.com.co/libro-elantris-edicion-ilustrada/9788410466265/17219772",
+      "https://es.wikipedia.org/wiki/Brandon_Sanderson"
+    ]
+  },
+  "thoe": {
+    "world": "sel",
+    "system": "selish-system",
+    "series": "elantris",
+    "subseries": null,
+    "seriesIndex": 2,
+    "publication": "2006-01",
+    "year": 2006,
+    "pages": null,
+    "words": 6030,
+    "format": "short",
+    "status": "published",
+    "phase": 1,
+    "es": {
+      "title": "La esperanza de Elantris",
+      "publisher": "Nova",
+      "year": 2017,
+      "pages": null,
+      "editionYear": 2017
+    },
+    "readFree": "https://www.brandonsanderson.com/blogs/blog/the-hope-of-elantris",
+    "inUpstream": true,
+    "source": [
+      "https://coppermind.net/wiki/The_Hope_of_Elantris",
+      "https://www.casadellibro.com/libro-arcanum-ilimitado-la-coleccion-del-cosmere/9788466662321/5923412",
+      "https://es.wikipedia.org/wiki/Brandon_Sanderson"
+    ]
+  },
+  "elantris2": {
+    "world": "sel",
+    "system": "selish-system",
+    "series": "elantris",
+    "subseries": null,
+    "seriesIndex": 3,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "elantris3": {
+    "world": "sel",
+    "system": "selish-system",
+    "series": "elantris",
+    "subseries": null,
+    "seriesIndex": 4,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "tes": {
+    "world": "sel",
+    "system": "selish-system",
+    "series": null,
+    "subseries": null,
+    "seriesIndex": null,
+    "publication": "2012-11-01",
+    "year": 2012,
+    "pages": 175,
+    "words": 31925,
+    "format": "novella",
+    "status": "published",
+    "phase": 1,
+    "es": {
+      "title": "El alma del emperador",
+      "publisher": "Nova",
+      "year": 2014,
+      "pages": 176,
+      "editionYear": 2026
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": [
+      "https://coppermind.net/wiki/The_Emperor%27s_Soul",
+      "https://openlibrary.org/isbn/9781616960926",
+      "https://www.casadellibro.com.co/libro-el-alma-del-emperador/9788410466692/18085914",
+      "https://es.wikipedia.org/wiki/Brandon_Sanderson"
+    ]
+  },
+  "tes2": {
+    "world": "sel",
+    "system": "selish-system",
+    "series": null,
+    "subseries": null,
+    "seriesIndex": null,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novella",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "mb1": {
+    "world": "scadrial",
+    "system": "scadrian-system",
+    "series": "mistborn",
+    "subseries": "mistborn-era-1",
+    "seriesIndex": 1,
+    "publication": "2006-07-17",
+    "year": 2006,
+    "pages": 541,
+    "words": 210103,
+    "format": "novel",
+    "status": "published",
+    "phase": 1,
+    "es": {
+      "title": "El imperio final",
+      "publisher": "Nova",
+      "year": 2008,
+      "pages": 672,
+      "editionYear": 2024
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": [
+      "https://coppermind.net/wiki/Mistborn:_The_Final_Empire",
+      "https://www.casadellibro.com.co/libro-nacidos-de-la-bruma-nacidos-de-la-bruma-mistborn-1/9788419260246/14390396",
+      "https://es.wikipedia.org/wiki/Brandon_Sanderson"
+    ]
+  },
+  "11m": {
+    "world": "scadrial",
+    "system": "scadrian-system",
+    "series": "mistborn",
+    "subseries": "mistborn-era-1",
+    "seriesIndex": 4,
+    "publication": "2011-12-15",
+    "year": 2011,
+    "pages": null,
+    "words": 6713,
+    "format": "short",
+    "status": "published",
+    "phase": 1,
+    "es": {
+      "title": "El undécimo metal",
+      "publisher": "Nova",
+      "year": 2017,
+      "pages": null,
+      "editionYear": 2017
+    },
+    "readFree": "https://www.brandonsanderson.com/blogs/blog/mistborn-the-eleventh-metal",
+    "inUpstream": true,
+    "source": [
+      "https://coppermind.net/wiki/The_Eleventh_Metal",
+      "https://www.casadellibro.com/libro-arcanum-ilimitado-la-coleccion-del-cosmere/9788466662321/5923412"
+    ]
+  },
+  "mb2": {
+    "world": "scadrial",
+    "system": "scadrian-system",
+    "series": "mistborn",
+    "subseries": "mistborn-era-1",
+    "seriesIndex": 2,
+    "publication": "2007-08-21",
+    "year": 2007,
+    "pages": 590,
+    "words": 244371,
+    "format": "novel",
+    "status": "published",
+    "phase": 1,
+    "es": {
+      "title": "El pozo de la ascensión",
+      "publisher": "Nova",
+      "year": 2009,
+      "pages": 784,
+      "editionYear": 2016
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": [
+      "https://coppermind.net/wiki/The_Well_of_Ascension",
+      "https://www.casadellibro.com/libro-el-pozo-de-la-ascension-saga-nacidos-de-la-bruma-2/9788466658904/3045890",
+      "https://es.wikipedia.org/wiki/Brandon_Sanderson"
+    ]
+  },
+  "mb3": {
+    "world": "scadrial",
+    "system": "scadrian-system",
+    "series": "mistborn",
+    "subseries": "mistborn-era-1",
+    "seriesIndex": 3,
+    "publication": "2008-10-14",
+    "year": 2008,
+    "pages": 572,
+    "words": 225372,
+    "format": "novel",
+    "status": "published",
+    "phase": 1,
+    "es": {
+      "title": "El héroe de las eras",
+      "publisher": "Nova",
+      "year": 2010,
+      "pages": 760,
+      "editionYear": 2016
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": [
+      "https://coppermind.net/wiki/The_Hero_of_Ages",
+      "https://www.casadellibro.com/libro-el-heroe-de-las-eras-saga-nacidos-de-la-bruma-3/9788466658911/3082061",
+      "https://es.wikipedia.org/wiki/Brandon_Sanderson"
+    ]
+  },
+  "mb4": {
+    "world": "scadrial",
+    "system": "scadrian-system",
+    "series": "mistborn",
+    "subseries": "mistborn-era-2",
+    "seriesIndex": 1,
+    "publication": "2011-11-08",
+    "year": 2011,
+    "pages": 332,
+    "words": 94652,
+    "format": "novel",
+    "status": "published",
+    "phase": 2,
+    "es": {
+      "title": "Aleación de ley",
+      "publisher": "Nova",
+      "year": 2012,
+      "pages": 352,
+      "editionYear": 2024
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": [
+      "https://coppermind.net/wiki/The_Alloy_of_Law",
+      "https://www.casadellibro.com/libro-aleacion-de-ley-wax--wayne-edicion-ilustrada-1/9788419260215/15984582",
+      "https://es.wikipedia.org/wiki/Brandon_Sanderson"
+    ]
+  },
+  "jak": {
+    "world": "scadrial",
+    "system": "scadrian-system",
+    "series": "mistborn",
+    "subseries": "mistborn-era-2",
+    "seriesIndex": 2,
+    "publication": "2014-08-07",
+    "year": 2014,
+    "pages": null,
+    "words": 7047,
+    "format": "short",
+    "status": "published",
+    "phase": 2,
+    "es": {
+      "title": "Alomante Jak y los pozos de Eltania",
+      "publisher": "Nova",
+      "year": 2017,
+      "pages": null,
+      "editionYear": 2017
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": [
+      "https://coppermind.net/wiki/Allomancer_Jak_and_the_Pits_of_Eltania",
+      "https://www.casadellibro.com/libro-arcanum-ilimitado-la-coleccion-del-cosmere/9788466662321/5923412"
+    ]
+  },
+  "mb5": {
+    "world": "scadrial",
+    "system": "scadrian-system",
+    "series": "mistborn",
+    "subseries": "mistborn-era-2",
+    "seriesIndex": 3,
+    "publication": "2015-10-06",
+    "year": 2015,
+    "pages": 383,
+    "words": 110019,
+    "format": "novel",
+    "status": "published",
+    "phase": 2,
+    "es": {
+      "title": "Sombras de identidad",
+      "publisher": "Nova",
+      "year": 2016,
+      "pages": 440,
+      "editionYear": 2025
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": [
+      "https://coppermind.net/wiki/Shadows_of_Self",
+      "https://www.casadellibro.com/libro-sombras-de-identidad-wax--wayne-edicion-ilustrada-2/9788419260673/16561859",
+      "https://es.wikipedia.org/wiki/Brandon_Sanderson"
+    ]
+  },
+  "mb6": {
+    "world": "scadrial",
+    "system": "scadrian-system",
+    "series": "mistborn",
+    "subseries": "mistborn-era-2",
+    "seriesIndex": 4,
+    "publication": "2016-01-26",
+    "year": 2016,
+    "pages": 447,
+    "words": 127456,
+    "format": "novel",
+    "status": "published",
+    "phase": 2,
+    "es": {
+      "title": "Brazales de duelo",
+      "publisher": "Nova",
+      "year": 2017,
+      "pages": 512,
+      "editionYear": 2025
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": [
+      "https://coppermind.net/wiki/The_Bands_of_Mourning",
+      "https://www.casadellibro.com/libro-brazales-de-duelo-edicion-ilustrada-wax--wayne-edicion-ilustrada-3/9788410466074/16710087",
+      "https://es.wikipedia.org/wiki/Brandon_Sanderson"
+    ]
+  },
+  "msh": {
+    "world": "scadrial",
+    "system": "scadrian-system",
+    "series": "mistborn",
+    "subseries": "mistborn-era-2",
+    "seriesIndex": 5,
+    "publication": "2016-01-26",
+    "year": 2016,
+    "pages": null,
+    "words": 44981,
+    "format": "novella",
+    "status": "published",
+    "phase": 2,
+    "es": {
+      "title": "Mistborn. Historia secreta",
+      "publisher": "Nova",
+      "year": 2017,
+      "pages": 272,
+      "editionYear": 2026
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": [
+      "https://coppermind.net/wiki/Mistborn:_Secret_History",
+      "https://www.casadellibro.com/libro-mistborn-historia-secreta/9788410466654/18085912"
+    ]
+  },
+  "mb7": {
+    "world": "scadrial",
+    "system": "scadrian-system",
+    "series": "mistborn",
+    "subseries": "mistborn-era-2",
+    "seriesIndex": 6,
+    "publication": "2022-11-15",
+    "year": 2022,
+    "pages": 507,
+    "words": 156381,
+    "format": "novel",
+    "status": "published",
+    "phase": 2,
+    "es": {
+      "title": "El metal perdido",
+      "publisher": "Nova",
+      "year": 2022,
+      "pages": 640,
+      "editionYear": 2026
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": [
+      "https://coppermind.net/wiki/The_Lost_Metal",
+      "https://www.casadellibro.com/libro-el-metal-perdido-edicion-ilustrada-wax--wayne-4/9788410466456/17908806"
+    ]
+  },
+  "book-of-nails": {
+    "world": "scadrial",
+    "system": "scadrian-system",
+    "series": "mistborn",
+    "subseries": "mistborn-era-2",
+    "seriesIndex": 7,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "mb8": {
+    "world": "scadrial",
+    "system": "scadrian-system",
+    "series": "mistborn",
+    "subseries": "mistborn-era-3",
+    "seriesIndex": 1,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "announced",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "mb9": {
+    "world": "scadrial",
+    "system": "scadrian-system",
+    "series": "mistborn",
+    "subseries": "mistborn-era-3",
+    "seriesIndex": 2,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "announced",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "mb10": {
+    "world": "scadrial",
+    "system": "scadrian-system",
+    "series": "mistborn",
+    "subseries": "mistborn-era-3",
+    "seriesIndex": 3,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "announced",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "mb11": {
+    "world": "scadrial",
+    "system": "scadrian-system",
+    "series": "mistborn",
+    "subseries": "mistborn-era-4",
+    "seriesIndex": 1,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "mb12": {
+    "world": "scadrial",
+    "system": "scadrian-system",
+    "series": "mistborn",
+    "subseries": "mistborn-era-4",
+    "seriesIndex": 2,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "mb13": {
+    "world": "scadrial",
+    "system": "scadrian-system",
+    "series": "mistborn",
+    "subseries": "mistborn-era-4",
+    "seriesIndex": 3,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "mb14": {
+    "world": "scadrial",
+    "system": "scadrian-system",
+    "series": "mistborn",
+    "subseries": "mistborn-era-5",
+    "seriesIndex": 1,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "mb15": {
+    "world": "scadrial",
+    "system": "scadrian-system",
+    "series": "mistborn",
+    "subseries": "mistborn-era-5",
+    "seriesIndex": 2,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "mb16": {
+    "world": "scadrial",
+    "system": "scadrian-system",
+    "series": "mistborn",
+    "subseries": "mistborn-era-5",
+    "seriesIndex": 3,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "msh2": {
+    "world": "scadrial",
+    "system": "scadrian-system",
+    "series": "mistborn",
+    "subseries": "mistborn-other",
+    "seriesIndex": 1,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novella",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "wb": {
+    "world": "nalthis",
+    "system": "nalthian-system",
+    "series": "warbreaker",
+    "subseries": null,
+    "seriesIndex": 1,
+    "publication": "2009-06-09",
+    "year": 2009,
+    "pages": 592,
+    "words": 196014,
+    "format": "novel",
+    "status": "published",
+    "phase": 1,
+    "es": {
+      "title": "El aliento de los dioses",
+      "publisher": "Nova",
+      "year": null,
+      "pages": 720,
+      "editionYear": 2019
+    },
+    "readFree": "https://www.brandonsanderson.com/blogs/blog/warbreaker-rights-and-downloads",
+    "inUpstream": true,
+    "source": [
+      "https://coppermind.net/wiki/Warbreaker",
+      "https://www.casadellibro.com/libro-el-aliento-de-los-dioses/9788490709122/9198645"
+    ]
+  },
+  "nb": {
+    "world": "nalthis",
+    "system": "nalthian-system",
+    "series": "warbreaker",
+    "subseries": null,
+    "seriesIndex": 2,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "sa1": {
+    "world": "roshar",
+    "system": "rosharan-system",
+    "series": "stormlight",
+    "subseries": null,
+    "seriesIndex": 1,
+    "publication": "2010-08-31",
+    "year": 2010,
+    "pages": 1008,
+    "words": 379585,
+    "format": "novel",
+    "status": "published",
+    "phase": 2,
+    "es": {
+      "title": "El camino de los reyes",
+      "publisher": "Nova",
+      "year": 2012,
+      "pages": 1200,
+      "editionYear": 2015
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": [
+      "https://coppermind.net/wiki/The_Way_of_Kings",
+      "https://www.casadellibro.com/libro-el-camino-de-los-reyes-el-archivo-de-las-tormentas-1/9788466657662/2571296",
+      "https://es.wikipedia.org/wiki/Brandon_Sanderson"
+    ]
+  },
+  "sa2": {
+    "world": "roshar",
+    "system": "rosharan-system",
+    "series": "stormlight",
+    "subseries": null,
+    "seriesIndex": 2,
+    "publication": "2014-03-04",
+    "year": 2014,
+    "pages": 1088,
+    "words": 398238,
+    "format": "novel",
+    "status": "published",
+    "phase": 2,
+    "es": {
+      "title": "Palabras radiantes",
+      "publisher": "Nova",
+      "year": 2015,
+      "pages": 1248,
+      "editionYear": 2015
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": [
+      "https://coppermind.net/wiki/Words_of_Radiance",
+      "https://www.casadellibro.com/libro-palabras-radiantes-saga-el-archivo-de-las-tormentas-2/9788466657549/2571295",
+      "https://es.wikipedia.org/wiki/Brandon_Sanderson"
+    ]
+  },
+  "elsecaller": {
+    "world": "roshar",
+    "system": "rosharan-system",
+    "series": "stormlight",
+    "subseries": "stormlight-lost-tales",
+    "seriesIndex": 1,
+    "publication": "2024-12-05",
+    "year": 2024,
+    "pages": 48,
+    "words": null,
+    "format": "short",
+    "status": "published",
+    "phase": 2,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": [
+      "https://coppermind.net/wiki/Elsecaller_(short_story)"
+    ]
+  },
+  "lopen": {
+    "world": "roshar",
+    "system": "rosharan-system",
+    "series": "stormlight",
+    "subseries": "stormlight-lost-tales",
+    "seriesIndex": 2,
+    "publication": "2024-12-05",
+    "year": 2024,
+    "pages": 67,
+    "words": null,
+    "format": "short",
+    "status": "published",
+    "phase": 2,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": [
+      "https://coppermind.net/wiki/King_Lopen_the_First_of_Alethkar"
+    ]
+  },
+  "sa2-5": {
+    "world": "roshar",
+    "system": "rosharan-system",
+    "series": "stormlight",
+    "subseries": null,
+    "seriesIndex": 3,
+    "publication": "2016-11-22",
+    "year": 2016,
+    "pages": 272,
+    "words": 40660,
+    "format": "novella",
+    "status": "published",
+    "phase": 2,
+    "es": {
+      "title": "Danzante del filo",
+      "publisher": "Nova",
+      "year": 2017,
+      "pages": 224,
+      "editionYear": 2026
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": [
+      "https://coppermind.net/wiki/Edgedancer_(novella)",
+      "https://www.casadellibro.com/libro-danzante-del-filo/9788410466678/18085913"
+    ]
+  },
+  "sa3": {
+    "world": "roshar",
+    "system": "rosharan-system",
+    "series": "stormlight",
+    "subseries": null,
+    "seriesIndex": 4,
+    "publication": "2017-11-14",
+    "year": 2017,
+    "pages": 1220,
+    "words": 454440,
+    "format": "novel",
+    "status": "published",
+    "phase": 2,
+    "es": {
+      "title": "Juramentada",
+      "publisher": "Nova",
+      "year": 2018,
+      "pages": 1408,
+      "editionYear": 2018
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": [
+      "https://coppermind.net/wiki/Oathbringer",
+      "https://www.casadellibro.com/libro-juramentada-saga-el-archivo-de-las-tormentas-3/9788417347000/6311284",
+      "https://es.wikipedia.org/wiki/Brandon_Sanderson"
+    ]
+  },
+  "sa3-5": {
+    "world": "roshar",
+    "system": "rosharan-system",
+    "series": "stormlight",
+    "subseries": null,
+    "seriesIndex": 5,
+    "publication": "2020-11-05",
+    "year": 2020,
+    "pages": 269,
+    "words": 55096,
+    "format": "novella",
+    "status": "published",
+    "phase": 2,
+    "es": {
+      "title": "Esquirla del amanecer",
+      "publisher": "Nova",
+      "year": 2021,
+      "pages": 256,
+      "editionYear": 2021
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": [
+      "https://coppermind.net/wiki/Dawnshard_(novella)",
+      "https://www.casadellibro.com/libro-esquirla-del-amanecer/9788418037238/12254777",
+      "https://es.wikipedia.org/wiki/Brandon_Sanderson"
+    ]
+  },
+  "sa4": {
+    "world": "roshar",
+    "system": "rosharan-system",
+    "series": "stormlight",
+    "subseries": null,
+    "seriesIndex": 6,
+    "publication": "2020-11-17",
+    "year": 2020,
+    "pages": 1230,
+    "words": 455891,
+    "format": "novel",
+    "status": "published",
+    "phase": 2,
+    "es": {
+      "title": "El ritmo de la guerra",
+      "publisher": "Nova",
+      "year": 2020,
+      "pages": 1408,
+      "editionYear": 2020
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": [
+      "https://coppermind.net/wiki/Rhythm_of_War",
+      "https://www.casadellibro.com/libro-el-ritmo-de-la-guerra-el-archivo-de-las-tormentas-4/9788417347932/11627802",
+      "https://es.wikipedia.org/wiki/Brandon_Sanderson"
+    ]
+  },
+  "sa5": {
+    "world": "roshar",
+    "system": "rosharan-system",
+    "series": "stormlight",
+    "subseries": null,
+    "seriesIndex": 7,
+    "publication": "2024-12-06",
+    "year": 2024,
+    "pages": 1330,
+    "words": 487746,
+    "format": "novel",
+    "status": "published",
+    "phase": 2,
+    "es": {
+      "title": "Viento y verdad",
+      "publisher": "Nova",
+      "year": 2024,
+      "pages": 1408,
+      "editionYear": 2024
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": [
+      "https://coppermind.net/wiki/Wind_and_Truth",
+      "https://www.casadellibro.com/libro-viento-y-verdad-el-archivo-de-las-tormentas-5/9788419260543/16287862"
+    ]
+  },
+  "sa5-5": {
+    "world": "roshar",
+    "system": "rosharan-system",
+    "series": "stormlight",
+    "subseries": null,
+    "seriesIndex": 11,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novella",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "sa6": {
+    "world": "roshar",
+    "system": "rosharan-system",
+    "series": "stormlight",
+    "subseries": null,
+    "seriesIndex": 12,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "sa7": {
+    "world": "roshar",
+    "system": "rosharan-system",
+    "series": "stormlight",
+    "subseries": null,
+    "seriesIndex": 13,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "sa8": {
+    "world": "roshar",
+    "system": "rosharan-system",
+    "series": "stormlight",
+    "subseries": null,
+    "seriesIndex": 14,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "sa9": {
+    "world": "roshar",
+    "system": "rosharan-system",
+    "series": "stormlight",
+    "subseries": null,
+    "seriesIndex": 15,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "sa10": {
+    "world": "roshar",
+    "system": "rosharan-system",
+    "series": "stormlight",
+    "subseries": null,
+    "seriesIndex": 16,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "chasmfriends": {
+    "world": "roshar",
+    "system": "rosharan-system",
+    "series": "stormlight",
+    "subseries": "stormlight-lost-tales",
+    "seriesIndex": null,
+    "publication": "2024-12-05",
+    "year": 2024,
+    "pages": null,
+    "words": null,
+    "format": "short",
+    "status": "apocryphal",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": [
+      "https://coppermind.net/wiki/The_ChasmFriends_Get_a_Pet!"
+    ]
+  },
+  "tdatd": {
+    "world": "roshar",
+    "system": "rosharan-system",
+    "series": "stormlight",
+    "subseries": null,
+    "seriesIndex": 8,
+    "publication": "2026-09",
+    "year": 2026,
+    "pages": null,
+    "words": null,
+    "format": "illustrated",
+    "status": "published",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": [
+      "https://hoids-storybook.backerkit.com/hosted_preorders/project_updates",
+      "https://coppermind.net/wiki/The_ChasmFriends_Get_a_Pet!"
+    ]
+  },
+  "tgwlu": {
+    "world": "roshar",
+    "system": "rosharan-system",
+    "series": "stormlight",
+    "subseries": null,
+    "seriesIndex": 9,
+    "publication": "2026-09",
+    "year": 2026,
+    "pages": null,
+    "words": null,
+    "format": "illustrated",
+    "status": "published",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": [
+      "https://hoids-storybook.backerkit.com/hosted_preorders/project_updates",
+      "https://coppermind.net/wiki/The_ChasmFriends_Get_a_Pet!"
+    ]
+  },
+  "wsgn": {
+    "world": "taldain",
+    "system": "taldain-system",
+    "series": "white-sand",
+    "subseries": null,
+    "seriesIndex": 1,
+    "publication": "2016-06-28",
+    "year": 2016,
+    "pages": 496,
+    "words": null,
+    "format": "comic",
+    "status": "published",
+    "phase": 1,
+    "es": {
+      "title": "Arena blanca",
+      "publisher": "Nova",
+      "year": null,
+      "pages": 496,
+      "editionYear": 2022
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": [
+      "https://coppermind.net/wiki/White_Sand",
+      "https://openlibrary.org/search.json?q=White+Sand+Omnibus+Sanderson",
+      "https://www.casadellibro.com.co/libro-arena-blanca-vol-1-a-3/9788418037429/12815590"
+    ],
+    "publicationNote": {
+      "en": "Date of the first volume; pages of the omnibus edition.",
+      "es": "Fecha del primer volumen; páginas de la edición integral."
+    }
+  },
+  "wsn": {
+    "world": "taldain",
+    "system": "taldain-system",
+    "series": "white-sand",
+    "subseries": null,
+    "seriesIndex": 2,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "arcanist": {
+    "world": "taldain",
+    "system": "taldain-system",
+    "series": "white-sand",
+    "subseries": null,
+    "seriesIndex": 3,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "comic",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "sfs": {
+    "world": "threnody",
+    "system": "threnodite-system",
+    "series": null,
+    "subseries": null,
+    "seriesIndex": null,
+    "publication": "2013-12-03",
+    "year": 2013,
+    "pages": null,
+    "words": 17647,
+    "format": "novella",
+    "status": "published",
+    "phase": 1,
+    "es": {
+      "title": "Sombras por silencio en los bosques del infierno",
+      "publisher": "Nova",
+      "year": 2017,
+      "pages": null,
+      "editionYear": 2017
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": [
+      "https://coppermind.net/wiki/Shadows_for_Silence_in_the_Forests_of_Hell",
+      "https://www.casadellibro.com/libro-arcanum-ilimitado-la-coleccion-del-cosmere/9788466662321/5923412"
+    ]
+  },
+  "tnb": {
+    "world": "threnody",
+    "system": "threnodite-system",
+    "series": null,
+    "subseries": null,
+    "seriesIndex": null,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "sotd": {
+    "world": "first-of-the-sun",
+    "system": "drominad-system",
+    "series": null,
+    "subseries": null,
+    "seriesIndex": null,
+    "publication": "2014-06-30",
+    "year": 2014,
+    "pages": null,
+    "words": 17794,
+    "format": "novella",
+    "status": "published",
+    "phase": 1,
+    "es": {
+      "title": "Sexto del ocaso",
+      "publisher": "Nova",
+      "year": 2017,
+      "pages": null,
+      "editionYear": 2017
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": [
+      "https://coppermind.net/wiki/Sixth_of_the_Dusk_(novella)",
+      "https://www.casadellibro.com/libro-arcanum-ilimitado-la-coleccion-del-cosmere/9788466662321/5923412"
+    ]
+  },
+  "iote": {
+    "world": "first-of-the-sun",
+    "system": "drominad-system",
+    "series": null,
+    "subseries": null,
+    "seriesIndex": null,
+    "publication": "2025-07-01",
+    "year": 2025,
+    "pages": 465,
+    "words": 128904,
+    "format": "novel",
+    "status": "published",
+    "phase": 3,
+    "es": {
+      "title": "Islas de la Ascuaoscura",
+      "publisher": "Nova",
+      "year": 2025,
+      "pages": 560,
+      "editionYear": 2025
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": [
+      "https://coppermind.net/wiki/Isles_of_the_Emberdark",
+      "https://www.casadellibro.com/libro-islas-de-la-ascuaoscura/9788419260574/17145546"
+    ],
+    "secretProject": 5
+  },
+  "kingmaker": {
+    "world": "first-of-the-sun",
+    "system": "drominad-system",
+    "series": null,
+    "subseries": null,
+    "seriesIndex": null,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "aether1": {
+    "world": "aether-homeworld",
+    "system": null,
+    "series": "aether",
+    "subseries": null,
+    "seriesIndex": 1,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "aether2": {
+    "world": "aether-homeworld",
+    "system": null,
+    "series": "aether",
+    "subseries": null,
+    "seriesIndex": 2,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "aether3": {
+    "world": "aether-homeworld",
+    "system": null,
+    "series": "aether",
+    "subseries": null,
+    "seriesIndex": 3,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "mythos1": {
+    "world": "mythos",
+    "system": null,
+    "series": "mythos",
+    "subseries": null,
+    "seriesIndex": 1,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "mythos2": {
+    "world": "mythos",
+    "system": null,
+    "series": "mythos",
+    "subseries": null,
+    "seriesIndex": 2,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "mythos3": {
+    "world": "mythos",
+    "system": null,
+    "series": "mythos",
+    "subseries": null,
+    "seriesIndex": 3,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "d1": {
+    "world": "yolen",
+    "system": "yolish-system",
+    "series": "dragonsteel",
+    "subseries": null,
+    "seriesIndex": 1,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "d2": {
+    "world": "yolen",
+    "system": "yolish-system",
+    "series": "dragonsteel",
+    "subseries": null,
+    "seriesIndex": 2,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "d3": {
+    "world": "yolen",
+    "system": "yolish-system",
+    "series": "dragonsteel",
+    "subseries": null,
+    "seriesIndex": 3,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "au": {
+    "world": null,
+    "system": null,
+    "series": null,
+    "subseries": null,
+    "seriesIndex": null,
+    "publication": "2016-11-22",
+    "year": 2016,
+    "pages": 672,
+    "words": null,
+    "format": "anthology",
+    "status": "published",
+    "phase": 2,
+    "es": {
+      "title": "Arcanum ilimitado: La colección del Cosmere",
+      "publisher": "Nova",
+      "year": 2017,
+      "pages": 784,
+      "editionYear": 2017
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": [
+      "https://coppermind.net/wiki/Arcanum_Unbounded",
+      "https://openlibrary.org/isbn/9780765391162",
+      "https://www.casadellibro.com/libro-arcanum-ilimitado-la-coleccion-del-cosmere/9788466662321/5923412"
+    ]
+  },
+  "tress": {
+    "world": "lumar",
+    "system": null,
+    "series": null,
+    "subseries": null,
+    "seriesIndex": null,
+    "publication": "2023-01-01",
+    "year": 2023,
+    "pages": 496,
+    "words": 107227,
+    "format": "novel",
+    "status": "published",
+    "phase": 3,
+    "es": {
+      "title": "Trenza del mar esmeralda",
+      "publisher": "Nova",
+      "year": 2023,
+      "pages": 560,
+      "editionYear": 2023
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": [
+      "https://coppermind.net/wiki/Tress_of_the_Emerald_Sea",
+      "https://www.dragonsteelbooks.com/products/tress-of-the-emerald-sea-premium-hardcover",
+      "https://www.casadellibro.com/libro-trenza-del-mar-esmeralda-novela-secreta-1/9788418037818/13296538",
+      "https://es.wikipedia.org/wiki/Brandon_Sanderson"
+    ],
+    "secretProject": 1
+  },
+  "yumi": {
+    "world": "komashi",
+    "system": "utol-system",
+    "series": null,
+    "subseries": null,
+    "seriesIndex": null,
+    "publication": "2023-07-01",
+    "year": 2023,
+    "pages": 479,
+    "words": 113455,
+    "format": "novel",
+    "status": "published",
+    "phase": 3,
+    "es": {
+      "title": "Yumi y el pintor de pesadillas",
+      "publisher": "Nova",
+      "year": 2023,
+      "pages": 560,
+      "editionYear": 2023
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": [
+      "https://coppermind.net/wiki/Yumi_and_the_Nightmare_Painter",
+      "https://www.dragonsteelbooks.com/products/yumi-and-the-nightmare-painter-premium-hardcover-book",
+      "https://www.casadellibro.com/libro-yumi-y-el-pintor-de-pesadillas-novela-secreta-3/9788419260024/13682116",
+      "https://es.wikipedia.org/wiki/Brandon_Sanderson"
+    ],
+    "secretProject": 3
+  },
+  "tsm": {
+    "world": "canticle",
+    "system": null,
+    "series": null,
+    "subseries": null,
+    "seriesIndex": null,
+    "publication": "2023-10-01",
+    "year": 2023,
+    "pages": 446,
+    "words": 101582,
+    "format": "novel",
+    "status": "published",
+    "phase": 3,
+    "es": {
+      "title": "El hombre iluminado",
+      "publisher": "Nova",
+      "year": 2023,
+      "pages": 544,
+      "editionYear": 2023
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": [
+      "https://coppermind.net/wiki/The_Sunlit_Man",
+      "https://www.dragonsteelbooks.com/products/the-sunlit-man-premium-hardcover-book",
+      "https://www.casadellibro.com/libro-el-hombre-iluminado-novela-secreta-4/9788419260123/14093979",
+      "https://es.wikipedia.org/wiki/Brandon_Sanderson"
+    ],
+    "secretProject": 4
+  },
+  "tsd": {
+    "world": "ashyn",
+    "system": "rosharan-system",
+    "series": null,
+    "subseries": null,
+    "seriesIndex": null,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novella",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "untitled-cosmere-novel": {
+    "world": null,
+    "system": null,
+    "series": null,
+    "subseries": null,
+    "seriesIndex": null,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "tga": {
+    "world": null,
+    "system": null,
+    "series": null,
+    "subseries": null,
+    "seriesIndex": null,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "dan": {
+    "world": null,
+    "system": null,
+    "series": null,
+    "subseries": null,
+    "seriesIndex": null,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "burrito": {
+    "world": null,
+    "system": null,
+    "series": null,
+    "subseries": null,
+    "seriesIndex": null,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "untitled-cosmere-novella": {
+    "world": null,
+    "system": null,
+    "series": null,
+    "subseries": null,
+    "seriesIndex": null,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novella",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "kite": {
+    "world": null,
+    "system": null,
+    "series": null,
+    "subseries": null,
+    "seriesIndex": null,
+    "publication": null,
+    "year": null,
+    "pages": null,
+    "words": null,
+    "format": "novella",
+    "status": "planned",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": []
+  },
+  "wsp": {
+    "world": "taldain",
+    "system": "taldain-system",
+    "series": "white-sand",
+    "subseries": null,
+    "seriesIndex": null,
+    "publication": "2009-06",
+    "year": 2009,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "apocryphal",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": [],
+    "publicationNote": {
+      "en": "Unpublished manuscript, available on request since this date.",
+      "es": "Manuscrito sin publicar, disponible bajo petición desde esta fecha."
+    }
+  },
+  "aon": {
+    "world": null,
+    "system": null,
+    "series": null,
+    "subseries": null,
+    "seriesIndex": null,
+    "publication": "2009-06",
+    "year": 2009,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "apocryphal",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": "https://www.17thshard.com/forums/topic/60219-aether-of-night-manuscript-requests/",
+    "inUpstream": true,
+    "source": [],
+    "publicationNote": {
+      "en": "Unpublished manuscript, available on request since this date.",
+      "es": "Manuscrito sin publicar, disponible bajo petición desde esta fecha."
+    }
+  },
+  "imperial-fool": {
+    "world": "sel",
+    "system": "selish-system",
+    "series": null,
+    "subseries": null,
+    "seriesIndex": null,
+    "publication": "2012-11",
+    "year": 2012,
+    "pages": null,
+    "words": null,
+    "format": "short",
+    "status": "apocryphal",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": "https://www.brandonsanderson.com/blogs/blog/the-emperors-soul-deleted-prologue-imperial-fool",
+    "inUpstream": true,
+    "source": []
+  },
+  "dsp": {
+    "world": "yolen",
+    "system": "yolish-system",
+    "series": "dragonsteel",
+    "subseries": null,
+    "seriesIndex": null,
+    "publication": "2024-03-29",
+    "year": 2024,
+    "pages": 642,
+    "words": 236997,
+    "format": "novel",
+    "status": "apocryphal",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": true,
+    "source": [
+      "https://coppermind.net/wiki/Dragonsteel_Prime"
+    ]
+  },
+  "twokp": {
+    "world": "roshar",
+    "system": "rosharan-system",
+    "series": "stormlight",
+    "subseries": null,
+    "seriesIndex": null,
+    "publication": "2020-07-07",
+    "year": 2020,
+    "pages": null,
+    "words": null,
+    "format": "novel",
+    "status": "apocryphal",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": "https://www.brandonsanderson.com/pages/the-way-of-kings-prime",
+    "inUpstream": true,
+    "source": [
+      "https://coppermind.net/wiki/The_Way_of_Kings_Prime"
+    ]
+  },
+  "sa-deleted-scene": {
+    "world": "roshar",
+    "system": "rosharan-system",
+    "series": "stormlight",
+    "subseries": null,
+    "seriesIndex": null,
+    "publication": "2014-08-06",
+    "year": 2014,
+    "pages": null,
+    "words": null,
+    "format": "short",
+    "status": "apocryphal",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": "https://reactormag.com/2014/08/06/stormlight-archive-scene-after-words-of-radiance",
+    "inUpstream": true,
+    "source": []
+  },
+  "traveler": {
+    "world": "yolen",
+    "system": "yolish-system",
+    "series": null,
+    "subseries": null,
+    "seriesIndex": null,
+    "publication": "2018-04",
+    "year": 2018,
+    "pages": null,
+    "words": null,
+    "format": "short",
+    "status": "apocryphal",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": "https://wob.coppermind.net/events/332-jordancon-2018/#e9518",
+    "inUpstream": true,
+    "source": []
+  },
+  "mistborn-adventure-game": {
+    "world": "scadrial",
+    "system": "scadrian-system",
+    "series": "mistborn",
+    "subseries": "mistborn-adventure-game",
+    "seriesIndex": 1,
+    "publication": "2011-12-16",
+    "year": 2011,
+    "pages": 584,
+    "words": null,
+    "format": "rpg",
+    "status": "published",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": false,
+    "source": [
+      "https://coppermind.net/wiki/Mistborn_Adventure_Game_(rule_book)",
+      "https://www.gmsmagazine.com/crafty-games-proudly-brings-the-mistborn-adventure-game-to-gen-con-2011",
+      "https://bookwyrm.social/book/869805/s/mistborn-adventure-game"
+    ],
+    "worldBasis": "own-listing"
+  },
+  "fires-of-december": {
+    "world": null,
+    "system": null,
+    "series": null,
+    "subseries": null,
+    "seriesIndex": null,
+    "publication": "2026-09-15",
+    "year": 2026,
+    "pages": 384,
+    "words": null,
+    "format": "novel",
+    "status": "published",
+    "phase": null,
+    "es": {
+      "title": "Los fuegos de diciembre",
+      "publisher": "Nova",
+      "year": 2026,
+      "pages": 544,
+      "editionYear": 2026
+    },
+    "readFree": null,
+    "inUpstream": false,
+    "source": [
+      "https://coppermind.net/wiki/The_Fires_of_December",
+      "https://www.dragonsteelbooks.com/products/the-fires-of-december-ebook",
+      "https://www.lindentreebooks.com/the-fires-of-december.html",
+      "https://www.casadellibro.com/libro-los-fuegos-de-diciembre/9788410466715/18581196"
+    ]
+  },
+  "hoids-storybook-collection": {
+    "world": null,
+    "system": null,
+    "series": null,
+    "subseries": null,
+    "seriesIndex": null,
+    "publication": "2026-09",
+    "year": 2026,
+    "pages": null,
+    "words": null,
+    "format": "anthology",
+    "status": "published",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": false,
+    "source": [
+      "https://hoids-storybook.backerkit.com/hosted_preorders/project_updates",
+      "https://www.dragonsteelbooks.com/blogs/the-cognitive-realm/hoids-storybook-collection-backerkit"
+    ]
+  },
+  "wandersail": {
+    "world": null,
+    "system": null,
+    "series": "stormlight",
+    "subseries": null,
+    "seriesIndex": 10,
+    "publication": "2026-09",
+    "year": 2026,
+    "pages": null,
+    "words": null,
+    "format": "illustrated",
+    "status": "published",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": false,
+    "source": [
+      "https://hoids-storybook.backerkit.com/hosted_preorders/project_updates",
+      "https://www.dragonsteelbooks.com/blogs/the-cognitive-realm/wandersail-hoids-storybook-collection"
+    ]
+  },
+  "stormlight-rpg-handbook": {
+    "world": "roshar",
+    "system": "rosharan-system",
+    "series": "stormlight",
+    "subseries": "cosmere-rpg-stormlight",
+    "seriesIndex": 2,
+    "publication": "2025-07-23",
+    "year": 2025,
+    "pages": 392,
+    "words": null,
+    "format": "rpg",
+    "status": "published",
+    "phase": null,
+    "es": {
+      "title": "Manual del Archivo de las Tormentas",
+      "publisher": "Devir",
+      "year": null,
+      "pages": 392
+    },
+    "readFree": null,
+    "inUpstream": false,
+    "source": [
+      "https://coppermind.net/wiki/Cosmere_Roleplaying_Game",
+      "https://www.dragonsteelbooks.com/products/stormlight-handbook",
+      "https://devir.es/manual-del-archivo-de-las-tormentas"
+    ],
+    "worldBasis": "own-listing"
+  },
+  "stormlight-rpg-world-guide": {
+    "world": "roshar",
+    "system": "rosharan-system",
+    "series": "stormlight",
+    "subseries": "cosmere-rpg-stormlight",
+    "seriesIndex": 3,
+    "publication": "2025-07-23",
+    "year": 2025,
+    "pages": 280,
+    "words": null,
+    "format": "rpg",
+    "status": "published",
+    "phase": null,
+    "es": {
+      "title": "Guía del mundo del Archivo de las Tormentas",
+      "publisher": "Devir",
+      "year": null,
+      "pages": 280
+    },
+    "readFree": null,
+    "inUpstream": false,
+    "source": [
+      "https://coppermind.net/wiki/Cosmere_Roleplaying_Game",
+      "https://www.dragonsteelbooks.com/products/bw-stormlight-world-guide",
+      "https://devir.es/guia-del-mundo-del-archivo-de-las-tormentas"
+    ],
+    "worldBasis": "own-listing"
+  },
+  "stormlight-rpg-welcome-to-roshar": {
+    "world": "roshar",
+    "system": "rosharan-system",
+    "series": "stormlight",
+    "subseries": "cosmere-rpg-stormlight",
+    "seriesIndex": 4,
+    "publication": "2025",
+    "year": 2025,
+    "pages": null,
+    "words": null,
+    "format": "rpg",
+    "status": "published",
+    "phase": null,
+    "es": {
+      "title": "El Archivo de las Tormentas - Bienvenidos a Roshar",
+      "publisher": "Devir",
+      "year": null,
+      "pages": 28
+    },
+    "readFree": null,
+    "inUpstream": false,
+    "source": [
+      "https://www.dragonsteelbooks.com/products/bw-welcome-to-roshar-guide-book",
+      "https://devir.es/el-archivo-de-las-tormentas-bienvenidos-a-roshar"
+    ],
+    "worldBasis": "own-listing"
+  },
+  "stormlight-rpg-bridge-nine": {
+    "world": "roshar",
+    "system": "rosharan-system",
+    "series": "stormlight",
+    "subseries": "cosmere-rpg-stormlight",
+    "seriesIndex": 5,
+    "publication": "2025-07-23",
+    "year": 2025,
+    "pages": null,
+    "words": null,
+    "format": "rpg",
+    "status": "published",
+    "phase": null,
+    "es": {
+      "title": "El Archivo de las Tormentas - Puente nueve",
+      "publisher": "Devir",
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": false,
+    "source": [
+      "https://coppermind.net/wiki/Bridge_Nine_(adventure)",
+      "https://www.dragonsteelbooks.com/products/stormlight-handbook",
+      "https://devir.es/el-archivo-de-las-tormentas-puente-nueve"
+    ],
+    "worldBasis": "product-line"
+  },
+  "stonewalkers": {
+    "world": "roshar",
+    "system": "rosharan-system",
+    "series": "stormlight",
+    "subseries": "cosmere-rpg-stormlight",
+    "seriesIndex": 6,
+    "publication": "2025",
+    "year": 2025,
+    "pages": 172,
+    "words": null,
+    "format": "rpg",
+    "status": "published",
+    "phase": null,
+    "es": {
+      "title": "El Archivo de las Tormentas - Caminapiedras",
+      "publisher": "Devir",
+      "year": null,
+      "pages": 172
+    },
+    "readFree": null,
+    "inUpstream": false,
+    "source": [
+      "https://www.dragonsteelbooks.com/products/bw-stormlight-stonewalkers-adventure",
+      "https://devir.es/el-archivo-de-las-tormentas-caminapiedras"
+    ],
+    "worldBasis": "own-listing"
+  },
+  "mistborn-rpg-handbook": {
+    "world": "scadrial",
+    "system": "scadrian-system",
+    "series": "mistborn",
+    "subseries": "cosmere-rpg-mistborn",
+    "seriesIndex": 1,
+    "publication": "2026-09",
+    "year": 2026,
+    "pages": null,
+    "words": null,
+    "format": "rpg",
+    "status": "published",
+    "phase": null,
+    "es": {
+      "title": "Manual de Nacidos de la Bruma",
+      "publisher": "Devir",
+      "year": null,
+      "pages": 416
+    },
+    "readFree": null,
+    "inUpstream": false,
+    "source": [
+      "https://www.dragonsteelbooks.com/products/mistborn-rpg-handbook",
+      "https://dungeonmister.com/news/mistborn-setting-digital-launch-today/",
+      "https://devir.es/pdf-manual-de-nacidos-de-la-bruma"
+    ],
+    "worldBasis": "own-listing"
+  },
+  "mistborn-rpg-world-guide": {
+    "world": "scadrial",
+    "system": "scadrian-system",
+    "series": "mistborn",
+    "subseries": "cosmere-rpg-mistborn",
+    "seriesIndex": 2,
+    "publication": "2026-09",
+    "year": 2026,
+    "pages": null,
+    "words": null,
+    "format": "rpg",
+    "status": "published",
+    "phase": null,
+    "es": {
+      "title": "Guía del mundo de Nacidos de la Bruma",
+      "publisher": "Devir",
+      "year": null,
+      "pages": 296
+    },
+    "readFree": null,
+    "inUpstream": false,
+    "source": [
+      "https://www.dragonsteelbooks.com/products/mistborn-rpg-world-guide",
+      "https://dungeonmister.com/news/mistborn-setting-digital-launch-today/",
+      "https://devir.es/pdf-guia-del-mundo-de-nacidos-de-la-bruma"
+    ],
+    "worldBasis": "own-listing"
+  },
+  "mistborn-rpg-legacy": {
+    "world": "scadrial",
+    "system": "scadrian-system",
+    "series": "mistborn",
+    "subseries": "cosmere-rpg-mistborn",
+    "seriesIndex": 4,
+    "publication": "2026",
+    "year": 2026,
+    "pages": null,
+    "words": null,
+    "format": "rpg",
+    "status": "published",
+    "phase": null,
+    "es": {
+      "title": "Nacidos de la Bruma - Legado",
+      "publisher": "Devir",
+      "year": null,
+      "pages": 270
+    },
+    "readFree": null,
+    "inUpstream": false,
+    "source": [
+      "https://www.dragonsteelbooks.com/products/mistborn-legacy-adventure-cosmere-rpg",
+      "https://www.dragonsteelbooks.com/products/mistborn-rpg-handbook",
+      "https://devir.es/pdf-nacidos-de-la-bruma-legado"
+    ],
+    "worldBasis": "product-line"
+  },
+  "mistborn-adventure-game-terris": {
+    "world": "scadrial",
+    "system": "scadrian-system",
+    "series": "mistborn",
+    "subseries": "mistborn-adventure-game",
+    "seriesIndex": 2,
+    "publication": "2014-03-03",
+    "year": 2014,
+    "pages": null,
+    "words": null,
+    "format": "rpg",
+    "status": "published",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": false,
+    "source": [
+      "https://coppermind.net/wiki/Terris:_Wrought_of_Copper",
+      "https://www.gmsmagazine.com/crafty-games-proudly-brings-the-mistborn-adventure-game-to-gen-con-2011"
+    ],
+    "worldBasis": "product-line"
+  },
+  "mistborn-adventure-game-alloy-of-law": {
+    "world": "scadrial",
+    "system": "scadrian-system",
+    "series": "mistborn",
+    "subseries": "mistborn-adventure-game",
+    "seriesIndex": 3,
+    "publication": "2014-08-03",
+    "year": 2014,
+    "pages": null,
+    "words": null,
+    "format": "rpg",
+    "status": "published",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": false,
+    "source": [
+      "https://coppermind.net/wiki/Alloy_of_Law_(rule_book)",
+      "https://www.gmsmagazine.com/crafty-games-proudly-brings-the-mistborn-adventure-game-to-gen-con-2011"
+    ],
+    "worldBasis": "product-line"
+  },
+  "mistborn-adventure-game-skaa": {
+    "world": "scadrial",
+    "system": "scadrian-system",
+    "series": "mistborn",
+    "subseries": "mistborn-adventure-game",
+    "seriesIndex": 4,
+    "publication": "2015-11-16",
+    "year": 2015,
+    "pages": 220,
+    "words": null,
+    "format": "rpg",
+    "status": "published",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": false,
+    "source": [
+      "https://coppermind.net/wiki/Skaa:_Tin_%26_Ash",
+      "https://www.gmsmagazine.com/crafty-games-proudly-brings-the-mistborn-adventure-game-to-gen-con-2011",
+      "https://nobleknight.com/P/2147614444/Skaa---Tin-and-Ash"
+    ],
+    "worldBasis": "product-line"
+  },
+  "mistborn-adventure-game-masks-of-the-past": {
+    "world": "scadrial",
+    "system": "scadrian-system",
+    "series": "mistborn",
+    "subseries": "mistborn-adventure-game",
+    "seriesIndex": 5,
+    "publication": "2017-08-08",
+    "year": 2017,
+    "pages": null,
+    "words": null,
+    "format": "rpg",
+    "status": "published",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": false,
+    "source": [
+      "https://coppermind.net/wiki/Alloy_of_Law:_Masks_of_the_Past",
+      "https://www.gmsmagazine.com/crafty-games-proudly-brings-the-mistborn-adventure-game-to-gen-con-2011"
+    ],
+    "worldBasis": "product-line"
+  },
+  "mistborn-adventure-game-nobles": {
+    "world": "scadrial",
+    "system": "scadrian-system",
+    "series": "mistborn",
+    "subseries": "mistborn-adventure-game",
+    "seriesIndex": 6,
+    "publication": "2023",
+    "year": 2023,
+    "pages": 208,
+    "words": null,
+    "format": "rpg",
+    "status": "published",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": false,
+    "source": [
+      "https://nobleknight.com/P/2148112371/Nobles---The-Golden-Mandate",
+      "https://www.gmsmagazine.com/crafty-games-proudly-brings-the-mistborn-adventure-game-to-gen-con-2011"
+    ],
+    "worldBasis": "product-line"
+  },
+  "stormlight-rpg-first-step": {
+    "world": "roshar",
+    "system": "rosharan-system",
+    "series": "stormlight",
+    "subseries": "cosmere-rpg-stormlight",
+    "seriesIndex": 1,
+    "publication": "2025-07-23",
+    "year": 2025,
+    "pages": null,
+    "words": null,
+    "format": "rpg",
+    "status": "published",
+    "phase": null,
+    "es": {
+      "title": "El Archivo de las Tormentas - El primer paso",
+      "publisher": "Devir",
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": false,
+    "source": [
+      "https://coppermind.net/wiki/Cosmere_Roleplaying_Game",
+      "https://www.dragonsteelbooks.com/products/stormlight-handbook",
+      "https://devir.es/el-archivo-de-las-tormentas-el-primer-paso"
+    ],
+    "worldBasis": "product-line"
+  },
+  "stormlight-rpg-scenarios": {
+    "world": "roshar",
+    "system": "rosharan-system",
+    "series": "stormlight",
+    "subseries": "cosmere-rpg-stormlight",
+    "seriesIndex": 7,
+    "publication": "2025-09-24",
+    "year": 2025,
+    "pages": null,
+    "words": null,
+    "format": "rpg",
+    "status": "published",
+    "phase": null,
+    "es": {
+      "title": "Archivo de las Tormentas - Escenarios",
+      "publisher": "Devir",
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": false,
+    "source": [
+      "https://coppermind.net/wiki/Stormlight_Scenarios",
+      "https://www.dragonsteelbooks.com/products/stormlight-handbook",
+      "https://devir.es/archivo-de-las-tormentas-escenarios"
+    ],
+    "worldBasis": "product-line"
+  },
+  "stormlight-rpg-advanced-adversaries": {
+    "world": "roshar",
+    "system": "rosharan-system",
+    "series": "stormlight",
+    "subseries": "cosmere-rpg-stormlight",
+    "seriesIndex": 8,
+    "publication": "2025-09-24",
+    "year": 2025,
+    "pages": null,
+    "words": null,
+    "format": "rpg",
+    "status": "published",
+    "phase": null,
+    "es": {
+      "title": "Archivo de las Tormentas - Adversarios avanzados",
+      "publisher": "Devir",
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": false,
+    "source": [
+      "https://coppermind.net/wiki/Advanced_Adversaries",
+      "https://www.dragonsteelbooks.com/products/stormlight-handbook",
+      "https://devir.es/archivo-de-las-tormentas-adversarios-avanzados"
+    ],
+    "worldBasis": "product-line"
+  },
+  "stormlight-rpg-law-and-obligation": {
+    "world": "roshar",
+    "system": "rosharan-system",
+    "series": "stormlight",
+    "subseries": "cosmere-rpg-stormlight",
+    "seriesIndex": 9,
+    "publication": "2026-06-27",
+    "year": 2026,
+    "pages": null,
+    "words": null,
+    "format": "rpg",
+    "status": "published",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": false,
+    "source": [
+      "https://coppermind.net/wiki/Law_and_Obligation",
+      "https://www.dragonsteelbooks.com/products/stormlight-handbook"
+    ],
+    "worldBasis": "product-line"
+  },
+  "mistborn-rpg-welcome-to-scadrial": {
+    "world": "scadrial",
+    "system": "scadrian-system",
+    "series": "mistborn",
+    "subseries": "cosmere-rpg-mistborn",
+    "seriesIndex": 3,
+    "publication": "2026",
+    "year": 2026,
+    "pages": null,
+    "words": null,
+    "format": "rpg",
+    "status": "published",
+    "phase": null,
+    "es": {
+      "title": "Nacidos de la Bruma - Bienvenidos a Scadrial",
+      "publisher": "Devir",
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": false,
+    "source": [
+      "https://www.dragonsteelbooks.com/products/mistborn-rpg-handbook",
+      "https://devir.es/pdf-nacidos-de-la-bruma-bienvenidos-a-scadrial"
+    ],
+    "worldBasis": "product-line"
+  },
+  "mistborn-rpg-scenarios": {
+    "world": "scadrial",
+    "system": "scadrian-system",
+    "series": "mistborn",
+    "subseries": "cosmere-rpg-mistborn",
+    "seriesIndex": 5,
+    "publication": "2026-10-01",
+    "year": 2026,
+    "pages": null,
+    "words": null,
+    "format": "rpg",
+    "status": "published",
+    "phase": null,
+    "es": {
+      "title": null,
+      "publisher": null,
+      "year": null,
+      "pages": null
+    },
+    "readFree": null,
+    "inUpstream": false,
+    "source": [
+      "https://coppermind.net/wiki/Mistborn_Scenarios",
+      "https://www.dragonsteelbooks.com/products/mistborn-rpg-handbook"
+    ],
+    "worldBasis": "product-line"
+  }
+}

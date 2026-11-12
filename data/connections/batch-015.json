@@ -1,0 +1,26 @@
+[
+  {
+    "id": "c-0900",
+    "from": "elsecaller",
+    "to": null,
+    "type": "appearance",
+    "tier": "theory",
+    "description": {
+      "en": "Wit awaits Jasnah when her voyage concludes, dodging her inquiries about how he tracked her down.",
+      "es": "Sagaz aguarda a Jasnah cuando concluye el trayecto de esta y evita responder a sus cuestiones sobre cómo dio con ella."
+    },
+    "requires": [
+      "elsecaller",
+      "sa2"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Elsecaller_(short_story)",
+        "kind": "wiki"
+      }
+    ],
+    "author": "agent:research-batch-015",
+    "verifiedBy": "agent:verify-batch-015",
+    "verifiedOn": "2026-11-04"
+  }
+]

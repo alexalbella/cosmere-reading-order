@@ -1,0 +1,216 @@
+[
+  {
+    "id": "c-0700",
+    "from": "fires-of-december",
+    "to": "mb3",
+    "type": "significant",
+    "tier": "confirmed",
+    "description": {
+      "en": "Hemalurgy, the Scadrial art of impaling and moving attributes via spikes, is the technique the Prophet employed on Miral: a silver stake hammered into the Megalith to restrain it.",
+      "es": "La hemalurgia, arte scadriano que consiste en clavar púas y traspasar atributos, constituye la técnica que empleó el Profeta en Miral: una púa de plata hincada en el Megalito para retenerlo."
+    },
+    "requires": [
+      "fires-of-december",
+      "mb1",
+      "mb2",
+      "mb3"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Hemalurgy",
+        "kind": "wiki",
+        "cites": "The Fires of December, chapter 26 (Miral section)"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Miral",
+        "kind": "wiki",
+        "cites": "The Fires of December, chapter XXVI"
+      }
+    ],
+    "author": "agent:research-batch-013",
+    "verifiedBy": "agent:verify-batch-013",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0701",
+    "from": "fires-of-december",
+    "to": "wb",
+    "type": "minor",
+    "tier": "confirmed",
+    "description": {
+      "en": "To make the binding possible, the Aon on the spike was affixed using a cushion of cleansed Breaths, an altered variety of BioChromatic Breath, which is the Investiture native to Nalthis.",
+      "es": "Para que la atadura fuese viable, el aon del clavo se sujetó mediante una base de alientos depurados, variedad alterada del aliento biocromático, que es la Investidura propia de Nalthis."
+    },
+    "requires": [
+      "fires-of-december",
+      "wb",
+      "elantris"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Ever-Slaying_Sword",
+        "kind": "wiki",
+        "cites": "The Fires of December, chapters XXV and XXXVIII"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Hemalurgy",
+        "kind": "wiki",
+        "cites": "The Fires of December, chapter 38 (Miral section)"
+      }
+    ],
+    "author": "agent:research-batch-013",
+    "verifiedBy": "agent:verify-batch-013",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0702",
+    "from": "fires-of-december",
+    "to": "elantris",
+    "type": "minor",
+    "tier": "confirmed",
+    "description": {
+      "en": "The bond on the spike relies on an Aon, namely Aon Reo; Aons constitute a script used on Sel.",
+      "es": "El vínculo del clavo emplea un aon, concretamente el aon Reo; los aones constituyen un tipo de escritura propio de Sel."
+    },
+    "requires": [
+      "fires-of-december",
+      "elantris"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Ever-Slaying_Sword",
+        "kind": "wiki",
+        "cites": "The Fires of December, chapter XXV"
+      }
+    ],
+    "author": "agent:research-batch-013",
+    "verifiedBy": "agent:verify-batch-013",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0703",
+    "from": "fires-of-december",
+    "to": "sfs",
+    "type": "significant",
+    "tier": "confirmed",
+    "description": {
+      "en": "A portion of the Evil from Threnody arrived on Miral, where such beings go by the name demons; they are Splinters of Ambition.",
+      "es": "Una porción de la Maldad de Treno alcanzó Miral, lugar donde a esas entidades se las llama demonios; son Astillas de Ambición."
+    },
+    "requires": [
+      "fires-of-december",
+      "sfs",
+      "iote"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Evil",
+        "kind": "wiki",
+        "cites": "Isles of the Emberdark, chapter 39; The Fires of December, chapters IV and XXIV"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Miral",
+        "kind": "wiki",
+        "cites": "The Fires of December, chapter IV"
+      }
+    ],
+    "author": "agent:research-batch-013",
+    "verifiedBy": "agent:verify-batch-013",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0704",
+    "from": "fires-of-december",
+    "to": "sa5",
+    "type": "significant",
+    "tier": "confirmed",
+    "description": {
+      "en": "Valor, the Shard, operated on Miral, and Hoid travels there in pursuit of Valor; the Stormlight Archive lays the groundwork for that quest and offers additional details about this Shard.",
+      "es": "En Miral tuvo actividad la Esquirla Valentía, y Hoid acude a ese mundo tras la pista de Valentía; El Archivo de las Tormentas sienta las bases de esa pesquisa y amplía datos sobre esta Esquirla."
+    },
+    "requires": [
+      "fires-of-december",
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa4",
+      "sa5"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Valor",
+        "kind": "wiki",
+        "cites": "The Fires of December, chapter IV and epilogue; Rhythm of War, chapter 25 epigraph; Wind and Truth, chapter 115 and epilogue"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Miral",
+        "kind": "wiki",
+        "cites": "The Fires of December, chapters IV and XXIV, and epilogue"
+      }
+    ],
+    "author": "agent:research-batch-013",
+    "verifiedBy": "agent:verify-batch-013",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0705",
+    "from": "fires-of-december",
+    "to": "mb7",
+    "type": "significant",
+    "tier": "confirmed",
+    "description": {
+      "en": "Hoid's visit to Miral belongs to the hunt for Valor, which he embarks upon once he finishes assisting Waxillium.",
+      "es": "La visita de Hoid a Miral se inscribe en la persecución de Valentía que inicia después de prestar auxilio a Waxillium."
+    },
+    "requires": [
+      "fires-of-december",
+      "mb1",
+      "mb2",
+      "mb3",
+      "mb4",
+      "mb5",
+      "mb6",
+      "mb7",
+      "sa5"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Valor",
+        "kind": "wiki",
+        "cites": "The Fires of December, epilogue; Wind and Truth, epilogue"
+      }
+    ],
+    "author": "agent:research-batch-013",
+    "verifiedBy": "agent:verify-batch-013",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0706",
+    "from": "fires-of-december",
+    "to": null,
+    "type": "appearance",
+    "tier": "confirmed",
+    "description": {
+      "en": "Hoid shows up in this volume, visiting Miral.",
+      "es": "Hoid comparece en este volumen, de visita en Miral."
+    },
+    "requires": [
+      "fires-of-december"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Miral",
+        "kind": "wiki",
+        "cites": "The Fires of December, epilogue (Hoid visits the planet)"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "wiki",
+        "cites": "The Fires of December, chapters IV, XII and the epilogue"
+      }
+    ],
+    "author": "agent:research-batch-013",
+    "verifiedBy": "agent:verify-batch-013",
+    "verifiedOn": "2026-11-04"
+  }
+]

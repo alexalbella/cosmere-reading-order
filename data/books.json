@@ -1,0 +1,2423 @@
+[
+  {
+    "id": "elantris",
+    "titles": {
+      "en": "Elantris",
+      "es": "Elantris"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://www.casadellibro.com.co/libro-elantris-edicion-ilustrada/9788410466265/17219772",
+      "publisher": "Nova",
+      "year": 2006
+    },
+    "world": "sel",
+    "series": "Elantris",
+    "format": "novel",
+    "status": "published",
+    "order": {
+      "recommended": 5,
+      "publication": 1
+    },
+    "phase": 1,
+    "year": 2005,
+    "pages": 800,
+    "seriesIndex": 1,
+    "place": 1,
+    "publication": "2005-04-21",
+    "words": 201372
+  },
+  {
+    "id": "thoe",
+    "titles": {
+      "en": "The Hope of Elantris",
+      "es": "La esperanza de Elantris"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://www.casadellibro.com/libro-arcanum-ilimitado-la-coleccion-del-cosmere/9788466662321/5923412",
+      "in": "Arcanum ilimitado",
+      "publisher": "Nova",
+      "year": 2017
+    },
+    "world": "sel",
+    "series": "Elantris",
+    "format": "short",
+    "status": "published",
+    "order": {
+      "recommended": 6,
+      "publication": 2
+    },
+    "phase": 1,
+    "year": 2006,
+    "containedIn": [
+      "au"
+    ],
+    "seriesIndex": 2,
+    "place": 2,
+    "aside": true,
+    "readFree": "https://www.brandonsanderson.com/blogs/blog/the-hope-of-elantris",
+    "publication": "2006-01",
+    "words": 6030
+  },
+  {
+    "id": "elantris2",
+    "titles": {
+      "en": "Elantris 2",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "sel",
+    "series": "Elantris",
+    "format": "novel",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "seriesIndex": 3,
+    "place": 3
+  },
+  {
+    "id": "elantris3",
+    "titles": {
+      "en": "Elantris 3",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "sel",
+    "series": "Elantris",
+    "format": "novel",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "seriesIndex": 4,
+    "place": 4
+  },
+  {
+    "id": "tes",
+    "titles": {
+      "en": "The Emperor's Soul",
+      "es": "El alma del emperador"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://www.casadellibro.com.co/libro-el-alma-del-emperador/9788410466692/18085914",
+      "publisher": "Nova",
+      "year": 2014
+    },
+    "world": "sel",
+    "series": null,
+    "format": "novella",
+    "status": "published",
+    "order": {
+      "recommended": 7,
+      "publication": 11
+    },
+    "phase": 1,
+    "year": 2012,
+    "containedIn": [
+      "au"
+    ],
+    "pages": 176,
+    "place": 5,
+    "publication": "2012-11-01",
+    "words": 31925
+  },
+  {
+    "id": "tes2",
+    "titles": {
+      "en": "The Emperor's Soul sequel",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "sel",
+    "series": null,
+    "format": "novella",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "place": 6
+  },
+  {
+    "id": "mb1",
+    "titles": {
+      "en": "Mistborn: The Final Empire",
+      "es": "El imperio final"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://www.casadellibro.com.co/libro-nacidos-de-la-bruma-nacidos-de-la-bruma-mistborn-1/9788419260246/14390396",
+      "publisher": "Nova",
+      "year": 2008
+    },
+    "world": "scadrial",
+    "series": "Mistborn",
+    "format": "novel",
+    "status": "published",
+    "order": {
+      "recommended": 1,
+      "publication": 3
+    },
+    "phase": 1,
+    "year": 2006,
+    "pages": 672,
+    "subseries": "Mistborn Era 1",
+    "seriesIndex": 1,
+    "place": 7,
+    "publication": "2006-07-17",
+    "words": 210103
+  },
+  {
+    "id": "11m",
+    "titles": {
+      "en": "The Eleventh Metal",
+      "es": "El undécimo metal"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://www.casadellibro.com/libro-arcanum-ilimitado-la-coleccion-del-cosmere/9788466662321/5923412",
+      "in": "Arcanum ilimitado",
+      "publisher": "Nova",
+      "year": 2017
+    },
+    "world": "scadrial",
+    "series": "Mistborn",
+    "format": "short",
+    "status": "published",
+    "order": {
+      "recommended": 4,
+      "publication": 10
+    },
+    "phase": 1,
+    "year": 2011,
+    "containedIn": [
+      "au",
+      "mistborn-adventure-game"
+    ],
+    "subseries": "Mistborn Era 1",
+    "seriesIndex": 4,
+    "place": 8,
+    "aside": true,
+    "readFree": "https://www.brandonsanderson.com/blogs/blog/mistborn-the-eleventh-metal",
+    "publication": "2011-12-15",
+    "words": 6713
+  },
+  {
+    "id": "mb2",
+    "titles": {
+      "en": "The Well of Ascension",
+      "es": "El pozo de la ascensión"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://www.casadellibro.com/libro-el-pozo-de-la-ascension-saga-nacidos-de-la-bruma-2/9788466658904/3045890",
+      "publisher": "Nova",
+      "year": 2009
+    },
+    "world": "scadrial",
+    "series": "Mistborn",
+    "format": "novel",
+    "status": "published",
+    "order": {
+      "recommended": 2,
+      "publication": 4
+    },
+    "phase": 1,
+    "year": 2007,
+    "pages": 784,
+    "subseries": "Mistborn Era 1",
+    "seriesIndex": 2,
+    "place": 9,
+    "publication": "2007-08-21",
+    "words": 244371
+  },
+  {
+    "id": "mb3",
+    "titles": {
+      "en": "The Hero of Ages",
+      "es": "El héroe de las eras"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://www.casadellibro.com/libro-el-heroe-de-las-eras-saga-nacidos-de-la-bruma-3/9788466658911/3082061",
+      "publisher": "Nova",
+      "year": 2010
+    },
+    "world": "scadrial",
+    "series": "Mistborn",
+    "format": "novel",
+    "status": "published",
+    "order": {
+      "recommended": 3,
+      "publication": 5
+    },
+    "phase": 1,
+    "year": 2008,
+    "pages": 760,
+    "subseries": "Mistborn Era 1",
+    "seriesIndex": 3,
+    "place": 10,
+    "publication": "2008-10-14",
+    "words": 225372
+  },
+  {
+    "id": "mb4",
+    "titles": {
+      "en": "The Alloy of Law",
+      "es": "Aleación de ley"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://www.casadellibro.com/libro-aleacion-de-ley-wax--wayne-edicion-ilustrada-1/9788419260215/15984582",
+      "publisher": "Nova",
+      "year": 2012
+    },
+    "world": "scadrial",
+    "series": "Mistborn",
+    "format": "novel",
+    "status": "published",
+    "order": {
+      "recommended": 12,
+      "publication": 8
+    },
+    "phase": 2,
+    "year": 2011,
+    "pages": 352,
+    "subseries": "Mistborn Era 2",
+    "seriesIndex": 1,
+    "place": 11,
+    "publication": "2011-11-08",
+    "words": 94652
+  },
+  {
+    "id": "jak",
+    "titles": {
+      "en": "Allomancer Jak and the Pits of Eltania",
+      "es": "Alomante Jak y los pozos de Eltania"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://www.casadellibro.com/libro-arcanum-ilimitado-la-coleccion-del-cosmere/9788466662321/5923412",
+      "in": "Arcanum ilimitado",
+      "publisher": "Nova",
+      "year": 2017
+    },
+    "world": "scadrial",
+    "series": "Mistborn",
+    "format": "short",
+    "status": "published",
+    "order": {
+      "recommended": 13,
+      "publication": 17
+    },
+    "phase": 2,
+    "year": 2014,
+    "containedIn": [
+      "au",
+      "mistborn-adventure-game-alloy-of-law"
+    ],
+    "subseries": "Mistborn Era 2",
+    "seriesIndex": 2,
+    "place": 12,
+    "aside": true,
+    "publication": "2014-08-07",
+    "words": 7047
+  },
+  {
+    "id": "mb5",
+    "titles": {
+      "en": "Shadows of Self",
+      "es": "Sombras de identidad"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://www.casadellibro.com/libro-sombras-de-identidad-wax--wayne-edicion-ilustrada-2/9788419260673/16561859",
+      "publisher": "Nova",
+      "year": 2016
+    },
+    "world": "scadrial",
+    "series": "Mistborn",
+    "format": "novel",
+    "status": "published",
+    "order": {
+      "recommended": 14,
+      "publication": 18
+    },
+    "phase": 2,
+    "year": 2015,
+    "pages": 440,
+    "subseries": "Mistborn Era 2",
+    "seriesIndex": 3,
+    "place": 13,
+    "publication": "2015-10-06",
+    "words": 110019
+  },
+  {
+    "id": "mb6",
+    "titles": {
+      "en": "The Bands of Mourning",
+      "es": "Brazales de duelo"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://www.casadellibro.com/libro-brazales-de-duelo-edicion-ilustrada-wax--wayne-edicion-ilustrada-3/9788410466074/16710087",
+      "publisher": "Nova",
+      "year": 2017
+    },
+    "world": "scadrial",
+    "series": "Mistborn",
+    "format": "novel",
+    "status": "published",
+    "order": {
+      "recommended": 15,
+      "publication": 20
+    },
+    "phase": 2,
+    "year": 2016,
+    "pages": 512,
+    "subseries": "Mistborn Era 2",
+    "seriesIndex": 4,
+    "place": 14,
+    "publication": "2016-01-26",
+    "words": 127456
+  },
+  {
+    "id": "msh",
+    "titles": {
+      "en": "Mistborn: Secret History",
+      "es": "Mistborn. Historia secreta"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://www.casadellibro.com/libro-mistborn-historia-secreta/9788410466654/18085912",
+      "publisher": "Nova",
+      "year": 2017
+    },
+    "world": "scadrial",
+    "series": "Mistborn",
+    "format": "novella",
+    "status": "published",
+    "order": {
+      "recommended": 16,
+      "publication": 21
+    },
+    "phase": 2,
+    "year": 2016,
+    "containedIn": [
+      "au"
+    ],
+    "pages": 272,
+    "subseries": "Mistborn Era 2",
+    "seriesIndex": 5,
+    "place": 15,
+    "aside": true,
+    "publication": "2016-01-26",
+    "words": 44981
+  },
+  {
+    "id": "mb7",
+    "titles": {
+      "en": "The Lost Metal",
+      "es": "El metal perdido"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://www.casadellibro.com/libro-el-metal-perdido-edicion-ilustrada-wax--wayne-4/9788410466456/17908806",
+      "publisher": "Nova",
+      "year": 2022
+    },
+    "world": "scadrial",
+    "series": "Mistborn",
+    "format": "novel",
+    "status": "published",
+    "order": {
+      "recommended": 17,
+      "publication": 29
+    },
+    "phase": 2,
+    "year": 2022,
+    "pages": 640,
+    "subseries": "Mistborn Era 2",
+    "seriesIndex": 6,
+    "place": 16,
+    "publication": "2022-11-15",
+    "words": 156381
+  },
+  {
+    "id": "book-of-nails",
+    "titles": {
+      "en": "Book of Nails",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "scadrial",
+    "series": "Mistborn",
+    "format": "novel",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "subseries": "Mistborn Era 2",
+    "seriesIndex": 7,
+    "place": 17,
+    "aside": true
+  },
+  {
+    "id": "mb8",
+    "titles": {
+      "en": "Mistborn Era 3, Book 1",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "scadrial",
+    "series": "Mistborn",
+    "format": "novel",
+    "status": "announced",
+    "order": {},
+    "phase": null,
+    "subseries": "Mistborn Era 3",
+    "seriesIndex": 1,
+    "place": 18
+  },
+  {
+    "id": "mb9",
+    "titles": {
+      "en": "Mistborn Era 3, Book 2",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "scadrial",
+    "series": "Mistborn",
+    "format": "novel",
+    "status": "announced",
+    "order": {},
+    "phase": null,
+    "subseries": "Mistborn Era 3",
+    "seriesIndex": 2,
+    "place": 19
+  },
+  {
+    "id": "mb10",
+    "titles": {
+      "en": "Mistborn Era 3, Book 3",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "scadrial",
+    "series": "Mistborn",
+    "format": "novel",
+    "status": "announced",
+    "order": {},
+    "phase": null,
+    "subseries": "Mistborn Era 3",
+    "seriesIndex": 3,
+    "place": 20
+  },
+  {
+    "id": "mb11",
+    "titles": {
+      "en": "Mistborn Era 4, Book 1",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "scadrial",
+    "series": "Mistborn",
+    "format": "novel",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "subseries": "Mistborn Era 4",
+    "seriesIndex": 1,
+    "place": 21
+  },
+  {
+    "id": "mb12",
+    "titles": {
+      "en": "Mistborn Era 4, Book 2",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "scadrial",
+    "series": "Mistborn",
+    "format": "novel",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "subseries": "Mistborn Era 4",
+    "seriesIndex": 2,
+    "place": 22
+  },
+  {
+    "id": "mb13",
+    "titles": {
+      "en": "Mistborn Era 4, Book 3",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "scadrial",
+    "series": "Mistborn",
+    "format": "novel",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "subseries": "Mistborn Era 4",
+    "seriesIndex": 3,
+    "place": 23
+  },
+  {
+    "id": "mb14",
+    "titles": {
+      "en": "Mistborn Era 5, Book 1",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "scadrial",
+    "series": "Mistborn",
+    "format": "novel",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "subseries": "Mistborn Era 5",
+    "seriesIndex": 1,
+    "place": 24
+  },
+  {
+    "id": "mb15",
+    "titles": {
+      "en": "Mistborn Era 5, Book 2",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "scadrial",
+    "series": "Mistborn",
+    "format": "novel",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "subseries": "Mistborn Era 5",
+    "seriesIndex": 2,
+    "place": 25
+  },
+  {
+    "id": "mb16",
+    "titles": {
+      "en": "Mistborn Era 5, Book 3",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "scadrial",
+    "series": "Mistborn",
+    "format": "novel",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "subseries": "Mistborn Era 5",
+    "seriesIndex": 3,
+    "place": 26
+  },
+  {
+    "id": "msh2",
+    "titles": {
+      "en": "Mistborn: Secret History 2",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "scadrial",
+    "series": "Mistborn",
+    "format": "novella",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "subseries": "Other Mistborn",
+    "seriesIndex": 1,
+    "place": 27
+  },
+  {
+    "id": "wb",
+    "titles": {
+      "en": "Warbreaker",
+      "es": "El aliento de los dioses"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://www.casadellibro.com/libro-el-aliento-de-los-dioses/9788490709122/9198645",
+      "publisher": "Nova"
+    },
+    "world": "nalthis",
+    "series": "Warbreaker",
+    "format": "novel",
+    "status": "published",
+    "order": {
+      "recommended": 8,
+      "publication": 6
+    },
+    "phase": 1,
+    "year": 2009,
+    "pages": 720,
+    "seriesIndex": 1,
+    "place": 39,
+    "readFree": "https://www.brandonsanderson.com/blogs/blog/warbreaker-rights-and-downloads",
+    "publication": "2009-06-09",
+    "words": 196014
+  },
+  {
+    "id": "nb",
+    "titles": {
+      "en": "Nightblood",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "nalthis",
+    "series": "Warbreaker",
+    "format": "novel",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "seriesIndex": 2,
+    "place": 40
+  },
+  {
+    "id": "sa1",
+    "titles": {
+      "en": "The Way of Kings",
+      "es": "El camino de los reyes"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://www.casadellibro.com/libro-el-camino-de-los-reyes-el-archivo-de-las-tormentas-1/9788466657662/2571296",
+      "publisher": "Nova",
+      "year": 2012
+    },
+    "world": "roshar",
+    "series": "The Stormlight Archive",
+    "format": "novel",
+    "status": "published",
+    "order": {
+      "recommended": 19,
+      "publication": 7
+    },
+    "phase": 2,
+    "year": 2010,
+    "pages": 1200,
+    "seriesIndex": 1,
+    "place": 41,
+    "publication": "2010-08-31",
+    "words": 379585
+  },
+  {
+    "id": "sa2",
+    "titles": {
+      "en": "Words of Radiance",
+      "es": "Palabras radiantes"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://www.casadellibro.com/libro-palabras-radiantes-saga-el-archivo-de-las-tormentas-2/9788466657549/2571295",
+      "publisher": "Nova",
+      "year": 2015
+    },
+    "world": "roshar",
+    "series": "The Stormlight Archive",
+    "format": "novel",
+    "status": "published",
+    "order": {
+      "recommended": 20,
+      "publication": 13
+    },
+    "phase": 2,
+    "year": 2014,
+    "pages": 1248,
+    "seriesIndex": 2,
+    "place": 42,
+    "publication": "2014-03-04",
+    "words": 398238
+  },
+  {
+    "id": "elsecaller",
+    "titles": {
+      "en": "Elsecaller",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "roshar",
+    "series": "The Stormlight Archive",
+    "format": "short",
+    "status": "published",
+    "order": {
+      "recommended": 21,
+      "publication": 34
+    },
+    "phase": 2,
+    "year": 2024,
+    "subseries": "Stormlight Lost Tales",
+    "seriesIndex": 1,
+    "place": 43,
+    "aside": true,
+    "publication": "2024-12-05",
+    "pages": 48
+  },
+  {
+    "id": "lopen",
+    "titles": {
+      "en": "King Lopen the First of Alethkar",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "roshar",
+    "series": "The Stormlight Archive",
+    "format": "short",
+    "status": "published",
+    "order": {
+      "recommended": 22,
+      "publication": 35
+    },
+    "phase": 2,
+    "year": 2024,
+    "subseries": "Stormlight Lost Tales",
+    "seriesIndex": 2,
+    "place": 44,
+    "aside": true,
+    "publication": "2024-12-05",
+    "pages": 67
+  },
+  {
+    "id": "sa2-5",
+    "titles": {
+      "en": "Edgedancer",
+      "es": "Danzante del filo"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://www.casadellibro.com/libro-danzante-del-filo/9788410466678/18085913",
+      "publisher": "Nova",
+      "year": 2017
+    },
+    "world": "roshar",
+    "series": "The Stormlight Archive",
+    "format": "novella",
+    "status": "published",
+    "order": {
+      "recommended": 23,
+      "publication": 24
+    },
+    "phase": 2,
+    "year": 2016,
+    "containedIn": [
+      "au"
+    ],
+    "aliases": [
+      "sa2.5"
+    ],
+    "pages": 224,
+    "seriesIndex": 3,
+    "place": 45,
+    "aside": true,
+    "publication": "2016-11-22",
+    "words": 40660
+  },
+  {
+    "id": "sa3",
+    "titles": {
+      "en": "Oathbringer",
+      "es": "Juramentada"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://www.casadellibro.com/libro-juramentada-saga-el-archivo-de-las-tormentas-3/9788417347000/6311284",
+      "publisher": "Nova",
+      "year": 2018
+    },
+    "world": "roshar",
+    "series": "The Stormlight Archive",
+    "format": "novel",
+    "status": "published",
+    "order": {
+      "recommended": 24,
+      "publication": 26
+    },
+    "phase": 2,
+    "year": 2017,
+    "pages": 1408,
+    "seriesIndex": 4,
+    "place": 46,
+    "publication": "2017-11-14",
+    "words": 454440
+  },
+  {
+    "id": "sa3-5",
+    "titles": {
+      "en": "Dawnshard",
+      "es": "Esquirla del amanecer"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://www.casadellibro.com/libro-esquirla-del-amanecer/9788418037238/12254777",
+      "publisher": "Nova",
+      "year": 2021
+    },
+    "world": "roshar",
+    "series": "The Stormlight Archive",
+    "format": "novella",
+    "status": "published",
+    "order": {
+      "recommended": 25,
+      "publication": 27
+    },
+    "phase": 2,
+    "year": 2020,
+    "aliases": [
+      "sa3.5"
+    ],
+    "pages": 256,
+    "seriesIndex": 5,
+    "place": 47,
+    "aside": true,
+    "publication": "2020-11-05",
+    "words": 55096
+  },
+  {
+    "id": "sa4",
+    "titles": {
+      "en": "Rhythm of War",
+      "es": "El ritmo de la guerra"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://www.casadellibro.com/libro-el-ritmo-de-la-guerra-el-archivo-de-las-tormentas-4/9788417347932/11627802",
+      "publisher": "Nova",
+      "year": 2020
+    },
+    "world": "roshar",
+    "series": "The Stormlight Archive",
+    "format": "novel",
+    "status": "published",
+    "order": {
+      "recommended": 26,
+      "publication": 28
+    },
+    "phase": 2,
+    "year": 2020,
+    "pages": 1408,
+    "seriesIndex": 6,
+    "place": 48,
+    "publication": "2020-11-17",
+    "words": 455891
+  },
+  {
+    "id": "sa5",
+    "titles": {
+      "en": "Wind and Truth",
+      "es": "Viento y verdad"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://www.casadellibro.com/libro-viento-y-verdad-el-archivo-de-las-tormentas-5/9788419260543/16287862",
+      "publisher": "Nova",
+      "year": 2024
+    },
+    "world": "roshar",
+    "series": "The Stormlight Archive",
+    "format": "novel",
+    "status": "published",
+    "order": {
+      "recommended": 27,
+      "publication": 36
+    },
+    "phase": 2,
+    "year": 2024,
+    "pages": 1408,
+    "seriesIndex": 7,
+    "place": 49,
+    "publication": "2024-12-06",
+    "words": 487746
+  },
+  {
+    "id": "sa5-5",
+    "titles": {
+      "en": "Horneater",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "roshar",
+    "series": "The Stormlight Archive",
+    "format": "novella",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "aliases": [
+      "sa5.5"
+    ],
+    "seriesIndex": 11,
+    "place": 50,
+    "aside": true
+  },
+  {
+    "id": "sa6",
+    "titles": {
+      "en": "Stormlight Archive 6",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "roshar",
+    "series": "The Stormlight Archive",
+    "format": "novel",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "seriesIndex": 12,
+    "place": 51
+  },
+  {
+    "id": "sa7",
+    "titles": {
+      "en": "Stormlight Archive 7",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "roshar",
+    "series": "The Stormlight Archive",
+    "format": "novel",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "seriesIndex": 13,
+    "place": 52
+  },
+  {
+    "id": "sa8",
+    "titles": {
+      "en": "Stormlight Archive 8",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "roshar",
+    "series": "The Stormlight Archive",
+    "format": "novel",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "seriesIndex": 14,
+    "place": 53
+  },
+  {
+    "id": "sa9",
+    "titles": {
+      "en": "Stormlight Archive 9",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "roshar",
+    "series": "The Stormlight Archive",
+    "format": "novel",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "seriesIndex": 15,
+    "place": 54
+  },
+  {
+    "id": "sa10",
+    "titles": {
+      "en": "Stormlight Archive 10",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "roshar",
+    "series": "The Stormlight Archive",
+    "format": "novel",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "seriesIndex": 16,
+    "place": 55
+  },
+  {
+    "id": "chasmfriends",
+    "titles": {
+      "en": "The ChasmFriends Get a Pet!",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "roshar",
+    "series": "The Stormlight Archive",
+    "format": "short",
+    "status": "apocryphal",
+    "order": {},
+    "phase": null,
+    "year": 2024,
+    "containedIn": [
+      "hoids-storybook-collection"
+    ],
+    "subseries": "Stormlight Lost Tales",
+    "place": 56,
+    "aside": true
+  },
+  {
+    "id": "tdatd",
+    "titles": {
+      "en": "The Dog and the Dragon",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "roshar",
+    "series": "The Stormlight Archive",
+    "format": "illustrated",
+    "status": "announced",
+    "order": {},
+    "phase": null,
+    "containedIn": [
+      "hoids-storybook-collection"
+    ],
+    "seriesIndex": 8,
+    "place": 57,
+    "aside": true
+  },
+  {
+    "id": "tgwlu",
+    "titles": {
+      "en": "The Girl Who Looked Up",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "roshar",
+    "series": "The Stormlight Archive",
+    "format": "illustrated",
+    "status": "announced",
+    "order": {},
+    "phase": null,
+    "containedIn": [
+      "hoids-storybook-collection"
+    ],
+    "seriesIndex": 9,
+    "place": 58,
+    "aside": true
+  },
+  {
+    "id": "wsgn",
+    "titles": {
+      "en": "White Sand (graphic novels)",
+      "es": "Arena blanca"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://www.casadellibro.com.co/libro-arena-blanca-vol-1-a-3/9788418037429/12815590",
+      "publisher": "Nova"
+    },
+    "world": "taldain",
+    "series": "White Sand",
+    "format": "comic",
+    "status": "published",
+    "order": {
+      "recommended": 9,
+      "publication": 22
+    },
+    "phase": 1,
+    "year": 2016,
+    "pages": 496,
+    "seriesIndex": 1,
+    "place": 69,
+    "aside": true,
+    "publication": "2016-06-28"
+  },
+  {
+    "id": "wsn",
+    "titles": {
+      "en": "White Sand (prose rewrite)",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "taldain",
+    "series": "White Sand",
+    "format": "novel",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "seriesIndex": 2,
+    "place": 70
+  },
+  {
+    "id": "arcanist",
+    "titles": {
+      "en": "The Arcanist",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "taldain",
+    "series": "White Sand",
+    "format": "comic",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "seriesIndex": 3,
+    "place": 71
+  },
+  {
+    "id": "sfs",
+    "titles": {
+      "en": "Shadows for Silence in the Forests of Hell",
+      "es": "Sombras por silencio en los bosques del infierno"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://www.casadellibro.com/libro-arcanum-ilimitado-la-coleccion-del-cosmere/9788466662321/5923412",
+      "in": "Arcanum ilimitado",
+      "publisher": "Nova",
+      "year": 2017
+    },
+    "world": "threnody",
+    "series": null,
+    "format": "novella",
+    "status": "published",
+    "order": {
+      "recommended": 10,
+      "publication": 12
+    },
+    "phase": 1,
+    "year": 2013,
+    "containedIn": [
+      "au"
+    ],
+    "place": 72,
+    "publication": "2013-12-03",
+    "words": 17647
+  },
+  {
+    "id": "tnb",
+    "titles": {
+      "en": "The Night Brigade",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "threnody",
+    "series": null,
+    "format": "novel",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "place": 73
+  },
+  {
+    "id": "sotd",
+    "titles": {
+      "en": "Sixth of the Dusk",
+      "es": "Sexto del ocaso"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://www.casadellibro.com/libro-arcanum-ilimitado-la-coleccion-del-cosmere/9788466662321/5923412",
+      "in": "Arcanum ilimitado",
+      "publisher": "Nova",
+      "year": 2017
+    },
+    "world": "sol",
+    "series": null,
+    "format": "novella",
+    "status": "published",
+    "order": {
+      "recommended": 11,
+      "publication": 15
+    },
+    "phase": 1,
+    "year": 2014,
+    "containedIn": [
+      "au"
+    ],
+    "place": 74,
+    "aside": true,
+    "publication": "2014-06-30",
+    "words": 17794
+  },
+  {
+    "id": "iote",
+    "titles": {
+      "en": "Isles of the Emberdark",
+      "es": "Islas de la Ascuaoscura"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://www.casadellibro.com/libro-islas-de-la-ascuaoscura/9788419260574/17145546",
+      "publisher": "Nova",
+      "year": 2025
+    },
+    "world": "sol",
+    "series": null,
+    "format": "novel",
+    "status": "published",
+    "order": {
+      "recommended": 31,
+      "publication": 37
+    },
+    "phase": 3,
+    "year": 2025,
+    "pages": 560,
+    "place": 75,
+    "publication": "2025-07-01",
+    "words": 128904
+  },
+  {
+    "id": "kingmaker",
+    "titles": {
+      "en": "Kingmaker",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "sol",
+    "series": null,
+    "format": "novel",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "place": 76
+  },
+  {
+    "id": "aether1",
+    "titles": {
+      "en": "Aether Book 1",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "aether",
+    "series": "Aether",
+    "format": "novel",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "seriesIndex": 1,
+    "place": 77
+  },
+  {
+    "id": "aether2",
+    "titles": {
+      "en": "Aether Book 2",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "aether",
+    "series": "Aether",
+    "format": "novel",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "seriesIndex": 2,
+    "place": 78
+  },
+  {
+    "id": "aether3",
+    "titles": {
+      "en": "Aether Book 3",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "aether",
+    "series": "Aether",
+    "format": "novel",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "seriesIndex": 3,
+    "place": 79
+  },
+  {
+    "id": "mythos1",
+    "titles": {
+      "en": "Mythos Book 1",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "mythos",
+    "series": "Mythos",
+    "format": "novel",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "seriesIndex": 1,
+    "place": 80
+  },
+  {
+    "id": "mythos2",
+    "titles": {
+      "en": "Mythos Book 2",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "mythos",
+    "series": "Mythos",
+    "format": "novel",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "seriesIndex": 2,
+    "place": 81
+  },
+  {
+    "id": "mythos3",
+    "titles": {
+      "en": "Mythos Book 3",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "mythos",
+    "series": "Mythos",
+    "format": "novel",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "seriesIndex": 3,
+    "place": 82
+  },
+  {
+    "id": "d1",
+    "titles": {
+      "en": "Dragonsteel 1",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "yolen",
+    "series": "Dragonsteel",
+    "format": "novel",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "seriesIndex": 1,
+    "place": 83
+  },
+  {
+    "id": "d2",
+    "titles": {
+      "en": "Dragonsteel 2",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "yolen",
+    "series": "Dragonsteel",
+    "format": "novel",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "seriesIndex": 2,
+    "place": 84
+  },
+  {
+    "id": "d3",
+    "titles": {
+      "en": "Dragonsteel 3",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "yolen",
+    "series": "Dragonsteel",
+    "format": "novel",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "seriesIndex": 3,
+    "place": 85
+  },
+  {
+    "id": "au",
+    "titles": {
+      "en": "Arcanum Unbounded",
+      "es": "Arcanum ilimitado: La colección del Cosmere"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://www.casadellibro.com/libro-arcanum-ilimitado-la-coleccion-del-cosmere/9788466662321/5923412",
+      "publisher": "Nova",
+      "year": 2017
+    },
+    "world": "otros",
+    "series": null,
+    "format": "anthology",
+    "status": "published",
+    "order": {
+      "recommended": 18,
+      "publication": 23
+    },
+    "phase": 2,
+    "year": 2016,
+    "pages": 784,
+    "place": 86,
+    "publication": "2016-11-22"
+  },
+  {
+    "id": "tress",
+    "titles": {
+      "en": "Tress of the Emerald Sea",
+      "es": "Trenza del mar esmeralda"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://www.casadellibro.com/libro-trenza-del-mar-esmeralda-novela-secreta-1/9788418037818/13296538",
+      "publisher": "Nova",
+      "year": 2023
+    },
+    "world": "lumar",
+    "series": null,
+    "format": "novel",
+    "status": "published",
+    "order": {
+      "recommended": 28,
+      "publication": 30
+    },
+    "phase": 3,
+    "year": 2023,
+    "pages": 560,
+    "place": 87,
+    "publication": "2023-01-01",
+    "words": 107227
+  },
+  {
+    "id": "yumi",
+    "titles": {
+      "en": "Yumi and the Nightmare Painter",
+      "es": "Yumi y el pintor de pesadillas"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://www.casadellibro.com/libro-yumi-y-el-pintor-de-pesadillas-novela-secreta-3/9788419260024/13682116",
+      "publisher": "Nova",
+      "year": 2023
+    },
+    "world": "komashi",
+    "series": null,
+    "format": "novel",
+    "status": "published",
+    "order": {
+      "recommended": 29,
+      "publication": 31
+    },
+    "phase": 3,
+    "year": 2023,
+    "pages": 560,
+    "place": 88,
+    "publication": "2023-07-01",
+    "words": 113455
+  },
+  {
+    "id": "tsm",
+    "titles": {
+      "en": "The Sunlit Man",
+      "es": "El hombre iluminado"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://www.casadellibro.com/libro-el-hombre-iluminado-novela-secreta-4/9788419260123/14093979",
+      "publisher": "Nova",
+      "year": 2023
+    },
+    "world": "canticle",
+    "series": null,
+    "format": "novel",
+    "status": "published",
+    "order": {
+      "recommended": 30,
+      "publication": 33
+    },
+    "phase": 3,
+    "year": 2023,
+    "pages": 544,
+    "place": 89,
+    "publication": "2023-10-01",
+    "words": 101582
+  },
+  {
+    "id": "tsd",
+    "titles": {
+      "en": "The Silence Divine",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "ashyn",
+    "series": null,
+    "format": "novella",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "place": 90
+  },
+  {
+    "id": "untitled-cosmere-novel",
+    "titles": {
+      "en": "Untitled Cosmere novel",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "otros",
+    "series": null,
+    "format": "novel",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "place": 91
+  },
+  {
+    "id": "tga",
+    "titles": {
+      "en": "The Grand Apparatus",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "otros",
+    "series": null,
+    "format": "novel",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "place": 92
+  },
+  {
+    "id": "dan",
+    "titles": {
+      "en": "Untitled Dan Cosmere novel",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "otros",
+    "series": null,
+    "format": "novel",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "place": 93
+  },
+  {
+    "id": "burrito",
+    "titles": {
+      "en": "Free Fall Burrito World",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "otros",
+    "series": null,
+    "format": "novel",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "place": 94
+  },
+  {
+    "id": "untitled-cosmere-novella",
+    "titles": {
+      "en": "Untitled Cosmere novella",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "otros",
+    "series": null,
+    "format": "novella",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "place": 95
+  },
+  {
+    "id": "kite",
+    "titles": {
+      "en": "Magic Kites YA story",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "otros",
+    "series": null,
+    "format": "novella",
+    "status": "planned",
+    "order": {},
+    "phase": null,
+    "place": 96
+  },
+  {
+    "id": "wsp",
+    "titles": {
+      "en": "White Sand (prose)",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "taldain",
+    "series": "White Sand",
+    "format": "novel",
+    "status": "apocryphal",
+    "order": {},
+    "phase": null,
+    "year": 2009,
+    "place": 97
+  },
+  {
+    "id": "aon",
+    "titles": {
+      "en": "Aether of Night",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "otros",
+    "series": null,
+    "format": "novel",
+    "status": "apocryphal",
+    "order": {},
+    "phase": null,
+    "year": 2009,
+    "place": 98
+  },
+  {
+    "id": "imperial-fool",
+    "titles": {
+      "en": "Imperial Fool",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "sel",
+    "series": null,
+    "format": "short",
+    "status": "apocryphal",
+    "order": {},
+    "phase": null,
+    "year": 2012,
+    "place": 99,
+    "readFree": "https://www.brandonsanderson.com/blogs/blog/the-emperors-soul-deleted-prologue-imperial-fool"
+  },
+  {
+    "id": "dsp",
+    "titles": {
+      "en": "Dragonsteel Prime",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "yolen",
+    "series": "Dragonsteel",
+    "format": "novel",
+    "status": "apocryphal",
+    "order": {},
+    "phase": null,
+    "year": 2024,
+    "place": 100
+  },
+  {
+    "id": "twokp",
+    "titles": {
+      "en": "The Way of Kings Prime",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "roshar",
+    "series": "The Stormlight Archive",
+    "format": "novel",
+    "status": "apocryphal",
+    "order": {},
+    "phase": null,
+    "year": 2020,
+    "place": 101,
+    "readFree": "https://www.brandonsanderson.com/pages/the-way-of-kings-prime"
+  },
+  {
+    "id": "sa-deleted-scene",
+    "titles": {
+      "en": "Stormlight Archive deleted scene",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "roshar",
+    "series": "The Stormlight Archive",
+    "format": "short",
+    "status": "apocryphal",
+    "order": {},
+    "phase": null,
+    "year": 2014,
+    "place": 102,
+    "readFree": "https://reactormag.com/2014/08/06/stormlight-archive-scene-after-words-of-radiance"
+  },
+  {
+    "id": "traveler",
+    "titles": {
+      "en": "The Traveler",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "yolen",
+    "series": null,
+    "format": "short",
+    "status": "apocryphal",
+    "order": {},
+    "phase": null,
+    "year": 2018,
+    "place": 103
+  },
+  {
+    "id": "mistborn-adventure-game",
+    "titles": {
+      "en": "The Mistborn Adventure Game",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "scadrial",
+    "series": "Mistborn",
+    "format": "rpg",
+    "status": "published",
+    "order": {
+      "recommended": 33,
+      "publication": 9
+    },
+    "phase": null,
+    "year": 2011,
+    "subseries": "Mistborn Adventure Game",
+    "seriesIndex": 1,
+    "place": 28,
+    "publication": "2011-12-16",
+    "pages": 584
+  },
+  {
+    "id": "fires-of-december",
+    "titles": {
+      "en": "The Fires of December",
+      "es": "Los fuegos de diciembre"
+    },
+    "esEdition": {
+      "status": "announced",
+      "source": "https://www.casadellibro.com/libro-los-fuegos-de-diciembre/9788410466715/18581196"
+    },
+    "world": "otros",
+    "series": null,
+    "format": "novel",
+    "status": "published",
+    "order": {
+      "recommended": 32,
+      "publication": 51
+    },
+    "phase": 3,
+    "year": 2026,
+    "pages": 544,
+    "place": 105,
+    "publication": "2026-09-15"
+  },
+  {
+    "id": "hoids-storybook-collection",
+    "titles": {
+      "en": "Hoid's Storybook Collection",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "otros",
+    "series": null,
+    "format": "anthology",
+    "status": "announced",
+    "order": {},
+    "phase": null,
+    "place": 104
+  },
+  {
+    "id": "wandersail",
+    "titles": {
+      "en": "Wandersail",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "otros",
+    "series": "The Stormlight Archive",
+    "format": "illustrated",
+    "status": "announced",
+    "order": {},
+    "phase": null,
+    "containedIn": [
+      "hoids-storybook-collection"
+    ],
+    "seriesIndex": 10,
+    "place": 59
+  },
+  {
+    "id": "stormlight-rpg-handbook",
+    "titles": {
+      "en": "Stormlight Handbook (Cosmere RPG)",
+      "es": "Manual del Archivo de las Tormentas"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://devir.es/manual-del-archivo-de-las-tormentas",
+      "publisher": "Devir"
+    },
+    "world": "roshar",
+    "series": "The Stormlight Archive",
+    "format": "rpg",
+    "status": "published",
+    "order": {
+      "recommended": 39,
+      "publication": 39
+    },
+    "phase": null,
+    "year": 2025,
+    "pages": 392,
+    "subseries": "Cosmere RPG: Stormlight",
+    "seriesIndex": 2,
+    "place": 61,
+    "publication": "2025-07-23"
+  },
+  {
+    "id": "stormlight-rpg-world-guide",
+    "titles": {
+      "en": "Stormlight World Guide (Cosmere RPG)",
+      "es": "Guía del mundo del Archivo de las Tormentas"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://devir.es/guia-del-mundo-del-archivo-de-las-tormentas",
+      "publisher": "Devir"
+    },
+    "world": "roshar",
+    "series": "The Stormlight Archive",
+    "format": "rpg",
+    "status": "published",
+    "order": {
+      "recommended": 40,
+      "publication": 40
+    },
+    "phase": null,
+    "year": 2025,
+    "pages": 280,
+    "subseries": "Cosmere RPG: Stormlight",
+    "seriesIndex": 3,
+    "place": 62,
+    "publication": "2025-07-23"
+  },
+  {
+    "id": "stormlight-rpg-welcome-to-roshar",
+    "titles": {
+      "en": "Stormlight Welcome to Roshar Guide Book (Cosmere RPG)",
+      "es": "El Archivo de las Tormentas - Bienvenidos a Roshar"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://devir.es/el-archivo-de-las-tormentas-bienvenidos-a-roshar",
+      "publisher": "Devir"
+    },
+    "world": "roshar",
+    "series": "The Stormlight Archive",
+    "format": "rpg",
+    "status": "published",
+    "order": {
+      "recommended": 41,
+      "publication": 41
+    },
+    "phase": null,
+    "year": 2025,
+    "pages": 28,
+    "subseries": "Cosmere RPG: Stormlight",
+    "seriesIndex": 4,
+    "place": 63,
+    "publication": "2025"
+  },
+  {
+    "id": "stormlight-rpg-bridge-nine",
+    "titles": {
+      "en": "Stormlight Bridge Nine Adventure (Cosmere RPG)",
+      "es": "El Archivo de las Tormentas - Puente nueve"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://devir.es/el-archivo-de-las-tormentas-puente-nueve",
+      "publisher": "Devir"
+    },
+    "world": "roshar",
+    "series": "The Stormlight Archive",
+    "format": "rpg",
+    "status": "published",
+    "order": {
+      "recommended": 42,
+      "publication": 42
+    },
+    "phase": null,
+    "year": 2025,
+    "subseries": "Cosmere RPG: Stormlight",
+    "seriesIndex": 5,
+    "place": 64,
+    "publication": "2025-07-23"
+  },
+  {
+    "id": "stonewalkers",
+    "titles": {
+      "en": "Stormlight Stonewalkers Adventure (Cosmere RPG)",
+      "es": "El Archivo de las Tormentas - Caminapiedras"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://devir.es/el-archivo-de-las-tormentas-caminapiedras",
+      "publisher": "Devir"
+    },
+    "world": "roshar",
+    "series": "The Stormlight Archive",
+    "format": "rpg",
+    "status": "published",
+    "order": {
+      "recommended": 44,
+      "publication": 43
+    },
+    "phase": null,
+    "pages": 172,
+    "year": 2025,
+    "subseries": "Cosmere RPG: Stormlight",
+    "seriesIndex": 6,
+    "place": 65,
+    "publication": "2025"
+  },
+  {
+    "id": "mistborn-rpg-handbook",
+    "titles": {
+      "en": "Mistborn Handbook (Cosmere RPG)",
+      "es": "Manual de Nacidos de la Bruma"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://devir.es/pdf-manual-de-nacidos-de-la-bruma",
+      "publisher": "Devir"
+    },
+    "world": "scadrial",
+    "series": "Mistborn",
+    "format": "rpg",
+    "status": "published",
+    "order": {
+      "recommended": 48,
+      "publication": 47
+    },
+    "phase": null,
+    "year": 2026,
+    "pages": 416,
+    "subseries": "Cosmere RPG: Mistborn",
+    "seriesIndex": 1,
+    "place": 34,
+    "publication": "2026-09"
+  },
+  {
+    "id": "mistborn-rpg-world-guide",
+    "titles": {
+      "en": "Mistborn World Guide (Cosmere RPG)",
+      "es": "Guía del mundo de Nacidos de la Bruma"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://devir.es/pdf-guia-del-mundo-de-nacidos-de-la-bruma",
+      "publisher": "Devir"
+    },
+    "world": "scadrial",
+    "series": "Mistborn",
+    "format": "rpg",
+    "status": "published",
+    "order": {
+      "recommended": 49,
+      "publication": 48
+    },
+    "phase": null,
+    "year": 2026,
+    "pages": 296,
+    "subseries": "Cosmere RPG: Mistborn",
+    "seriesIndex": 2,
+    "place": 35,
+    "publication": "2026-09"
+  },
+  {
+    "id": "mistborn-rpg-legacy",
+    "titles": {
+      "en": "Mistborn Legacy (Cosmere RPG)",
+      "es": "Nacidos de la Bruma - Legado"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://devir.es/pdf-nacidos-de-la-bruma-legado",
+      "publisher": "Devir"
+    },
+    "world": "scadrial",
+    "series": "Mistborn",
+    "format": "rpg",
+    "status": "published",
+    "order": {
+      "recommended": 51,
+      "publication": 50
+    },
+    "phase": null,
+    "year": 2026,
+    "pages": 270,
+    "subseries": "Cosmere RPG: Mistborn",
+    "seriesIndex": 4,
+    "place": 37,
+    "publication": "2026"
+  },
+  {
+    "id": "mistborn-adventure-game-terris",
+    "titles": {
+      "en": "Terris: Wrought of Copper (Mistborn Adventure Game)",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "scadrial",
+    "series": "Mistborn",
+    "format": "rpg",
+    "status": "published",
+    "order": {
+      "recommended": 34,
+      "publication": 14
+    },
+    "phase": null,
+    "year": 2014,
+    "subseries": "Mistborn Adventure Game",
+    "seriesIndex": 2,
+    "place": 29,
+    "publication": "2014-03-03"
+  },
+  {
+    "id": "mistborn-adventure-game-alloy-of-law",
+    "titles": {
+      "en": "Alloy of Law (Mistborn Adventure Game)",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "scadrial",
+    "series": "Mistborn",
+    "format": "rpg",
+    "status": "published",
+    "order": {
+      "recommended": 35,
+      "publication": 16
+    },
+    "phase": null,
+    "year": 2014,
+    "subseries": "Mistborn Adventure Game",
+    "seriesIndex": 3,
+    "place": 30,
+    "publication": "2014-08-03"
+  },
+  {
+    "id": "mistborn-adventure-game-skaa",
+    "titles": {
+      "en": "Skaa: Tin & Ash (Mistborn Adventure Game)",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "scadrial",
+    "series": "Mistborn",
+    "format": "rpg",
+    "status": "published",
+    "order": {
+      "recommended": 36,
+      "publication": 19
+    },
+    "phase": null,
+    "year": 2015,
+    "subseries": "Mistborn Adventure Game",
+    "seriesIndex": 4,
+    "place": 31,
+    "publication": "2015-11-16",
+    "pages": 220
+  },
+  {
+    "id": "mistborn-adventure-game-masks-of-the-past",
+    "titles": {
+      "en": "Alloy of Law: Masks of the Past (Mistborn Adventure Game)",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "scadrial",
+    "series": "Mistborn",
+    "format": "rpg",
+    "status": "published",
+    "order": {
+      "recommended": 37,
+      "publication": 25
+    },
+    "phase": null,
+    "year": 2017,
+    "subseries": "Mistborn Adventure Game",
+    "seriesIndex": 5,
+    "place": 32,
+    "publication": "2017-08-08"
+  },
+  {
+    "id": "mistborn-adventure-game-nobles",
+    "titles": {
+      "en": "Nobles: The Golden Mandate (Mistborn Adventure Game)",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "scadrial",
+    "series": "Mistborn",
+    "format": "rpg",
+    "status": "published",
+    "order": {
+      "recommended": 38,
+      "publication": 32
+    },
+    "phase": null,
+    "year": 2023,
+    "subseries": "Mistborn Adventure Game",
+    "seriesIndex": 6,
+    "place": 33,
+    "publication": "2023",
+    "pages": 208
+  },
+  {
+    "id": "stormlight-rpg-first-step",
+    "titles": {
+      "en": "Stormlight The First Step Adventure (Cosmere RPG)",
+      "es": "El Archivo de las Tormentas - El primer paso"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://devir.es/el-archivo-de-las-tormentas-el-primer-paso",
+      "publisher": "Devir"
+    },
+    "world": "roshar",
+    "series": "The Stormlight Archive",
+    "format": "rpg",
+    "status": "published",
+    "order": {
+      "recommended": 43,
+      "publication": 38
+    },
+    "phase": null,
+    "year": 2025,
+    "subseries": "Cosmere RPG: Stormlight",
+    "seriesIndex": 1,
+    "place": 60,
+    "publication": "2025-07-23"
+  },
+  {
+    "id": "stormlight-rpg-scenarios",
+    "titles": {
+      "en": "Stormlight Scenarios (Cosmere RPG)",
+      "es": "Archivo de las Tormentas - Escenarios"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://devir.es/archivo-de-las-tormentas-escenarios",
+      "publisher": "Devir"
+    },
+    "world": "roshar",
+    "series": "The Stormlight Archive",
+    "format": "rpg",
+    "status": "published",
+    "order": {
+      "recommended": 45,
+      "publication": 44
+    },
+    "phase": null,
+    "year": 2025,
+    "subseries": "Cosmere RPG: Stormlight",
+    "seriesIndex": 7,
+    "place": 66,
+    "publication": "2025-09-24"
+  },
+  {
+    "id": "stormlight-rpg-advanced-adversaries",
+    "titles": {
+      "en": "Stormlight Advanced Adversaries (Cosmere RPG)",
+      "es": "Archivo de las Tormentas - Adversarios avanzados"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://devir.es/archivo-de-las-tormentas-adversarios-avanzados",
+      "publisher": "Devir"
+    },
+    "world": "roshar",
+    "series": "The Stormlight Archive",
+    "format": "rpg",
+    "status": "published",
+    "order": {
+      "recommended": 46,
+      "publication": 45
+    },
+    "phase": null,
+    "year": 2025,
+    "subseries": "Cosmere RPG: Stormlight",
+    "seriesIndex": 8,
+    "place": 67,
+    "publication": "2025-09-24"
+  },
+  {
+    "id": "stormlight-rpg-law-and-obligation",
+    "titles": {
+      "en": "Stormlight Law and Obligation Adventure (Cosmere RPG)",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "roshar",
+    "series": "The Stormlight Archive",
+    "format": "rpg",
+    "status": "published",
+    "order": {
+      "recommended": 47,
+      "publication": 46
+    },
+    "phase": null,
+    "year": 2026,
+    "subseries": "Cosmere RPG: Stormlight",
+    "seriesIndex": 9,
+    "place": 68,
+    "publication": "2026-06-27"
+  },
+  {
+    "id": "mistborn-rpg-welcome-to-scadrial",
+    "titles": {
+      "en": "Mistborn Welcome to Scadrial Guide Book (Cosmere RPG)",
+      "es": "Nacidos de la Bruma - Bienvenidos a Scadrial"
+    },
+    "esEdition": {
+      "status": "published",
+      "source": "https://devir.es/pdf-nacidos-de-la-bruma-bienvenidos-a-scadrial",
+      "publisher": "Devir"
+    },
+    "world": "scadrial",
+    "series": "Mistborn",
+    "format": "rpg",
+    "status": "published",
+    "order": {
+      "recommended": 50,
+      "publication": 49
+    },
+    "phase": null,
+    "year": 2026,
+    "subseries": "Cosmere RPG: Mistborn",
+    "seriesIndex": 3,
+    "place": 36,
+    "publication": "2026"
+  },
+  {
+    "id": "mistborn-rpg-scenarios",
+    "titles": {
+      "en": "Mistborn Scenarios (Cosmere RPG)",
+      "es": null
+    },
+    "esEdition": {
+      "status": "unknown"
+    },
+    "world": "scadrial",
+    "series": "Mistborn",
+    "format": "rpg",
+    "status": "published",
+    "order": {
+      "recommended": 52,
+      "publication": 52
+    },
+    "phase": null,
+    "year": 2026,
+    "subseries": "Cosmere RPG: Mistborn",
+    "seriesIndex": 5,
+    "place": 38,
+    "publication": "2026-10-01"
+  }
+]

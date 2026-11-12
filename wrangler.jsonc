@@ -1,0 +1,29 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "cosmere-reading-order",
+  "main": "worker/index.ts",
+  "compatibility_date": "2026-10-31",
+  "workers_dev": false,
+  "preview_urls": false,
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*"]
+  },
+  // Off on purpose, and stated because a new Worker may have it on by default. Trace spans record KV keys, the key
+  // holds the email, and invocation logs may hold the request's token header.
+  "observability": { "enabled": false },
+  // The four values below are placeholders. The deploy job writes the real ones from the repository's secrets
+  // (SITE_HOSTNAME, ACCESS_TEAM, ACCESS_AUD, KV_ID) with scripts/fill-deploy-config.ts; docs/DEPLOY.md says where
+  // each one comes from. While one still says PLACEHOLDER, no token can verify and CI refuses to deploy.
+  // The hostname. Cloudflare creates its DNS record on the first deploy. Nothing else in the zone is touched.
+  "routes": [{ "pattern": "PLACEHOLDER-hostname", "custom_domain": true }],
+  "vars": {
+    // Zero Trust > Settings: the team name, only the part before .cloudflareaccess.com.
+    "ACCESS_TEAM": "PLACEHOLDER-team",
+    // The Access application's Application Audience (AUD) tag.
+    "ACCESS_AUD": "PLACEHOLDER-aud"
+  },
+  // The id printed by: npx wrangler kv namespace create cosmere-state
+  "kv_namespaces": [{ "binding": "STATE", "id": "PLACEHOLDER-kv" }]
+}

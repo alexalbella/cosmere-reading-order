@@ -1,0 +1,588 @@
+[
+  {
+    "id": "c-0200",
+    "from": "sa5",
+    "to": "mb4",
+    "type": "minor",
+    "tier": "confirmed",
+    "description": {
+      "en": "Brandon has said that The Alloy of Law is set later than Wind and Truth, which at the time was titled Stormlight 5.",
+      "es": "Según Brandon, Aleación de ley ocurre más tarde que Viento y verdad, cuyo título de entonces era Stormlight 5."
+    },
+    "requires": [
+      "sa5",
+      "mb4"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/api/entry/549/",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:research-batch-008",
+    "verifiedBy": "agent:verify-batch-008",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0201",
+    "from": "sa5",
+    "to": "wb",
+    "type": "significant",
+    "tier": "confirmed",
+    "description": {
+      "en": "Nightblood, the sentient sword from Warbreaker, converses with Szeth and Kaladin; Vasher, Shashara and Yesteel come up, as does its own forging, and Vivenna gets a mention.",
+      "es": "Sangre Nocturna, la espada consciente de El aliento de los dioses, conversa con Szeth y Kaladin; salen a relucir Vasher, Shashara y Yesteel, así como su propio forjado, y se menciona a Vivenna."
+    },
+    "requires": [
+      "sa5",
+      "wb",
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa4"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Wind_and_Truth/Summary",
+        "kind": "wiki",
+        "cites": "Wind and Truth chapter 35"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Nightblood",
+        "kind": "wiki",
+        "cites": "Wind and Truth chapter 35"
+      }
+    ],
+    "author": "agent:research-batch-008",
+    "verifiedBy": "agent:verify-batch-008",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0202",
+    "from": "sa5",
+    "to": "wb",
+    "type": "significant",
+    "tier": "confirmed",
+    "description": {
+      "en": "In secret, Vasher assists Gavilar in collecting Voidlight in the Cognitive Realm and transporting it into the Physical Realm.",
+      "es": "Vasher colabora clandestinamente con Gavilar para cosechar luz del vacío desde el Reino Cognitivo y trasladarla hasta el Reino Físico."
+    },
+    "requires": [
+      "sa5",
+      "wb",
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa4"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Wind_and_Truth/Summary",
+        "kind": "wiki",
+        "cites": "Wind and Truth prologue"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Vasher",
+        "kind": "wiki",
+        "cites": "Wind and Truth prologue"
+      }
+    ],
+    "author": "agent:research-batch-008",
+    "verifiedBy": "agent:verify-batch-008",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0203",
+    "from": "sa5",
+    "to": "wb",
+    "type": "significant",
+    "tier": "confirmed",
+    "description": {
+      "en": "Going by Zahel, Vasher turns up once more in the interludes, where Axindweth imprisons and tortures him to extract his Breath; Lift eventually sets him free.",
+      "es": "Con el nombre de Zahel, Vasher reaparece en los interludios: Axindweth lo mantiene cautivo y lo somete a tormento para arrebatarle su Aliento, hasta que Lift acaba liberándolo."
+    },
+    "requires": [
+      "sa5",
+      "wb",
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa4"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Wind_and_Truth/Summary",
+        "kind": "wiki",
+        "cites": "Wind and Truth interlude I-9; interlude I-13"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Vasher",
+        "kind": "wiki",
+        "cites": "Wind and Truth interlude I-9; interlude I-13"
+      }
+    ],
+    "author": "agent:research-batch-008",
+    "verifiedBy": "agent:verify-batch-008",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0204",
+    "from": "sa5",
+    "to": "wb",
+    "type": "significant",
+    "tier": "confirmed",
+    "description": {
+      "en": "The epigraphs of Part Five include a letter from Endowment, the Shard that remains on Nalthis, replying to Hoid's plea for assistance against Odium.",
+      "es": "Los epígrafes de la quinta parte recogen una carta de la Esquirla Dotación, que sigue en Nalthis, con la que responde a la súplica de auxilio de Hoid frente a Odium."
+    },
+    "requires": [
+      "sa5",
+      "wb",
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa4"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Wind_and_Truth/Epigraphs",
+        "kind": "wiki",
+        "cites": "Wind and Truth, Part Five epigraphs (chapter 55 onward), Endowment's Letter"
+      }
+    ],
+    "author": "agent:research-batch-008",
+    "verifiedBy": "agent:verify-batch-008",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0205",
+    "from": "sa5",
+    "to": "mb1",
+    "type": "significant",
+    "tier": "confirmed",
+    "description": {
+      "en": "Under pressure, Wit draws on Allomancy to push metals and uses Awakening, abilities from two other worlds.",
+      "es": "Bajo presión, Sagaz impulsa metales por medio de la alomancia y recurre al Despertar, facultades de otros dos mundos."
+    },
+    "requires": [
+      "sa5",
+      "mb1",
+      "wb",
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa4"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Wind_and_Truth/Summary",
+        "kind": "wiki",
+        "cites": "Wind and Truth chapter 14"
+      }
+    ],
+    "author": "agent:research-batch-008",
+    "verifiedBy": "agent:verify-batch-008",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0206",
+    "from": "sa5",
+    "to": "wsgn",
+    "type": "egg",
+    "tier": "confirmed",
+    "description": {
+      "en": "Wit possesses sand originating in Taldain, which glows an intense white whenever he draws on his kinetic Investiture.",
+      "es": "Sagaz posee arena procedente de Taldain, que adquiere un blanco vivo siempre que recurre a su Investidura cinética."
+    },
+    "requires": [
+      "sa5",
+      "wsgn",
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa4"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Wind_and_Truth/Summary",
+        "kind": "wiki",
+        "cites": "Wind and Truth chapter 14"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "wiki",
+        "cites": "Wind and Truth chapter 14"
+      }
+    ],
+    "author": "agent:research-batch-008",
+    "verifiedBy": "agent:verify-batch-008",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0207",
+    "from": "sa5",
+    "to": "mb2",
+    "type": "significant",
+    "tier": "confirmed",
+    "description": {
+      "en": "Hoid's Allomancy derives from a lerasium bead that he took from the Well of Ascension, granting him power on a par with the ancient Allomancers.",
+      "es": "La alomancia de Hoid tiene su origen en una cuenta de lerasium sustraída del Pozo de la Ascensión, y su poder iguala al de los alomantes de la antigüedad."
+    },
+    "requires": [
+      "sa5",
+      "mb1",
+      "mb2",
+      "mb3",
+      "msh",
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa4"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "wiki",
+        "cites": "Mistborn: Secret History part 2 chapter 1; The Hero of Ages chapter 22 epigraph; Wind and Truth chapter 14"
+      }
+    ],
+    "author": "agent:research-batch-008",
+    "verifiedBy": "agent:verify-batch-008",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0208",
+    "from": "sa5",
+    "to": "mb3",
+    "type": "significant",
+    "tier": "confirmed",
+    "description": {
+      "en": "Kelsier swaps intel with Gavilar, part of it concerning the Heralds, and in return Gavilar pledges to deliver Kalak into the hands of Kelsier's operatives.",
+      "es": "Kelsier cambia datos con Gavilar, en parte sobre los Heraldos, y a cambio recibe la promesa de que Gavilar entregará a Kalak a sus agentes."
+    },
+    "requires": [
+      "sa5",
+      "mb1",
+      "mb2",
+      "mb3",
+      "msh",
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa4"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Ghostbloods",
+        "kind": "wiki",
+        "cites": "Wind and Truth prologue"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Wind_and_Truth/Summary",
+        "kind": "wiki",
+        "cites": "Wind and Truth prologue"
+      }
+    ],
+    "author": "agent:research-batch-008",
+    "verifiedBy": "agent:verify-batch-008",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0209",
+    "from": "sa5",
+    "to": "elantris",
+    "type": "minor",
+    "tier": "confirmed",
+    "description": {
+      "en": "Among the Ghostbloods on Roshar is a seon named Ala, who gathers intelligence and relays it to Kelsier; Kelsier owns a seon of his own that lets him contact them on Roshar.",
+      "es": "En Roshar, los Sangre Espectral cuentan con un seon, Ala, que hace de espía e informa a Kelsier; este posee un seon propio con el que establecer contacto con ellos allí."
+    },
+    "requires": [
+      "sa5",
+      "elantris",
+      "mb1",
+      "mb2",
+      "mb3",
+      "msh",
+      "mb7",
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa4"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Wind_and_Truth/Summary",
+        "kind": "wiki",
+        "cites": "Wind and Truth interlude I-1"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Kelsier",
+        "kind": "wiki",
+        "cites": "Wind and Truth prologue; chapter 147"
+      }
+    ],
+    "author": "agent:research-batch-008",
+    "verifiedBy": "agent:verify-batch-008",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0210",
+    "from": "sa5",
+    "to": "mb3",
+    "type": "significant",
+    "tier": "confirmed",
+    "description": {
+      "en": "Iyatil informs Shallan that Thaidakar's top priority is safeguarding Scadrial.",
+      "es": "Iyatil informa a Shallan de que, para Thaidakar, lo que más importa es resguardar Scadrial."
+    },
+    "requires": [
+      "sa5",
+      "mb1",
+      "mb2",
+      "mb3",
+      "msh",
+      "mb7",
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa4"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Wind_and_Truth/Summary",
+        "kind": "wiki",
+        "cites": "Wind and Truth chapter 26"
+      }
+    ],
+    "author": "agent:research-batch-008",
+    "verifiedBy": "agent:verify-batch-008",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0211",
+    "from": "sa5",
+    "to": "mb7",
+    "type": "significant",
+    "tier": "confirmed",
+    "description": {
+      "en": "Ulaam, the kandra from The Lost Metal, had preserved a cell culture of Hoid to allow him to rebuild his body. That culture rescues Hoid when his body is wrecked, and he comes to in Scadrial.",
+      "es": "Ulaam, un kandra de El metal perdido, había conservado un cultivo celular de Hoid con el fin de que este reconstruyera su cuerpo. Gracias a ello Hoid se salva cuando su organismo queda inutilizado y recobra el conocimiento en Scadrial."
+    },
+    "requires": [
+      "sa5",
+      "mb7",
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa4"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Ulaam",
+        "kind": "wiki",
+        "cites": "Wind and Truth chapter 147"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Wind_and_Truth/Summary",
+        "kind": "wiki",
+        "cites": "Wind and Truth chapter 147"
+      }
+    ],
+    "author": "agent:research-batch-008",
+    "verifiedBy": "agent:verify-batch-008",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0212",
+    "from": "sa5",
+    "to": "wsgn",
+    "type": "significant",
+    "tier": "confirmed",
+    "description": {
+      "en": "Hoid hears from Taldain that Autonomy is making its move against Scadrial.",
+      "es": "A Hoid le llega, por medio de Taldain, la noticia de que Autonomía avanza sobre Scadrial."
+    },
+    "requires": [
+      "sa5",
+      "wsgn",
+      "mb7",
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa4"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Wind_and_Truth/Summary",
+        "kind": "wiki",
+        "cites": "Wind and Truth chapter 147"
+      }
+    ],
+    "author": "agent:research-batch-008",
+    "verifiedBy": "agent:verify-batch-008",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0213",
+    "from": "sa5",
+    "to": "yumi",
+    "type": "minor",
+    "tier": "confirmed",
+    "description": {
+      "en": "Design, the spren Hoid uses for Lightweaving, is stranded on Roshar when Hoid's body is wrecked, since he is no longer able to call it forth as a Shardblade.",
+      "es": "Diseño, la spren que Hoid emplea para tejer luz, queda abandonada en Roshar al quedar inutilizado el cuerpo de Hoid, pues ya no puede convocarla como hoja esquirlada."
+    },
+    "requires": [
+      "sa5",
+      "yumi",
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa4"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Design",
+        "kind": "wiki",
+        "cites": "Wind and Truth chapter 147"
+      }
+    ],
+    "author": "agent:research-batch-008",
+    "verifiedBy": "agent:verify-batch-008",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0214",
+    "from": "sa5",
+    "to": "elantris",
+    "type": "significant",
+    "tier": "confirmed",
+    "description": {
+      "en": "Galladon the Elantrian makes a trip back to Roshar alongside two companions to pick up a letter from Hoid.",
+      "es": "Galladon, el elantrino, regresa a Roshar acompañado de dos compañeros y se hace con una carta de Hoid."
+    },
+    "requires": [
+      "sa5",
+      "elantris",
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa4"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Galladon",
+        "kind": "wiki",
+        "cites": "Wind and Truth interlude I-11"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Wind_and_Truth/Summary",
+        "kind": "wiki",
+        "cites": "Wind and Truth interlude I-11"
+      }
+    ],
+    "author": "agent:research-batch-008",
+    "verifiedBy": "agent:verify-batch-008",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0215",
+    "from": "sa5",
+    "to": "mb3",
+    "type": "significant",
+    "tier": "confirmed",
+    "description": {
+      "en": "Demoux, hailing from the Final Empire, travels back to Roshar accompanied by a pair of companions and retrieves a letter from Hoid.",
+      "es": "Demoux, oriundo del Imperio Final, vuelve a Roshar junto a dos compañeros y recupera una carta de Hoid."
+    },
+    "requires": [
+      "sa5",
+      "mb1",
+      "mb2",
+      "mb3",
+      "msh",
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa4"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Demoux",
+        "kind": "wiki",
+        "cites": "Wind and Truth interlude I-11"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Wind_and_Truth/Summary",
+        "kind": "wiki",
+        "cites": "Wind and Truth interlude I-11"
+      }
+    ],
+    "author": "agent:research-batch-008",
+    "verifiedBy": "agent:verify-batch-008",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0216",
+    "from": "sa5",
+    "to": "wsgn",
+    "type": "significant",
+    "tier": "confirmed",
+    "description": {
+      "en": "Baon, a sand master originally from Taldain, heads back to Roshar along with two companions and picks up a letter from Hoid.",
+      "es": "Baon, maestro de arena originario de Taldain, retorna a Roshar en compañía de otros dos y obtiene una carta de Hoid."
+    },
+    "requires": [
+      "sa5",
+      "wsgn",
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa4"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Baon",
+        "kind": "wiki",
+        "cites": "Wind and Truth interlude I-11"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Wind_and_Truth/Summary",
+        "kind": "wiki",
+        "cites": "Wind and Truth interlude I-11"
+      }
+    ],
+    "author": "agent:research-batch-008",
+    "verifiedBy": "agent:verify-batch-008",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0217",
+    "from": "sa5",
+    "to": null,
+    "type": "appearance",
+    "tier": "confirmed",
+    "description": {
+      "en": "Hoid turns up as Wit and in scenes that are his own.",
+      "es": "Hoid figura como Sagaz y en escenas que le pertenecen."
+    },
+    "requires": [
+      "sa5",
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa4"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "wiki",
+        "cites": "Wind and Truth chapter 147"
+      }
+    ],
+    "author": "agent:research-batch-008",
+    "verifiedBy": "agent:verify-batch-008",
+    "verifiedOn": "2026-11-04"
+  }
+]

@@ -1,0 +1,739 @@
+[
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-006",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0115",
+    "from": "sfs",
+    "to": "au",
+    "type": "minor",
+    "description": {
+      "en": "The Threnodite system essay discusses the history of Threnody.",
+      "es": "El ensayo del sistema de Treno trata de la historia de Treno."
+    },
+    "requires": [
+      "sfs",
+      "au"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Threnodite_system",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Threnody",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-006",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0116",
+    "from": "sfs",
+    "to": "sa4",
+    "type": "egg",
+    "description": {
+      "en": "Raboniel's chain from 'the lands of the dead' is likely a silver chain from Threnody.",
+      "es": "La cadena de Rabeniel «de las tierras de los muertos» es probablemente una cadena de plata de Treno."
+    },
+    "requires": [
+      "sfs",
+      "sa4",
+      "sa1",
+      "sa2",
+      "sa3"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Raboniel",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Silver",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Threnody",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-006",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0117",
+    "from": "sfs",
+    "to": "tress",
+    "type": "minor",
+    "description": {
+      "en": "Silver is used to cut aether and kill aether spores. Lumar's seas are said to be relatively shallow compared to the Lilting Abyss on Threnody.",
+      "es": "La plata se usa para cortar el éter y matar las esporas de éter. Se dice que los mares de Lumar son relativamente poco profundos comparados con el Abismo Lírico de Treno."
+    },
+    "requires": [
+      "sfs",
+      "tress"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Silver",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Aether",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Aether_spores",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Lumar",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Lilting_Abyss",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Threnody",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-006",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0118",
+    "from": "sfs",
+    "to": "yumi",
+    "type": "minor",
+    "description": {
+      "en": "Design says that Komashi is stranger than any world she's been to, including Threnody.",
+      "es": "Diseño dice que Komashi es más extraño que cualquier mundo que haya visitado, incluido Treno."
+    },
+    "requires": [
+      "sfs",
+      "yumi"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Design",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Komashi",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Threnody",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-006",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0119",
+    "from": "sfs",
+    "to": "tsm",
+    "type": "significant",
+    "description": {
+      "en": "The Threnodites were first seen in Shadows for Silence in the Forests of Hell. Shades are seen and mentioned, including the Chorus and those used by the Night Brigade. Nomad mentions Forests of Hell, the Evil.",
+      "es": "Los threnodites se vieron por primera vez en Sombras para el silencio en los bosques del infierno. Se ven y se mencionan umbras, entre ellas el Coro y las que usa la Brigada Nocturna. Nómada menciona los Bosques del infierno y la Maldad."
+    },
+    "requires": [
+      "sfs",
+      "tsm",
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa4",
+      "sa5"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Threnody",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Shadows_for_Silence_in_the_Forests_of_Hell",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Shade",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Chorus",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Night_Brigade",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Sigzil",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Forests_of_Hell",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Evil",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-006",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0120",
+    "from": "sotd",
+    "to": "sa3",
+    "type": "minor",
+    "description": {
+      "en": "Mraize's chicken, mentioned in Chapter 22, is an Aviar. Patji is referenced obliquely in Autonomy's letter to Hoid in the Part 2 epigraphs.",
+      "es": "El pollo de Mraize, mencionado en el capítulo 22, es un aviar. Patji se menciona de forma velada en la carta de Autonomía a Hoid en los epígrafes de la Parte 2."
+    },
+    "requires": [
+      "sotd",
+      "sa3",
+      "sa1",
+      "sa2",
+      "iote"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Mraize",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:Oathbringer#Chapter_22:_The_Darkness_Within",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Aviar",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Patji",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Autonomy",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Letters#Second_Oathbringer_Letter",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Oathbringer/Epigraphs#Letters",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-006",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0121",
+    "from": "sotd",
+    "to": "au",
+    "type": "minor",
+    "description": {
+      "en": "The Drominad system essay discusses First of the Sun and its magic.",
+      "es": "El ensayo del sistema Drominad trata de Primero del Sol y de su magia."
+    },
+    "requires": [
+      "sotd",
+      "au"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Drominad_system",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/First_of_the_Sun",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-006",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0122",
+    "from": "sotd",
+    "to": "sa4",
+    "type": "minor",
+    "description": {
+      "en": "Gereh has an Aviar, which Lift comes into possession of.",
+      "es": "Gereh tiene un aviar, que acaba en manos de Lift."
+    },
+    "requires": [
+      "sotd",
+      "sa4",
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa5"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Gereh",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Aviar",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Lift",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-006",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0123",
+    "from": "sotd",
+    "to": "tress",
+    "type": "egg",
+    "description": {
+      "en": "Hoid refers to a story about Linji, likely a figure from First of the Sun, who attempted to travel around the world without the use of Aviar. This reference strongly suggests that the audience listening to the story is from First of the Sun.",
+      "es": "Hoid alude a una historia sobre Linji, probablemente una figura de Primero del Sol, que intentó dar la vuelta al mundo sin ayuda de los aviares. Esta alusión sugiere con fuerza que el público que escucha la historia es de Primero del Sol."
+    },
+    "requires": [
+      "sotd",
+      "tress"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Linji",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/First_of_the_Sun",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Aviar",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-006",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0124",
+    "from": "au",
+    "to": "sa4",
+    "type": "minor",
+    "description": {
+      "en": "Devotion and Dominion are referenced in the Chapter 26 Epigraph. Ambition's struggle with Odium is referenced in the Chapter 27 Epigraph.",
+      "es": "Devoción y Dominio se mencionan en el epígrafe del capítulo 26. La lucha de Ambición con Odium se menciona en el epígrafe del capítulo 27."
+    },
+    "requires": [
+      "au",
+      "sa4",
+      "sa1",
+      "sa2",
+      "sa3"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Devotion",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Dominion",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Rhythm_of_War/Epigraphs",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Ambition",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Odium",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-006",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0125",
+    "from": "au",
+    "to": "mb7",
+    "type": "minor",
+    "description": {
+      "en": "Moonlight references the death of Devotion and Dominion in Chapter 40. Autonomy currently resides in the Taldain system. Dlavil speaks with a Silverlight accent. MeLaan receives a note from Harmony with Silverlight Mercantile stamped on the envelope.",
+      "es": "Luzdeluna alude a la muerte de Devoción y Dominio en el capítulo 40. Autonomía reside actualmente en el sistema de Taldain. Dlavil habla con acento de Luzdeplata. MeLaan recibe una nota de Armonía con el sello de Mercantil Luzdeplata en el sobre."
+    },
+    "requires": [
+      "au",
+      "mb7",
+      "mb1",
+      "mb2",
+      "mb3",
+      "mb4",
+      "mb5",
+      "mb6",
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa4"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Moonlight",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Devotion",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Dominion",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Autonomy",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Taldain_system",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Dlavil",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Silverlight",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/MeLaan",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Harmony",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Silverlight_Mercantile",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-006",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0126",
+    "from": "au",
+    "to": "tsm",
+    "type": "minor",
+    "description": {
+      "en": "Nomad sees a planetary guidebook and mentions films from Silverlight. When seeking to enter the TimeTellers' spaceship, he cites the 'Refugee and Lost Expatriate Bill' under the 'Silverlight Codes of Interplanetary Conduct'. Zellion is said to be a Yolish name.",
+      "es": "Nómada ve una guía planetaria y menciona películas de Luzdeplata. Al intentar entrar en la nave espacial de los Decidores del Tiempo, cita la «Ley de Refugiados y Expatriados Perdidos» de los «Códigos de Luzdeplata para la Conducta Interplanetaria». Se dice que Zellion es un nombre yoleño."
+    },
+    "requires": [
+      "au",
+      "tsm",
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa4",
+      "sa5"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Sigzil",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Silverlight",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/TimeTellers",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Zellion",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Yolen",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-006",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0127",
+    "from": "au",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Khriss is the author of the essays.",
+      "es": "Khriss es la autora de los ensayos."
+    },
+    "requires": [
+      "au"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Khrissalla",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-006",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0128",
+    "from": "tress",
+    "to": "dsp",
+    "type": "minor",
+    "description": {
+      "en": "Hoid refers to the Shattering of Adonalsium in Tress of the Emerald Sea chapter 39 and chapter 56. The strange metal seen on Xisis, dragonsteel, is what 'Dragonsteel' gets its name from.",
+      "es": "Hoid alude a la Fragmentación de Adonalsium en los capítulos 39 y 56 de Trenza del mar Esmeralda. El extraño metal visto en Xisis, el acero de dragón, es de donde toma su nombre «Dragonsteel»."
+    },
+    "requires": [
+      "tress",
+      "dsp"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Shattering",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Adonalsium",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Tress_of_the_Emerald_Sea",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:Tress_of_the_Emerald_Sea#Chapter_39",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Summary:Tress_of_the_Emerald_Sea#Chapter_56",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Xisisrefliel",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Dragonsteel_(metal)",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-006",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0129",
+    "from": "tress",
+    "to": "tsm",
+    "type": "egg",
+    "description": {
+      "en": "Zephyr aether is referenced as a means of propulsion useful for spaceships.",
+      "es": "Se menciona el éter céfiro como medio de propulsión útil para naves espaciales."
+    },
+    "requires": [
+      "tress",
+      "tsm"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Aether",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-006",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0130",
+    "from": "tress",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Hoid is the narrator and a prominent character.",
+      "es": "Hoid es el narrador y un personaje destacado."
+    },
+    "requires": [
+      "tress"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-006",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0131",
+    "from": "yumi",
+    "to": "tsm",
+    "type": "egg",
+    "description": {
+      "en": "Nomad appears to Skip to UTol, the planetary neighbor of Komashi.",
+      "es": "Al parecer, Nómada salta a UTol, el vecino planetario de Komashi."
+    },
+    "requires": [
+      "yumi",
+      "tsm",
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa4",
+      "sa5"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Sigzil",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Skipping",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/UTol",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Komashi",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-006",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0132",
+    "from": "yumi",
+    "to": null,
+    "type": "appearance",
+    "description": {
+      "en": "Hoid is the narrator and a prominent character.",
+      "es": "Hoid es el narrador y un personaje destacado."
+    },
+    "requires": [
+      "yumi"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "upstream"
+      }
+    ]
+  },
+  {
+    "tier": "confirmed",
+    "author": "upstream",
+    "verifiedBy": "agent:verify-batch-006",
+    "verifiedOn": "2026-11-04",
+    "id": "c-0133",
+    "from": "tsm",
+    "to": "tnb",
+    "type": "minor",
+    "description": {
+      "en": "The titular Night Brigade first appeared chasing Nomad in The Sunlit Man in search of the Dawnshard he once held.",
+      "es": "La Brigada Nocturna del título apareció por primera vez persiguiendo a Nómada en El Hombre Iluminado, en busca de la Esquirla del Amanecer que él tuvo una vez."
+    },
+    "requires": [
+      "tsm",
+      "tnb",
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa3-5",
+      "sa4",
+      "sa5"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Night_Brigade",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Sigzil",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/The_Sunlit_Man",
+        "kind": "upstream"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Dawnshard",
+        "kind": "upstream"
+      }
+    ]
+  }
+]

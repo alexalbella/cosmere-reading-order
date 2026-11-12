@@ -1,0 +1,2391 @@
+{
+  "generatedOn": "2026-11-11",
+  "upstream": {
+    "repo": "https://github.com/17thshard/reading-order",
+    "ref": "master",
+    "dataFileLastChanged": "2025-04-22"
+  },
+  "systems": [
+    {
+      "id": "selish-system",
+      "name": {
+        "en": "Selish system",
+        "es": "Sistema de Sel"
+      }
+    },
+    {
+      "id": "scadrian-system",
+      "name": {
+        "en": "Scadrian system",
+        "es": "Sistema de Scadrial"
+      }
+    },
+    {
+      "id": "nalthian-system",
+      "name": {
+        "en": "Nalthian system",
+        "es": "Sistema nalthiano"
+      }
+    },
+    {
+      "id": "rosharan-system",
+      "name": {
+        "en": "Rosharan system",
+        "es": "Sistema roshariano"
+      }
+    },
+    {
+      "id": "taldain-system",
+      "name": {
+        "en": "Taldain system",
+        "es": "Sistema de Taldain"
+      }
+    },
+    {
+      "id": "threnodite-system",
+      "name": {
+        "en": "Threnodite system",
+        "es": "Sistema de Treno"
+      }
+    },
+    {
+      "id": "drominad-system",
+      "name": {
+        "en": "Drominad system",
+        "es": "Sistema Drominad"
+      }
+    },
+    {
+      "id": "yolish-system",
+      "name": {
+        "en": "Yolish system",
+        "es": "Sistema de Yolen"
+      }
+    },
+    {
+      "id": "utol-system",
+      "name": {
+        "en": "UTol system",
+        "es": "Sistema UTol"
+      }
+    }
+  ],
+  "worlds": [
+    {
+      "id": "sel",
+      "name": {
+        "en": "Sel",
+        "es": "Sel"
+      },
+      "system": "selish-system",
+      "upstreamColor": "#58b06e",
+      "legacyKey": "sel"
+    },
+    {
+      "id": "scadrial",
+      "name": {
+        "en": "Scadrial",
+        "es": "Scadrial"
+      },
+      "system": "scadrian-system",
+      "upstreamColor": "#9973bf",
+      "legacyKey": "scadrial"
+    },
+    {
+      "id": "nalthis",
+      "name": {
+        "en": "Nalthis",
+        "es": "Nalthis"
+      },
+      "system": "nalthian-system",
+      "upstreamColor": "#de4343",
+      "legacyKey": "nalthis"
+    },
+    {
+      "id": "roshar",
+      "name": {
+        "en": "Roshar",
+        "es": "Roshar"
+      },
+      "system": "rosharan-system",
+      "upstreamColor": "#2aa1d4",
+      "legacyKey": "roshar"
+    },
+    {
+      "id": "taldain",
+      "name": {
+        "en": "Taldain",
+        "es": "Taldain"
+      },
+      "system": "taldain-system",
+      "upstreamColor": "#9e9957",
+      "legacyKey": "taldain"
+    },
+    {
+      "id": "threnody",
+      "name": {
+        "en": "Threnody",
+        "es": "Treno"
+      },
+      "system": "threnodite-system",
+      "upstreamColor": "#6633cc",
+      "legacyKey": "threnody"
+    },
+    {
+      "id": "first-of-the-sun",
+      "name": {
+        "en": "First of the Sun",
+        "es": "Primero del Sol"
+      },
+      "system": "drominad-system",
+      "upstreamColor": "#367485",
+      "legacyKey": "sol"
+    },
+    {
+      "id": "aether-homeworld",
+      "name": {
+        "en": "Aether homeworld",
+        "es": "Mundo natal de Aether"
+      },
+      "system": null,
+      "upstreamColor": "#e3a1e3",
+      "legacyKey": null,
+      "placeholder": true
+    },
+    {
+      "id": "mythos",
+      "name": {
+        "en": "Mythos",
+        "es": "Mythos"
+      },
+      "system": null,
+      "upstreamColor": "#d4c955",
+      "legacyKey": null,
+      "placeholder": true
+    },
+    {
+      "id": "yolen",
+      "name": {
+        "en": "Yolen",
+        "es": "Yolen"
+      },
+      "system": "yolish-system",
+      "upstreamColor": "#d98a41",
+      "legacyKey": null
+    },
+    {
+      "id": "lumar",
+      "name": {
+        "en": "Lumar",
+        "es": "Lumar"
+      },
+      "system": null,
+      "upstreamColor": null,
+      "legacyKey": null
+    },
+    {
+      "id": "komashi",
+      "name": {
+        "en": "Komashi",
+        "es": "Komashi"
+      },
+      "system": "utol-system",
+      "upstreamColor": null,
+      "legacyKey": null
+    },
+    {
+      "id": "canticle",
+      "name": {
+        "en": "Canticle",
+        "es": "Cántico"
+      },
+      "system": null,
+      "upstreamColor": null,
+      "legacyKey": null
+    },
+    {
+      "id": "ashyn",
+      "name": {
+        "en": "Ashyn",
+        "es": "Ashyn"
+      },
+      "system": "rosharan-system",
+      "upstreamColor": null,
+      "legacyKey": null
+    }
+  ],
+  "series": [
+    {
+      "id": "elantris",
+      "name": {
+        "en": "Elantris",
+        "es": "Elantris"
+      },
+      "world": "sel",
+      "parent": null
+    },
+    {
+      "id": "mistborn",
+      "name": {
+        "en": "Mistborn",
+        "es": "Nacidos de la bruma"
+      },
+      "world": "scadrial",
+      "parent": null
+    },
+    {
+      "id": "mistborn-era-1",
+      "name": {
+        "en": "Mistborn Era 1",
+        "es": "Nacidos de la bruma: Era 1"
+      },
+      "world": "scadrial",
+      "parent": "mistborn"
+    },
+    {
+      "id": "mistborn-era-2",
+      "name": {
+        "en": "Mistborn Era 2",
+        "es": "Nacidos de la bruma: Era 2"
+      },
+      "world": "scadrial",
+      "parent": "mistborn"
+    },
+    {
+      "id": "mistborn-era-3",
+      "name": {
+        "en": "Mistborn Era 3",
+        "es": "Nacidos de la bruma: Era 3"
+      },
+      "world": "scadrial",
+      "parent": "mistborn"
+    },
+    {
+      "id": "mistborn-era-4",
+      "name": {
+        "en": "Mistborn Era 4",
+        "es": "Nacidos de la bruma: Era 4"
+      },
+      "world": "scadrial",
+      "parent": "mistborn"
+    },
+    {
+      "id": "mistborn-era-5",
+      "name": {
+        "en": "Mistborn Era 5",
+        "es": "Nacidos de la bruma: Era 5"
+      },
+      "world": "scadrial",
+      "parent": "mistborn"
+    },
+    {
+      "id": "mistborn-other",
+      "name": {
+        "en": "Other Mistborn",
+        "es": "Otros de Nacidos de la bruma"
+      },
+      "world": "scadrial",
+      "parent": "mistborn"
+    },
+    {
+      "id": "mistborn-adventure-game",
+      "name": {
+        "en": "Mistborn Adventure Game",
+        "es": "Mistborn Adventure Game"
+      },
+      "world": "scadrial",
+      "parent": "mistborn"
+    },
+    {
+      "id": "cosmere-rpg-mistborn",
+      "name": {
+        "en": "Cosmere RPG: Mistborn",
+        "es": "Cosmere RPG: Nacidos de la bruma"
+      },
+      "world": "scadrial",
+      "parent": "mistborn"
+    },
+    {
+      "id": "warbreaker",
+      "name": {
+        "en": "Warbreaker",
+        "es": "El aliento de los dioses"
+      },
+      "world": "nalthis",
+      "parent": null
+    },
+    {
+      "id": "stormlight",
+      "name": {
+        "en": "The Stormlight Archive",
+        "es": "El Archivo de las Tormentas"
+      },
+      "world": "roshar",
+      "parent": null
+    },
+    {
+      "id": "stormlight-lost-tales",
+      "name": {
+        "en": "Stormlight Lost Tales",
+        "es": "Stormlight Lost Tales"
+      },
+      "world": "roshar",
+      "parent": "stormlight"
+    },
+    {
+      "id": "cosmere-rpg-stormlight",
+      "name": {
+        "en": "Cosmere RPG: Stormlight",
+        "es": "Cosmere RPG: El Archivo de las Tormentas"
+      },
+      "world": "roshar",
+      "parent": "stormlight"
+    },
+    {
+      "id": "white-sand",
+      "name": {
+        "en": "White Sand",
+        "es": "Arena blanca"
+      },
+      "world": "taldain",
+      "parent": null
+    },
+    {
+      "id": "dragonsteel",
+      "name": {
+        "en": "Dragonsteel",
+        "es": "Dragonsteel"
+      },
+      "world": "yolen",
+      "parent": null
+    },
+    {
+      "id": "aether",
+      "name": {
+        "en": "Aether",
+        "es": "Aether"
+      },
+      "world": "aether-homeworld",
+      "parent": null
+    },
+    {
+      "id": "mythos",
+      "name": {
+        "en": "Mythos",
+        "es": "Mythos"
+      },
+      "world": "mythos",
+      "parent": null
+    }
+  ],
+  "tree": [
+    {
+      "label": {
+        "en": "Sel",
+        "es": "Sel"
+      },
+      "kind": "world",
+      "ref": "sel",
+      "color": "#58b06e",
+      "children": [
+        {
+          "label": {
+            "en": "Elantris",
+            "es": "Elantris"
+          },
+          "kind": "series",
+          "ref": "elantris",
+          "color": null,
+          "children": [
+            "elantris",
+            "thoe",
+            "elantris2",
+            "elantris3"
+          ]
+        },
+        {
+          "label": null,
+          "kind": "group",
+          "ref": null,
+          "color": null,
+          "children": [
+            "tes",
+            "tes2"
+          ]
+        }
+      ],
+      "system": "selish-system"
+    },
+    {
+      "label": {
+        "en": "Scadrial",
+        "es": "Scadrial"
+      },
+      "kind": "world",
+      "ref": "scadrial",
+      "color": "#9973bf",
+      "children": [
+        {
+          "label": {
+            "en": "Mistborn Era 1",
+            "es": "Nacidos de la bruma Era 1"
+          },
+          "kind": "subseries",
+          "ref": "mistborn-era-1",
+          "color": null,
+          "children": [
+            "mb1",
+            "11m",
+            "mb2",
+            "mb3"
+          ],
+          "lines": {
+            "en": [
+              "Mistborn",
+              "Era 1"
+            ],
+            "es": [
+              "Nacidos de la bruma Era 1"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": "Mistborn Era 2",
+            "es": "Nacidos de la bruma Era 2"
+          },
+          "kind": "subseries",
+          "ref": "mistborn-era-2",
+          "color": null,
+          "children": [
+            "mb4",
+            "jak",
+            "mb5",
+            "mb6",
+            "msh",
+            "mb7",
+            "book-of-nails"
+          ],
+          "lines": {
+            "en": [
+              "Mistborn",
+              "Era 2"
+            ],
+            "es": [
+              "Nacidos de la bruma Era 2"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": "Mistborn Era 3",
+            "es": "Nacidos de la bruma Era 3"
+          },
+          "kind": "subseries",
+          "ref": "mistborn-era-3",
+          "color": null,
+          "children": [
+            "mb8",
+            "mb9",
+            "mb10"
+          ],
+          "lines": {
+            "en": [
+              "Mistborn",
+              "Era 3"
+            ],
+            "es": [
+              "Nacidos de la bruma Era 3"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": "Mistborn Era 4",
+            "es": "Nacidos de la bruma Era 4"
+          },
+          "kind": "subseries",
+          "ref": "mistborn-era-4",
+          "color": null,
+          "children": [
+            "mb11",
+            "mb12",
+            "mb13"
+          ],
+          "lines": {
+            "en": [
+              "Mistborn",
+              "Era 4"
+            ],
+            "es": [
+              "Nacidos de la bruma Era 4"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": "Mistborn Era 5",
+            "es": "Nacidos de la bruma Era 5"
+          },
+          "kind": "subseries",
+          "ref": "mistborn-era-5",
+          "color": null,
+          "children": [
+            "mb14",
+            "mb15",
+            "mb16"
+          ],
+          "lines": {
+            "en": [
+              "Mistborn",
+              "Era 5"
+            ],
+            "es": [
+              "Nacidos de la bruma Era 5"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": "Other Mistborn",
+            "es": "Otros de Nacidos de la bruma"
+          },
+          "kind": "subseries",
+          "ref": "mistborn-other",
+          "color": null,
+          "children": [
+            "msh2"
+          ],
+          "lines": {
+            "en": [
+              "Other",
+              "Mistborn"
+            ],
+            "es": [
+              "Otros de Nacidos de la bruma"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": "Mistborn Adventure Game",
+            "es": "Mistborn Adventure Game"
+          },
+          "kind": "subseries",
+          "ref": "mistborn-adventure-game",
+          "color": null,
+          "added": true,
+          "children": [
+            "mistborn-adventure-game",
+            "mistborn-adventure-game-terris",
+            "mistborn-adventure-game-alloy-of-law",
+            "mistborn-adventure-game-skaa",
+            "mistborn-adventure-game-masks-of-the-past",
+            "mistborn-adventure-game-nobles"
+          ]
+        },
+        {
+          "label": {
+            "en": "Cosmere RPG",
+            "es": "Cosmere RPG"
+          },
+          "kind": "subseries",
+          "ref": "cosmere-rpg-mistborn",
+          "color": null,
+          "added": true,
+          "children": [
+            "mistborn-rpg-handbook",
+            "mistborn-rpg-world-guide",
+            "mistborn-rpg-welcome-to-scadrial",
+            "mistborn-rpg-legacy",
+            "mistborn-rpg-scenarios"
+          ]
+        }
+      ],
+      "system": "scadrian-system"
+    },
+    {
+      "label": {
+        "en": "Nalthis",
+        "es": "Nalthis"
+      },
+      "kind": "world",
+      "ref": "nalthis",
+      "color": "#de4343",
+      "children": [
+        {
+          "label": {
+            "en": "Warbreaker",
+            "es": "El aliento de los dioses"
+          },
+          "kind": "series",
+          "ref": "warbreaker",
+          "color": "#de4343",
+          "children": [
+            "wb",
+            "nb"
+          ]
+        }
+      ],
+      "system": "nalthian-system"
+    },
+    {
+      "label": {
+        "en": "Roshar",
+        "es": "Roshar"
+      },
+      "kind": "world",
+      "ref": "roshar",
+      "color": "#2aa1d4",
+      "children": [
+        {
+          "label": {
+            "en": "The Stormlight Archive",
+            "es": "El Archivo de las Tormentas"
+          },
+          "kind": "series",
+          "ref": "stormlight",
+          "color": null,
+          "children": [
+            "sa1",
+            "sa2",
+            "elsecaller",
+            "lopen",
+            "sa2-5",
+            "sa3",
+            "sa3-5",
+            "sa4",
+            "sa5",
+            "sa5-5",
+            "sa6",
+            "sa7",
+            "sa8",
+            "sa9",
+            "sa10",
+            "chasmfriends",
+            "tdatd",
+            "tgwlu",
+            "wandersail"
+          ]
+        },
+        {
+          "label": {
+            "en": "Cosmere RPG",
+            "es": "Cosmere RPG"
+          },
+          "kind": "subseries",
+          "ref": "cosmere-rpg-stormlight",
+          "color": null,
+          "added": true,
+          "children": [
+            "stormlight-rpg-first-step",
+            "stormlight-rpg-handbook",
+            "stormlight-rpg-world-guide",
+            "stormlight-rpg-welcome-to-roshar",
+            "stormlight-rpg-bridge-nine",
+            "stonewalkers",
+            "stormlight-rpg-scenarios",
+            "stormlight-rpg-advanced-adversaries",
+            "stormlight-rpg-law-and-obligation"
+          ]
+        }
+      ],
+      "system": "rosharan-system"
+    },
+    {
+      "label": {
+        "en": "Taldain",
+        "es": "Taldain"
+      },
+      "kind": "world",
+      "ref": "taldain",
+      "color": "#9e9957",
+      "children": [
+        {
+          "label": {
+            "en": "White Sand",
+            "es": "Arena blanca"
+          },
+          "kind": "series",
+          "ref": "white-sand",
+          "color": "#9e9957",
+          "children": [
+            "wsgn",
+            "wsn",
+            "arcanist"
+          ]
+        }
+      ],
+      "system": "taldain-system"
+    },
+    {
+      "label": {
+        "en": "Threnody",
+        "es": "Treno"
+      },
+      "kind": "world",
+      "ref": "threnody",
+      "color": "#6633cc",
+      "children": [
+        {
+          "label": null,
+          "kind": "group",
+          "ref": null,
+          "color": null,
+          "children": [
+            "sfs"
+          ]
+        },
+        {
+          "label": null,
+          "kind": "group",
+          "ref": null,
+          "color": null,
+          "children": [
+            "tnb"
+          ]
+        }
+      ],
+      "system": "threnodite-system"
+    },
+    {
+      "label": {
+        "en": "First of the Sun",
+        "es": "Primero del Sol"
+      },
+      "kind": "world",
+      "ref": "first-of-the-sun",
+      "color": "#367485",
+      "children": [
+        {
+          "label": null,
+          "kind": "group",
+          "ref": null,
+          "color": null,
+          "children": [
+            "sotd",
+            "iote"
+          ]
+        },
+        {
+          "label": null,
+          "kind": "group",
+          "ref": null,
+          "color": null,
+          "children": [
+            "kingmaker"
+          ]
+        }
+      ],
+      "system": "drominad-system",
+      "lines": {
+        "en": [
+          "First of",
+          "the Sun"
+        ],
+        "es": [
+          "Primero del Sol"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": "Aether Homeworld",
+        "es": "Mundo natal de Aether"
+      },
+      "kind": "world",
+      "ref": "aether-homeworld",
+      "color": "#e3a1e3",
+      "children": [
+        {
+          "label": {
+            "en": "Aether Series",
+            "es": "Serie Aether"
+          },
+          "kind": "series",
+          "ref": "aether",
+          "color": "#e3a1e3",
+          "children": [
+            "aether1",
+            "aether2",
+            "aether3"
+          ],
+          "lines": {
+            "en": [
+              "Aether",
+              "Series"
+            ],
+            "es": [
+              "Serie Aether"
+            ]
+          }
+        }
+      ],
+      "system": null,
+      "lines": {
+        "en": [
+          "Aether",
+          "Homeworld"
+        ],
+        "es": [
+          "Mundo natal de Aether"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": "Mythos",
+        "es": "Mythos"
+      },
+      "kind": "world",
+      "ref": "mythos",
+      "color": "#d4c955",
+      "children": [
+        {
+          "label": {
+            "en": "Mythos Series",
+            "es": "Serie Mythos"
+          },
+          "kind": "series",
+          "ref": "mythos",
+          "color": "#d4c955",
+          "children": [
+            "mythos1",
+            "mythos2",
+            "mythos3"
+          ],
+          "lines": {
+            "en": [
+              "Mythos",
+              "Series"
+            ],
+            "es": [
+              "Serie Mythos"
+            ]
+          }
+        }
+      ],
+      "system": null
+    },
+    {
+      "label": {
+        "en": "Yolen",
+        "es": "Yolen"
+      },
+      "kind": "world",
+      "ref": "yolen",
+      "color": "#d98a41",
+      "children": [
+        {
+          "label": {
+            "en": "Dragonsteel",
+            "es": "Dragonsteel"
+          },
+          "kind": "series",
+          "ref": "dragonsteel",
+          "color": null,
+          "children": [
+            "d1",
+            "d2",
+            "d3"
+          ]
+        }
+      ],
+      "system": "yolish-system"
+    },
+    {
+      "label": {
+        "en": "Other Worlds",
+        "es": "Otros mundos"
+      },
+      "kind": "group",
+      "ref": null,
+      "color": "#a0a0a0",
+      "children": [
+        {
+          "label": null,
+          "kind": "group",
+          "ref": null,
+          "color": null,
+          "children": [
+            "au",
+            "tress",
+            "yumi",
+            "tsm"
+          ]
+        },
+        {
+          "label": null,
+          "kind": "group",
+          "ref": null,
+          "color": null,
+          "children": [
+            "tsd",
+            "untitled-cosmere-novel",
+            "tga",
+            "dan",
+            "burrito",
+            "untitled-cosmere-novella",
+            "kite"
+          ]
+        }
+      ]
+    },
+    {
+      "label": {
+        "en": "Mixed",
+        "es": "Varios"
+      },
+      "kind": "group",
+      "ref": null,
+      "color": "#a0a0a0",
+      "children": [
+        {
+          "label": null,
+          "kind": "group",
+          "ref": null,
+          "color": null,
+          "children": [
+            "wsp",
+            "aon",
+            "imperial-fool",
+            "dsp",
+            "twokp",
+            "sa-deleted-scene",
+            "traveler"
+          ]
+        }
+      ]
+    },
+    {
+      "label": {
+        "en": "Others",
+        "es": "Otros"
+      },
+      "kind": "group",
+      "ref": null,
+      "color": "#a0a0a0",
+      "added": true,
+      "children": [
+        {
+          "label": null,
+          "kind": "group",
+          "ref": null,
+          "color": null,
+          "added": true,
+          "children": [
+            "hoids-storybook-collection",
+            "fires-of-december"
+          ]
+        }
+      ]
+    }
+  ],
+  "baseSeparation": 3.1,
+  "layers": [
+    {
+      "id": "series",
+      "name": {
+        "en": "Series",
+        "es": "Series"
+      },
+      "startActive": true,
+      "startCollapsed": false,
+      "categories": [
+        {
+          "id": "elantris",
+          "name": {
+            "en": "Elantris",
+            "es": "Elantris"
+          },
+          "color": "#58b06e",
+          "style": null,
+          "activeByDefault": null,
+          "description": {
+            "en": "Elantris and its sequels.",
+            "es": "Elantris y sus secuelas."
+          }
+        },
+        {
+          "id": "mistborn",
+          "name": {
+            "en": "Mistborn",
+            "es": "Nacidos de la bruma"
+          },
+          "color": "#9973bf",
+          "style": null,
+          "activeByDefault": null,
+          "description": {
+            "en": "Mistborn (all eras)",
+            "es": "Nacidos de la bruma (todas las eras)."
+          }
+        },
+        {
+          "id": "warbreaker",
+          "name": {
+            "en": "Warbreaker",
+            "es": "El aliento de los dioses"
+          },
+          "color": "#de4343",
+          "style": null,
+          "activeByDefault": null,
+          "description": {
+            "en": "Warbreaker and its sequel.",
+            "es": "El aliento de los dioses y su secuela."
+          }
+        },
+        {
+          "id": "stormlight",
+          "name": {
+            "en": "Stormlight Archive",
+            "es": "El Archivo de las Tormentas"
+          },
+          "color": "#2aa1d4",
+          "style": null,
+          "activeByDefault": null,
+          "description": {
+            "en": "The Stormlight Archive",
+            "es": "El Archivo de las Tormentas."
+          }
+        },
+        {
+          "id": "white-sand",
+          "name": {
+            "en": "White Sand",
+            "es": "Arena blanca"
+          },
+          "color": "#9e9957",
+          "style": null,
+          "activeByDefault": null,
+          "description": {
+            "en": "White Sand",
+            "es": "Arena blanca."
+          }
+        },
+        {
+          "id": "dragonsteel",
+          "name": {
+            "en": "Dragonsteel",
+            "es": "Dragonsteel"
+          },
+          "color": "#d98a41",
+          "style": null,
+          "activeByDefault": null,
+          "description": {
+            "en": "Dragonsteel",
+            "es": "Dragonsteel."
+          }
+        },
+        {
+          "id": "aether",
+          "name": {
+            "en": "Aether",
+            "es": "Aether"
+          },
+          "color": "#e3a1e3",
+          "style": null,
+          "activeByDefault": null,
+          "description": {
+            "en": "Aether series",
+            "es": "Serie Aether."
+          }
+        },
+        {
+          "id": "mythos",
+          "name": {
+            "en": "Mythos",
+            "es": "Mythos"
+          },
+          "color": "#d4c955",
+          "style": null,
+          "activeByDefault": null,
+          "description": {
+            "en": "Mythos series",
+            "es": "Serie Mythos."
+          }
+        },
+        {
+          "id": "no-series",
+          "name": {
+            "en": "Non-series Stories",
+            "es": "Historias sin serie"
+          },
+          "color": "#A0A0A0",
+          "style": null,
+          "activeByDefault": null,
+          "description": {
+            "en": "Stories not part of a series.",
+            "es": "Historias que no forman parte de una serie."
+          }
+        }
+      ]
+    },
+    {
+      "id": "pub-status",
+      "name": {
+        "en": "Publication Status",
+        "es": "Estado de publicación"
+      },
+      "startActive": false,
+      "startCollapsed": true,
+      "categories": [
+        {
+          "id": "published",
+          "name": {
+            "en": "Published",
+            "es": "Publicado"
+          },
+          "color": "#00c29a",
+          "style": null,
+          "activeByDefault": null,
+          "description": {
+            "en": "Published, canonical works.",
+            "es": "Obras publicadas y canónicas."
+          }
+        },
+        {
+          "id": "forthcoming",
+          "name": {
+            "en": "Forthcoming",
+            "es": "Próximamente"
+          },
+          "color": "#82ddc3",
+          "style": null,
+          "activeByDefault": null,
+          "description": {
+            "en": "Forthcoming works with a planned release target or which are being actively worked on. Titles may be tentative.",
+            "es": "Obras próximas con una fecha de publicación prevista o en las que se está trabajando activamente. Los títulos pueden ser provisionales."
+          }
+        },
+        {
+          "id": "future-plan",
+          "name": {
+            "en": "Future Plans",
+            "es": "Planes futuros"
+          },
+          "color": "#ffb060",
+          "style": null,
+          "activeByDefault": null,
+          "description": {
+            "en": "Future Cosmere story plans with a relatively high likelihood of being written. Titles are tentative.",
+            "es": "Planes de futuras historias del Cosmere con una probabilidad relativamente alta de escribirse. Los títulos son provisionales."
+          }
+        },
+        {
+          "id": "potential-plan",
+          "name": {
+            "en": "Potential Plans",
+            "es": "Planes posibles"
+          },
+          "color": "#fe7e61",
+          "style": null,
+          "activeByDefault": null,
+          "description": {
+            "en": "Potential Cosmere story ideas that are less certain. Titles are tentative.",
+            "es": "Ideas de posibles historias del Cosmere que son menos seguras. Los títulos son provisionales."
+          }
+        },
+        {
+          "id": "other-pub",
+          "name": {
+            "en": "Other",
+            "es": "Otros"
+          },
+          "color": "#735a45",
+          "style": null,
+          "activeByDefault": null,
+          "description": {
+            "en": "Uncanonical works which are publicly available, both excerpts and complete.",
+            "es": "Obras no canónicas disponibles públicamente, tanto fragmentos como textos completos."
+          }
+        }
+      ]
+    },
+    {
+      "id": "reading-order",
+      "name": {
+        "en": "Reading Order",
+        "es": "Orden de lectura"
+      },
+      "startActive": false,
+      "startCollapsed": true,
+      "categories": [
+        {
+          "id": "phase1",
+          "name": {
+            "en": "Phase 1",
+            "es": "Fase 1"
+          },
+          "color": "#00b02b",
+          "style": null,
+          "activeByDefault": null,
+          "description": null
+        },
+        {
+          "id": "phase2",
+          "name": {
+            "en": "Phase 2",
+            "es": "Fase 2"
+          },
+          "color": "#0094d4",
+          "style": null,
+          "activeByDefault": null,
+          "description": null
+        },
+        {
+          "id": "phase3",
+          "name": {
+            "en": "Phase 3",
+            "es": "Fase 3"
+          },
+          "color": "#e3ae00",
+          "style": null,
+          "activeByDefault": null,
+          "description": null
+        },
+        {
+          "id": "phase4",
+          "name": {
+            "en": "Phase 4",
+            "es": "Fase 4"
+          },
+          "color": "#dd2222",
+          "style": null,
+          "activeByDefault": null,
+          "description": null
+        },
+        {
+          "id": "unpublished",
+          "name": {
+            "en": "Unpublished",
+            "es": "Sin publicar"
+          },
+          "color": "#505050",
+          "style": null,
+          "activeByDefault": null,
+          "description": {
+            "en": "Includes all planned future Cosmere stories. Likelihood of publication varies. Titles are tentative.",
+            "es": "Incluye todas las historias futuras planeadas del Cosmere. La probabilidad de publicación varía. Los títulos son provisionales."
+          }
+        },
+        {
+          "id": "apocryphal",
+          "name": {
+            "en": "Apocryphal",
+            "es": "Apócrifo"
+          },
+          "color": "#735a45",
+          "style": null,
+          "activeByDefault": null,
+          "description": {
+            "en": "Includes apocryphal stories. Some may be published in the future while others will not.",
+            "es": "Incluye historias apócrifas. Algunas pueden publicarse en el futuro y otras no."
+          }
+        }
+      ]
+    },
+    {
+      "id": "formats",
+      "name": {
+        "en": "Formats",
+        "es": "Formatos"
+      },
+      "startActive": false,
+      "startCollapsed": true,
+      "categories": [
+        {
+          "id": "novel",
+          "name": {
+            "en": "Novels",
+            "es": "Novelas"
+          },
+          "color": "#01b58a",
+          "style": null,
+          "activeByDefault": null,
+          "description": {
+            "en": "Full novels.",
+            "es": "Novelas completas."
+          }
+        },
+        {
+          "id": "graphic",
+          "name": {
+            "en": "Graphic Novels",
+            "es": "Novelas gráficas"
+          },
+          "color": "#4656cd",
+          "style": "italic",
+          "activeByDefault": null,
+          "description": {
+            "en": "Graphic novels.",
+            "es": "Novelas gráficas."
+          }
+        },
+        {
+          "id": "novella",
+          "name": {
+            "en": "Novellas",
+            "es": "Novelas cortas"
+          },
+          "color": "#fd8f32",
+          "style": "italic",
+          "activeByDefault": null,
+          "description": {
+            "en": "Novellas.",
+            "es": "Novelas cortas."
+          }
+        },
+        {
+          "id": "short",
+          "name": {
+            "en": "Short Stories",
+            "es": "Relatos"
+          },
+          "color": "#fb4422",
+          "style": "italic",
+          "activeByDefault": null,
+          "description": {
+            "en": "Short stories.",
+            "es": "Relatos."
+          }
+        }
+      ]
+    }
+  ],
+  "bookCategories": {
+    "elantris": [
+      "elantris",
+      "published",
+      "phase1",
+      "novel"
+    ],
+    "thoe": [
+      "elantris",
+      "published",
+      "phase1",
+      "short"
+    ],
+    "elantris2": [
+      "elantris",
+      "future-plan",
+      "unpublished",
+      "novel"
+    ],
+    "elantris3": [
+      "elantris",
+      "future-plan",
+      "unpublished",
+      "novel"
+    ],
+    "tes": [
+      "no-series",
+      "published",
+      "phase1",
+      "novella"
+    ],
+    "tes2": [
+      "no-series",
+      "potential-plan",
+      "unpublished",
+      "novella"
+    ],
+    "mb1": [
+      "mistborn",
+      "published",
+      "phase1",
+      "novel"
+    ],
+    "11m": [
+      "mistborn",
+      "published",
+      "phase1",
+      "short"
+    ],
+    "mb2": [
+      "mistborn",
+      "published",
+      "phase1",
+      "novel"
+    ],
+    "mb3": [
+      "mistborn",
+      "published",
+      "phase1",
+      "novel"
+    ],
+    "mb4": [
+      "mistborn",
+      "published",
+      "phase2",
+      "novel"
+    ],
+    "jak": [
+      "mistborn",
+      "published",
+      "phase2",
+      "short"
+    ],
+    "mb5": [
+      "mistborn",
+      "published",
+      "phase2",
+      "novel"
+    ],
+    "mb6": [
+      "mistborn",
+      "published",
+      "phase2",
+      "novel"
+    ],
+    "msh": [
+      "mistborn",
+      "published",
+      "phase2",
+      "novella"
+    ],
+    "mb7": [
+      "mistborn",
+      "published",
+      "phase2",
+      "novel"
+    ],
+    "book-of-nails": [
+      "mistborn",
+      "future-plan",
+      "unpublished",
+      "novel"
+    ],
+    "mb8": [
+      "mistborn",
+      "forthcoming",
+      "unpublished",
+      "novel"
+    ],
+    "mb9": [
+      "mistborn",
+      "forthcoming",
+      "unpublished",
+      "novel"
+    ],
+    "mb10": [
+      "mistborn",
+      "forthcoming",
+      "unpublished",
+      "novel"
+    ],
+    "mb11": [
+      "mistborn",
+      "future-plan",
+      "unpublished",
+      "novel"
+    ],
+    "mb12": [
+      "mistborn",
+      "future-plan",
+      "unpublished",
+      "novel"
+    ],
+    "mb13": [
+      "mistborn",
+      "future-plan",
+      "unpublished",
+      "novel"
+    ],
+    "mb14": [
+      "mistborn",
+      "future-plan",
+      "unpublished",
+      "novel"
+    ],
+    "mb15": [
+      "mistborn",
+      "future-plan",
+      "unpublished",
+      "novel"
+    ],
+    "mb16": [
+      "mistborn",
+      "future-plan",
+      "unpublished",
+      "novel"
+    ],
+    "msh2": [
+      "mistborn",
+      "potential-plan",
+      "unpublished",
+      "novella"
+    ],
+    "wb": [
+      "warbreaker",
+      "published",
+      "phase1",
+      "novel"
+    ],
+    "nb": [
+      "warbreaker",
+      "future-plan",
+      "unpublished",
+      "novel"
+    ],
+    "sa1": [
+      "stormlight",
+      "published",
+      "phase2",
+      "novel"
+    ],
+    "sa2": [
+      "stormlight",
+      "published",
+      "phase2",
+      "novel"
+    ],
+    "elsecaller": [
+      "stormlight",
+      "published",
+      "phase2",
+      "short"
+    ],
+    "lopen": [
+      "stormlight",
+      "published",
+      "phase2",
+      "short"
+    ],
+    "sa2-5": [
+      "stormlight",
+      "published",
+      "phase2",
+      "novella"
+    ],
+    "sa3": [
+      "stormlight",
+      "published",
+      "phase2",
+      "novel"
+    ],
+    "sa3-5": [
+      "stormlight",
+      "published",
+      "phase2",
+      "novella"
+    ],
+    "sa4": [
+      "stormlight",
+      "published",
+      "phase2",
+      "novel"
+    ],
+    "sa5": [
+      "stormlight",
+      "published",
+      "phase2",
+      "novel"
+    ],
+    "sa5-5": [
+      "stormlight",
+      "future-plan",
+      "unpublished",
+      "novella"
+    ],
+    "sa6": [
+      "stormlight",
+      "future-plan",
+      "unpublished",
+      "novel"
+    ],
+    "sa7": [
+      "stormlight",
+      "future-plan",
+      "unpublished",
+      "novel"
+    ],
+    "sa8": [
+      "stormlight",
+      "future-plan",
+      "unpublished",
+      "novel"
+    ],
+    "sa9": [
+      "stormlight",
+      "future-plan",
+      "unpublished",
+      "novel"
+    ],
+    "sa10": [
+      "stormlight",
+      "future-plan",
+      "unpublished",
+      "novel"
+    ],
+    "chasmfriends": [
+      "stormlight",
+      "other-pub",
+      "apocryphal",
+      "short"
+    ],
+    "tdatd": [
+      "stormlight",
+      "published",
+      "graphic"
+    ],
+    "tgwlu": [
+      "stormlight",
+      "published",
+      "graphic"
+    ],
+    "wsgn": [
+      "white-sand",
+      "published",
+      "phase1",
+      "graphic"
+    ],
+    "wsn": [
+      "white-sand",
+      "future-plan",
+      "unpublished",
+      "novel"
+    ],
+    "arcanist": [
+      "white-sand",
+      "potential-plan",
+      "unpublished",
+      "graphic"
+    ],
+    "sfs": [
+      "no-series",
+      "published",
+      "phase1",
+      "novella"
+    ],
+    "tnb": [
+      "no-series",
+      "future-plan",
+      "unpublished",
+      "novel"
+    ],
+    "sotd": [
+      "no-series",
+      "published",
+      "phase1",
+      "novella"
+    ],
+    "iote": [
+      "no-series",
+      "published",
+      "phase3",
+      "novel"
+    ],
+    "kingmaker": [
+      "no-series",
+      "potential-plan",
+      "unpublished",
+      "novel"
+    ],
+    "aether1": [
+      "aether",
+      "future-plan",
+      "unpublished",
+      "novel"
+    ],
+    "aether2": [
+      "aether",
+      "future-plan",
+      "unpublished",
+      "novel"
+    ],
+    "aether3": [
+      "aether",
+      "future-plan",
+      "unpublished",
+      "novel"
+    ],
+    "mythos1": [
+      "mythos",
+      "future-plan",
+      "unpublished",
+      "novel"
+    ],
+    "mythos2": [
+      "mythos",
+      "future-plan",
+      "unpublished",
+      "novel"
+    ],
+    "mythos3": [
+      "mythos",
+      "future-plan",
+      "unpublished",
+      "novel"
+    ],
+    "d1": [
+      "dragonsteel",
+      "future-plan",
+      "unpublished",
+      "novel"
+    ],
+    "d2": [
+      "dragonsteel",
+      "future-plan",
+      "unpublished",
+      "novel"
+    ],
+    "d3": [
+      "dragonsteel",
+      "future-plan",
+      "unpublished",
+      "novel"
+    ],
+    "au": [
+      "no-series",
+      "published",
+      "phase2",
+      "short"
+    ],
+    "tress": [
+      "no-series",
+      "published",
+      "phase3",
+      "novel"
+    ],
+    "yumi": [
+      "no-series",
+      "published",
+      "phase3",
+      "novel"
+    ],
+    "tsm": [
+      "no-series",
+      "published",
+      "phase3",
+      "novel"
+    ],
+    "tsd": [
+      "no-series",
+      "future-plan",
+      "unpublished",
+      "novella"
+    ],
+    "untitled-cosmere-novel": [
+      "no-series",
+      "potential-plan",
+      "unpublished",
+      "novel"
+    ],
+    "tga": [
+      "no-series",
+      "future-plan",
+      "unpublished",
+      "novel"
+    ],
+    "dan": [
+      "no-series",
+      "future-plan",
+      "unpublished",
+      "novel"
+    ],
+    "burrito": [
+      "no-series",
+      "potential-plan",
+      "unpublished",
+      "novel"
+    ],
+    "untitled-cosmere-novella": [
+      "no-series",
+      "potential-plan",
+      "unpublished",
+      "novella"
+    ],
+    "kite": [
+      "no-series",
+      "potential-plan",
+      "unpublished",
+      "novella"
+    ],
+    "wsp": [
+      "white-sand",
+      "other-pub",
+      "apocryphal",
+      "novel"
+    ],
+    "aon": [
+      "no-series",
+      "other-pub",
+      "apocryphal",
+      "novel"
+    ],
+    "imperial-fool": [
+      "no-series",
+      "other-pub",
+      "apocryphal",
+      "short"
+    ],
+    "dsp": [
+      "dragonsteel",
+      "other-pub",
+      "apocryphal",
+      "novel"
+    ],
+    "twokp": [
+      "stormlight",
+      "other-pub",
+      "apocryphal",
+      "novel"
+    ],
+    "sa-deleted-scene": [
+      "stormlight",
+      "other-pub",
+      "apocryphal",
+      "short"
+    ],
+    "traveler": [
+      "no-series",
+      "other-pub",
+      "apocryphal",
+      "short"
+    ],
+    "mistborn-adventure-game": [
+      "mistborn",
+      "published"
+    ],
+    "fires-of-december": [
+      "no-series",
+      "published",
+      "novel"
+    ],
+    "hoids-storybook-collection": [
+      "no-series",
+      "published"
+    ],
+    "wandersail": [
+      "stormlight",
+      "published",
+      "graphic"
+    ],
+    "stormlight-rpg-handbook": [
+      "stormlight",
+      "published"
+    ],
+    "stormlight-rpg-world-guide": [
+      "stormlight",
+      "published"
+    ],
+    "stormlight-rpg-welcome-to-roshar": [
+      "stormlight",
+      "published"
+    ],
+    "stormlight-rpg-bridge-nine": [
+      "stormlight",
+      "published"
+    ],
+    "stonewalkers": [
+      "stormlight",
+      "published"
+    ],
+    "mistborn-rpg-handbook": [
+      "mistborn",
+      "published"
+    ],
+    "mistborn-rpg-world-guide": [
+      "mistborn",
+      "published"
+    ],
+    "mistborn-rpg-legacy": [
+      "mistborn",
+      "published"
+    ],
+    "mistborn-adventure-game-terris": [
+      "mistborn",
+      "published"
+    ],
+    "mistborn-adventure-game-alloy-of-law": [
+      "mistborn",
+      "published"
+    ],
+    "mistborn-adventure-game-skaa": [
+      "mistborn",
+      "published"
+    ],
+    "mistborn-adventure-game-masks-of-the-past": [
+      "mistborn",
+      "published"
+    ],
+    "mistborn-adventure-game-nobles": [
+      "mistborn",
+      "published"
+    ],
+    "stormlight-rpg-first-step": [
+      "stormlight",
+      "published"
+    ],
+    "stormlight-rpg-scenarios": [
+      "stormlight",
+      "published"
+    ],
+    "stormlight-rpg-advanced-adversaries": [
+      "stormlight",
+      "published"
+    ],
+    "stormlight-rpg-law-and-obligation": [
+      "stormlight",
+      "published"
+    ],
+    "mistborn-rpg-welcome-to-scadrial": [
+      "mistborn",
+      "published"
+    ],
+    "mistborn-rpg-scenarios": [
+      "mistborn",
+      "published"
+    ]
+  },
+  "bookCategoriesChangedFromUpstream": [
+    "mb8",
+    "mb9",
+    "mb10",
+    "tdatd",
+    "tgwlu",
+    "iote"
+  ],
+  "sorting": [
+    {
+      "id": "publication",
+      "description": {
+        "en": "Publication date",
+        "es": "Fecha de publicación"
+      },
+      "excluded": false
+    },
+    {
+      "id": "order",
+      "description": {
+        "en": "Reading order",
+        "es": "Orden de lectura"
+      },
+      "excluded": false
+    },
+    {
+      "id": "chronology",
+      "description": {
+        "en": "Cosmere timeline",
+        "es": "Cronología del Cosmere"
+      },
+      "excluded": true
+    }
+  ],
+  "sortingDefault": {
+    "en": "Series (the ring grouped by world and series, clockwise)",
+    "es": "Series (el anillo agrupado por mundo y serie, en sentido horario)"
+  },
+  "bookSorting": {
+    "elantris": {
+      "publication": 2005.04,
+      "order": 1.21
+    },
+    "thoe": {
+      "publication": 2006.01,
+      "order": 1.22
+    },
+    "elantris2": {
+      "publication": 2029.06
+    },
+    "elantris3": {
+      "publication": 2030.06
+    },
+    "tes": {
+      "publication": 2012.11,
+      "order": 1.31
+    },
+    "mb1": {
+      "publication": 2006.07,
+      "order": 1.11
+    },
+    "11m": {
+      "publication": 2011.12,
+      "order": 1.14
+    },
+    "mb2": {
+      "publication": 2007.08,
+      "order": 1.12
+    },
+    "mb3": {
+      "publication": 2008.1,
+      "order": 1.13
+    },
+    "mb4": {
+      "publication": 2011.11,
+      "order": 2.21
+    },
+    "jak": {
+      "publication": 2014.08,
+      "order": 2.22
+    },
+    "mb5": {
+      "publication": 2015.1,
+      "order": 2.23
+    },
+    "mb6": {
+      "publication": 2016.01,
+      "order": 2.24
+    },
+    "msh": {
+      "publication": 2016.01,
+      "order": 2.25
+    },
+    "mb7": {
+      "publication": 2022.11,
+      "order": 2.27
+    },
+    "mb8": {
+      "publication": 2028.12
+    },
+    "mb9": {
+      "publication": 2029.12
+    },
+    "mb10": {
+      "publication": 2030.12
+    },
+    "wb": {
+      "publication": 2009.06,
+      "order": 1.41
+    },
+    "sa1": {
+      "publication": 2010.08,
+      "order": 2.41
+    },
+    "sa2": {
+      "publication": 2014.03,
+      "order": 2.42
+    },
+    "elsecaller": {
+      "publication": 2024.121,
+      "order": 2.421
+    },
+    "lopen": {
+      "publication": 2024.122,
+      "order": 2.422
+    },
+    "sa2-5": {
+      "publication": 2016.11,
+      "order": 2.43
+    },
+    "sa3": {
+      "publication": 2017.11,
+      "order": 2.44
+    },
+    "sa3-5": {
+      "publication": 2020.1105,
+      "order": 2.45
+    },
+    "sa4": {
+      "publication": 2020.1117,
+      "order": 2.46
+    },
+    "sa5": {
+      "publication": 2024.12,
+      "order": 2.47
+    },
+    "sa5-5": {
+      "publication": 2026.12
+    },
+    "sa6": {
+      "publication": 2032
+    },
+    "chasmfriends": {
+      "publication": 2024.123,
+      "order": 2.423
+    },
+    "wsgn": {
+      "publication": 2016.06,
+      "order": 1.51
+    },
+    "wsn": {
+      "order": 1.51
+    },
+    "sfs": {
+      "publication": 2013.12,
+      "order": 1.6
+    },
+    "sotd": {
+      "publication": 2014.06,
+      "order": 1.7
+    },
+    "iote": {
+      "publication": 2025.09,
+      "order": 3.2
+    },
+    "au": {
+      "publication": 2016.11,
+      "order": 2.31
+    },
+    "tress": {
+      "publication": 2023.01,
+      "order": 3.1
+    },
+    "yumi": {
+      "publication": 2023.07,
+      "order": 3.11
+    },
+    "tsm": {
+      "publication": 2023.1,
+      "order": 3.12
+    },
+    "wsp": {
+      "publication": 2009.06,
+      "order": 1.54
+    },
+    "aon": {
+      "publication": 2009.06,
+      "order": 1.8
+    },
+    "imperial-fool": {
+      "publication": 2012.11,
+      "order": 1.31
+    },
+    "dsp": {
+      "publication": 2024.03,
+      "order": 3.15
+    },
+    "twokp": {
+      "publication": 2020.07,
+      "order": 2.445
+    },
+    "sa-deleted-scene": {
+      "publication": 2014.08,
+      "order": 2.421
+    },
+    "traveler": {
+      "publication": 2018.04,
+      "order": 2.26
+    }
+  },
+  "bookPadding": {
+    "thoe": 12,
+    "11m": 12,
+    "jak": 12,
+    "msh": 12,
+    "book-of-nails": 12,
+    "elsecaller": 12,
+    "lopen": 12,
+    "sa2-5": 12,
+    "sa3-5": 12,
+    "sa5-5": 12,
+    "chasmfriends": 12,
+    "tdatd": 12,
+    "tgwlu": 12,
+    "wsgn": 12,
+    "sotd": 12
+  },
+  "connectionTypes": [
+    {
+      "id": "major",
+      "ours": "major",
+      "name": {
+        "en": "Major",
+        "es": "Mayor"
+      },
+      "color": "#770000",
+      "highlightColor": "#DB1E1E",
+      "width": 2,
+      "dash": null,
+      "description": {
+        "en": "There is at least one major connection between the books which will enhance your understanding of the plot and the Cosmere. Reading in this order is highly recommended, and reading out of order may be spoilery.",
+        "es": "Hay al menos una conexión mayor entre los libros que mejora la comprensión de la trama y del Cosmere. Leer en este orden es muy recomendable; hacerlo en otro orden puede destripar cosas."
+      },
+      "activeByDefault": null,
+      "upstreamKind": "arrow"
+    },
+    {
+      "id": "significant",
+      "ours": "significant",
+      "name": {
+        "en": "Significant",
+        "es": "Significativa"
+      },
+      "color": "#a0470d",
+      "highlightColor": "#a0470d",
+      "width": 2,
+      "dash": "4 2",
+      "description": {
+        "en": "There is at least one significant connection between the books which may enhance your understanding of the plot and the Cosmere. Reading in this order is recommended.",
+        "es": "Hay al menos una conexión significativa entre los libros que puede mejorar la comprensión de la trama y del Cosmere. Se recomienda leer en este orden."
+      },
+      "activeByDefault": null,
+      "upstreamKind": "arrow"
+    },
+    {
+      "id": "minor",
+      "ours": "minor",
+      "name": {
+        "en": "Minor",
+        "es": "Menor"
+      },
+      "color": "#a09713",
+      "highlightColor": "#a09713",
+      "width": 1,
+      "dash": "3",
+      "description": {
+        "en": "There is at least one minor connection between the books which may enhance your understanding of the plot and Cosmere in a small way.",
+        "es": "Hay al menos una conexión menor entre los libros que puede mejorar un poco la comprensión de la trama y del Cosmere."
+      },
+      "activeByDefault": false,
+      "upstreamKind": "arrow"
+    },
+    {
+      "id": "egg",
+      "ours": "egg",
+      "name": {
+        "en": "Easter Eggs",
+        "es": "Guiños"
+      },
+      "color": "#4d4d4d",
+      "highlightColor": "#4d4d4d",
+      "width": 1,
+      "dash": "2",
+      "description": {
+        "en": "There is at least one subtle reference between the books which may hint at something bigger going on. Easter eggs may be very difficult to spot unaided.",
+        "es": "Hay al menos una referencia sutil entre los libros que puede apuntar a algo mayor. Los guiños pueden ser muy difíciles de ver sin ayuda."
+      },
+      "activeByDefault": false,
+      "upstreamKind": "arrow"
+    },
+    {
+      "id": "appearance",
+      "ours": "appearance",
+      "name": {
+        "en": "Appearances",
+        "es": "Apariciones"
+      },
+      "color": "#A0A0A0",
+      "highlightColor": null,
+      "width": null,
+      "dash": null,
+      "description": {
+        "en": "Upstream draws these as a letter marker beside the title, not as a line: solid for an appearance, outline for a mention. Off by default.",
+        "es": "El original las dibuja como una letra junto al título, no como una línea: rellena para una aparición, en contorno para una mención. Desactivadas por defecto."
+      },
+      "activeByDefault": false,
+      "upstreamKind": "marker"
+    }
+  ],
+  "phases": [
+    {
+      "id": 1,
+      "name": {
+        "en": "Phase 1",
+        "es": "Fase 1"
+      },
+      "description": {
+        "en": "The idea of the greater Cosmere plays a small role, with connections generally being little more than easter eggs.",
+        "es": "La idea del Cosmere en su conjunto tiene poco peso; las conexiones suelen ser poco más que guiños."
+      },
+      "color": "#00b02b",
+      "category": "phase1"
+    },
+    {
+      "id": 2,
+      "name": {
+        "en": "Phase 2",
+        "es": "Fase 2"
+      },
+      "description": {
+        "en": "This phase involves more direct Cosmere references and serves as a transition from Phase 1 to Phase 3.",
+        "es": "Esta fase incluye referencias más directas al Cosmere y sirve de transición entre la fase 1 y la fase 3."
+      },
+      "color": "#0094d4",
+      "category": "phase2"
+    },
+    {
+      "id": 3,
+      "name": {
+        "en": "Phase 3",
+        "es": "Fase 3"
+      },
+      "description": {
+        "en": "Cosmere connections are common and notable, but series are still mostly isolated and distinct.",
+        "es": "Las conexiones del Cosmere son frecuentes y notables, pero las series siguen siendo en su mayoría independientes."
+      },
+      "color": "#e3ae00",
+      "category": "phase3"
+    },
+    {
+      "id": 4,
+      "name": {
+        "en": "Phase 4",
+        "es": "Fase 4"
+      },
+      "description": {
+        "en": "Cosmere connections are heavy, but series are still mostly isolated and distinct.",
+        "es": "Las conexiones del Cosmere pesan mucho, pero las series siguen siendo en su mayoría independientes."
+      },
+      "color": "#dd2222",
+      "category": "phase4"
+    }
+  ],
+  "legend": {
+    "intro": {
+      "en": [
+        "Books are grouped by series, world and star system by default, and are listed in the clockwise direction.",
+        "There is no right way to read the Cosmere. The guide presents an order similar to publication order that also minimises jumping between series: read everything in each phase before moving to the next, and each series in the order listed. The list can also be sorted by publication order.",
+        "Arrows illustrate connections between stories; the target includes some reference to the first. Arrow styles mark how significant the references are and can be taken as extra reading order advice.",
+        "Unpublished books may or may not be eventually published."
+      ],
+      "es": [
+        "Por defecto los libros se agrupan por serie, mundo y sistema estelar, y se listan en sentido horario.",
+        "No hay una forma correcta de leer el Cosmere. La guía propone un orden parecido al de publicación que además reduce los saltos entre series: leer todo lo de una fase antes de pasar a la siguiente, y cada serie en el orden listado. También se puede ordenar por publicación.",
+        "Las flechas ilustran conexiones entre historias; el destino incluye alguna referencia al origen. El estilo de la flecha marca la importancia de las referencias y sirve como consejo adicional de orden de lectura.",
+        "Los libros sin publicar pueden llegar a publicarse o no."
+      ]
+    },
+    "options": [
+      {
+        "id": "order-by",
+        "name": {
+          "en": "Order by",
+          "es": "Ordenar por"
+        }
+      },
+      {
+        "id": "show-spoilers",
+        "name": {
+          "en": "Show spoilers",
+          "es": "Mostrar spoilers"
+        },
+        "default": false
+      },
+      {
+        "id": "highlight-series",
+        "name": {
+          "en": "Activate series and planets",
+          "es": "Activar series y planetas"
+        },
+        "default": false
+      }
+    ],
+    "sections": [
+      {
+        "en": "Options",
+        "es": "Opciones"
+      },
+      {
+        "en": "Categories",
+        "es": "Categorías"
+      },
+      {
+        "en": "Connections",
+        "es": "Conexiones"
+      },
+      {
+        "en": "Appearances",
+        "es": "Apariciones"
+      }
+    ]
+  },
+  "notes": {
+    "tree": "Upstream nests two levels (top group, then series group) and has no system level; each world node carries its system. Nodes and leaves marked added:true or listed in addedLeaves are not in upstream.",
+    "addedLeaves": [
+      "wandersail"
+    ],
+    "bookSorting": "Upstream values only, as of its last data change; real first-publication dates are in public-facts.json.",
+    "excluded": "The in-world chronological order exists upstream under the sorting id \"chronology\"; no values are carried here."
+  }
+}

@@ -1,0 +1,352 @@
+[
+  {
+    "id": "c-0300",
+    "from": "tress",
+    "to": "wsgn",
+    "type": "significant",
+    "tier": "confirmed",
+    "description": {
+      "en": "According to Brandon, Lumar's spore seas found their footing as a narrative only after he linked them to the magic of White Sand. That sand responds to water thanks to a minuscule lichen-like organism that covers each grain, while the spores represent a far untamed take on the very same concept.",
+      "es": "Según Brandon, los mares de esporas de Lumar cobraron sentido narrativo únicamente cuando los vinculó a la magia de Arena blanca. Esa arena responde al agua gracias a un minúsculo organismo semejante a un liquen que recubre cada grano, mientras que las esporas representan una versión bastante más indómita del mismo concepto."
+    },
+    "requires": [
+      "tress",
+      "wsgn"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/api/entry/17177/",
+        "kind": "word-of-brandon"
+      },
+      {
+        "url": "https://wob.coppermind.net/api/entry/16185/",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:research-batch-009",
+    "verifiedBy": "agent:verify-batch-009",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0301",
+    "from": "tress",
+    "to": "yumi",
+    "type": "significant",
+    "tier": "confirmed",
+    "description": {
+      "en": "Hoid narrates both tales for listeners situated somewhere else in the Cosmere, and neither closes with an epilogue revealing those listeners' identities. Brandon files them together with a third book under the heading Stories of Hoid's Travails.",
+      "es": "Hoid narra ambas para oyentes situados en otro punto del Cosmere, y ninguna concluye con un epílogo que revele quiénes son. Brandon las reúne con un tercer volumen bajo el título Las desventuras de Hoid."
+    },
+    "requires": [
+      "tress",
+      "yumi"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/api/entry/15538/",
+        "kind": "word-of-brandon"
+      },
+      {
+        "url": "https://wob.coppermind.net/api/entry/16772/",
+        "kind": "word-of-brandon"
+      },
+      {
+        "url": "https://wob.coppermind.net/api/entry/17002/",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:research-batch-009",
+    "verifiedBy": "agent:verify-batch-009",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0302",
+    "from": "tress",
+    "to": "yumi",
+    "type": "minor",
+    "tier": "confirmed",
+    "description": {
+      "en": "Brandon deliberately designed the nightmares of Yumi and the Nightmare Painter to act like Midnight Essence, a substance that mimics whatever lies close by and is shown in Tress of the Emerald Sea, where it is found on Lumar.",
+      "es": "Brandon hizo que los sueños funestos presentes en Yumi y el pintor de pesadillas actuaran igual que la Esencia de Medianoche, una sustancia que imita lo que la rodea y que se describe en Trenza del mar Esmeralda como presente en Lumar."
+    },
+    "requires": [
+      "sa1",
+      "tress",
+      "yumi"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/api/entry/15529/",
+        "kind": "word-of-brandon"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Midnight_Essence",
+        "kind": "wiki"
+      }
+    ],
+    "author": "agent:research-batch-009",
+    "verifiedBy": "agent:verify-batch-009",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0303",
+    "from": "tress",
+    "to": "fires-of-december",
+    "type": "significant",
+    "tier": "confirmed",
+    "description": {
+      "en": "The Fires of December forms the third installment of the Stories of Hoid's Travails series, which Tress of the Emerald Sea launched, and Hoid once more serves as narrator.",
+      "es": "Los fuegos de Diciembre constituye el tercer tomo de la serie Las desventuras de Hoid, iniciada por Trenza del mar Esmeralda, y vuelve a estar narrado por Hoid."
+    },
+    "requires": [
+      "tress",
+      "yumi",
+      "fires-of-december"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/api/entry/17002/",
+        "kind": "word-of-brandon"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Tress_of_the_Emerald_Sea",
+        "kind": "wiki"
+      }
+    ],
+    "author": "agent:research-batch-009",
+    "verifiedBy": "agent:verify-batch-009",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0304",
+    "from": "tress",
+    "to": "aon",
+    "type": "minor",
+    "tier": "confirmed",
+    "description": {
+      "en": "Lumar's aethers originate in Aether of Night, an unreleased early novel by Brandon that first presented them. He explains that his aim was to make the aethers canon by weaving them into the core Cosmere novels.",
+      "es": "El origen de los éteres de Lumar está en Aether of Night, una obra inédita de sus inicios con la que Brandon los presentó por primera vez. Según él, su meta era canonizarlos incorporándolos a las novelas centrales del Cosmere."
+    },
+    "requires": [
+      "tress",
+      "aon"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/api/entry/14645/",
+        "kind": "word-of-brandon"
+      },
+      {
+        "url": "https://wob.coppermind.net/api/entry/16115/",
+        "kind": "word-of-brandon"
+      },
+      {
+        "url": "https://wob.coppermind.net/api/entry/15430/",
+        "kind": "word-of-brandon"
+      },
+      {
+        "url": "https://wob.coppermind.net/api/entry/15565/",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:research-batch-009",
+    "verifiedBy": "agent:verify-batch-009",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0305",
+    "from": "tress",
+    "to": "mb7",
+    "type": "significant",
+    "tier": "confirmed",
+    "description": {
+      "en": "Lumar's aethers branch off from the central aethers featured in The Lost Metal. According to Brandon, Tress takes place on a planet that brushes against the aethers only at the edges, rather than the principal ones.",
+      "es": "Los éteres de Lumar derivan de los éteres centrales que se ven en El metal perdido. Según Brandon, Trenza del mar Esmeralda se ambienta en un planeta que toca los éteres solo de manera periférica, y no los principales."
+    },
+    "requires": [
+      "mb1",
+      "mb2",
+      "mb3",
+      "mb4",
+      "mb5",
+      "mb6",
+      "msh",
+      "mb7",
+      "tress"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/api/entry/15459/",
+        "kind": "word-of-brandon"
+      },
+      {
+        "url": "https://wob.coppermind.net/api/entry/15565/",
+        "kind": "word-of-brandon"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Aether",
+        "kind": "wiki"
+      }
+    ],
+    "author": "agent:research-batch-009",
+    "verifiedBy": "agent:verify-batch-009",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0306",
+    "from": "tress",
+    "to": "mb6",
+    "type": "egg",
+    "tier": "confirmed",
+    "description": {
+      "en": "Ulaam haggles over Tress's eyes and organs much as VenDell in The Bands of Mourning strikes arrangements with folks, acquiring their bones after they pass away.",
+      "es": "Ulaam regatea por los ojos de Trenza y por sus órganos, del mismo modo que VenDell, en Brazales de duelo, cierra pactos con la gente para quedarse con sus huesos al morir."
+    },
+    "requires": [
+      "mb1",
+      "mb2",
+      "mb3",
+      "mb4",
+      "mb5",
+      "mb6",
+      "tress"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Ulaam",
+        "kind": "wiki",
+        "cites": "The Bands of Mourning chapter 3; Tress of the Emerald Sea chapter 18"
+      }
+    ],
+    "author": "agent:research-batch-009",
+    "verifiedBy": "agent:verify-batch-009",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0307",
+    "from": "tress",
+    "to": "sa5",
+    "type": "significant",
+    "tier": "confirmed",
+    "description": {
+      "en": "Ulaam, the kandra introduced in Tress, shows up in Wind and Truth, where he serves as the figure who preserved a living cell culture of Hoid so that Hoid was able to reconstruct his body.",
+      "es": "Ulaam, el kandra que aparece por primera vez en Trenza del mar Esmeralda, figura en Viento y verdad como el personaje que mantuvo con vida un cultivo celular de Hoid con el que este pudiera rehacer su cuerpo."
+    },
+    "requires": [
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa4",
+      "sa5",
+      "tress"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Ulaam",
+        "kind": "wiki",
+        "cites": "Wind and Truth chapter 147"
+      }
+    ],
+    "author": "agent:research-batch-009",
+    "verifiedBy": "agent:verify-batch-009",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0308",
+    "from": "tress",
+    "to": "iote",
+    "type": "significant",
+    "tier": "confirmed",
+    "description": {
+      "en": "Xisis and Captain Crow return in Isles of the Emberdark, coming after Tress: by then Xisis has acquired a vessel and appointed Crow as its skipper.",
+      "es": "En Islas de la Ascuaoscura vuelven a verse Xisis y la capitana Cuervo, tras Trenza del mar Esmeralda: Xisis ya posee un navío y ha nombrado a Cuervo capitana de la misma."
+    },
+    "requires": [
+      "tress",
+      "sotd",
+      "iote"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Xisisrefliel",
+        "kind": "wiki",
+        "cites": "Isles of the Emberdark chapter 25; Isles of the Emberdark chapter 22"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Crow",
+        "kind": "wiki",
+        "cites": "Isles of the Emberdark chapter 25"
+      }
+    ],
+    "author": "agent:research-batch-009",
+    "verifiedBy": "agent:verify-batch-009",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0309",
+    "from": "tress",
+    "to": "sa3",
+    "type": "minor",
+    "tier": "confirmed",
+    "description": {
+      "en": "Riina's group, the Ire, is already present in Oathbringer, where Riino, a fellow member, presents Kaladin with a luminous sphere.",
+      "es": "Los Ire, la agrupación a la que pertenece Riina, ya tienen presencia en Juramentada: allí Riino, uno de sus integrantes, muestra a Kaladin una esfera que brilla."
+    },
+    "requires": [
+      "elantris",
+      "mb1",
+      "mb2",
+      "mb3",
+      "mb4",
+      "mb5",
+      "mb6",
+      "msh",
+      "sa1",
+      "sa2",
+      "sa3",
+      "tress"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Ire",
+        "kind": "wiki",
+        "cites": "Oathbringer chapter 97"
+      }
+    ],
+    "author": "agent:research-batch-009",
+    "verifiedBy": "agent:verify-batch-009",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0310",
+    "from": "tress",
+    "to": "sa3",
+    "type": "egg",
+    "tier": "confirmed",
+    "description": {
+      "en": "Inside Oathbringer, Mraize's laundress removes an aether mark from his suit, an early sign of the aethers which Tress makes the core of its setting.",
+      "es": "Dentro de Juramentada, la lavandera de Mraize saca una marca de éter de su traje, un indicio temprano de los éteres, que en Trenza del mar Esmeralda ocupan el centro de su ambientación."
+    },
+    "requires": [
+      "sa1",
+      "sa2",
+      "sa3",
+      "tress"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Mem",
+        "kind": "wiki",
+        "cites": "Oathbringer interlude I-8"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Aether",
+        "kind": "wiki",
+        "cites": "Oathbringer interlude I-8"
+      }
+    ],
+    "author": "agent:research-batch-009",
+    "verifiedBy": "agent:verify-batch-009",
+    "verifiedOn": "2026-11-04"
+  }
+]

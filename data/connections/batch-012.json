@@ -1,0 +1,333 @@
+[
+  {
+    "id": "c-0600",
+    "from": "iote",
+    "to": "sotd",
+    "type": "major",
+    "tier": "confirmed",
+    "description": {
+      "en": "Isles of the Emberdark retells Sixth of the Dusk as a novel, preserving the novella as a flashback, and includes a second narrative in the Cosmere's space era that tracks Dusk following the novella's events.",
+      "es": "Islas de la Ascuaoscura reelabora Sexto del ocaso en formato novela: la novela corta permanece como un flashback y se suma una segunda narración en la Era Espacial del Cosmere, donde se sigue a Ocaso con posterioridad a lo acontecido en aquella."
+    },
+    "requires": [
+      "iote",
+      "sotd"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/api/entry/16511/",
+        "kind": "word-of-brandon"
+      },
+      {
+        "url": "https://wob.coppermind.net/api/entry/14408/",
+        "kind": "word-of-brandon"
+      },
+      {
+        "url": "https://wob.coppermind.net/api/entry/16911/",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:research-batch-012",
+    "verifiedBy": "agent:verify-batch-012",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0601",
+    "from": "iote",
+    "to": "sa3",
+    "type": "minor",
+    "tier": "confirmed",
+    "description": {
+      "en": "Mraize's peculiar bird in the Stormlight Archive is an Aviar; per Brandon, every creature bearing that name originates from First of the Sun, the planet where Sixth of the Dusk and this volume take place.",
+      "es": "El ave extraña que Mraize porta en El Archivo de las Tormentas pertenece a la especie de los aviares; según Brandon, todo lo denominado aviar tiene origen en Primero del Sol, planeta donde transcurren Sexto del ocaso y este volumen."
+    },
+    "requires": [
+      "iote",
+      "sa3",
+      "sotd",
+      "sa1",
+      "sa2"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/api/entry/8900/",
+        "kind": "word-of-brandon"
+      },
+      {
+        "url": "https://wob.coppermind.net/api/entry/8807/",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:research-batch-012",
+    "verifiedBy": "agent:verify-batch-012",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0602",
+    "from": "iote",
+    "to": "sa3-5",
+    "type": "significant",
+    "tier": "confirmed",
+    "description": {
+      "en": "Chrysalis, the physician aboard the Dynamic, belongs to the Sleepless, the swarm-bodied folk built out of hordelings that the Stormlight Archive likewise depicts.",
+      "es": "Crisálida, médica de la Dinámica, pertenece a las Insomnes, un pueblo de cuerpos hechos de enjambres de hordinos que igualmente se retrata en El Archivo de las Tormentas."
+    },
+    "requires": [
+      "iote",
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa3-5",
+      "sa2-5"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Sleepless",
+        "kind": "wiki",
+        "cites": "Isles of the Emberdark chapter 23; Dawnshard chapter 18; Edgedancer chapter 18"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Chrysalis",
+        "kind": "wiki",
+        "cites": "Isles of the Emberdark chapter 23"
+      }
+    ],
+    "author": "agent:research-batch-012",
+    "verifiedBy": "agent:verify-batch-012",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0603",
+    "from": "iote",
+    "to": null,
+    "type": "appearance",
+    "tier": "confirmed",
+    "description": {
+      "en": "Hoid features in this book: Starling serves as his pupil, and he once acted as navigator of the Dynamic.",
+      "es": "Hoid tiene presencia en este libro: Astrífera le sirve de aprendiz y él ejerció de navegante de la Dinámica."
+    },
+    "requires": [
+      "iote"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Hoid",
+        "kind": "wiki",
+        "cites": "Isles of the Emberdark chapter 51; Isles of the Emberdark chapter 25; Isles of the Emberdark chapter 22"
+      },
+      {
+        "url": "https://wob.coppermind.net/api/entry/16519/",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:research-batch-012",
+    "verifiedBy": "agent:verify-batch-012",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0604",
+    "from": "iote",
+    "to": null,
+    "type": "appearance",
+    "tier": "confirmed",
+    "description": {
+      "en": "Nazh belongs to the Dynamic's team, working as its security chief.",
+      "es": "Nazh integra el equipo de a bordo de la Dinámica en calidad de responsable de seguridad."
+    },
+    "requires": [
+      "iote"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Nazh",
+        "kind": "wiki",
+        "cites": "Isles of the Emberdark chapter 22; Isles of the Emberdark chapter 25"
+      }
+    ],
+    "author": "agent:research-batch-012",
+    "verifiedBy": "agent:verify-batch-012",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0605",
+    "from": "iote",
+    "to": "msh",
+    "type": "significant",
+    "tier": "confirmed",
+    "description": {
+      "en": "Nazh, who once crossed paths with Kelsier and Khriss in Secret History, is already a Shade when he joins Starling's team in this book.",
+      "es": "Cuando Nazh entra en la tripulación de Astrífera en este libro, ya se ha convertido en umbra; antes había cruzado su camino con Kelsier y Khriss en Historia secreta."
+    },
+    "requires": [
+      "iote",
+      "msh",
+      "mb1",
+      "mb2",
+      "mb3",
+      "sfs"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Nazh",
+        "kind": "wiki",
+        "cites": "Mistborn: Secret History part 3 chapter 2; Isles of the Emberdark chapter 22"
+      }
+    ],
+    "author": "agent:research-batch-012",
+    "verifiedBy": "agent:verify-batch-012",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0606",
+    "from": "iote",
+    "to": "sa2",
+    "type": "minor",
+    "tier": "confirmed",
+    "description": {
+      "en": "Nazh turns up on Roshar in Words of Radiance too, posing as a native while wearing the garb of an ardent.",
+      "es": "Nazh asimismo surge en Roshar dentro de Palabras radiantes, disfrazado de nativo con la indumentaria de un fervoroso."
+    },
+    "requires": [
+      "iote",
+      "sa1",
+      "sa2"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Nazh",
+        "kind": "wiki",
+        "cites": "Words of Radiance chapter 31; Isles of the Emberdark chapter 22"
+      }
+    ],
+    "author": "agent:research-batch-012",
+    "verifiedBy": "agent:verify-batch-012",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0608",
+    "from": "iote",
+    "to": "tsm",
+    "type": "significant",
+    "tier": "confirmed",
+    "description": {
+      "en": "The Malwish Empire, the Scadrian space-faring state featured in The Sunlit Man, is the colonizing force oppressing the Eelakin and tracking down the perpendicularity located on First of the Sun.",
+      "es": "El Imperio Malwish, la fuerza espacial scadriana presente en El Hombre Iluminado, actúa como metrópoli colonizadora que oprime a los eelakin y rastrea la perpendicularidad de Primero del Sol."
+    },
+    "requires": [
+      "iote",
+      "tsm"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Malwish_Empire",
+        "kind": "wiki",
+        "cites": "The Sunlit Man chapter 8; The Sunlit Man chapter 44; Isles of the Emberdark chapter 7; Isles of the Emberdark chapter 30; Isles of the Emberdark chapter 36"
+      }
+    ],
+    "author": "agent:research-batch-012",
+    "verifiedBy": "agent:verify-batch-012",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0609",
+    "from": "iote",
+    "to": "tsm",
+    "type": "minor",
+    "tier": "confirmed",
+    "description": {
+      "en": "Silverlight, a Cognitive Realm metropolis that The Sunlit Man refers to through its travel guides and interplanetary protocols, shows up in this book as well, where Hoid is described as a fugitive.",
+      "es": "Luzdeplata, urbe del Reino Cognitivo que El Hombre Iluminado cita por sus manuales de viaje y protocolos interplanetarios, también figura en este libro, donde Hoid es un proscrito en esa urbe."
+    },
+    "requires": [
+      "iote",
+      "tsm"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Silverlight",
+        "kind": "wiki",
+        "cites": "The Sunlit Man chapter 16; The Sunlit Man chapter 43; Isles of the Emberdark chapter 30; Isles of the Emberdark chapter 28"
+      }
+    ],
+    "author": "agent:research-batch-012",
+    "verifiedBy": "agent:verify-batch-012",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0610",
+    "from": "iote",
+    "to": "au",
+    "type": "minor",
+    "tier": "confirmed",
+    "description": {
+      "en": "The setting of this book is the Drominad system and its perpendicularity, a subject that Khriss's piece in Arcanum Unbounded singles out as noteworthy for Cosmere researchers.",
+      "es": "Este libro transcurre en el sistema de Drominad y en su perpendicularidad, aspectos que el artículo de Khriss incluido en Arcanum ilimitado destaca como relevantes para los investigadores del Cosmere."
+    },
+    "requires": [
+      "iote",
+      "au"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Drominad",
+        "kind": "wiki",
+        "cites": "Arcanum Unbounded - The Drominad System; Isles of the Emberdark chapter 2; Isles of the Emberdark chapter 16"
+      }
+    ],
+    "author": "agent:research-batch-012",
+    "verifiedBy": "agent:verify-batch-012",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0611",
+    "from": "iote",
+    "to": "sa2",
+    "type": "minor",
+    "tier": "confirmed",
+    "description": {
+      "en": "Frost, Starling's dragon uncle and the one who brought her up, is identical to the Frost whose correspondence with Hoid is reproduced as epigraphs within the Stormlight Archive.",
+      "es": "Escarcha, tío dragón de Astrífera y quien se encargó de criarla, coincide con el Escarcha cuya correspondencia dirigida a Hoid se reproduce en forma de epígrafes dentro de El Archivo de las Tormentas."
+    },
+    "requires": [
+      "iote",
+      "sa1",
+      "sa2"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Frost",
+        "kind": "wiki",
+        "cites": "The Way of Kings chapter 26 epigraph; Words of Radiance chapter 66 epigraph; Isles of the Emberdark prologue"
+      }
+    ],
+    "author": "agent:research-batch-012",
+    "verifiedBy": "agent:verify-batch-012",
+    "verifiedOn": "2026-11-04"
+  },
+  {
+    "id": "c-0612",
+    "from": "iote",
+    "to": "tress",
+    "type": "egg",
+    "tier": "theory",
+    "description": {
+      "en": "Hoid's narrative about Tress refers to travelers in starships with articulate minds; the Coppermind interprets them as the Ones Above pressuring First of the Sun in this volume, though the text does not state it plainly.",
+      "es": "En la narración de Hoid sobre Trenza aparecen viajeros a bordo de navíos con mentes capaces de hablar; la Coppermind los identifica con los Venidos de Arriba que presionan Primero del Sol en este volumen, aunque el texto no lo expresa de manera clara."
+    },
+    "requires": [
+      "iote",
+      "tress",
+      "sotd"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Ones_Above",
+        "kind": "wiki",
+        "cites": "Tress of the Emerald Sea chapter 60; Tress of the Emerald Sea chapter 43"
+      }
+    ],
+    "author": "agent:research-batch-012",
+    "verifiedBy": "agent:verify-batch-012",
+    "verifiedOn": "2026-11-04"
+  }
+]

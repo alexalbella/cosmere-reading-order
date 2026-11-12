@@ -1,0 +1,323 @@
+/* The approved convergence (docs/superpowers/variants/2026-11-04-cosmere-encuadernacion/converge):
+   Cuero vivo for colour, La prensa for motion, La orilla for structure. Values are in tokens.md.
+   The finished state is always the base state: animations only add, under no-preference. */
+@font-face { font-family: Marcellus; src: url(/fonts/marcellus-latin-400-normal.woff2) format('woff2'); font-display: swap; }
+@font-face { font-family: Alegreya; src: url(/fonts/alegreya-latin-400-normal.woff2) format('woff2'); font-weight: 400; font-display: swap; }
+@font-face { font-family: Alegreya; src: url(/fonts/alegreya-latin-500-normal.woff2) format('woff2'); font-weight: 500; font-display: swap; }
+@font-face { font-family: Alegreya; src: url(/fonts/alegreya-latin-400-italic.woff2) format('woff2'); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Alegreya SC'; src: url(/fonts/alegreya-sc-latin-500-normal.woff2) format('woff2'); font-weight: 500; font-display: swap; }
+
+:root {
+  --gold: #e2c070; --gold-hot: #f4dc97; --gold-line: #bb9b52; --gold-dark: #8e6d28;
+  --bone: #efe6d2; --ink: #1d1a16; --wood: #15110d; --board: #3a2a1b; --danger: #eeb0a5; --ribbon: #b92f35;
+  --relief: #26231e; --relief-text: #c8c1b0; --relief-ring: #a8a396; --relief-band: #8d8778; --relief-tone: #6f6a60;
+  --tone-sel: #58b06e; --tone-scadrial: #9973bf; --tone-nalthis: #de4343; --tone-taldain: #9e9957; --tone-threnody: #7a55d6; --tone-sol: #3f8a9e; --tone-roshar: #2aa1d4; --tone-lumar: #00b28f; --tone-komashi: #d472ac; --tone-canticle: #dc7a44; --tone-yolen: #7e9bba; --tone-ashyn: #c78383; --tone-aether: #b783ba; --tone-mythos: #b09803; --tone-otros: #889baa;
+  --face-title: 'Marcellus', 'Palatino Linotype', serif;
+  --face-text: 'Alegreya', 'Palatino Linotype', serif;
+  --face-caps: 'Alegreya SC', 'Alegreya', serif;
+  --ease: cubic-bezier(.16, 1, .3, 1);
+  /* Two seamless tiles from scripts/make-grain.ts. Black with alpha, so they can only raise the contrast of light text. */
+  --grain: url(/textures/leather-grain-a.png), url(/textures/leather-grain-b.png);
+}
+/* field = leather, deep = the same darker (plate, spine strip, medallions), blind = unread stamp, second = secondary text */
+/* ink-world = a title in its world's colour, read; ink-unread = the same, not yet read. Both pass 4.5:1 on every leather. */
+:root { --ink-world: #efe6d2; --ink-unread: #c8c1b0; }
+[data-world=sel] { --field: #013f2a; --deep: #032115; --blind: #aac5b7; --second: #c7dcd1; --ink-world: #b1eabc; --ink-unread: #96c39e; }
+[data-world=scadrial] { --field: #282e35; --deep: #14171b; --blind: #aec0d4; --second: #cad7e7; --ink-world: #e4cefe; --ink-unread: #c1abda; }
+[data-world=nalthis] { --field: #5f0818; --deep: #33050b; --blind: #d4b5b5; --second: #e7cfcf; --ink-world: #fdcbc6; --ink-unread: #dfa59f; }
+[data-world=taldain] { --field: #453507; --deep: #251c05; --blind: #c7bda5; --second: #ddd5c3; --ink-world: #e1dd9b; --ink-unread: #bcb984; }
+[data-world=threnody] { --field: #2b1657; --deep: #150a2e; --blind: #bebad3; --second: #d6d3e6; --ink-world: #d9d2ff; --ink-unread: #b6aedf; }
+[data-world=sol] { --field: #003e4c; --deep: #032128; --blind: #a6c4cd; --second: #c4dae1; --ink-world: #97e7ff; --ink-unread: #81c1d4; }
+[data-world=roshar] { --field: #0b1f54; --deep: #040f2c; --blind: #b3bed5; --second: #cdd6e8; --ink-world: #aee1fd; --ink-unread: #88bedb; }
+[data-world=lumar] { --field: #00372a; --deep: #001e16; --blind: #abc4bb; --second: #c6dcd4; --ink-world: #9eecd3; --ink-unread: #87c5b1; }
+[data-world=komashi] { --field: #461e36; --deep: #260f1d; --blind: #cdb6c2; --second: #e3d0da; --ink-world: #fdc6e4; --ink-unread: #d7a4c0; }
+[data-world=canticle] { --field: #492109; --deep: #291105; --blind: #cfb8ad; --second: #e5d1c8; --ink-world: #fecdb4; --ink-unread: #dca98f; }
+[data-world=yolen] { --field: #232f3c; --deep: #121920; --blind: #b8bec5; --second: #d1d6dc; --ink-world: #c9dbef; --ink-unread: #a9b8c7; }
+[data-world=ashyn] { --field: #412525; --deep: #231313; --blind: #c9b9b9; --second: #e0d2d2; --ink-world: #f9cccb; --ink-unread: #d0acab; }
+[data-world=aether] { --field: #3a253b; --deep: #201320; --blind: #c5b9c5; --second: #dcd2dc; --ink-world: #eeccef; --ink-unread: #c6acc7; }
+[data-world=mythos] { --field: #362e00; --deep: #1e1800; --blind: #c3bea9; --second: #dad6c4; --ink-world: #e8da99; --ink-unread: #c1b783; }
+[data-world=otros] { --field: #272f35; --deep: #14191c; --blind: #babec2; --second: #d3d6d9; --ink-world: #cfdbe4; --ink-unread: #adb7bf; }
+@media (min-width: 1280px) { .interior { --blind: #bdb5a2; --second: #d7cfbc; } }
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scrollbar-color: var(--gold-dark) transparent; font-synthesis: none; -webkit-text-size-adjust: 100%; touch-action: manipulation; -webkit-tap-highlight-color: rgba(226, 192, 112, .22); }
+body { margin: 0; overflow: hidden; font: 400 17px/1.45 var(--face-text); color: var(--bone); background-color: var(--field, #00394a); -webkit-font-smoothing: antialiased; transition: background-color 500ms var(--ease); }
+::selection { background: var(--gold); color: var(--ink); }
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; text-align: inherit; }
+a { color: inherit; text-underline-offset: .22em; text-decoration-thickness: 1px; }
+:focus-visible { outline: 2px solid var(--gold-hot); outline-offset: 3px; }
+h1, h2, h3, p, ul, ol { margin: 0; padding: 0; font-weight: 400; }
+ul, ol { list-style: none; }
+.gold { color: var(--gold); text-shadow: 0 1px 0 rgba(0, 0, 0, .45); }
+.blind { color: var(--blind); text-shadow: 0 -1px 0 rgba(0, 0, 0, .55), 0 1px 0 rgba(255, 255, 255, .08); }
+.sep { color: var(--blind); }
+.seal { display: block; background-color: currentColor; -webkit-mask: url(/seal.svg) center / contain no-repeat; mask: url(/seal.svg) center / contain no-repeat; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+/* Shell: spine strip, framed cover, one rail for the sentence and the plate */
+.app { display: grid; grid-template-columns: 92px minmax(0, 1fr); height: 100dvh; background-image: var(--grain); }
+.cover { position: relative; isolation: isolate; min-height: 0; margin: 18px; border: 1px solid var(--gold); outline: 3px solid var(--gold); outline-offset: 5px; display: grid; grid-template-columns: minmax(0, 1fr) clamp(320px, 25vw, 400px); grid-template-rows: auto minmax(0, 1fr) auto; grid-template-areas: 'area sentence' 'area slot' 'foot foot'; column-gap: 26px; padding: 14px 30px 8px 22px; }
+.cover:not(.interior) { background-image: radial-gradient(ellipse at center, transparent 58%, rgba(0, 0, 0, .24)); }
+.cover.interior { background-color: var(--wood); background-image: var(--grain); }
+.controls { display: contents; }
+.controls .medallion { position: absolute; z-index: 2; }
+.m-lang { top: 10px; left: 10px; } .m-filters { top: 10px; right: 10px; } .m-settings { bottom: 10px; left: 10px; } .m-spoilers { bottom: 10px; right: 10px; }
+.lang-on { text-decoration: underline; text-underline-offset: .28em; text-decoration-thickness: 1px; }
+.tabs-phone, .spine-lock { display: none; }
+.sentence-col { grid-area: sentence; padding: 78px 0 14px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.area { grid-area: area; min-height: 0; min-width: 0; display: block; overflow: auto; padding-right: 8px; scrollbar-width: thin; }
+@media (min-width: 1280px) { .area.ring-area { overflow: hidden; padding-right: 0; } }
+.slot { grid-area: slot; min-height: 0; display: flex; flex-direction: column; margin-bottom: 88px; padding: 5px; }
+.slot .plate, .slot .panel { flex: 0 1 auto; min-height: 0; overflow: auto; scrollbar-width: thin; }
+.with-panel .sentence-col { display: none; }
+/* Below the corner tool, whose lower point would otherwise run under the panel's top edge. */
+.with-panel .slot { margin-top: 94px; }
+.foot-area { grid-area: foot; padding: 2px 90px 0; }
+.plate-more, .plate .plate-close { display: none; }
+.foot-btn { color: var(--blind); text-decoration: underline; text-underline-offset: .22em; text-decoration-thickness: 1px; }
+.foot-btn:hover { color: var(--gold-hot); }
+
+/* Spine strip */
+.spine { background-color: var(--deep); transition: background-color 500ms var(--ease); background-image: var(--grain); box-shadow: inset -10px 0 18px -10px rgba(0, 0, 0, .8); display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 18px 0; min-height: 0; }
+.spine-seal { width: 54px; height: 54px; color: var(--gold); flex: none; }
+.rib { width: 100%; height: 7px; flex: none; background: rgba(0, 0, 0, .34); border-block: 1px solid var(--gold-dark); box-shadow: 0 2px 3px rgba(0, 0, 0, .5); }
+.spine h1 { writing-mode: vertical-rl; transform: rotate(180deg); font: 400 28px/1 var(--face-title); letter-spacing: .14em; color: var(--gold); }
+.tally { font: 500 15px/1.15 var(--face-caps); color: var(--gold); text-align: center; font-variant-numeric: lining-nums tabular-nums; }
+.tabs { display: flex; flex-direction: column; gap: 3px; width: 100%; }
+.tab { min-height: 44px; width: 100%; padding: 0 2px; font: 500 14px/1 var(--face-caps); color: var(--gold); text-align: center; background-color: rgba(0, 0, 0, .25); }
+.tab:hover { color: var(--gold-hot); }
+.tab[aria-pressed=true] { background-color: var(--gold); color: var(--ink); }
+
+/* Foil bar: one band per work, its length by page count. A gap shows as missing foil. */
+.foilbar { display: flex; gap: 1px; border: 1px solid var(--gold-dark); padding: 1px; }
+.foilbar.vertical { flex-direction: column; width: 14px; flex: 1; min-height: 120px; }
+.foilbar.horizontal { flex-direction: row; height: 10px; width: 100%; }
+.seg { display: block; flex-basis: 0; min-width: 2px; min-height: 2px; background: transparent; }
+.seg-read { background: var(--gold); }
+.seg-reading { background: var(--gold-hot); box-shadow: 0 0 0 1px var(--gold-hot); }
+.seg-next { box-shadow: inset 0 0 0 1px var(--gold-hot); }
+.seg-skipped { background: var(--gold-dark); }
+
+/* Medallions */
+.medallion { width: 74px; height: 74px; border-radius: 50%; border: 1px solid var(--gold); outline: 2px solid var(--gold); outline-offset: 3px; display: grid; place-items: center; background-color: var(--deep); color: var(--gold); font: 500 14px/1.1 var(--face-caps); text-align: center; padding: 6px; transition: color 150ms, background-color 150ms; }
+.medallion:hover, .medallion[aria-pressed=true] { color: var(--ink); background-color: var(--gold); }
+.medallion:focus-visible { outline: 2px solid var(--gold-hot); outline-offset: 5px; }
+
+/* Inline targets reach 44 px without moving the text */
+.title-btn, .plate-world, .foot-btn, .credit { position: relative; }
+.title-btn::after, .plate-world::after, .foot-btn::after, .credit::after { content: ''; position: absolute; inset: -12px -3px; }
+
+/* The sentence */
+.line { font-size: 17px; line-height: 1.3; }
+/* The words that lead into a title are part of its sentence: set at nearly its size, on its line, never as a small label above it. */
+.kicker { display: inline; margin-right: .3em; color: var(--second); font-size: calc(var(--t-line, 28px) * .8); line-height: 1.12; }
+/* The title is part of its sentence and breaks with it, so it is a button by role, not a box. */
+.title-btn { font: 400 var(--t-line, 28px)/1.12 var(--face-title); color: var(--gold); display: inline; cursor: pointer; }
+.line-reading, .line-next { text-wrap: balance; }
+.title-btn:hover { color: var(--gold-hot); }
+.line-reading { --t-line: clamp(23px, 2.9vh, 27px); }
+.line-next { --t-line: clamp(27px, 3.7vh, 34px); }
+.line-next .title-btn { color: var(--gold-hot); }
+/* The end of the order: the one sentence with nothing after it. */
+.line-done { font: 400 clamp(23px, 2.9vh, 27px)/1.2 var(--face-title); color: var(--gold); text-wrap: balance; }
+.edition, .gaps, .panel-p, .cons-empty, .con-note, .notice { text-wrap: pretty; }
+.dot { display: none; }
+.edition { margin-top: .35em; font-size: 16px; color: var(--bone); }
+.line + .line { margin-top: 16px; }
+.gaps { font-size: 15.5px; line-height: 1.35; color: var(--blind); }
+.gap-btn { color: var(--second); text-decoration: underline; text-underline-offset: .2em; text-decoration-thickness: 1px; }
+.gap-btn:hover { color: var(--gold-hot); }
+/* The gaps wrap into rows, and an invisible reach would cover the row above. For a finger the rows themselves are 44 px. */
+@media (max-width: 1279px), (pointer: coarse) { .gaps { line-height: 44px; } }
+/* What does not fit one row is a list, one title a row, and the words that made it a sentence go. */
+.gaps-list { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: .3em; line-height: 1.35; }
+.gaps-list .gaps-join { display: none; }
+.gaps-list .gap-btn { display: inline-flex; align-items: center; min-height: 44px; }
+/* The label shares the first title's row, and every title after it has a row of its own. */
+.gaps-list .gap-btn ~ .gap-btn { flex-basis: 100%; }
+/* A first title too long to share: the label goes above it, nearer its list than what comes before. */
+.gaps-alone .gaps-label { flex-basis: 100%; margin-top: 12px; }
+
+/* The plate: the same leather, darker, with a double gold frame */
+.plate { position: relative; background-color: var(--deep); background-image: var(--grain); border: 1px solid var(--gold); outline: 2px solid var(--gold); outline-offset: 3px; padding: 20px 20px 18px; display: flex; flex-direction: column; gap: 14px; color: var(--bone); }
+.plate-title { font: 400 clamp(24px, 2vw, 30px)/1.1 var(--face-title); text-wrap: balance; }
+.plate-orig { font-style: italic; color: var(--blind); font-size: 15.5px; margin-top: .2em; }
+.plate-sub { margin-top: .45em; font-size: 16px; color: var(--second); }
+.plate-world { text-decoration: underline; text-underline-offset: .2em; text-decoration-thickness: 1px; color: var(--second); }
+.plate-world:hover, .plate-world[aria-pressed=true] { color: var(--gold-hot); }
+/* Positioned, so the world's reach never lies over the mark button. */
+.plate-actions { position: relative; }
+.world-dot { display: inline-block; width: .62em; height: .62em; margin-right: .42em; border-radius: 50%; background-color: var(--dot, var(--relief-tone)); }
+/* The book's public facts, each beside its name: the name in small capitals, the fact in the reading face. */
+.plate-facts { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 5px 14px; margin: 0; font-size: 15.5px; line-height: 1.3; }
+.fact { display: contents; }
+.fact dt { font: 500 14px/1.45 var(--face-caps); letter-spacing: .03em; color: var(--blind); }
+.fact dd { margin: 0; color: var(--second); font-variant-numeric: oldstyle-nums; text-wrap: pretty; }
+.fact dd a { color: var(--second); }
+.fact dd a:hover { color: var(--gold-hot); }
+.plate-new { font: 500 15px var(--face-caps); color: var(--gold-hot); margin-top: .2em; }
+.plate-x, .plate-more { position: absolute; top: 6px; right: 6px; width: 44px; height: 44px; display: grid; place-items: center; color: var(--blind); }
+.plate-x:hover, .plate-more:hover { color: var(--gold-hot); }
+.btn-gold { display: block; width: 100%; min-height: 48px; padding: 10px 16px; background-color: var(--gold); color: var(--ink); font: 500 18px/1.1 var(--face-caps); letter-spacing: .02em; text-align: center; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .35), 0 2px 5px rgba(0, 0, 0, .4); transition: background-color 150ms; }
+.btn-gold:hover { background-color: var(--gold-hot); }
+.quiet-row { display: flex; flex-wrap: wrap; gap: 0 18px; margin-top: 4px; }
+.quiet { min-height: 44px; font-size: 16px; color: var(--second); text-decoration: underline; text-underline-offset: .22em; text-decoration-thickness: 1px; }
+.quiet:hover { color: var(--gold-hot); }
+.undo { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 48px; padding-bottom: 2px; }
+.undo-text { color: var(--gold); }
+.undo-btn { min-height: 44px; padding: 0 16px; border: 1px solid var(--gold); color: var(--gold); font: 500 16px var(--face-caps); }
+.undo-btn:hover { background-color: var(--gold); color: var(--ink); }
+.fuse { position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background-color: var(--gold); transform-origin: left; }
+.plate-h { font: 500 15px var(--face-caps); color: var(--gold); letter-spacing: .03em; display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.cons { border-top: 1px solid var(--gold-dark); padding-top: 10px; }
+.cons-empty { color: var(--blind); font-size: 16px; margin-top: 4px; }
+.con { border-bottom: 1px solid var(--gold-dark); }
+.con:last-child { border-bottom: 0; }
+.con-b { display: grid; grid-template-columns: 1fr auto auto; gap: 10px; align-items: baseline; width: 100%; min-height: 44px; padding: 10px 0; }
+.con-t { font-size: 16.5px; line-height: 1.2; color: var(--bone); }
+.con-type { font-size: 15px; color: var(--blind); }
+.con-act { font: 500 15px var(--face-caps); color: var(--gold); }
+.con-b:hover .con-t { color: var(--gold-hot); }
+.con-note { padding: 0 0 10px; font-size: 16.5px; line-height: 1.42; max-width: 62ch; }
+.con-src { font-size: 15px; color: var(--blind); margin-top: .4em; }
+.con-src a { color: var(--second); }
+.anthology p { font-size: 16px; }
+.anthology ul { margin: 6px 0 10px; color: var(--gold); font-size: 16px; }
+
+/* Panels replace the plate, so the mark button is never beside them */
+.panel { position: relative; background-color: var(--deep); background-image: var(--grain); border: 1px solid var(--gold); outline: 2px solid var(--gold); outline-offset: 3px; padding: 20px; display: flex; flex-direction: column; gap: 16px; color: var(--bone); overflow: auto; }
+.panel-head h2 { font: 400 26px/1.1 var(--face-title); color: var(--gold); }
+.group h3 { font: 500 15px var(--face-caps); color: var(--gold); margin-bottom: 6px; letter-spacing: .03em; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chips.mt { margin-top: 8px; }
+.chip { min-height: 44px; padding: 6px 12px; font-size: 15.5px; line-height: 1.1; border: 1px solid var(--gold-dark); color: var(--second); }
+.chip:hover { color: var(--gold-hot); border-color: var(--gold); }
+a.chip { display: inline-flex; align-items: center; text-decoration: none; }
+.chip[aria-pressed=true] { background-color: var(--gold); border-color: var(--gold); color: var(--ink); }
+.chip[aria-pressed=true]:hover { color: var(--ink); background-color: var(--gold-hot); }
+.panel-p { font-size: 16px; line-height: 1.4; color: var(--second); }
+.panel-p[role=status] { color: var(--bone); }
+.apart { margin-top: 18px; padding-top: 14px; border-top: 3px double var(--gold-dark); }
+.btn-danger { display: block; width: 100%; min-height: 48px; margin-top: 10px; padding: 10px 14px; border: 1px solid var(--danger); color: var(--danger); text-align: center; line-height: 1.2; }
+.btn-danger:hover { background-color: var(--danger); color: var(--ink); }
+.btn-quiet { display: block; width: 100%; min-height: 48px; margin-top: 10px; padding: 10px 14px; border: 1px solid var(--gold); color: var(--gold); text-align: center; }
+.btn-quiet:hover { background-color: var(--gold); color: var(--ink); }
+.warn { color: var(--bone); }
+.confirm { display: flex; flex-direction: column; }
+.unlocked-list li { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.file-input { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
+
+/* The key: each mark of the ring drawn beside its name */
+.how dt { font: 500 15px var(--face-caps); letter-spacing: .03em; color: var(--gold); margin-bottom: 4px; }
+.how dd { margin: 0 0 14px; font-size: 16px; line-height: 1.42; color: var(--second); max-width: 62ch; text-wrap: pretty; }
+.how dd:last-child { margin-bottom: 0; }
+.how dd p + p { margin-top: .5em; }
+.marks { display: grid; grid-template-columns: max-content 1fr; gap: 6px 10px; align-items: center; }
+.marks svg { display: block; }
+.how dd p + .marks { margin-top: .6em; }
+.how-new { margin: 0; font-size: 13px; }
+
+/* Footer */
+.site-footer { font-size: 15px; color: var(--blind); }
+/* Date and credit hold the ends of the rule, so the count takes the middle without moving either. */
+.foot-line { display: grid; grid-template-columns: 1fr auto 1fr; gap: 0 1.1em; align-items: baseline; }
+.foot-mid { display: flex; gap: 0 1.1em; justify-content: center; }
+/* «Unofficial» sits above the credit, in the credit's own column: the row keeps one height whatever the middle holds. */
+.foot-line .foot-end { justify-self: end; display: flex; flex-direction: column; align-items: flex-end; }
+/* In the count's place, which is empty when the file has failed: one line, so the row keeps its height and no book moves. */
+.foot-mid .notice { margin: 0; }
+@media (min-width: 1280px) { .foot-mid .notice { white-space: nowrap; } }
+.foot-count { color: var(--gold); }
+.credit, .unofficial { color: var(--blind); }
+.notice { color: var(--bone); text-align: center; margin-bottom: 2px; }
+
+/* Shared by the views: new marker on a spine or ring title */
+.new-tag { font: 500 14px var(--face-caps); font-style: normal; color: var(--gold-hot); margin-left: .3em; }
+
+/* The stamp. The base state is the finished one; the animation only exists under no-preference. */
+@keyframes press {
+  0% { transform: scale(1.035); filter: brightness(.6) blur(.5px); opacity: .55; }
+  26% { transform: scale(.985); filter: brightness(2.1) blur(0); opacity: 1; }
+  58% { transform: scale(1); filter: brightness(1.32); }
+  100% { transform: none; filter: none; }
+}
+@keyframes draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes rise { from { transform: translateY(16px); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes burn { to { transform: scaleX(0); } }
+@media (prefers-reduced-motion: no-preference) {
+  .stamped, .plate-title.stamped { animation: press 640ms var(--ease) backwards; transform-box: fill-box; transform-origin: center; }
+  .line-new { stroke-dasharray: 1; animation: draw 760ms var(--ease) 260ms backwards; }
+  .area.entering { animation: fade-in 220ms var(--ease) both; }
+  .slot.rising { animation: rise 240ms var(--ease) both; }
+  .fuse { animation: burn 8s linear both; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  .fuse { display: none; }
+}
+
+@media (max-width: 1279px) {
+  .app { grid-template-columns: 1fr; grid-template-rows: auto minmax(0, 1fr); }
+  .spine { flex-direction: row; flex-wrap: wrap; padding: 6px 16px 8px; gap: 6px 10px; box-shadow: none; border-bottom: 1px solid var(--gold-dark); min-height: auto; }
+  .spine-seal { width: 34px; height: 34px; }
+  .spine h1 { writing-mode: horizontal-tb; transform: none; font-size: 22px; letter-spacing: .08em; flex: 1; }
+  .spine .rib, .spine .tabs { display: none; }
+  .tally { font-size: 15px; white-space: nowrap; }
+  .tally br { display: none; }
+  .foilbar.horizontal { order: 9; flex: 0 0 100%; }
+  .spine-lock { display: grid; place-items: center; width: 44px; height: 44px; margin: -5px -10px -5px 0; color: var(--gold); }
+  .cover, .cover.interior { margin: 0; border: 0; outline: 0; display: flex; flex-direction: column; padding: 0; background: none; min-height: 0; }
+  .sentence-col { padding: 10px 16px 8px; gap: 4px; }
+  .line { font-size: 16px; }
+  /* Two lines of the sentence, one against the other: each reaches away from the other, so both have 44 px and neither covers the other. */
+  .line-reading .title-btn::after { inset: -24px -3px 0; }
+  .line-next .title-btn::after { inset: 0 -3px -24px; }
+  .line-reading, .line-next { --t-line: 18px; }
+  .kicker { font-size: inherit; line-height: inherit; }
+  .line-done { font-size: 18px; }
+  .dot { display: inline; }
+  .line + .line { margin-top: 2px; }
+  .edition { margin-top: 2px; font-size: 15.5px; color: var(--second); }
+  .controls { display: flex; align-items: center; gap: 2px 10px; padding: 0 16px 6px; }
+  .controls .medallion { position: static; width: auto; height: 44px; border: 0; outline: 0; background: none; padding: 0; color: var(--gold); font-size: 15px; border-radius: 0; }
+  .controls .medallion:hover, .controls .medallion[aria-pressed=true] { background: none; color: var(--gold-hot); text-decoration: underline; text-underline-offset: .28em; text-decoration-thickness: 1px; }
+  .controls .m-lang, .controls .m-spoilers { display: none; }
+  .tabs-phone { display: flex; flex: none; border: 1px solid var(--gold); }
+  .tabs-phone .tab { padding: 0 10px; width: auto; font-size: 15px; background: none; }
+  .tabs-phone .tab[aria-pressed=true] { background-color: var(--gold); }
+  .area { flex: 1; min-height: 0; padding: 0 16px 10px; border-top: 1px solid var(--gold-dark); overscroll-behavior: contain; scrollbar-width: none; }
+  /* The walnut interior, as on the PC, so the spines of the current world stand out from what is behind them. */
+  .interior .area { --blind: #bdb5a2; --second: #d7cfbc; background-color: var(--wood); }
+  .slot { margin: 0; padding: 0; flex: none; }
+  .slot:empty { display: none; }
+  .slot .plate, .slot .panel { outline: 0; border: 0; border-top: 3px double var(--gold); padding: 12px 16px; max-height: 66dvh; gap: 10px; }
+  .with-panel .slot { margin-top: 0; }
+  .slot .panel { max-height: 78dvh; }
+  .plate-title { font-size: 21px; padding-right: 92px; }
+  .plate .plate-close { display: grid; }
+  .plate.folded .plate-data, .plate.folded .cons, .plate.folded .plate-orig { display: none; }
+  .plate-more { display: grid; right: 50px; }
+  .area .site-footer { padding: 18px 0 6px; }
+  .foot-line { display: flex; flex-direction: column; align-items: center; }
+  .foot-mid { display: contents; }
+  .foot-line .foot-end { justify-self: auto; flex-direction: column; align-items: center; }
+  .foot-date:empty { display: none; }
+  /* Stacked, their reach would overlap: here each is a real 44 px row. */
+  .foot-btn, .credit { display: inline-flex; align-items: center; min-height: 44px; }
+  .foot-btn::after, .credit::after { display: none; }
+  /* A 44 px row inside a sentence would pull its lines apart. */
+  .notice .foot-btn { display: flex; width: fit-content; margin-inline: auto; }
+}
+/* A phone on its side has no height to give a list of its own: the whole cover scrolls, and the plate stays at its foot. */
+@media (max-width: 1279px) and (max-height: 560px) {
+  .cover, .cover.interior { overflow-y: auto; }
+  .area { flex: none; overflow: visible; }
+  .slot { position: sticky; bottom: 0; z-index: 3; }
+}
+@media (max-width: 359px) {
+  .tabs-phone .tab { padding: 0 7px; font-size: 14.5px; }
+  /* Three tabs and two controls do not share one row this narrow: the controls take the next. */
+  .controls { gap: 2px 8px; flex-wrap: wrap; }
+  .controls .medallion { font-size: 14.5px; }
+}
