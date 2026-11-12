@@ -81,9 +81,9 @@ Tapping a work only selects it. Marking is a separate button on its plate, with 
 
 ## 11. A synopsis waits for the earlier works of its own series
 
-Every work may have a synopsis in our own words. It waits only on works of its own series, never on another series, so a locked synopsis never tells you that two series are linked; a series opener or a work with no series is open. A synopsis that is malformed, or whose work has two, is treated as missing, so its requirements leave no trace. On the plate it is folded and its text enters the page only when asked for; a locked one says the same line on every work.
+Every work may have a synopsis in our own words. It waits only on earlier works of its own series, never on another series, so a locked synopsis never tells you that two series are linked; only the first work of a whole series, or a work with no series, is open. «Earlier» and «first» come from the publication order; where it is not known, the synopsis hides. A synopsis that is malformed, or whose work has two, is treated as missing, so its requirements leave no trace. On the plate it is folded and its text enters the page only when asked for; a locked one says the same line on every work.
 
-- `tests/unit/content-soundness.test.ts`: «a required work of another series», «a work with no series that is not open», «open on a later work of its series»
+- `tests/unit/content-soundness.test.ts`: «a required work of another series», «a work with no series that is not open», «open on a later work of its series», «open on the first work of a later part, numbered 1 there», «a required work that comes after it in the series», «requires that is not a list hides it, even when open»
 - `tests/unit/visible-content.test.ts`: «a gated synopsis is gated until its earlier work is read, then visible», «an unsound synopsis is missing, never gated», «two synopses for one book: missing»
 - `tests/unit/plate.test.ts`: «a visible synopsis is folded and its text is absent until asked», «a gated synopsis says the same line on every work and names no other work»
 - `e2e/leak.spec.ts`: «no gated synopsis text or hidden note reaches the page»

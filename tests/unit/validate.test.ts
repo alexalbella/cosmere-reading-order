@@ -512,6 +512,11 @@ describe('synopses and notes in the catalogue', () => {
     expect(problems).toContainEqual({ code: 'NOT_AN_OBJECT', id: 'syn#3' })
     expect(problems).toContainEqual({ code: 'REF_UNKNOWN', id: 'syn#4' })
   })
+  test('a synopsis on a work the catalogue lacks is named by position, never by what it says', () => {
+    const c = withContent()
+    c.synopses.push({ ...fixtureSynopses()[0]!, book: 'some-words-from-a-file' })
+    expect(validateCatalog(c)).toEqual([{ code: 'REF_UNKNOWN', id: 'syn#3' }])
+  })
   test('two synopses for one book: DUPLICATE_ID', () => {
     const c = withContent()
     c.synopses.push(fixtureSynopses()[0]!)
@@ -589,6 +594,8 @@ describe('plate facts for works not published, apocryphal and role-playing', () 
     ['an expected date that is not said official or not', { expected: { when: '2027', official: 'yes', source: SRC } }, 'BAD_FIELD'],
     ['an expected date without its source', { expected: { when: '2027', official: true } }, 'BAD_FIELD'],
     ['an announcement that is not an https link', { announcedIn: 'http://source.example.test/p' }, 'BAD_FIELD'],
+    ['a writing source that is not a link', { writing: { stage: 'idea', source: 'free text here', asOf: '2026-11-01' } }, 'BAD_FIELD'],
+    ['an expected source that is not a link', { expected: { when: '2027', official: true, source: 'free text here' } }, 'BAD_FIELD'],
   ])('%s', (_name, extra, code) => {
     expect(codes(withBook('low-tide-atlas', extra), 'low-tide-atlas')).toEqual([code])
   })
@@ -602,6 +609,8 @@ describe('plate facts for works not published, apocryphal and role-playing', () 
     ['a campaign that is not an https link', { crowdfunding: 'ftp://campaign.example.test' }, 'BAD_FIELD'],
     ['a canon value outside the list', { canon: { value: 'maybe', source: SRC } }, 'BAD_ENUM'],
     ['a canon value without its source', { canon: { value: 'yes' } }, 'BAD_FIELD'],
+    ['a canon source that is not a link', { canon: { value: 'yes', source: 'free text here' } }, 'BAD_FIELD'],
+    ['an apocryphal source that is not a link', { apocryphal: { reason: 'parody', source: 'free text here' } }, 'BAD_FIELD'],
   ])('%s', (_name, extra, code) => {
     expect(codes(withBook('paper-wolves', extra), 'paper-wolves')).toEqual([code])
   })

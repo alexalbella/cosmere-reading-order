@@ -95,12 +95,12 @@ function main(): number {
     const aliases = new Set(catalog.books.filter(isObject).flatMap((b) => (Array.isArray(b.aliases) ? b.aliases : [])))
     const cited = (id: string): boolean =>
       catalog.connections.some((c, i) => connectionLabel(c, i) === id && citesAlias(c, aliases)) ||
-      catalog.synopses.some((s, i) => synopsisLabel(s, i) === id && citesAlias(s, aliases)) ||
+      catalog.synopses.some((s, i) => synopsisLabel(s, i, bookIds) === id && citesAlias(s, aliases)) ||
       catalog.notes.some((n, i) => noteLabel(n, i) === id && citesAlias(n, aliases))
     const renamed = new Set(problems.filter((p) => p.code === 'REF_UNKNOWN' && cited(p.id)).map((p) => p.id))
     const prunable = problems.filter((p) => !bookIds.has(p.id) && !renamed.has(p.id))
     const conns = pruneBy(catalog.connections, prunable, connectionLabel)
-    const syns = pruneBy(catalog.synopses, prunable, synopsisLabel)
+    const syns = pruneBy(catalog.synopses, prunable, (s, i) => synopsisLabel(s, i, bookIds))
     const notes = pruneBy(catalog.notes, prunable, noteLabel)
     const dropped = [...conns.dropped, ...syns.dropped, ...notes.dropped]
     // Decided before anything is written: a run that will fail leaves the tree as it found it.

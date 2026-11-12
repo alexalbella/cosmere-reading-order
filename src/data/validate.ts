@@ -22,9 +22,12 @@ export function connectionLabel(c: Connection, index: number): string {
   return isObject(c) && isConnectionId(c.id) ? c.id : `conn#${index}`
 }
 
-/** A synopsis is named by its work, `syn:<book>`, or by its position when the work is not a valid id. */
-export function synopsisLabel(s: Synopsis, index: number): string {
-  return isObject(s) && isBookId(s.book) ? `syn:${s.book}` : `syn#${index}`
+/**
+ * A synopsis is named by its work, `syn:<book>`, only when the catalogue has that work; otherwise by its position,
+ * so text from a data file can never reach the output dressed as an id.
+ */
+export function synopsisLabel(s: Synopsis, index: number, known: ReadonlySet<string>): string {
+  return isObject(s) && isBookId(s.book) && known.has(s.book) ? `syn:${s.book}` : `syn#${index}`
 }
 
 export function noteLabel(n: Note, index: number): string {
@@ -54,7 +57,7 @@ function plateFactProblems(b: Book): boolean {
       isObject(w) &&
       typeof w.stage === 'string' &&
       absentOr(w.percent, (p) => isNumber(p) && (p as number) >= 0 && (p as number) <= 100) &&
-      isText(w.source) &&
+      isHttps(w.source) &&
       isCalendarDate(w.asOf),
     ) ||
     !absentOr(expected, (e) =>
@@ -63,15 +66,15 @@ function plateFactProblems(b: Book): boolean {
       EXPECTED_WHEN.test(e.when) &&
       (e.when.length !== 10 || isCalendarDate(e.when)) &&
       typeof e.official === 'boolean' &&
-      isText(e.source),
+      isHttps(e.source),
     ) ||
     !absentOr(b.announcedIn, isHttps) ||
-    !absentOr(apocryphal, (a) => isObject(a) && typeof a.reason === 'string' && isText(a.source)) ||
+    !absentOr(apocryphal, (a) => isObject(a) && typeof a.reason === 'string' && isHttps(a.source)) ||
     !absentOr(b.publisher, isText) ||
     !absentOr(b.line, isText) ||
     !absentOr(b.rpgKind, (k) => typeof k === 'string') ||
     !absentOr(b.crowdfunding, isHttps) ||
-    !absentOr(canon, (c) => isObject(c) && typeof c.value === 'string' && isText(c.source))
+    !absentOr(canon, (c) => isObject(c) && typeof c.value === 'string' && isHttps(c.source))
   )
 }
 
@@ -194,8 +197,9 @@ function catalogueSynopsisProblems(synopses: unknown, books: unknown, add: Add):
   const map = bookMap(books)
   const perBook = new Map<unknown, number>()
   for (const s of list) if (isObject(s)) perBook.set(s.book, (perBook.get(s.book) ?? 0) + 1)
+  const known = new Set(map.keys())
   list.forEach((s, index) => {
-    const id = synopsisLabel(s, index)
+    const id = synopsisLabel(s, index, known)
     for (const code of synopsisProblems(s, map)) add(code, id)
     if (isObject(s) && (perBook.get(s.book) ?? 0) > 1) add('DUPLICATE_ID', id)
   })

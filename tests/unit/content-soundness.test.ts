@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'vitest'
 import { isNoteId, noteProblems, synopsisProblems } from '../../src/data/soundness'
-import type { Note, ProblemCode, Synopsis } from '../../src/data/types'
+import type { Book, Note, ProblemCode, Synopsis } from '../../src/data/types'
 import { fixtureBookMap, fixtureNotes, fixtureSynopses } from '../fixtures/content'
 
 const books = fixtureBookMap()
@@ -29,7 +29,7 @@ describe('synopsis soundness', () => {
     ['a verifier', () => ({ ...syn('glass-harbour'), verifiedBy: '' }), 'UNVERIFIED'],
     ['a real date', () => ({ ...syn('glass-harbour'), verifiedOn: '2026-02-30' }), 'BAD_DATE'],
     ['someone else verifies', () => ({ ...syn('glass-harbour'), verifiedBy: 'Agent-A' }), 'SELF_VERIFIED'],
-    ['open and requires at once', () => ({ ...syn('copper-orchard'), requires: ['orchard-dusk'] }), 'SYNOPSIS_OPEN_AND_REQUIRES'],
+    ['open and requires at once', () => ({ ...syn('glass-harbour'), requires: ['ash-road'] }), 'SYNOPSIS_OPEN_AND_REQUIRES'],
     ['neither open nor gated', () => ({ ...syn('orchard-dusk'), requires: [] }), 'SYNOPSIS_NOT_GATED'],
     ['a required work of another series', () => ({ ...syn('orchard-dusk'), requires: ['ash-road'] }), 'SYNOPSIS_OUTSIDE_SERIES'],
     [
@@ -45,6 +45,34 @@ describe('synopsis soundness', () => {
   ]
   test.each(cases)('%s', (_name, make, code) => {
     expect(synopsisProblems(make(), books)).toEqual([code])
+  })
+
+  // Final review: the series order comes from the publication order of the whole series, not from a number
+  // that restarts in each part, and a place that is not known fails closed.
+  const reshaped = (id: string, extra: Partial<Book>) => {
+    const map = fixtureBookMap()
+    map.set(id, { ...map.get(id)!, ...extra })
+    return map
+  }
+  test('open on the first work of a later part, numbered 1 there', () => {
+    const map = reshaped('orchard-dusk', { subseries: 'Dusk', seriesIndex: 1 })
+    expect(synopsisProblems({ ...without(syn('orchard-dusk'), 'requires'), open: true }, map)).toEqual(['SYNOPSIS_OPEN_LATER'])
+  })
+  test('open on a work of a series whose order is not known', () => {
+    const map = reshaped('orchard-dusk', { order: {} })
+    expect(synopsisProblems(syn('copper-orchard'), map)).toEqual(['SYNOPSIS_OPEN_LATER'])
+  })
+  test('a required work that comes after it in the series', () => {
+    expect(synopsisProblems({ ...without(syn('copper-orchard'), 'open'), requires: ['orchard-dusk'] }, books)).toEqual(['SYNOPSIS_REQUIRES_NOT_EARLIER'])
+  })
+  test('a synopsis that requires its own work', () => {
+    expect(synopsisProblems({ ...syn('orchard-dusk'), requires: ['orchard-dusk'] }, books)).toEqual(['SYNOPSIS_REQUIRES_NOT_EARLIER'])
+  })
+  test('requires that is not a list hides it, even when open', () => {
+    expect(synopsisProblems({ ...syn('copper-orchard'), requires: 'orchard-dusk' }, books)).toEqual(['BAD_FIELD'])
+  })
+  test('a synopsis never carries an upstream source', () => {
+    expect(synopsisProblems({ ...syn('glass-harbour'), sources: [{ url: 'https://upstream.example.test/p', kind: 'upstream' }] }, books)).toEqual(['UPSTREAM_SOURCE_ON_NEW'])
   })
 
   test('never throws, whatever the entry', () => {
@@ -79,7 +107,7 @@ describe('note soundness', () => {
     ['a Word of Brandon needs a primary source', () => ({ ...note('n-0001'), sources: [{ url: 'https://wiki-one.example.test/p', kind: 'wiki', cites: 'ch. 2' }] }), 'NOTE_WEAK_SOURCE'],
     ['a confirmed theory needs a primary source', () => ({ ...note('n-0002'), kind: 'confirmed-theory' }), 'NOTE_WEAK_SOURCE'],
     ['at least one source', () => ({ ...note('n-0002'), sources: [] }), 'NO_SOURCE'],
-    ['sources are http links', () => ({ ...note('n-0002'), sources: [{ url: 'javascript:alert(1)', kind: 'wiki' }] }), 'BAD_SOURCE_URL'],
+    ['sources are http links', () => ({ ...note('n-0002'), sources: [{ url: 'javascript:alert(1)', kind: 'official' }] }), 'BAD_SOURCE_URL'],
     ['an author', () => ({ ...note('n-0002'), author: ' ' }), 'NO_AUTHOR'],
     ['a verifier', () => ({ ...note('n-0002'), verifiedOn: '' }), 'UNVERIFIED'],
     ['a real date', () => ({ ...note('n-0002'), verifiedOn: '12/11/2026' }), 'BAD_DATE'],
@@ -87,6 +115,16 @@ describe('note soundness', () => {
   ]
   test.each(cases)('%s', (_name, make, code) => {
     expect(noteProblems(make(), known)).toEqual([code])
+  })
+
+  test('an easter egg or a relation resting on one forum source is too weak', () => {
+    for (const kind of ['egg', 'relation']) {
+      expect(noteProblems({ ...note('n-0002'), kind, sources: [{ url: 'https://forum.example.test/t', kind: 'forum' }] }, known)).toEqual(['NOTE_WEAK_SOURCE'])
+    }
+  })
+  test('a note never carries an upstream source', () => {
+    const sources = [...note('n-0002').sources, { url: 'https://upstream.example.test/p', kind: 'upstream' }]
+    expect(noteProblems({ ...note('n-0002'), sources }, known)).toEqual(['UPSTREAM_SOURCE_ON_NEW'])
   })
 
   test('never throws, whatever the entry', () => {

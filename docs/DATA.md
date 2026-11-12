@@ -51,7 +51,7 @@ Lists of allowed values live in `src/data/types.ts` (`WORLD_KEYS`, `FORMATS`, `B
 
 #### Plate facts for works not yet published, apocryphal works and role-playing books
 
-All optional. Each is a list value or a link, never free text, so a fact cannot carry plot, and each names its source. On an announced or planned work the plate keeps the row and says «Por anunciar» / «To be announced» when the fact is missing; on other works a missing fact takes no row.
+All optional. Each is a list value or a link, never free text, so a fact cannot carry plot, and each names its source as an https link. On an announced or planned work the plate keeps the row and says «Por anunciar» / «To be announced» when the fact is missing; on other works a missing fact takes no row.
 
 | Field | Type | Meaning |
 | --- | --- | --- |
@@ -132,9 +132,9 @@ One per work, in our own words: never a publisher's blurb, never text copied or 
 | --- | --- | --- |
 | `book` | book id | The work. One synopsis per work: two for one work hide both. |
 | `text.en`, `text.es` | string | The synopsis in both languages. |
-| `requires` | book id[] | The works it would spoil. **Only works of the same series**, never another series, so a locked synopsis never tells a reader that two series are linked. |
-| `open` | `true` | Instead of `requires`, for a synopsis that waits for nothing: a series opener, or a work with no series (which must be open). |
-| `sources`, `author`, `verifiedBy`, `verifiedOn` | | As for connections. |
+| `requires` | book id[] | The works it would spoil. **Only earlier works of the same series** (earlier by `order.publication`), never another series and never the work itself, so a locked synopsis never tells a reader that two series are linked. |
+| `open` | `true` | Instead of `requires`, for a synopsis that waits for nothing: the first work of the whole series by `order.publication` (not the first of a part), or a work with no series (which must be open). Where the order is not known, it cannot be open. |
+| `sources`, `author`, `verifiedBy`, `verifiedOn` | | As for connections, except that `kind: upstream` is never allowed. |
 
 Exactly one of `open: true` or a non-empty `requires`. An empty `requires` without `open` hides the synopsis, like an empty `requires` hides a connection. The plate says one of three things: the folded synopsis, opened on request; the same line on every work saying it opens once the earlier works of its series are read; or «Sin sinopsis todavía» / «No synopsis yet».
 
@@ -166,7 +166,7 @@ What hangs on one or more works without linking two of them (a link between two 
 | `text.en`, `text.es` | string | The note, in our own words. |
 | `quote.en`, `quote.es` | string | For a `wob`: the literal English quote and our Spanish translation. Required on a `wob`. |
 | `requires` | book id[] | Every work in `books`, and any other work the note gives away. |
-| `sources`, `author`, `verifiedBy`, `verifiedOn` | | As for connections. A `wob` or `confirmed-theory` needs a `word-of-brandon` or `official` source. |
+| `sources`, `author`, `verifiedBy`, `verifiedOn` | | As for connections, never `kind: upstream`. A `wob` or `confirmed-theory` needs a `word-of-brandon` or `official` source; an `egg` or `relation` meets the source rule for `confirmed` connections. |
 
 A note shows only when every work in `requires` is read or unlocked, with its text folded until asked for. A hidden note leaves no trace: no count per work, no empty section.
 
@@ -214,7 +214,7 @@ Output is one line per problem, `CODE id`, never content. A synopsis is named `s
 | `NO_SOURCE` | No source. |
 | `BAD_SOURCE_URL` | A source url is not http(s). |
 | `CONFIRMED_WEAK_SOURCE` | `confirmed` without a source strong enough (see the rule above). |
-| `UPSTREAM_SOURCE_ON_NEW` | `kind: upstream` on an entry whose author is not `upstream`. |
+| `UPSTREAM_SOURCE_ON_NEW` | `kind: upstream` on an entry whose author is not `upstream`, or on any synopsis or note. |
 | `NO_AUTHOR` | Blank author. |
 | `UNVERIFIED` | No verifier or no verification date. |
 | `BAD_DATE` | A date that is not a real calendar date. |
@@ -236,12 +236,13 @@ Output is one line per problem, `CODE id`, never content. A synopsis is named `s
 | `SYNOPSIS_OUTSIDE_SERIES` | A synopsis requires a work of another series. |
 | `SYNOPSIS_NOT_GATED` | A synopsis has neither `open: true` nor a non-empty `requires`. |
 | `SYNOPSIS_OPEN_AND_REQUIRES` | A synopsis has both. |
-| `SYNOPSIS_OPEN_LATER` | `open: true` on a later work of its series (`seriesIndex` above 1). |
+| `SYNOPSIS_OPEN_LATER` | `open: true` on a work that is not the first of its whole series by `order.publication`, or whose place there is not known. |
 | `SYNOPSIS_NO_SERIES_NOT_OPEN` | A work with no series whose synopsis is not open. |
+| `SYNOPSIS_REQUIRES_NOT_EARLIER` | A synopsis requires its own work, a later work of its series, or one whose place is not known. |
 | `NOTE_NO_BOOKS` | A note hangs on no work. |
 | `NOTE_REQUIRES_MISSING_BOOK` | A note's `requires` lacks one of its `books`. |
 | `NOTE_QUOTE_MISSING` | A `wob` without its quote in both languages. |
-| `NOTE_WEAK_SOURCE` | A `wob` or `confirmed-theory` without a `word-of-brandon` or `official` source. |
+| `NOTE_WEAK_SOURCE` | A `wob` or `confirmed-theory` without a `word-of-brandon` or `official` source, or an `egg` or `relation` below the rule for `confirmed`. |
 
 The full list is `PROBLEM_CODES` in `src/data/types.ts`; the checks live in `src/data/soundness.ts` (one connection, synopsis or note) and `src/data/validate.ts` (the catalogue). The site uses the same checks at runtime, so anything the validator rejects is also hidden on screen.
 

@@ -653,8 +653,10 @@ describe('synopsis and notes on the plate', () => {
     const { wrapper } = run({
       mutate: (c) => {
         withContent(c)
-        c.synopses.push({ ...fixtureSynopses()[1]!, book: 'ash-road', requires: ['ash-road'] })
-        c.books.find((b) => b.id === 'ash-road')!.series = 'Ash'
+        // A third work of the Orchard series, after the opener: its synopsis waits on the opener too.
+        c.books.find((b) => b.id === 'glass-harbour')!.series = 'Orchard'
+        c.synopses = c.synopses.filter((s) => s.book !== 'glass-harbour')
+        c.synopses.push({ ...fixtureSynopses()[1]!, book: 'glass-harbour', requires: ['copper-orchard'] })
       },
     })
     await pick(wrapper, 'Ocaso del huerto')
@@ -663,7 +665,7 @@ describe('synopsis and notes on the plate', () => {
     expect(gated).not.toContain('Huerto de cobre')
     expect(synopsisOf(wrapper).find('button').exists()).toBe(false)
     expect(wrapper.html()).not.toContain('LEAK-syn-orchard-dusk')
-    await pick(wrapper, 'Camino de ceniza')
+    await pick(wrapper, 'Puerto de cristal')
     expect(synopsisOf(wrapper).text()).toBe(gated)
   })
 

@@ -176,8 +176,20 @@ const list = (value: unknown): unknown[] => (Array.isArray(value) ? Array.from(v
 const bothLanguages = (value: unknown): boolean => !isBlank(field(value, 'en')) && !isBlank(field(value, 'es'))
 
 /**
- * Everything wrong with one synopsis. It waits only on works of its own series, so a lock never tells a reader
- * that two series are linked; a work with no series has nothing to wait for and must be open.
+ * Whether `a` came out before `b`, by the catalogue's publication order. Null when either has no place in it:
+ * the series rules then fail closed. A number inside a series restarts in each part, so it cannot say this.
+ */
+function cameBefore(a: Book, b: Book): boolean | null {
+  const pa = isObject(a.order) ? a.order.publication : undefined
+  const pb = isObject(b.order) ? b.order.publication : undefined
+  if (typeof pa !== 'number' || typeof pb !== 'number' || pa === pb) return null
+  return pa < pb
+}
+
+/**
+ * Everything wrong with one synopsis. It waits only on earlier works of its own series, so a lock never tells a
+ * reader that two series are linked; it is open only on the first work of the whole series, or on a work with no
+ * series, which has nothing to wait for and must be open.
  */
 export function synopsisProblems(s: unknown, books: ReadonlyMap<BookId, Book>): ProblemCode[] {
   if (!isObject(s)) return ['NOT_AN_OBJECT']
@@ -188,14 +200,23 @@ export function synopsisProblems(s: unknown, books: ReadonlyMap<BookId, Book>): 
   const other = (ref: unknown): Book | undefined => (typeof ref === 'string' ? books.get(ref) : undefined)
 
   when(!book || requires.some((ref) => !other(ref)), 'REF_UNKNOWN')
+  when(s.requires !== undefined && !Array.isArray(s.requires), 'BAD_FIELD')
   when(open && requires.length > 0, 'SYNOPSIS_OPEN_AND_REQUIRES')
   when(!open && requires.length === 0, 'SYNOPSIS_NOT_GATED')
   if (book) {
-    when(book.series === null && !open, 'SYNOPSIS_NO_SERIES_NOT_OPEN')
-    when(book.series !== null && requires.some((ref) => other(ref) !== undefined && other(ref)!.series !== book.series), 'SYNOPSIS_OUTSIDE_SERIES')
-    when(open && typeof book.seriesIndex === 'number' && book.seriesIndex > 1, 'SYNOPSIS_OPEN_LATER')
+    const series = typeof book.series === 'string' ? book.series : null
+    when(series === null && !open, 'SYNOPSIS_NO_SERIES_NOT_OPEN')
+    if (series !== null) {
+      const sameSeries = (b: Book | undefined): b is Book => b !== undefined && b.series === series
+      when(requires.some((ref) => other(ref) !== undefined && !sameSeries(other(ref))), 'SYNOPSIS_OUTSIDE_SERIES')
+      when(requires.some((ref) => sameSeries(other(ref)) && cameBefore(other(ref)!, book) !== true), 'SYNOPSIS_REQUIRES_NOT_EARLIER')
+      const siblings = [...books.values()].filter((b) => b.id !== book.id && sameSeries(b))
+      when(open && siblings.some((b) => cameBefore(book, b) !== true), 'SYNOPSIS_OPEN_LATER')
+    }
   }
-  provenance(s, list(s.sources), when)
+  const sources = list(s.sources)
+  when(sources.some((x) => field(x, 'kind') === 'upstream'), 'UPSTREAM_SOURCE_ON_NEW')
+  provenance(s, sources, when)
   when(!bothLanguages(s.text), 'MISSING_LANGUAGE')
   return [...problems]
 }
@@ -216,6 +237,9 @@ export function noteProblems(n: unknown, known: ReadonlySet<BookId>): ProblemCod
   when(books.some((b) => !requires.includes(b)), 'NOTE_REQUIRES_MISSING_BOOK')
   when(n.kind === 'wob' && !bothLanguages(n.quote), 'NOTE_QUOTE_MISSING')
   when((n.kind === 'wob' || n.kind === 'confirmed-theory') && !primary, 'NOTE_WEAK_SOURCE')
+  // Notes hold confirmed content only, so the rest meet the rule for a confirmed connection.
+  when((n.kind === 'egg' || n.kind === 'relation') && sources.length > 0 && !strongEnough(n.author, sources), 'NOTE_WEAK_SOURCE')
+  when(sources.some((x) => field(x, 'kind') === 'upstream'), 'UPSTREAM_SOURCE_ON_NEW')
   provenance(n, sources, when)
   when(!bothLanguages(n.text), 'MISSING_LANGUAGE')
   return [...problems]
