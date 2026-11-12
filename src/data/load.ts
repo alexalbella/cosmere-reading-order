@@ -1,4 +1,4 @@
-import type { Book, Catalog, Connection } from './types'
+import type { Book, Catalog, Connection, Note, Synopsis } from './types'
 import { isObject } from './soundness'
 
 const base = (): string => {
@@ -37,6 +37,16 @@ export function loadBooks(fetchFn: typeof fetch = defaultFetch): Promise<Book[] 
  */
 export function loadConnections(fetchFn: typeof fetch = defaultFetch): Promise<Connection[] | null> {
   return list<Connection>(fetchFn, 'connections.json')
+}
+
+/** Null when they fail, like connections: the plate then says there is no synopsis yet. The gate drops the malformed. */
+export function loadSynopses(fetchFn: typeof fetch = defaultFetch): Promise<Synopsis[] | null> {
+  return list<Synopsis>(fetchFn, 'synopses.json')
+}
+
+/** Null when they fail: no note shows, and nothing else is lost. */
+export function loadNotes(fetchFn: typeof fetch = defaultFetch): Promise<Note[] | null> {
+  return list<Note>(fetchFn, 'notes.json')
 }
 
 export async function loadMeta(fetchFn: typeof fetch = defaultFetch): Promise<Catalog['meta']> {

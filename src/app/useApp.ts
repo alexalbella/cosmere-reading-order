@@ -1,12 +1,12 @@
 import { computed, onScopeDispose, ref, shallowRef, watch, type ComputedRef, type Ref } from 'vue'
-import { loadBooks, loadConnections, loadMeta } from '../data/load'
-import type { Book, BookId, Catalog, Connection, OrderKey, WorldKey } from '../data/types'
+import { loadBooks, loadConnections, loadMeta, loadNotes, loadSynopses } from '../data/load'
+import type { Book, BookId, Catalog, Connection, Note, OrderKey, WorldKey } from '../data/types'
 import { defaultFilters, filterBooks, filterConnections, type Filters } from '../filters/filters'
 import type { Lang } from '../i18n'
 import { applyMark, restoreMarks, setUnlock, worksCarriedBy } from '../reading/marks'
 import { counts, current, gaps, next, type NextOptions } from '../reading/next'
 import { statusOf } from '../reading/status'
-import { visible, type Marks, type MarkStatus } from '../spoilers/visible'
+import { synopsisFor, visible, visibleNotes as notesShown, type Marks, type MarkStatus, type SynopsisView } from '../spoilers/visible'
 import { build, clampFuture, mergeState, ownEntries, sameState, type ReadState } from '../state/merge'
 import { loadPrefs, savePrefs, type View } from '../state/prefs'
 import { rekeyState } from '../state/rekey'
@@ -22,6 +22,9 @@ const STAMP_MS = 1400
 
 /** Where the connections file stands. While it is not `available` there are none, so nothing can be shown. */
 export type ConnectionsState = 'pending' | 'available' | 'failed'
+
+/** Where the synopses and notes files stand together: pending until both answer, failed if either did. */
+export type ContentState = 'pending' | 'available' | 'failed'
 
 export type ImportOutcome =
   | { ok: true; marked: number; unlocked: number; unknown: number }
@@ -67,6 +70,13 @@ export function useApp(options: UseAppOptions = {}): UseAppResult {
   const connectionsState = ref<ConnectionsState>(
     options.initial ? (options.initial.connectionsAvailable ? 'available' : 'failed') : 'pending',
   )
+  // Each file on its own, so one that fails hides only its own records.
+  const synopsesState = ref<ConnectionsState>(options.initial ? 'available' : 'pending')
+  const notesState = ref<ConnectionsState>(options.initial ? 'available' : 'pending')
+  const contentState = computed<ContentState>(() => {
+    const both = [synopsesState.value, notesState.value]
+    return both.includes('pending') ? 'pending' : both.includes('failed') ? 'failed' : 'available'
+  })
   const status = ref<'loading' | 'ready' | 'failed'>(options.initial ? 'ready' : 'loading')
 
   // The state is replaced as a whole, never written in place: `Object.hasOwn` on a reactive
@@ -163,6 +173,15 @@ export function useApp(options: UseAppOptions = {}): UseAppResult {
         void loadMeta(options.fetchFn).then((meta) => {
           catalog.value = { ...catalog.value!, meta }
         })
+        // After the connections: what the plate says comes last of all, and the gate reads it afresh when it lands.
+        void loadSynopses(options.fetchFn).then((synopses) => {
+          catalog.value = { ...catalog.value!, synopses: synopses ?? [] }
+          synopsesState.value = synopses ? 'available' : 'failed'
+        })
+        void loadNotes(options.fetchFn).then((notes) => {
+          catalog.value = { ...catalog.value!, notes: notes ?? [] }
+          notesState.value = notes ? 'available' : 'failed'
+        })
       })
     })
   }
@@ -209,6 +228,16 @@ export function useApp(options: UseAppOptions = {}): UseAppResult {
   )
   const connectionsOf = (id: BookId): Connection[] =>
     visibleConnections.value.filter((c) => c.from === id || c.to === id)
+
+  // Synopses and notes reach the plate only through the gate, and only once their own file has come.
+  const visibleNotes = computed<Note[]>(() =>
+    catalog.value && notesState.value === 'available' ? notesShown(catalog.value, state.value.marks, state.value.unlocks) : [],
+  )
+  const notesOf = (id: BookId): Note[] => visibleNotes.value.filter((n) => n.books.includes(id))
+  const synopsisOf = (id: BookId): SynopsisView =>
+    catalog.value && synopsesState.value === 'available'
+      ? synopsisFor(catalog.value, state.value.marks, state.value.unlocks, id)
+      : { state: 'missing' }
 
   const currentBook = computed(() => current(shownBooks.value, state.value.marks, readingOptions.value))
   const nextBook = computed(() => next(shownBooks.value, state.value.marks, readingOptions.value))
@@ -335,6 +364,10 @@ export function useApp(options: UseAppOptions = {}): UseAppResult {
     readingOptions,
     visibleConnections,
     connectionsOf,
+    contentState,
+    visibleNotes,
+    notesOf,
+    synopsisOf,
     currentBook,
     nextBook,
     gapBooks,
@@ -373,6 +406,13 @@ export interface UseAppResult {
   readingOptions: ComputedRef<NextOptions>
   visibleConnections: ComputedRef<Connection[]>
   connectionsOf: (id: BookId) => Connection[]
+  contentState: ComputedRef<ContentState>
+  /** Every note the marks allow, after the gate. */
+  visibleNotes: ComputedRef<Note[]>
+  /** The visible notes that hang on one work. */
+  notesOf: (id: BookId) => Note[]
+  /** Visible, gated or missing: what the plate may say. Missing while its file is pending or failed. */
+  synopsisOf: (id: BookId) => SynopsisView
   currentBook: ComputedRef<Book | null>
   nextBook: ComputedRef<Book | null>
   gapBooks: ComputedRef<Book[]>

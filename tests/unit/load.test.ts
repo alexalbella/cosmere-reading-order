@@ -1,8 +1,9 @@
 import { describe, expect, test, vi } from 'vitest'
-import { FETCH_TIMEOUT_MS, loadBooks, loadConnections, loadMeta } from '../../src/data/load'
+import { FETCH_TIMEOUT_MS, loadBooks, loadConnections, loadMeta, loadNotes, loadSynopses } from '../../src/data/load'
 import type { Catalog } from '../../src/data/types'
 import { visible } from '../../src/spoilers/visible'
 import { fixtureCatalog } from '../fixtures/catalog'
+import { fixtureNotes, fixtureSynopses } from '../fixtures/content'
 
 const fixture = fixtureCatalog()
 
@@ -103,6 +104,17 @@ describe('the catalogue files, each on its own', () => {
   test('one malformed connection is dropped by isShowable later, others survive', async () => {
     const mixed = [fixture.connections[0], { id: 'c-9999', from: 'ash-road' }, 7, null, fixture.connections[1]]
     expect(seen(await loadConnections(fetcher({ 'connections.json': mixed })))).toEqual(['c-0001', 'c-0002'])
+  })
+  test('synopses and notes come through as lists, and fail as null', async () => {
+    const files = fetcher({ 'synopses.json': fixtureSynopses(), 'notes.json': fixtureNotes() })
+    expect(await loadSynopses(files)).toHaveLength(3)
+    expect(await loadNotes(files)).toHaveLength(2)
+    expect(await loadSynopses(fetcher({}))).toBeNull()
+    expect(await loadNotes(fetcher({}))).toBeNull()
+    for (const bad of ['{oops', { not: 'a list' }, 'null']) {
+      expect(await loadSynopses(fetcher({ 'synopses.json': bad }))).toBeNull()
+      expect(await loadNotes(fetcher({ 'notes.json': bad }))).toBeNull()
+    }
   })
   test('a missing or corrupt meta is tolerated', async () => {
     expect((await loadMeta(fetcher({}))).updatedOn).toBe('')

@@ -4,6 +4,7 @@ import { useApp } from '../../src/app/useApp'
 import { filterConnections } from '../../src/filters/filters'
 import { visible } from '../../src/spoilers/visible'
 import { fixtureCatalog } from '../fixtures/catalog'
+import { fixtureNotes, fixtureSynopses } from '../fixtures/content'
 
 function fakeStorage(seed: Record<string, string> = {}): Storage {
   const data = new Map<string, string>(Object.entries(seed))
@@ -381,7 +382,8 @@ describe('the catalogue arrives in parts', () => {
       const url = String(input)
       if (url.endsWith('books.json')) return Response.json(fixture.books)
       if (url.endsWith('connections.json')) return new Promise<Response>((resolve) => (answerConnections = resolve))
-      return new Promise<Response>((resolve) => (answerMeta = resolve))
+      if (url.endsWith('meta.json')) return new Promise<Response>((resolve) => (answerMeta = resolve))
+      return new Promise<Response>(() => {})
     }) as typeof fetch
     const app = useApp({ fetchFn, storage: fakeStorage(seed), now: () => 1_000_000 })
     await vi.waitFor(() => expect(answerConnections && answerMeta).toBeTruthy())
@@ -405,7 +407,89 @@ describe('the catalogue arrives in parts', () => {
     watch(app.status, () => (atReady = [...asked]), { flush: 'sync' })
     await vi.waitFor(() => expect(app.status.value).toBe('ready'))
     expect(atReady).toEqual(['books.json'])
-    await vi.waitFor(() => expect(asked.slice().sort()).toEqual(['books.json', 'connections.json', 'meta.json']))
+    await vi.waitFor(() =>
+      expect(asked.slice().sort()).toEqual(['books.json', 'connections.json', 'meta.json', 'notes.json', 'synopses.json']),
+    )
+  })
+
+  describe('synopses and notes', () => {
+    /** Books answer at once; every other file waits for its own call. */
+    async function arrivingContent(seed: Record<string, string> = {}) {
+      const asked: string[] = []
+      const answer: Record<string, (r: Response) => void> = {}
+      const fetchFn = (async (input: RequestInfo | URL) => {
+        const name = String(input).split('/').pop()!
+        asked.push(name)
+        if (name === 'books.json') return Response.json(fixture.books)
+        return new Promise<Response>((resolve) => (answer[name] = resolve))
+      }) as typeof fetch
+      const app = useApp({ fetchFn, storage: fakeStorage(seed) })
+      let atReady: string[] = []
+      watch(app.status, () => (atReady = [...asked]), { flush: 'sync' })
+      await vi.waitFor(() => expect(answer['synopses.json'] && answer['notes.json']).toBeTruthy())
+      return { app, asked, answer, atReady: () => atReady }
+    }
+    const noteIds = (app: ReturnType<typeof useApp>, id: string) => app.notesOf(id).map((n) => n.id)
+
+    test('synopses and notes load after first paint and never delay the books', async () => {
+      const { app, asked, atReady } = await arrivingContent()
+      expect(app.status.value).toBe('ready')
+      expect(atReady()).toEqual(['books.json'])
+      expect(asked.indexOf('synopses.json')).toBeGreaterThan(asked.indexOf('connections.json'))
+      expect(asked.indexOf('notes.json')).toBeGreaterThan(asked.indexOf('connections.json'))
+    })
+
+    test('while pending, every synopsis is missing and no note shows', async () => {
+      const { app } = await arrivingContent(readEverything)
+      expect(app.contentState.value).toBe('pending')
+      expect(app.synopsisOf('copper-orchard')).toEqual({ state: 'missing' })
+      expect(app.synopsisOf('orchard-dusk')).toEqual({ state: 'missing' })
+      expect(app.notesOf('ash-road')).toEqual([])
+      expect(app.visibleNotes.value).toEqual([])
+    })
+
+    test('once they arrive they pass through the gate', async () => {
+      const { app, answer } = await arrivingContent(readEverything)
+      answer['synopses.json']!(Response.json(fixtureSynopses()))
+      answer['notes.json']!(Response.json(fixtureNotes()))
+      await flush()
+      expect(app.contentState.value).toBe('available')
+      expect(app.synopsisOf('orchard-dusk').state).toBe('visible')
+      expect(noteIds(app, 'ash-road')).toEqual(['n-0001'])
+      expect(noteIds(app, 'glass-harbour')).toEqual(['n-0002'])
+      expect(noteIds(app, 'paper-wolves')).toEqual([])
+    })
+
+    test('a failed file hides its own records, and the rest works', async () => {
+      const { app, answer } = await arrivingContent(readEverything)
+      answer['synopses.json']!(new Response('no', { status: 500 }))
+      answer['notes.json']!(Response.json(fixtureNotes()))
+      await flush()
+      expect(app.contentState.value).toBe('failed')
+      expect(app.status.value).toBe('ready')
+      expect(app.synopsisOf('copper-orchard')).toEqual({ state: 'missing' })
+      expect(noteIds(app, 'glass-harbour')).toEqual(['n-0002'])
+    })
+
+    test('a file that arrives after a mark shows what the marks allow now', async () => {
+      const { app, answer } = await arrivingContent()
+      app.markBooks(['copper-orchard', 'glass-harbour'], 'read')
+      answer['synopses.json']!(Response.json(fixtureSynopses()))
+      answer['notes.json']!(Response.json(fixtureNotes()))
+      await flush()
+      expect(app.synopsisOf('orchard-dusk').state).toBe('visible')
+      expect(noteIds(app, 'glass-harbour')).toEqual([])
+      app.markBooks(['ash-road'], 'read')
+      expect(noteIds(app, 'glass-harbour')).toEqual(['n-0002'])
+    })
+
+    test('a catalogue handed in with synopses and notes has them at once', () => {
+      const catalog = { ...fixtureCatalog(), synopses: fixtureSynopses(), notes: fixtureNotes() }
+      const app = useApp({ initial: { catalog, connectionsAvailable: true }, storage: fakeStorage() })
+      expect(app.contentState.value).toBe('available')
+      expect(app.synopsisOf('copper-orchard').state).toBe('visible')
+      expect(app.synopsisOf('orchard-dusk')).toEqual({ state: 'gated' })
+    })
   })
 
   test('ready on the books alone, with no connections while they are pending', async () => {
