@@ -263,7 +263,6 @@ a.chip { display: inline-flex; align-items: center; text-decoration: none; }
 @media (prefers-reduced-motion: no-preference) {
   .ring-window, .ring .zoom { transition: transform 620ms var(--ease); }
   .sentence-col { transition: transform 500ms var(--ease); }
-  .cover:not(.interior) .slot { transition: left 420ms var(--ease), top 420ms var(--ease); }
   .stamped, .plate-title.stamped { animation: press 640ms var(--ease) backwards; transform-box: fill-box; transform-origin: center; }
   .line-new { stroke-dasharray: 1; animation: draw 760ms var(--ease) 260ms backwards; }
   .area.entering { animation: fade-in 220ms var(--ease) both; }
@@ -309,7 +308,9 @@ a.chip { display: inline-flex; align-items: center; text-decoration: none; }
   .interior .area { --blind: #bdb5a2; --second: #d7cfbc; background-color: var(--wood); }
   .slot { margin: 0; padding: 0; flex: none; }
   .slot:empty { display: none; }
-  .slot .plate, .slot .panel { outline: 0; border: 0; border-top: 3px double var(--gold); padding: 12px 16px; max-height: 66dvh; gap: 10px; }
+  /* A sheet at the foot of the screen: it takes room from the list rather than covering it, so the chosen book stays in sight. */
+  .slot .plate, .slot .panel { outline: 0; border: 0; border-top: 3px double var(--gold); padding: 16px 16px 12px; max-height: 72dvh; gap: 10px; box-shadow: 0 -14px 24px -12px rgba(0, 0, 0, .7); }
+  .slot .plate::before { content: ''; position: absolute; top: 5px; left: 50%; width: 36px; height: 3px; margin-left: -18px; border-radius: 2px; background: var(--gold-dark); }
   .with-panel .slot { margin-top: 0; }
   .slot .panel { max-height: 78dvh; }
   .plate-title { font-size: 21px; padding-right: 92px; }
