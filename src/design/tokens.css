@@ -170,6 +170,21 @@ ul, ol { list-style: none; }
 .fuse { position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background-color: var(--gold); transform-origin: left; }
 .plate-h { font: 500 15px var(--face-caps); color: var(--gold); letter-spacing: .03em; display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
 .cons { border-top: 1px solid var(--gold-dark); padding-top: 10px; }
+/* Imagery: the hidden sprite, the uniform-edition cover on the plate, the writing progress mark. */
+.sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
+.plate-top { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 14px; align-items: start; }
+.cover-thumb { display: block; width: 64px; height: auto; aspect-ratio: 2 / 3; border-radius: 2px 4px 4px 2px; box-shadow: 0 6px 14px -4px rgba(0, 0, 0, .75), inset 3px 0 0 rgba(0, 0, 0, .35); color: var(--gold); }
+.cover-field { fill: var(--field); }
+.cover-foil { fill: none; stroke: var(--gold); stroke-linecap: round; stroke-linejoin: round; }
+.cover-dot { fill: var(--gold); stroke: none; }
+.cover-number { fill: var(--gold); font: 400 24px var(--face-title); }
+.progress-mark { display: block; width: min(100%, 240px); height: auto; color: var(--gold-line); --progress-on: var(--gold); }
+.progress-mark .stage { fill: none; stroke: currentColor; stroke-width: .8; }
+.progress-mark .stage.on { fill: var(--progress-on); stroke: var(--progress-on); }
+.progress-dot { fill: currentColor; }
+.progress-rail { fill: none; stroke: currentColor; stroke-width: .6; }
+.progress-fill { fill: var(--progress-on); }
+.world-emblem { display: inline-block; vertical-align: middle; color: inherit; }
 .cons-empty, .syn-empty { color: var(--blind); font-size: 16px; margin-top: 4px; }
 .con { border-bottom: 1px solid var(--gold-dark); }
 .con:last-child { border-bottom: 0; }

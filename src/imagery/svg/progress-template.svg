@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 16" fill="none" stroke="currentColor" stroke-width=".8" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Writing progress for a work not yet published; paste inline.
+       Stage: copy the style attribute of #progress-fill onto every stage up to and including the current one
+       (stage-idea, stage-drafting, stage-revising, stage-done). That fill is the CSS variable "progress-on"
+       (written with two leading hyphens, which an XML comment cannot hold), falling back to currentColor.
+       Percentage (optional): set the width of #progress-fill to 105 * percent / 100; leave it at 0 for none. -->
+  <rect id="stage-idea" x="7.5" y="2.5" width="21" height="6.5" rx=".8"/>
+  <rect id="stage-drafting" x="35.5" y="2.5" width="21" height="6.5" rx=".8"/>
+  <rect id="stage-revising" x="63.5" y="2.5" width="21" height="6.5" rx=".8"/>
+  <rect id="stage-done" x="91.5" y="2.5" width="21" height="6.5" rx=".8"/>
+  <path fill="currentColor" stroke="none" d="M32 3.55l2.2 2.2-2.2 2.2-2.2-2.2zM60 3.55l2.2 2.2-2.2 2.2-2.2-2.2zM88 3.55l2.2 2.2-2.2 2.2-2.2-2.2z"/>
+  <circle cx="3" cy="5.75" r="1.1" fill="currentColor" stroke="none"/>
+  <circle cx="117" cy="5.75" r="1.1" fill="currentColor" stroke="none"/>
+  <path stroke-width=".6" d="M7.5 13.25H112.5M7.5 11.9v2.7M112.5 11.9v2.7"/>
+  <rect id="progress-fill" x="7.5" y="12.25" width="0" height="2" stroke="none" fill="var(--progress-on, currentColor)"/>
+</svg>

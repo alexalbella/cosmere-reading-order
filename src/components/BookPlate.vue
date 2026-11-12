@@ -22,6 +22,8 @@ import {
 import { isRecentlyAdded } from '../reading/recent'
 import ConfirmDialog from './ConfirmDialog.vue'
 import ConnectionList from './ConnectionList.vue'
+import CoverThumb from '../imagery/CoverThumb.vue'
+import ProgressMark from '../imagery/ProgressMark.vue'
 import NoteList from './NoteList.vue'
 import SynopsisRow from './SynopsisRow.vue'
 import UndoToast from './UndoToast.vue'
@@ -223,43 +225,46 @@ function confirmAll(): void {
       </svg>
     </button>
 
-    <header class="plate-head">
-      <h2
-        class="plate-title"
-        :class="[titleTone, { stamped }]"
-      >
-        {{ title }}
-      </h2>
-      <p
-        v-if="isNew"
-        class="plate-new"
-      >
-        {{ t('new', lang) }}
-      </p>
-      <p
-        v-if="original"
-        class="plate-orig"
-      >
-        {{ original }}
-      </p>
-      <p class="plate-sub">
-        <button
-          type="button"
-          class="plate-world"
-          :aria-pressed="lifted"
-          @click="emit('lift', book.world)"
+    <div class="plate-top">
+      <CoverThumb :book="book" />
+      <header class="plate-head">
+        <h2
+          class="plate-title"
+          :class="[titleTone, { stamped }]"
         >
-          <span
-            class="world-dot"
-            :style="{ '--dot': `var(--tone-${book.world})` }"
+          {{ title }}
+        </h2>
+        <p
+          v-if="isNew"
+          class="plate-new"
+        >
+          {{ t('new', lang) }}
+        </p>
+        <p
+          v-if="original"
+          class="plate-orig"
+        >
+          {{ original }}
+        </p>
+        <p class="plate-sub">
+          <button
+            type="button"
+            class="plate-world"
+            :aria-pressed="lifted"
+            @click="emit('lift', book.world)"
+          >
+            <span
+              class="world-dot"
+              :style="{ '--dot': `var(--tone-${book.world})` }"
+              aria-hidden="true"
+            />{{ worldName(book.world, lang) }}
+          </button><span
+            class="sep"
             aria-hidden="true"
-          />{{ worldName(book.world, lang) }}
-        </button><span
-          class="sep"
-          aria-hidden="true"
-        > · </span><span>{{ stateLabel(book, mark, unlocked, lang) }}</span>
-      </p>
-    </header>
+          > · </span><span>{{ stateLabel(book, mark, unlocked, lang) }}</span>
+        </p>
+      </header>
+    </div>
 
     <div
       v-if="counts"
@@ -364,6 +369,10 @@ function confirmAll(): void {
       </div>
     </dl>
 
+    <ProgressMark
+      v-if="book.writing && (book.status === 'announced' || book.status === 'planned')"
+      :writing="book.writing"
+    />
     <SynopsisRow
       :view="synopsis"
       :lang="lang"

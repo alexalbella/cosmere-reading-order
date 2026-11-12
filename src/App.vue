@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { computed, nextTick, onBeforeUnmount, onMounted, ref, shallowRef, watch, watchEffect } from 'vue'
+import { computed, defineAsyncComponent, nextTick, onBeforeUnmount, onMounted, ref, shallowRef, watch, watchEffect } from 'vue'
+import { afterFirstPaint } from './app/afterFirstPaint'
 import { keepFocus } from './app/keepFocus'
 import { reload } from './app/reload'
 import { PHONE_QUERY } from './app/viewport'
@@ -22,6 +23,11 @@ import { countsAsRead } from './reading/status'
 import type { MarkStatus } from './spoilers/visible'
 import CircleView from './views/CircleView.vue'
 import ShelfView from './views/ShelfView.vue'
+
+// The sheet of emblems and icons is not needed for the first paint: it comes after it, in its own chunk.
+const SpriteSheet = defineAsyncComponent(() => import('./imagery/SpriteSheet.vue'))
+const spriteReady = ref(false)
+onMounted(() => afterFirstPaint(() => (spriteReady.value = true)))
 
 // Tests hand in their own `app`; the page builds one.
 const props = defineProps<{ app?: UseAppResult }>()
@@ -263,6 +269,7 @@ const pendingUnlocks = computed(() => {
     :data-connections="app.connectionsState.value"
     :data-content="app.contentState.value"
   >
+    <SpriteSheet v-if="spriteReady" />
     <SpineStrip
       :segments="segments"
       :read="readCount"

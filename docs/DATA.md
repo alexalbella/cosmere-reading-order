@@ -246,6 +246,12 @@ Output is one line per problem, `CODE id`, never content. A synopsis is named `s
 
 The full list is `PROBLEM_CODES` in `src/data/types.ts`; the checks live in `src/data/soundness.ts` (one connection, synopsis or note) and `src/data/validate.ts` (the catalogue). The site uses the same checks at runtime, so anything the validator rejects is also hidden on screen.
 
+## Imagery
+
+The emblems of the worlds, the icons of formats and statuses, the uniform-edition cover and the writing progress mark are original SVG drawings in `src/imagery/svg/` (see `src/imagery/PROVENANCE.md`). Official covers, maps and in-world symbols never enter the repository.
+
+To add or change a world's emblem: draw `src/imagery/svg/emblem-<world>.svg` with viewBox `0 0 64 64`, strokes or fills in `currentColor`, no text, fonts, images or links, then run `npx tsx scripts/make-sprite.ts` to rebuild `src/imagery/SpriteSheet.vue`. A test fails if a world, format or status has no symbol, or if the sheet is out of date with the drawings.
+
 ## Migrating from upstream
 
 `npx tsx scripts/migrate-upstream.ts [--dry-run] [--force] [--id-map <file>]` reads 17thshard/reading-order's `public/data.json` from the `upstream` remote and writes `data/connections/batch-000.json`. `--id-map` takes a JSON object of extra renames (old id to new id). It prints counts only.

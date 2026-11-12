@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" fill="none">
+  <rect width="200" height="300" rx="4" fill="var(--field, #333)"/>
+  <g fill="none" stroke="var(--foil, #d8b46a)" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="10" y="10" width="180" height="280" stroke-width="1.5"/>
+    <path stroke-width=".8" d="M25 16H175A9 9 0 0 0 184 25V275A9 9 0 0 0 175 284H25A9 9 0 0 0 16 275V25A9 9 0 0 0 25 16Z"/>
+    <g>
+      <circle cx="18.5" cy="18.5" r="1.5" fill="var(--foil, #d8b46a)" stroke="none"/>
+      <path fill="var(--foil, #d8b46a)" stroke="none" d="M27 24.2l2.8 2.8-2.8 2.8-2.8-2.8z"/>
+      <path stroke-width=".7" d="M30 20.5h11M20.5 30v11"/>
+    </g>
+    <g transform="translate(200 0) scale(-1 1)">
+      <circle cx="18.5" cy="18.5" r="1.5" fill="var(--foil, #d8b46a)" stroke="none"/>
+      <path fill="var(--foil, #d8b46a)" stroke="none" d="M27 24.2l2.8 2.8-2.8 2.8-2.8-2.8z"/>
+      <path stroke-width=".7" d="M30 20.5h11M20.5 30v11"/>
+    </g>
+    <g transform="translate(0 300) scale(1 -1)">
+      <circle cx="18.5" cy="18.5" r="1.5" fill="var(--foil, #d8b46a)" stroke="none"/>
+      <path fill="var(--foil, #d8b46a)" stroke="none" d="M27 24.2l2.8 2.8-2.8 2.8-2.8-2.8z"/>
+      <path stroke-width=".7" d="M30 20.5h11M20.5 30v11"/>
+    </g>
+    <g transform="translate(200 300) scale(-1 -1)">
+      <circle cx="18.5" cy="18.5" r="1.5" fill="var(--foil, #d8b46a)" stroke="none"/>
+      <path fill="var(--foil, #d8b46a)" stroke="none" d="M27 24.2l2.8 2.8-2.8 2.8-2.8-2.8z"/>
+      <path stroke-width=".7" d="M30 20.5h11M20.5 30v11"/>
+    </g>
+    <path stroke-width=".8" d="M62 50H84M116 50H138"/>
+    <path fill="var(--foil, #d8b46a)" stroke="none" d="M58 47.8l2.2 2.2-2.2 2.2-2.2-2.2zM142 47.8l2.2 2.2-2.2 2.2-2.2-2.2z"/>
+    <circle cx="100" cy="140" r="50" stroke-width=".8"/>
+    <path stroke-width=".8" d="M68 212H93M107 212H132"/>
+    <path fill="var(--foil, #d8b46a)" stroke="none" d="M100 208.5l3.5 3.5-3.5 3.5-3.5-3.5z"/>
+    <path stroke-width=".8" d="M62 244H80M120 244H138"/>
+  </g>
+  <g id="slot-number" transform="translate(100 50)"></g>
+  <g id="slot-emblem" transform="translate(55 95) scale(1.40625)"></g>
+  <g id="slot-format" transform="translate(88 232)"></g>
+</svg>

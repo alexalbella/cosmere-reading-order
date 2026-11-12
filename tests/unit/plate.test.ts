@@ -613,6 +613,26 @@ describe('plates for works not published, apocryphal and role-playing', () => {
     expect(plate.find(`a[href="${SRC}"]`).text()).toBe('Ver la campaña')
   })
 
+  test('a plate without writing shows no progress mark; with it, the mark', async () => {
+    const plain = runAll()
+    await plain.wrapper.vm.$nextTick()
+    await pick(plain.wrapper, 'Low Tide Atlas')
+    expect(plateOf(plain.wrapper).find('.progress-mark').exists()).toBe(false)
+    const { wrapper } = runAll((c) => {
+      Object.assign(book(c, 'low-tide-atlas'), { writing: { stage: 'drafting', percent: 40, source: SRC, asOf: '2026-11-01' } })
+    })
+    await wrapper.vm.$nextTick()
+    await pick(wrapper, 'Low Tide Atlas')
+    expect(plateOf(wrapper).findAll('.progress-mark .stage.on')).toHaveLength(2)
+  })
+
+  test('every plate wears the cover of its work', async () => {
+    const { wrapper } = runAll()
+    await wrapper.vm.$nextTick()
+    await pick(wrapper, 'Huerto de cobre')
+    expect(plateOf(wrapper).find('.cover-thumb').attributes('data-world')).toBe('scadrial')
+  })
+
   test('a published plate is unchanged: no row says «Por anunciar»', async () => {
     const { wrapper } = runAll()
     await wrapper.vm.$nextTick()
