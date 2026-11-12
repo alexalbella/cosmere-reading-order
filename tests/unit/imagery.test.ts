@@ -1,3 +1,4 @@
+import { createHash } from 'node:crypto'
 import { readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { mount } from '@vue/test-utils'
@@ -73,5 +74,41 @@ describe('the writing progress mark', () => {
   test('a stage outside the list, or no writing at all, draws nothing', () => {
     expect(mount(ProgressMark, { props: { writing: { stage: 'outline' } as unknown as Book['writing'] } }).find('svg').exists()).toBe(false)
     expect(mount(ProgressMark, { props: { writing: undefined } }).find('svg').exists()).toBe(false)
+  })
+})
+
+describe("the site's own seal", () => {
+  // The symbol inherited from upstream, which this site no longer uses.
+  const INHERITED_SHA256 = 'a2479b505f736856c6b4651db65d0e83fc8a3c69f52fe06d6a9d07f604ec8845'
+  const seals = ['public/seal.svg', 'public/seal-small.svg']
+
+  test('the seal is a single-colour shape usable as a mask: no text, no strokes that rely on colour, no opacity', () => {
+    for (const file of seals) {
+      const svg = readFileSync(file, 'utf8')
+      expect(svg, file).toMatch(/viewBox="0 0 100 100"/)
+      expect(svg, file).toMatch(/<path/)
+      expect(svg, file).not.toMatch(/<text|stroke=|opacity|style=|<image|href=|<mask/i)
+    }
+  })
+
+  test('the seal is not the inherited one', () => {
+    for (const file of seals) expect(createHash('sha256').update(readFileSync(file)).digest('hex'), file).not.toBe(INHERITED_SHA256)
+  })
+
+  test('the icons exist at their sizes', () => {
+    const size = (file: string) => {
+      const png = readFileSync(file)
+      expect(png.subarray(1, 4).toString('ascii'), file).toBe('PNG')
+      return [png.readUInt32BE(16), png.readUInt32BE(20)]
+    }
+    expect(size('public/icons/icon-192.png')).toEqual([192, 192])
+    expect(size('public/icons/icon-512.png')).toEqual([512, 512])
+    expect(size('public/icons/icon-maskable-512.png')).toEqual([512, 512])
+    expect(size('public/icons/apple-touch-icon.png')).toEqual([180, 180])
+    expect(size('public/icons/favicon-32.png')).toEqual([32, 32])
+  })
+
+  test('the page names its small icon, drawn from the small cut', () => {
+    expect(readFileSync('index.html', 'utf8')).toMatch(/<link rel="icon" type="image\/png" sizes="32x32" href="\/icons\/favicon-32.png"/)
   })
 })

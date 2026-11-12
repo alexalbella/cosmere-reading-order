@@ -10,6 +10,7 @@ The files hold no text, no raster images, no fonts and no links to anything outs
 | `format-<format>.svg` | One icon per format, viewBox `0 0 24 24`, strokes only. |
 | `status-<status>.svg` | One icon per publication status, viewBox `0 0 24 24`. |
 | `cover-template.svg` | The «uniform edition» cover, viewBox `0 0 200 300`, built into `CoverThumb.vue`. |
+| `public/seal.svg`, `public/seal-small.svg` | The site's seal, an astrolabe, and its simplified cut for 16-34 px (favicon, the phone's header). Fills only, used as a CSS mask; `scripts/make-icons.ts` renders the app icons from them. |
 | `progress-template.svg` | The writing progress mark for works not yet published, viewBox `0 0 120 16`, built into `ProgressMark.vue`. |
 
 `npx tsx scripts/make-sprite.ts` turns the emblems and icons into `SpriteSheet.vue`, which the page loads after its first paint and uses through `<use href="#emblem-<world>">`.
