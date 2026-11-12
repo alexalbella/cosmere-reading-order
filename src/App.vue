@@ -261,6 +261,7 @@ const pendingUnlocks = computed(() => {
     class="app"
     :data-world="activeWorld"
     :data-connections="app.connectionsState.value"
+    :data-content="app.contentState.value"
   >
     <SpineStrip
       :segments="segments"
@@ -454,6 +455,8 @@ const pendingUnlocks = computed(() => {
           :volume="volumeOf(selected)"
           :carried="carried"
           :items="app.connectionsOf(selected.id)"
+          :synopsis="app.synopsisOf(selected.id)"
+          :note-items="app.notesOf(selected.id)"
           :undo-status="undoStatus"
           :stamped="app.stampedId.value === selected.id"
           :lifted="app.lifted.value === selected.world"

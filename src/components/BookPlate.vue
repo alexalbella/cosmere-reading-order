@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
-import type { Book, BookId, Connection, MarkStatus, WorldKey } from '../data/types'
+import type { Book, BookId, Connection, MarkStatus, Note, WorldKey } from '../data/types'
+import type { SynopsisView } from '../spoilers/visible'
 import { t, titleOf, type Lang, type StringKey } from '../i18n'
 import {
   apocryphalLabel,
@@ -21,6 +22,8 @@ import {
 import { isRecentlyAdded } from '../reading/recent'
 import ConfirmDialog from './ConfirmDialog.vue'
 import ConnectionList from './ConnectionList.vue'
+import NoteList from './NoteList.vue'
+import SynopsisRow from './SynopsisRow.vue'
 import UndoToast from './UndoToast.vue'
 
 const props = defineProps<{
@@ -37,6 +40,10 @@ const props = defineProps<{
   /** Works inside this volume that are not marked yet. */
   carried: Book[]
   items: Connection[]
+  /** What the gate lets the plate say about the synopsis. */
+  synopsis: SynopsisView
+  /** The visible notes that hang on this book. */
+  noteItems: Note[]
   /** The change just made to this book, which the undo takes back. */
   undoStatus: MarkStatus | null
   stamped: boolean
@@ -356,6 +363,16 @@ function confirmAll(): void {
         </dd>
       </div>
     </dl>
+
+    <SynopsisRow
+      :view="synopsis"
+      :lang="lang"
+    />
+    <NoteList
+      v-if="noteItems.length"
+      :items="noteItems"
+      :lang="lang"
+    />
 
     <ConnectionList
       v-if="counts"

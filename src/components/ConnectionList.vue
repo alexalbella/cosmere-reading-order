@@ -3,6 +3,7 @@ import { nextTick, ref } from 'vue'
 import type { Book, BookId, Connection } from '../data/types'
 import { descriptionOf, t, titleOf, type Lang } from '../i18n'
 import { typeLabel } from '../i18n/labels'
+import { host, safeUrl } from '../app/links'
 
 // `items` are connections already cleared by `visible`. Nothing here can show more.
 const props = defineProps<{ items: Connection[]; selfId: BookId; books: Book[]; lang: Lang }>()
@@ -13,21 +14,6 @@ const openId = ref<string | null>(null)
 function otherEnd(c: Connection): Book | null {
   const id = c.from === props.selfId ? c.to : c.from
   return props.books.find((b) => b.id === id) ?? null
-}
-
-/** Only http and https become links, and never through v-html. */
-function safeUrl(url: unknown): string | null {
-  if (typeof url !== 'string') return null
-  try {
-    const parsed = new URL(url)
-    return parsed.protocol === 'https:' || parsed.protocol === 'http:' ? parsed.href : null
-  } catch {
-    return null
-  }
-}
-
-function host(url: string): string {
-  return new URL(url).hostname.replace(/^www\./, '')
 }
 
 async function toggle(id: string): Promise<void> {

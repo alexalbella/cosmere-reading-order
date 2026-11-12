@@ -120,7 +120,7 @@ ul, ol { list-style: none; }
 .line-next .title-btn { color: var(--gold-hot); }
 /* The end of the order: the one sentence with nothing after it. */
 .line-done { font: 400 clamp(23px, 2.9vh, 27px)/1.2 var(--face-title); color: var(--gold); text-wrap: balance; }
-.edition, .gaps, .panel-p, .cons-empty, .con-note, .notice { text-wrap: pretty; }
+.edition, .gaps, .panel-p, .cons-empty, .syn-empty, .con-note, .syn-text, .note-text, .notice { text-wrap: pretty; }
 .dot { display: none; }
 .edition { margin-top: .35em; font-size: 16px; color: var(--bone); }
 .line + .line { margin-top: 16px; }
@@ -170,15 +170,15 @@ ul, ol { list-style: none; }
 .fuse { position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background-color: var(--gold); transform-origin: left; }
 .plate-h { font: 500 15px var(--face-caps); color: var(--gold); letter-spacing: .03em; display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
 .cons { border-top: 1px solid var(--gold-dark); padding-top: 10px; }
-.cons-empty { color: var(--blind); font-size: 16px; margin-top: 4px; }
+.cons-empty, .syn-empty { color: var(--blind); font-size: 16px; margin-top: 4px; }
 .con { border-bottom: 1px solid var(--gold-dark); }
 .con:last-child { border-bottom: 0; }
-.con-b { display: grid; grid-template-columns: 1fr auto auto; gap: 10px; align-items: baseline; width: 100%; min-height: 44px; padding: 10px 0; }
+.con-b, .syn-b, .note-b { display: grid; grid-template-columns: 1fr auto auto; gap: 10px; align-items: baseline; width: 100%; min-height: 44px; padding: 10px 0; }
 .con-t { font-size: 16.5px; line-height: 1.2; color: var(--bone); }
 .con-type { font-size: 15px; color: var(--blind); }
 .con-act { font: 500 15px var(--face-caps); color: var(--gold); }
-.con-b:hover .con-t { color: var(--gold-hot); }
-.con-note { padding: 0 0 10px; font-size: 16.5px; line-height: 1.42; max-width: 62ch; }
+.con-b:hover .con-t, .syn-b:hover .con-t, .note-b:hover .con-t { color: var(--gold-hot); }
+.con-note, .syn-text, .note-text { padding: 0 0 10px; font-size: 16.5px; line-height: 1.42; max-width: 62ch; }
 .con-src { font-size: 15px; color: var(--blind); margin-top: .4em; }
 .con-src a { color: var(--second); }
 .anthology p { font-size: 16px; }

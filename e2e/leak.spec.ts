@@ -363,3 +363,59 @@ test.describe('panels and pointers carry nothing hidden', () => {
     })
   }
 })
+
+// Synopses and notes behind the gate. Nothing read: the second work of the Orchard series has a gated synopsis,
+// and both notes wait on works not read. The opener's synopsis is open.
+const CONTENT_HIDDEN = ['syn-orchard-dusk', 'n-0001', 'n-0002']
+const title = (id: string, lang: Lang) => BOOKS.find((b) => b.id === id)!.titles[lang]
+
+for (const view of VIEWS) {
+  for (const lang of LANGS) {
+    test(`no gated synopsis text or hidden note reaches the page, ${view}, ${lang}`, async ({ page }) => {
+      await withFixture(page, {}, { view, lang })
+      await openSettled(page)
+      await expect(page.locator('.app[data-content="available"]')).toBeVisible()
+      await assertNoLeak(page, CONTENT_HIDDEN)
+      for (const book of BOOKS) {
+        await pick(page, book.titles[lang])
+        await expandPlate(page)
+        await assertNoLeak(page, CONTENT_HIDDEN)
+        expect(await page.content()).not.toContain('LEAK-')
+        await expect(page.locator('.plate-notes')).toHaveCount(0)
+      }
+      await pick(page, title('orchard-dusk', lang))
+      await expect(page.locator('.syn')).toHaveText(t('synopsisGated', lang))
+      await pick(page, title('copper-orchard', lang))
+      await expandPlate(page)
+      await page.locator('.syn button').click()
+      await expect(page.locator('.syn-text')).toHaveText(`LEAK-syn-copper-orchard ${lang}`)
+      await assertNoLeak(page, CONTENT_HIDDEN)
+    })
+  }
+}
+
+for (const view of VIEWS) {
+  test(`URL parameters reveal no synopsis or note, ${view}`, async ({ page }) => {
+    await withFixture(page, {}, { view, lang: 'en' })
+    for (const url of ['/?spoilers=1&synopses=all&notes=all&unlock=all', '/?signin=1&unlock=all&theories=1']) {
+      await openSettled(page, url)
+      await expect(page.locator('.app[data-content="available"]')).toBeVisible()
+      await pick(page, 'Orchard Dusk')
+      await expandPlate(page)
+      await expect(page.locator('.syn')).toHaveText(t('synopsisGated', 'en'))
+      await assertNoLeak(page, CONTENT_HIDDEN)
+      expect(await page.content(), url).not.toContain('LEAK-')
+    }
+  })
+}
+
+test('a note shows once its works are read, and its text only on request', async ({ page }) => {
+  await withFixture(page, { marks: marksOf(['ash-road', 'glass-harbour']) }, { view: 'shelf', lang: 'es' })
+  await openSettled(page)
+  await pick(page, 'Puerto de cristal')
+  await expandPlate(page)
+  await expect(page.locator('.plate-notes .note-b')).toHaveCount(1)
+  expect(await page.content()).not.toContain('LEAK-n-0002')
+  await page.locator('.plate-notes .note-b').click()
+  await expect(page.locator('.plate-notes .note-text')).toContainText('LEAK-n-0002 es')
+})

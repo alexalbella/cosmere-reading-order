@@ -1,11 +1,12 @@
 import { expect, type Page } from '@playwright/test'
 import { BOOK_STATUSES, CONNECTION_TYPES, FORMATS } from '../src/data/types'
-import type { BookId, Connection } from '../src/data/types'
+import type { BookId, Connection, Note } from '../src/data/types'
 import type { Filters } from '../src/filters/filters'
 import type { Lang } from '../src/i18n'
 import type { Marks, MarkStatus, Unlocks } from '../src/spoilers/visible'
 import type { View } from '../src/state/prefs'
 import { fixtureCatalog } from '../tests/fixtures/catalog'
+import { fixtureNotes, fixtureSynopses } from '../tests/fixtures/content'
 
 export interface SeedState {
   marks?: Marks
@@ -19,6 +20,8 @@ export interface FixtureOptions {
   filters?: Filters
   /** `abort` makes the connections file fail to load. */
   connections?: 'ok' | 'abort'
+  /** `abort` makes the synopses and notes files fail to load. */
+  content?: 'ok' | 'abort'
 }
 
 export const AT = 1_700_000_000_000
@@ -53,6 +56,12 @@ function marked(c: Connection): Connection {
   }
 }
 
+/** The same for a note: its sources and provenance carry the marker too. */
+function markedNote(n: Note): Note {
+  const tag = `LEAK-${n.id}`
+  return { ...n, sources: n.sources.map((s) => ({ ...s, url: `${s.url}?m=${tag}` })), author: `${n.author}-${tag}`, verifiedBy: `${n.verifiedBy}-${tag}` }
+}
+
 /**
  * Serves the fixture catalogue in place of the real data, stubs the sync endpoint with an empty
  * state, and seeds preferences and the read state. A key already in storage is left alone, so a
@@ -67,6 +76,8 @@ export async function withFixture(page: Page, readState: SeedState = {}, options
     if (name === 'connections.json') {
       return options.connections === 'abort' ? route.abort() : route.fulfill({ json: catalog.connections.map(marked) })
     }
+    if (name === 'synopses.json') return options.content === 'abort' ? route.abort() : route.fulfill({ json: fixtureSynopses() })
+    if (name === 'notes.json') return options.content === 'abort' ? route.abort() : route.fulfill({ json: fixtureNotes().map(markedNote) })
     return route.fulfill({ status: 404, body: '' })
   })
   await page.route('**/api/state', (route) => route.fulfill({ json: { marks: {}, unlocks: {} } }))
@@ -88,12 +99,13 @@ export async function withFixture(page: Page, readState: SeedState = {}, options
 }
 
 /**
- * Opens the page and waits until the connections file has been answered and applied. The page is ready before
- * that, so a check that something hidden is absent would pass for the wrong reason if it ran any earlier.
+ * Opens the page and waits until the connections, synopses and notes files have been answered and applied. The
+ * page is ready before that, so a check that something hidden is absent would pass for the wrong reason if it
+ * ran any earlier.
  */
 export async function openSettled(page: Page, url = '/'): Promise<void> {
   await page.goto(url)
-  await expect(page.locator('.app[data-connections="available"]')).toBeVisible()
+  await expect(page.locator('.app[data-connections="available"]:not([data-content="pending"])')).toBeVisible()
 }
 
 /** The book's button, in either view, by the start of its accessible name (title, then a comma). */

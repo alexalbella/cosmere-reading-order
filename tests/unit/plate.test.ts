@@ -3,7 +3,9 @@ import { mount, type VueWrapper } from '@vue/test-utils'
 import App from '../../src/App.vue'
 import { useApp } from '../../src/app/useApp'
 import { MAX_STATE_BYTES } from '../../src/state/transfer'
+import { t } from '../../src/i18n'
 import { fixtureCatalog } from '../fixtures/catalog'
+import { fixtureNotes, fixtureSynopses } from '../fixtures/content'
 
 function fakeStorage(): Storage {
   const data = new Map<string, string>()
@@ -624,5 +626,98 @@ describe('plates for works not published, apocryphal and role-playing', () => {
     await wrapper.vm.$nextTick()
     await pick(wrapper, 'Low Tide Atlas')
     expect(plateOf(wrapper).text().match(/To be announced/g)?.length).toBe(3)
+  })
+})
+
+describe('synopsis and notes on the plate', () => {
+  const withContent = (c: Fixture) => {
+    c.synopses = fixtureSynopses()
+    c.notes = fixtureNotes()
+  }
+  const synopsisOf = (w: VueWrapper) => plateOf(w).find('.syn')
+
+  test('a visible synopsis is folded and its text is absent until asked', async () => {
+    const { wrapper } = run({ mutate: withContent })
+    await pick(wrapper, 'Huerto de cobre')
+    const toggle = synopsisOf(wrapper).find('button')
+    expect(toggle.text()).toContain('Sinopsis')
+    expect(toggle.attributes('aria-expanded')).toBe('false')
+    expect(wrapper.html()).not.toContain('LEAK-syn-copper-orchard')
+    await toggle.trigger('click')
+    expect(toggle.attributes('aria-expanded')).toBe('true')
+    expect(synopsisOf(wrapper).text()).toContain('LEAK-syn-copper-orchard es')
+    expect(wrapper.html()).not.toContain('LEAK-syn-copper-orchard en')
+  })
+
+  test('a gated synopsis says the same line on every work and names no other work', async () => {
+    const { wrapper } = run({
+      mutate: (c) => {
+        withContent(c)
+        c.synopses.push({ ...fixtureSynopses()[1]!, book: 'ash-road', requires: ['ash-road'] })
+        c.books.find((b) => b.id === 'ash-road')!.series = 'Ash'
+      },
+    })
+    await pick(wrapper, 'Ocaso del huerto')
+    const gated = synopsisOf(wrapper).text()
+    expect(gated).toBe(t('synopsisGated', 'es'))
+    expect(gated).not.toContain('Huerto de cobre')
+    expect(synopsisOf(wrapper).find('button').exists()).toBe(false)
+    expect(wrapper.html()).not.toContain('LEAK-syn-orchard-dusk')
+    await pick(wrapper, 'Camino de ceniza')
+    expect(synopsisOf(wrapper).text()).toBe(gated)
+  })
+
+  test('a missing synopsis says so', async () => {
+    const { wrapper } = run({ mutate: withContent })
+    await pick(wrapper, 'Vendaval del norte')
+    expect(synopsisOf(wrapper).text()).toBe(t('synopsisMissing', 'es'))
+  })
+
+  test('no notes section without a visible note', async () => {
+    const { wrapper } = run({ mutate: withContent })
+    await pick(wrapper, 'Camino de ceniza')
+    expect(plateOf(wrapper).find('.plate-notes').exists()).toBe(false)
+    expect(wrapper.html()).not.toContain('LEAK-n-')
+  })
+
+  test("a note's text appears only after asking", async () => {
+    const { wrapper, app } = run({ mutate: withContent })
+    app.markBooks(['ash-road'], 'read')
+    await pick(wrapper, 'Camino de ceniza')
+    const notes = plateOf(wrapper).find('.plate-notes')
+    expect(notes.text()).toContain('Palabra de Brandon')
+    expect(wrapper.html()).not.toContain('LEAK-n-0001')
+    const toggle = notes.find('button')
+    expect(toggle.attributes('aria-expanded')).toBe('false')
+    await toggle.trigger('click')
+    expect(notes.text()).toContain('LEAK-n-0001 es')
+    expect(notes.find('a[href="https://primary.example.test/wob"]').exists()).toBe(true)
+    expect(notes.text()).toContain(t('conExternal', 'es'))
+  })
+
+  test('a wob shows its quote and, in Spanish, the translation beneath; in English the quote alone', async () => {
+    const { wrapper, app } = run({ mutate: withContent })
+    app.markBooks(['ash-road'], 'read')
+    await pick(wrapper, 'Camino de ceniza')
+    await plateOf(wrapper).find('.plate-notes button').trigger('click')
+    const quote = plateOf(wrapper).find('.note-quote')
+    expect(quote.find('[lang="en"]').text()).toContain('LEAK-n-0001 quote en')
+    expect(quote.text()).toContain('LEAK-n-0001 quote es')
+    app.lang.value = 'en'
+    await wrapper.vm.$nextTick()
+    expect(plateOf(wrapper).find('.note-quote').text()).toContain('LEAK-n-0001 quote en')
+    expect(plateOf(wrapper).find('.note-quote').text()).not.toContain('LEAK-n-0001 quote es')
+  })
+
+  test('a note with a source that is not http is unsound, and no trace of it shows', async () => {
+    const { wrapper, app } = run({
+      mutate: (c) => {
+        withContent(c)
+        c.notes[0]!.sources.push({ url: 'javascript:alert(1)', kind: 'official' })
+      },
+    })
+    app.markBooks(['ash-road'], 'read')
+    await pick(wrapper, 'Camino de ceniza')
+    expect(plateOf(wrapper).find('.plate-notes').exists()).toBe(false)
   })
 })
