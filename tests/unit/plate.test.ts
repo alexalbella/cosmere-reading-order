@@ -545,3 +545,84 @@ describe('the shell', () => {
     expect(wrapper.html()).not.toContain('<script')
   })
 })
+
+describe('plates for works not published, apocryphal and role-playing', () => {
+  const SRC = 'https://source.example.test/p'
+  function runAll(mutate?: (c: Fixture) => void) {
+    const s = run({ mutate })
+    s.app.filters.value = { ...s.app.filters.value, statuses: ['published', 'announced', 'planned', 'apocryphal'], formats: [...s.app.filters.value.formats, 'rpg'] }
+    return s
+  }
+  const book = (c: Fixture, id: string) => c.books.find((b) => b.id === id)! as unknown as Record<string, unknown>
+
+  test('an announced work shows every planned row, with «Por anunciar» where empty', async () => {
+    const { wrapper } = runAll()
+    await wrapper.vm.$nextTick()
+    await pick(wrapper, 'Low Tide Atlas')
+    const text = plateOf(wrapper).text()
+    for (const label of ['Formato', 'Escritura', 'Prevista', 'Anuncio']) expect(text).toContain(label)
+    expect(text.match(/Por anunciar/g)?.length).toBe(3)
+  })
+
+  test('an announced work with its facts shows them, and links its announcement', async () => {
+    const { wrapper } = runAll((c) => {
+      Object.assign(book(c, 'low-tide-atlas'), {
+        writing: { stage: 'drafting', percent: 40, source: SRC, asOf: '2026-11-01' },
+        expected: { when: '2027-H2', official: false, source: SRC },
+        announcedIn: SRC,
+      })
+    })
+    await wrapper.vm.$nextTick()
+    await pick(wrapper, 'Low Tide Atlas')
+    const plate = plateOf(wrapper)
+    expect(plate.text()).toContain('Escribiéndose · 40 %')
+    expect(plate.text()).toContain('Segunda mitad de 2027 (estimación)')
+    expect(plate.text()).not.toContain('Por anunciar')
+    expect(plate.find(`a[href="${SRC}"]`).text()).toBe('Ver el anuncio')
+  })
+
+  test('an apocryphal work shows its reason and where it appeared', async () => {
+    const { wrapper } = runAll((c) => {
+      Object.assign(book(c, 'glass-harbour'), { status: 'apocryphal', apocryphal: { reason: 'parody', source: SRC }, publisher: 'Lantern Press', publication: '2015-04' })
+    })
+    await wrapper.vm.$nextTick()
+    await pick(wrapper, 'Puerto de cristal')
+    const text = plateOf(wrapper).text()
+    expect(text).toContain('Apócrifa')
+    expect(text).toContain('Parodia')
+    expect(text).toContain('abril de 2015 · Lantern Press')
+    expect(text).not.toContain('Por anunciar')
+  })
+
+  test('a role-playing book shows publisher, line, kind, campaign and canon', async () => {
+    const { wrapper } = runAll((c) => {
+      Object.assign(book(c, 'paper-wolves'), {
+        publisher: 'Lantern Press',
+        line: 'Chartmaker RPG',
+        rpgKind: 'core',
+        crowdfunding: SRC,
+        canon: { value: 'partly', source: SRC },
+      })
+    })
+    await wrapper.vm.$nextTick()
+    await pick(wrapper, 'Paper Wolves')
+    const plate = plateOf(wrapper)
+    for (const value of ['Lantern Press', 'Chartmaker RPG', 'Libro básico', 'En parte']) expect(plate.text()).toContain(value)
+    expect(plate.find(`a[href="${SRC}"]`).text()).toBe('Ver la campaña')
+  })
+
+  test('a published plate is unchanged: no row says «Por anunciar»', async () => {
+    const { wrapper } = runAll()
+    await wrapper.vm.$nextTick()
+    await pick(wrapper, 'Camino de ceniza')
+    expect(plateOf(wrapper).text()).not.toContain('Por anunciar')
+  })
+
+  test('in English the empty rows say «To be announced»', async () => {
+    const { wrapper, app } = runAll()
+    app.lang.value = 'en'
+    await wrapper.vm.$nextTick()
+    await pick(wrapper, 'Low Tide Atlas')
+    expect(plateOf(wrapper).text().match(/To be announced/g)?.length).toBe(3)
+  })
+})

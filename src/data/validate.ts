@@ -1,4 +1,4 @@
-import { BOOK_STATUSES, ES_EDITION_STATUSES, FORMATS, WORLD_KEYS } from './types'
+import { APOCRYPHAL_REASONS, BOOK_STATUSES, CANON_VALUES, ES_EDITION_STATUSES, FORMATS, RPG_KINDS, WORLD_KEYS, WRITING_STAGES } from './types'
 import { STORED_ID } from '../state/merge'
 import type { Book, Catalog, Connection, Note, Problem, ProblemCode, Synopsis } from './types'
 import {
@@ -40,6 +40,51 @@ type Add = (code: ProblemCode, id: string) => void
 const isNumber = (value: unknown): boolean => typeof value === 'number' && Number.isFinite(value)
 const isText = (value: unknown): boolean => typeof value === 'string' && value.trim() !== ''
 const absentOr = (value: unknown, ok: (v: unknown) => boolean): boolean => value === undefined || ok(value)
+const isHttps = (v: unknown): boolean => typeof v === 'string' && /^https:\/\/\S+$/.test(v)
+const EXPECTED_WHEN = /^\d{4}(?:-(?:0[1-9]|1[0-2])(?:-\d{2})?|-H[12]|-Q[1-4])?$/
+
+/** The shape of each plate fact. Whether its value is in its list is the enum rule's job. */
+function plateFactProblems(b: Book): boolean {
+  const writing: unknown = b.writing
+  const expected: unknown = b.expected
+  const apocryphal: unknown = b.apocryphal
+  const canon: unknown = b.canon
+  return (
+    !absentOr(writing, (w) =>
+      isObject(w) &&
+      typeof w.stage === 'string' &&
+      absentOr(w.percent, (p) => isNumber(p) && (p as number) >= 0 && (p as number) <= 100) &&
+      isText(w.source) &&
+      isCalendarDate(w.asOf),
+    ) ||
+    !absentOr(expected, (e) =>
+      isObject(e) &&
+      typeof e.when === 'string' &&
+      EXPECTED_WHEN.test(e.when) &&
+      (e.when.length !== 10 || isCalendarDate(e.when)) &&
+      typeof e.official === 'boolean' &&
+      isText(e.source),
+    ) ||
+    !absentOr(b.announcedIn, isHttps) ||
+    !absentOr(apocryphal, (a) => isObject(a) && typeof a.reason === 'string' && isText(a.source)) ||
+    !absentOr(b.publisher, isText) ||
+    !absentOr(b.line, isText) ||
+    !absentOr(b.rpgKind, (k) => typeof k === 'string') ||
+    !absentOr(b.crowdfunding, isHttps) ||
+    !absentOr(canon, (c) => isObject(c) && typeof c.value === 'string' && isText(c.source))
+  )
+}
+
+/** A plate fact whose value is outside its list. */
+function plateFactEnums(b: Book): boolean {
+  const field = (v: unknown, key: string): unknown => (isObject(v) ? v[key] : undefined)
+  return (
+    (b.writing !== undefined && isObject(b.writing) && !isOneOf(WRITING_STAGES, field(b.writing, 'stage'))) ||
+    (b.apocryphal !== undefined && isObject(b.apocryphal) && !isOneOf(APOCRYPHAL_REASONS, field(b.apocryphal, 'reason'))) ||
+    (typeof b.rpgKind === 'string' && !isOneOf(RPG_KINDS, b.rpgKind)) ||
+    (b.canon !== undefined && isObject(b.canon) && !isOneOf(CANON_VALUES, field(b.canon, 'value')))
+  )
+}
 
 /** Every field the app reads has the type it reads it as: a wrong one would throw, or show a blank, once on screen. */
 function fieldProblems(b: Book): boolean {
@@ -68,7 +113,8 @@ function fieldProblems(b: Book): boolean {
     !absentOr(b.aside, (v) => typeof v === 'boolean') ||
     !absentOr(b.words, isNumber) ||
     !absentOr(b.publication, (v) => typeof v === 'string' && /^\d{4}(-\d{2}(-\d{2})?)?$/.test(v)) ||
-    !absentOr(b.readFree, (v) => typeof v === 'string' && /^https:\/\//.test(v))
+    !absentOr(b.readFree, (v) => typeof v === 'string' && /^https:\/\//.test(v)) ||
+    plateFactProblems(b)
   )
 }
 
@@ -112,7 +158,8 @@ function bookProblems(books: Book[], add: Add): void {
     if (
       !isOneOf(FORMATS, b.format) ||
       !isOneOf(BOOK_STATUSES, b.status) ||
-      !isOneOf(ES_EDITION_STATUSES, b.esEdition?.status)
+      !isOneOf(ES_EDITION_STATUSES, b.esEdition?.status) ||
+      plateFactEnums(b)
     ) {
       add('BAD_ENUM', id)
     }

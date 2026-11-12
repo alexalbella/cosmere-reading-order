@@ -2,11 +2,13 @@ import { readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { WORLD_KEYS, type Book, type WorldKey } from '../src/data/types'
 import { readJson, ROOT } from './lib/load-data'
+import { copyPlateFacts, type PlateFacts } from './lib/plate-facts'
 import { runMain } from './lib/run'
 
 // Folds the public structure (`data/structure.json`) and the researched public facts
 // (`data/public-facts.json`) into `data/books.json`: each work's world, series, part, number, first
-// publication, word count, Spanish publisher and its seat on the map. It never touches a work's status,
+// publication, word count, Spanish publisher, its seat on the map, and the plate facts of works not yet
+// published, apocryphal works and role-playing books. It never touches a work's status,
 // its reading order, or a page count the catalogue already has, and it prints counts only.
 
 interface Names {
@@ -22,7 +24,7 @@ interface Structure {
   tree: TreeNode[]
   bookPadding?: Record<string, number>
 }
-interface Facts {
+interface Facts extends PlateFacts {
   world: string | null
   series: string | null
   subseries: string | null
@@ -95,6 +97,7 @@ function main(): number {
     put(book, 'place', seat.get(book.id))
     put(book, 'aside', structure.bookPadding?.[book.id] ? true : undefined)
     put(book, 'readFree', freeLink(f.readFree))
+    copyPlateFacts(book, f)
     if (book.status === 'published') {
       put(book, 'publication', f.publication)
       put(book, 'words', f.words)

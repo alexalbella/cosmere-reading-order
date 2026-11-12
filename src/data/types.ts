@@ -27,6 +27,18 @@ export type ConnectionType = (typeof CONNECTION_TYPES)[number]
 export const CONNECTION_TIERS = ['confirmed', 'theory'] as const
 export type ConnectionTier = (typeof CONNECTION_TIERS)[number]
 
+export const WRITING_STAGES = ['idea', 'drafting', 'revising', 'done'] as const
+export type WritingStage = (typeof WRITING_STAGES)[number]
+
+export const APOCRYPHAL_REASONS = ['not-canon', 'parody', 'superseded', 'unfinished'] as const
+export type ApocryphalReason = (typeof APOCRYPHAL_REASONS)[number]
+
+export const RPG_KINDS = ['core', 'world-guide', 'adventure', 'supplement', 'screen', 'starter'] as const
+export type RpgKind = (typeof RPG_KINDS)[number]
+
+export const CANON_VALUES = ['yes', 'partly', 'no', 'unknown'] as const
+export type CanonValue = (typeof CANON_VALUES)[number]
+
 export const NOTE_KINDS = ['wob', 'egg', 'confirmed-theory', 'relation'] as const
 export type NoteKind = (typeof NOTE_KINDS)[number]
 
@@ -103,6 +115,21 @@ export interface Book {
   containedIn?: BookId[]
   aliases?: BookId[]
   addedOn?: string
+  // Public facts for works not yet published, apocryphal works and role-playing books. Enums, never free text,
+  // so a fact cannot carry plot; each one names its source.
+  /** How far the writing has gone, from the author's own progress reports. */
+  writing?: { stage: WritingStage; percent?: number; source: string; asOf: string }
+  /** An official date, or the window the author gave: `2027`, `2027-03`, `2027-03-15`, `2027-H2` or `2027-Q4`. */
+  expected?: { when: string; official: boolean; source: string }
+  /** Where the work was announced: an https link. */
+  announcedIn?: string
+  apocryphal?: { reason: ApocryphalReason; source: string }
+  publisher?: string
+  line?: string
+  rpgKind?: RpgKind
+  /** The crowdfunding campaign: an https link. */
+  crowdfunding?: string
+  canon?: { value: CanonValue; source: string }
 }
 
 export interface Connection {

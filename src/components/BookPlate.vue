@@ -2,7 +2,22 @@
 import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import type { Book, BookId, Connection, MarkStatus, WorldKey } from '../data/types'
 import { t, titleOf, type Lang, type StringKey } from '../i18n'
-import { editionFact, formatLabel, numberText, phaseName, publicationText, seriesText, stateLabel, systemName, worldName } from '../i18n/labels'
+import {
+  apocryphalLabel,
+  canonLabel,
+  editionFact,
+  expectedText,
+  formatLabel,
+  numberText,
+  phaseName,
+  publicationText,
+  rpgKindLabel,
+  seriesText,
+  stateLabel,
+  systemName,
+  worldName,
+  writingText,
+} from '../i18n/labels'
 import { isRecentlyAdded } from '../reading/recent'
 import ConfirmDialog from './ConfirmDialog.vue'
 import ConnectionList from './ConnectionList.vue'
@@ -74,34 +89,56 @@ const isNew = computed(() => isRecentlyAdded(props.book, props.now))
 const done = computed(() => props.mark === 'read')
 const titleTone = computed(() => (done.value || props.mark === 'reading' ? 'gold' : 'blind'))
 
-/** Every public fact the catalogue has about the book, each beside its name. A fact it lacks takes no row. */
+/**
+ * Every public fact the catalogue has about the book, each beside its name. On a published or apocryphal work a
+ * fact it lacks takes no row; on an announced or planned one the row stays and says it is to be announced.
+ */
 const facts = computed(() => {
   const { book, lang } = props
   const rows: { key: string; label: string; value: string; href?: string }[] = []
   const add = (key: string, label: StringKey, value: string, href?: string) => {
     if (value) rows.push({ key, label: t(label, lang), value, href })
   }
+  const always = (key: string, label: StringKey, value: string, href?: string) =>
+    rows.push({ key, label: t(label, lang), value: value || t('toBeAnnounced', lang), href: value ? href : undefined })
+  const length = [
+    formatLabel(book.format, lang),
+    book.pages ? `${numberText(book.pages, lang)} ${t('pages', lang)}` : '',
+    book.words ? `${numberText(book.words, lang)} ${t('words', lang)}` : '',
+  ]
+    .filter(Boolean)
+    .join(' · ')
+  const date = publicationText(book.publication, lang) || (book.year ? String(book.year) : '')
   add('series', 'factSeries', seriesText(book, lang))
   add('system', 'factSystem', systemName(book.world, lang))
+  if (book.status === 'announced' || book.status === 'planned') {
+    always('format', 'factFormat', formatLabel(book.format, lang))
+    always('writing', 'factWriting', writingText(book.writing, lang))
+    always('expected', 'factExpected', expectedText(book.expected, lang))
+    always('announced', 'factAnnouncedIn', book.announcedIn ? t('factAnnouncedLink', lang) : '', book.announcedIn)
+  }
+  if (book.status === 'apocryphal') {
+    add('apocryphal', 'factApocryphal', apocryphalLabel(book.apocryphal?.reason, lang))
+    add('appeared', 'factAppeared', [date, book.publisher ?? ''].filter(Boolean).join(' · '))
+    add('format', 'factFormat', length)
+    if (book.readFree) add('free', 'factFree', t('factFreeLink', lang), book.readFree)
+  }
   if (counts.value) {
-    add(
-      'format',
-      'factFormat',
-      [
-        formatLabel(book.format, lang),
-        book.pages ? `${numberText(book.pages, lang)} ${t('pages', lang)}` : '',
-        book.words ? `${numberText(book.words, lang)} ${t('words', lang)}` : '',
-      ]
-        .filter(Boolean)
-        .join(' · '),
-    )
-    add('published', 'factPublished', publicationText(book.publication, lang) || (book.year ? String(book.year) : ''))
+    add('format', 'factFormat', length)
+    add('published', 'factPublished', date)
     add('spain', 'factSpain', editionFact(book, props.volume, lang))
     if (props.position) {
       const place = t('workOf', lang, props.position.index, props.position.total)
       add('reading', 'factReading', book.phase ? `${place} · ${phaseName(book.phase, lang)}` : place)
     }
     if (book.readFree) add('free', 'factFree', t('factFreeLink', lang), book.readFree)
+    if (book.format === 'rpg') {
+      add('publisher', 'factPublisher', book.publisher ?? '')
+      add('line', 'factLine', book.line ?? '')
+      add('kind', 'factRpgKind', rpgKindLabel(book.rpgKind, lang))
+      if (book.crowdfunding) add('campaign', 'factCrowdfunding', t('factCrowdfundingLink', lang), book.crowdfunding)
+      add('canon', 'factCanon', canonLabel(book.canon?.value, lang))
+    }
   }
   return rows
 })

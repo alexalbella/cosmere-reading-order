@@ -1,4 +1,5 @@
-import type { Book, ConnectionType, Format, MarkStatus, WorldKey } from '../data/types'
+import { isObject } from '../data/soundness'
+import type { ApocryphalReason, Book, CanonValue, ConnectionType, Format, MarkStatus, RpgKind, WorldKey, WritingStage } from '../data/types'
 import { WORLDS } from '../design/worlds'
 import { SERIES_ES } from './names'
 import { t, titleOf, type Lang, type StringKey } from './index'
@@ -20,6 +21,56 @@ const TYPE_KEYS: Record<ConnectionType, StringKey> = {
   minor: 'typeMinor',
   egg: 'typeEgg',
   appearance: 'typeAppearance',
+}
+
+const WRITING_KEYS: Record<WritingStage, StringKey> = { idea: 'writingIdea', drafting: 'writingDrafting', revising: 'writingRevising', done: 'writingDone' }
+const APOCRYPHAL_KEYS: Record<ApocryphalReason, StringKey> = {
+  'not-canon': 'apocryphalNotCanon',
+  parody: 'apocryphalParody',
+  superseded: 'apocryphalSuperseded',
+  unfinished: 'apocryphalUnfinished',
+}
+const RPG_KEYS: Record<RpgKind, StringKey> = {
+  core: 'rpgCore',
+  'world-guide': 'rpgWorldGuide',
+  adventure: 'rpgAdventure',
+  supplement: 'rpgSupplement',
+  screen: 'rpgScreen',
+  starter: 'rpgStarter',
+}
+const CANON_KEYS: Record<CanonValue, StringKey> = { yes: 'canonYes', partly: 'canonPartly', no: 'canonNo', unknown: 'canonUnknown' }
+
+/** A label from a list, or '' for a value the list lacks: the plate then has nothing to say. */
+function fromList<K extends string>(keys: Record<K, StringKey>, value: unknown, lang: Lang): string {
+  return typeof value === 'string' && Object.hasOwn(keys, value) ? t(keys[value as K], lang) : ''
+}
+export const apocryphalLabel = (reason: unknown, lang: Lang): string => fromList(APOCRYPHAL_KEYS, reason, lang)
+export const rpgKindLabel = (kind: unknown, lang: Lang): string => fromList(RPG_KEYS, kind, lang)
+export const canonLabel = (value: unknown, lang: Lang): string => fromList(CANON_KEYS, value, lang)
+
+/** The writing stage, with the author's percentage when he gave one. */
+export function writingText(writing: unknown, lang: Lang): string {
+  if (!isObject(writing)) return ''
+  const stage = fromList(WRITING_KEYS, writing.stage, lang)
+  if (!stage) return ''
+  const p = writing.percent
+  return typeof p === 'number' && Number.isFinite(p) ? `${stage} · ${p}${lang === 'es' ? ' %' : '%'}` : stage
+}
+
+/** An expected date or window, said as an estimate when it is not official. '' for anything malformed. */
+export function expectedText(expected: unknown, lang: Lang): string {
+  if (!isObject(expected) || typeof expected.when !== 'string') return ''
+  const window = /^(\d{4})-(H[12]|Q[1-4])$/.exec(expected.when)
+  let when: string
+  if (window) {
+    const [, year, part] = window
+    if (part === 'H1') when = t('expectedFirstHalf', lang, year!)
+    else if (part === 'H2') when = t('expectedSecondHalf', lang, year!)
+    else when = t('expectedQuarter', lang, part!.slice(1), year!)
+  } else when = publicationText(expected.when, lang)
+  if (!when) return ''
+  const text = when.charAt(0).toUpperCase() + when.slice(1)
+  return expected.official === true ? text : `${text} (${t('expectedEstimate', lang)})`
 }
 
 export const formatLabel = (f: Format, lang: Lang): string => t(FORMAT_KEYS[f], lang)

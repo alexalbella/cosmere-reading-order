@@ -546,3 +546,68 @@ describe('synopses and notes in the catalogue', () => {
     expect(JSON.stringify(validateCatalog(c))).not.toContain('LEAK')
   })
 })
+
+describe('plate facts for works not published, apocryphal and role-playing', () => {
+  const SRC = 'https://source.example.test/p'
+  function withBook(id: string, extra: Record<string, unknown>): Catalog {
+    const c = fixtureCatalog()
+    Object.assign(c.books.find((b) => b.id === id)!, extra)
+    return c
+  }
+  const codes = (c: Catalog, id: string) => validateCatalog(c).filter((p) => p.id === id).map((p) => p.code)
+
+  test('good values pass, on an announced work and on a role-playing book', () => {
+    const announced = withBook('low-tide-atlas', {
+      writing: { stage: 'drafting', percent: 40, source: SRC, asOf: '2026-11-01' },
+      expected: { when: '2027-H2', official: false, source: SRC },
+      announcedIn: SRC,
+    })
+    expect(codes(announced, 'low-tide-atlas')).toEqual([])
+    const rpg = withBook('paper-wolves', {
+      publisher: 'Lantern Press',
+      line: 'Chartmaker RPG',
+      rpgKind: 'core',
+      crowdfunding: SRC,
+      canon: { value: 'partly', source: SRC },
+    })
+    expect(codes(rpg, 'paper-wolves')).toEqual([])
+    const apocryphal = withBook('glass-harbour', { status: 'apocryphal', apocryphal: { reason: 'parody', source: SRC } })
+    expect(codes(apocryphal, 'glass-harbour')).toEqual([])
+    for (const when of ['2027', '2027-03', '2027-03-15', '2027-H1', '2027-Q4']) {
+      expect(codes(withBook('low-tide-atlas', { expected: { when, official: true, source: SRC } }), 'low-tide-atlas')).toEqual([])
+    }
+  })
+
+  test.each([
+    ['writing that is not an object', { writing: 'soon' }, 'BAD_FIELD'],
+    ['a writing stage outside the list', { writing: { stage: 'outline', source: SRC, asOf: '2026-11-01' } }, 'BAD_ENUM'],
+    ['a percentage above 100', { writing: { stage: 'drafting', percent: 140, source: SRC, asOf: '2026-11-01' } }, 'BAD_FIELD'],
+    ['a percentage below 0', { writing: { stage: 'drafting', percent: -1, source: SRC, asOf: '2026-11-01' } }, 'BAD_FIELD'],
+    ['writing without its source', { writing: { stage: 'idea', asOf: '2026-11-01' } }, 'BAD_FIELD'],
+    ['writing with an impossible date', { writing: { stage: 'idea', source: SRC, asOf: '2026-02-30' } }, 'BAD_FIELD'],
+    ['an expected window that does not exist', { expected: { when: '2027-Q5', official: false, source: SRC } }, 'BAD_FIELD'],
+    ['an expected date that is not said official or not', { expected: { when: '2027', official: 'yes', source: SRC } }, 'BAD_FIELD'],
+    ['an expected date without its source', { expected: { when: '2027', official: true } }, 'BAD_FIELD'],
+    ['an announcement that is not an https link', { announcedIn: 'http://source.example.test/p' }, 'BAD_FIELD'],
+  ])('%s', (_name, extra, code) => {
+    expect(codes(withBook('low-tide-atlas', extra), 'low-tide-atlas')).toEqual([code])
+  })
+
+  test.each([
+    ['an apocryphal reason outside the list', { apocryphal: { reason: 'fan-made', source: SRC } }, 'BAD_ENUM'],
+    ['an apocryphal reason without its source', { apocryphal: { reason: 'parody' } }, 'BAD_FIELD'],
+    ['a kind of role-playing book outside the list', { rpgKind: 'novel' }, 'BAD_ENUM'],
+    ['a blank publisher', { publisher: ' ' }, 'BAD_FIELD'],
+    ['a line that is not text', { line: 3 }, 'BAD_FIELD'],
+    ['a campaign that is not an https link', { crowdfunding: 'ftp://campaign.example.test' }, 'BAD_FIELD'],
+    ['a canon value outside the list', { canon: { value: 'maybe', source: SRC } }, 'BAD_ENUM'],
+    ['a canon value without its source', { canon: { value: 'yes' } }, 'BAD_FIELD'],
+  ])('%s', (_name, extra, code) => {
+    expect(codes(withBook('paper-wolves', extra), 'paper-wolves')).toEqual([code])
+  })
+
+  test('an announced work still may not carry a year; a forecast goes in expected, with its source', () => {
+    expect(codes(withBook('low-tide-atlas', { year: 2027 }), 'low-tide-atlas')).toEqual(['ANNOUNCED_WITH_DATE'])
+    expect(codes(withBook('low-tide-atlas', { expected: { when: '2027', official: true, source: SRC } }), 'low-tide-atlas')).toEqual([])
+  })
+})
