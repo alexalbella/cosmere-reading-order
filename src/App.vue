@@ -10,6 +10,7 @@ import BookPlate from './components/BookPlate.vue'
 import CoverFillet from './components/CoverFillet.vue'
 import FiltersPanel from './components/FiltersPanel.vue'
 import HowPanel from './components/HowPanel.vue'
+import LeaderThread from './components/LeaderThread.vue'
 import NextSentence from './components/NextSentence.vue'
 import SettingsPanel from './components/SettingsPanel.vue'
 import SpineStrip, { type Segment } from './components/SpineStrip.vue'
@@ -23,6 +24,7 @@ import { countsAsRead } from './reading/status'
 import type { MarkStatus } from './spoilers/visible'
 import CircleView from './views/CircleView.vue'
 import ShelfView from './views/ShelfView.vue'
+import { cardBox, CLEAR_BOTTOM, CLEAR_TOP, roomFor, sideOf, type Box, type Side } from './views/room'
 
 // The sheet of emblems and icons is not needed for the first paint: it comes after it, in its own chunk.
 const SpriteSheet = defineAsyncComponent(() => import('./imagery/SpriteSheet.vue'))
@@ -101,17 +103,89 @@ watch(selected, (book, before) => {
   if (phone.value && book && !before) rising.value = true
 })
 
-// On the PC the plate is always there, opened on the book in progress.
+// On the PC the book in progress starts selected. In the ring its card stays closed until asked for: the sentence
+// speaks at rest, and nothing covers the ring.
 watch(
   () => app.status.value === 'ready',
   (ready) => {
     if (ready && !phone.value && app.selectedId.value === null) {
       const first = app.currentBook.value ?? app.nextBook.value
-      if (first) app.selectBook(first.id)
+      if (first) app.selectedId.value = first.id
     }
   },
   { immediate: true },
 )
+
+// The ring makes room (PC, ring views): a card or a drawer opens beside the ring, the ring slides to the other
+// side and shrinks a little, and the sentence folds to its first line.
+const circle = ref<{ angleOf(id: string): number | null } | null>(null)
+const cardOpen = ref(false)
+const ringZoomed = ref(false)
+watch(
+  () => app.selectionCount.value,
+  () => (cardOpen.value = true),
+)
+const roomy = computed(() => !phone.value && app.view.value !== 'shelf')
+const showPlate = computed(() => selected.value !== null && (!roomy.value || cardOpen.value))
+const roomOpen = computed(() => roomy.value && (panel.value !== null || showPlate.value))
+const room = ref({ dx: 0, scale: 1 })
+const openBox = ref<{ side: Side; box: Box } | null>(null)
+const slotPlace = ref<Record<string, string>>({})
+/** How far from the centre a title's middle sits, as a share of the ring's radius. */
+const TITLE_RADIUS = 0.62
+
+async function place(): Promise<void> {
+  await nextTick()
+  const coverEl = cover.value
+  const slotEl = coverEl?.querySelector<HTMLElement>('.slot')
+  const ringEl = coverEl?.querySelector<HTMLElement>('.ring')
+  if (!roomOpen.value || !coverEl || !slotEl || !ringEl) {
+    room.value = { dx: 0, scale: 1 }
+    openBox.value = null
+    slotPlace.value = {}
+    return
+  }
+  const c = coverEl.getBoundingClientRect()
+  const r = ringEl.getBoundingClientRect()
+  const ring = { x: r.left - c.left, y: r.top - c.top, w: r.width, h: r.height }
+  const size = { w: c.width, h: c.height }
+  const w = slotEl.offsetWidth
+  const content = slotEl.scrollHeight
+  let open: { side: Side; box: Box }
+  if (panel.value) {
+    const side: Side = panel.value === 'settings' ? 'left' : 'right'
+    const h = Math.min(content, size.h - CLEAR_TOP - CLEAR_BOTTOM)
+    const y = panel.value === 'filters' ? CLEAR_TOP : size.h - h - CLEAR_BOTTOM
+    open = { side, box: { x: side === 'left' ? 22 : size.w - w - 22, y, w, h } }
+  } else {
+    const angle = selected.value ? (circle.value?.angleOf(selected.value.id) ?? null) : null
+    const side = angle === null ? 'right' : sideOf(angle)
+    const made = roomFor(ring, { side, box: cardBox(side, size.h / 2, { w, h: content }, size) }, size, ringZoomed.value)
+    const cy = ring.y + ring.h / 2
+    const titleY = angle === null ? cy : cy - Math.cos((angle * Math.PI) / 180) * TITLE_RADIUS * (ring.h / 2) * made.scale
+    open = { side, box: cardBox(side, titleY, { w, h: content }, size) }
+  }
+  room.value = roomFor(ring, open, size, ringZoomed.value)
+  openBox.value = open
+  slotPlace.value = { '--slot-x': `${open.box.x}px`, '--slot-y': `${open.box.y}px`, '--slot-h': `${open.box.h}px` }
+}
+watch([() => selected.value?.id, showPlate, panel, roomy, ringZoomed, lang, () => app.view.value], () => void place())
+const onResize = (): void => void place()
+onMounted(() => window.addEventListener('resize', onResize))
+onBeforeUnmount(() => window.removeEventListener('resize', onResize))
+
+function closeCard(): void {
+  cardOpen.value = false
+  void nextTick(() => document.querySelector<HTMLElement>('.area .sel')?.focus({ preventScroll: true }))
+}
+
+/** The sentence's mark: the same path as the plate's. Its card opens with the undo, or asks first for an anthology. */
+function markCurrent(): void {
+  const book = app.currentBook.value
+  if (!book) return
+  select(book.id)
+  if (!(book.format === 'anthology' && app.unreadWorksIn(book).length > 0)) app.markBooks([book.id], 'read')
+}
 
 const started = computed(() => Object.values(app.state.value.marks).some((m) => m.status !== 'none'))
 const counted = computed(() => app.countedBooks.value)
@@ -175,6 +249,7 @@ function togglePanel(name: PanelName): void {
   const active = document.activeElement
   opener = active instanceof HTMLElement && active !== document.body ? active : null
   panel.value = name
+  cardOpen.value = false
   void nextTick(() => document.querySelector<HTMLElement>('.slot .panel')?.focus({ preventScroll: true }))
 }
 function closePanel(): void {
@@ -191,6 +266,7 @@ function onEscape(event: KeyboardEvent): void {
   if (event.key !== 'Escape') return
   if (panel.value) closePanel()
   else if (phone.value && selected.value) closePlate()
+  else if (roomy.value && cardOpen.value) closeCard()
 }
 onMounted(() => window.addEventListener('keydown', onEscape))
 onBeforeUnmount(() => window.removeEventListener('keydown', onEscape))
@@ -284,9 +360,14 @@ const pendingUnlocks = computed(() => {
     <main
       ref="cover"
       class="cover"
-      :class="{ interior: app.view.value === 'shelf', 'with-panel': panel }"
+      :class="{ interior: app.view.value === 'shelf', 'with-panel': panel, 'room-open': roomOpen }"
     >
       <CoverFillet v-if="app.view.value !== 'shelf'" />
+      <LeaderThread
+        v-if="roomy && showPlate && !panel && openBox"
+        :side="openBox.side"
+        :box="openBox.box"
+      />
       <div class="sentence-col">
         <NextSentence
           :current="app.currentBook.value"
@@ -297,8 +378,10 @@ const pendingUnlocks = computed(() => {
           :narrowed="narrowed"
           :has-works="books.some((b) => counts(b, app.readingOptions.value))"
           :lang="lang"
+          :rest-actions="roomy"
           @select="select"
           @clear-filters="clearFilters"
+          @mark-current="markCurrent"
         />
       </div>
       <nav
@@ -373,12 +456,15 @@ const pendingUnlocks = computed(() => {
       >
         <CircleView
           v-if="app.view.value !== 'shelf'"
+          ref="circle"
           :app="app"
+          :room="room"
           :arrangement="app.view.value === 'map' ? 'map' : 'order'"
           :how-open="panel === 'how'"
           :phone="phone"
           :lang="lang"
           :now="now"
+          @zoomed="ringZoomed = $event"
           @how="togglePanel('how')"
         />
         <ShelfView
@@ -404,6 +490,8 @@ const pendingUnlocks = computed(() => {
       <div
         class="slot"
         :class="{ rising }"
+        :style="slotPlace"
+        :data-side="openBox?.side"
         @animationend.self="rising = false"
       >
         <SpoilersPanel
@@ -450,7 +538,7 @@ const pendingUnlocks = computed(() => {
           @close="closePanel"
         />
         <BookPlate
-          v-else-if="selected"
+          v-else-if="selected && showPlate"
           :key="selected.id"
           :book="selected"
           :books="books"
@@ -469,16 +557,17 @@ const pendingUnlocks = computed(() => {
           :lifted="app.lifted.value === selected.world"
           :folded="folded"
           :phone="phone"
+          :closable="roomy"
           :now="now"
           @mark="mark"
           @undo="app.undoLast()"
-          @close="closePlate"
+          @close="roomy ? closeCard() : closePlate()"
           @select="select"
           @toggle-fold="folded = !folded"
           @lift="app.toggleLift"
         />
         <section
-          v-else-if="!phone && app.shownBooks.value.length"
+          v-else-if="!phone && !roomy && app.shownBooks.value.length"
           class="plate"
         >
           <p class="cons-empty">

@@ -53,6 +53,8 @@ const props = defineProps<{
   lifted: boolean
   folded: boolean
   phone: boolean
+  /** A card beside the ring on the PC, which closes back to the ring. */
+  closable?: boolean
   now: number
 }>()
 
@@ -181,12 +183,12 @@ function confirmAll(): void {
 <template>
   <section
     class="plate"
-    :class="{ folded }"
+    :class="{ folded, closable }"
     :data-world="book.world"
     :aria-label="title"
   >
     <button
-      v-if="phone"
+      v-if="phone || closable"
       type="button"
       class="plate-x plate-close"
       :aria-label="t('close', lang)"

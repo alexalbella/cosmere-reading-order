@@ -118,6 +118,8 @@ for (const view of ['circle', 'shelf'] as const) {
       // The phone plate takes no touch for 400 ms after it opens.
       await page.waitForTimeout(450)
       await page.getByRole('button', { name: en('markSkipped'), exact: true }).click()
+      // On the PC the sentence folds to its first line while a card is open beside the ring: close it to read on.
+      if (view === 'circle' && (page.viewportSize()?.width ?? 0) >= 1280) await page.keyboard.press('Escape')
       await expect(gaps.getByRole('button', { name: 'Ash Road', exact: true })).toHaveCount(0)
       await expect(gaps.getByRole('button', { name: 'Glass Harbour', exact: true })).toBeVisible()
       expect((await storedState(page)).marks['ash-road']?.status).toBe('skipped')

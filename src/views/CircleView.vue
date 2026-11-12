@@ -37,8 +37,17 @@ import {
 } from './circle'
 import { usePanZoom } from './panZoom'
 
-const props = defineProps<{ app: UseAppResult; phone: boolean; lang: Lang; now: number; arrangement: Arrangement; howOpen?: boolean }>()
-const emit = defineEmits<{ how: [] }>()
+const props = defineProps<{
+  app: UseAppResult
+  phone: boolean
+  lang: Lang
+  now: number
+  arrangement: Arrangement
+  howOpen?: boolean
+  /** On the PC the ring slides and shrinks to make room for a card or a drawer beside it. */
+  room?: { dx: number; scale: number }
+}>()
+const emit = defineEmits<{ how: []; zoomed: [zoomed: boolean] }>()
 
 // Clockwise, as the ring shows them: the map seats the books itself, the order ring takes them as they come.
 const books = computed(() => (props.arrangement === 'map' ? mapOrder(props.app.shownBooks.value) : props.app.shownBooks.value))
@@ -65,6 +74,7 @@ onBeforeUnmount(() => observer?.disconnect())
 // Wheel, drag and pinch move a transform on the ring's own group. Nothing in the layout knows about it.
 const pan = usePanZoom(svg, { wheel: () => !props.phone })
 const zoomed = computed(() => pan.view.value.k > 1.001)
+watch(zoomed, (z) => emit('zoomed', z), { immediate: true })
 /** The ring's size on screen with the zoom in it: what the letters are sized against. */
 const reach = computed(() => ringPx.value * pan.view.value.k)
 /** Too small for titles: each book is a tick, and the whole ring is the target. Unmeasured, the width decides. */
@@ -486,6 +496,8 @@ const lens = computed(() => {
 /** Dots and marks grow more slowly than the ring, so a close view is not a view of dots. */
 const markScale = computed(() => 1 / Math.sqrt(pan.view.value.k))
 
+defineExpose({ angleOf: (id: BookId): number | null => (Object.hasOwn(layout.value.angles, id) ? angleOf(id) : null) })
+
 function pick(id: BookId): void {
   if (pan.dragged()) return
   props.app.selectBook(id)
@@ -501,6 +513,7 @@ function pick(id: BookId): void {
       <!-- Before the ring in the document: from the ring, the next stop is the plate. -->
       <div
         class="zoom"
+        :style="room && room.scale < 1 ? { transform: `translate(${room.dx.toFixed(1)}px, 0)` } : undefined"
         role="group"
         :aria-label="t('zoom', lang)"
       >
@@ -557,8 +570,8 @@ function pick(id: BookId): void {
       </div>
       <div
         class="ring-window"
-        :class="{ lens: zoomed }"
-        :style="{ '--lens': `${lens.toFixed(2)}%` }"
+        :class="{ lens: zoomed, 'making-room': room && room.scale < 1 }"
+        :style="{ '--lens': `${lens.toFixed(2)}%`, transform: room && room.scale < 1 ? `translate(${room.dx.toFixed(1)}px, 0) scale(${room.scale.toFixed(3)})` : undefined }"
       >
         <svg
           ref="svg"

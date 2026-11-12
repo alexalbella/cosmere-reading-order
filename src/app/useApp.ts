@@ -243,8 +243,11 @@ export function useApp(options: UseAppOptions = {}): UseAppResult {
   const nextBook = computed(() => next(shownBooks.value, state.value.marks, readingOptions.value))
   const gapBooks = computed(() => gaps(shownBooks.value, state.value.marks, readingOptions.value))
 
+  /** Bumped by every deliberate selection, even of the book already selected: the PC opens its card on it. */
+  const selectionCount = ref(0)
   function selectBook(id: BookId): void {
     selectedId.value = id
+    selectionCount.value += 1
   }
 
   let undoTimer: ReturnType<typeof setTimeout> | undefined
@@ -359,6 +362,7 @@ export function useApp(options: UseAppOptions = {}): UseAppResult {
     order,
     filters,
     selectedId,
+    selectionCount,
     shownBooks,
     countedBooks,
     readingOptions,
@@ -400,6 +404,7 @@ export interface UseAppResult {
   order: Ref<OrderKey>
   filters: Ref<Filters>
   selectedId: Ref<BookId | null>
+  selectionCount: Ref<number>
   shownBooks: ComputedRef<Book[]>
   countedBooks: ComputedRef<Book[]>
   /** Which works count toward what is left to read: the order and whether role-playing books are in. */

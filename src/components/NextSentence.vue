@@ -17,8 +17,10 @@ const props = defineProps<{
   /** There are works that count at all. With none, nothing was read and nothing is left, so nothing is claimed. */
   hasWorks: boolean
   lang: Lang
+  /** On the PC, in the ring: mark the book in progress, or see its card, from here. */
+  restActions?: boolean
 }>()
-const emit = defineEmits<{ select: [id: BookId]; clearFilters: [] }>()
+const emit = defineEmits<{ select: [id: BookId]; clearFilters: []; markCurrent: [] }>()
 
 // For a finger each title needs a row of its own height. If they all fit one row they stay a sentence;
 // if not they become a list, because a sentence wrapped at 44 px a line falls apart.
@@ -84,6 +86,25 @@ onBeforeUnmount(() => observer?.disconnect())
         @keydown.space.prevent="emit('select', current.id)"
       >{{ titleOf(current, lang) }}<span class="dot">.</span></span>
     </p>
+    <div
+      v-if="current && restActions"
+      class="rest-actions"
+    >
+      <button
+        type="button"
+        class="btn-gold"
+        @click="emit('markCurrent')"
+      >
+        {{ t('markRead', lang) }}
+      </button>
+      <button
+        type="button"
+        class="rest-see"
+        @click="emit('select', current.id)"
+      >
+        {{ t('seeCard', lang) }}
+      </button>
+    </div>
     <template v-if="next">
       <p class="line line-next">
         <span class="kicker">{{ current ? t('upNext', lang) : started ? t('continueWith', lang) : t('startWith', lang) }}</span>
