@@ -5,12 +5,13 @@ import { describe, expect, test } from 'vitest'
 import { placeholdersIn } from '../../scripts/check-deploy-config'
 
 const ROOT = process.cwd()
-const CONNECTIONS_ACCESS = [
-  /\.connections\b/, // catalog.connections
-  /\[\s*['"`]connections['"`]\s*\]/, // catalog['connections']
-  /\{\s*(?:[\w$]+(?:\s*:\s*[\w$]+)?\s*,\s*)*connections\b/, // const { books, connections } = catalog
-  /connections\.json/, // the data file itself
-]
+// The three gated collections: connections, synopses and notes reach the screen only through the gate.
+const GATED_ACCESS = ['connections', 'synopses', 'notes'].flatMap((name) => [
+  new RegExp(`\\.${name}\\b`), // catalog.connections
+  new RegExp(`\\[\\s*['"\`]${name}['"\`]\\s*\\]`), // catalog['connections']
+  new RegExp(`\\{\\s*(?:[\\w$]+(?:\\s*:\\s*[\\w$]+)?\\s*,\\s*)*${name}\\b`), // const { books, connections } = catalog
+  new RegExp(`${name}\\.json`), // the data file itself
+])
 const ALLOWED_DIRS = ['src/spoilers/', 'src/data/']
 const ALLOWED_FILES = ['src/app/useApp.ts']
 
@@ -22,11 +23,11 @@ function filesUnderSrc(): string[] {
 
 function breaksTheRule(file: string, text: string): boolean {
   const allowed = ALLOWED_FILES.includes(file) || ALLOWED_DIRS.some((dir) => file.startsWith(dir))
-  return !allowed && CONNECTIONS_ACCESS.some((pattern) => pattern.test(text))
+  return !allowed && GATED_ACCESS.some((pattern) => pattern.test(text))
 }
 
 describe('architecture', () => {
-  test('nothing outside the engine, the data layer and useApp touches .connections', () => {
+  test('nothing outside the engine, the data layer and useApp touches .connections, .synopses or .notes', () => {
     const offenders = filesUnderSrc().filter((file) => breaksTheRule(file, readFileSync(join(ROOT, file), 'utf8')))
     expect(offenders).toEqual([])
   })
@@ -58,6 +59,12 @@ describe('architecture', () => {
     'function draw({ connections }: Catalog) {}',
     "fetch('/data/connections.json')",
     "import data from '../../public/data/connections.json'",
+    'catalog.synopses',
+    "catalog['notes']",
+    'const { books, synopses } = catalog',
+    'const { notes: n } = catalog',
+    "fetch('/data/synopses.json')",
+    "fetch('/data/notes.json')",
   ])('catches %j outside the allowed folders', (text) => {
     expect(breaksTheRule('src/views/Shelf.vue', text)).toBe(true)
     expect(breaksTheRule('src/spoilers/visible.ts', text)).toBe(false)
@@ -73,6 +80,8 @@ describe('architecture', () => {
     "{ es: 'conexiones', en: 'connections' }",
     'function draw() { const connections = lines() }',
     '// the connections drawn on the circle',
+    'const { synopsisOf, notesOf } = useApp()',
+    "{{ t('notesTitle') }}",
   ])('leaves %j alone', (text) => {
     expect(breaksTheRule('src/views/Shelf.vue', text)).toBe(false)
   })
