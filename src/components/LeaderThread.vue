@@ -26,9 +26,9 @@ function draw(): void {
   const bx = right ? props.box.x : props.box.x + props.box.w
   const by = Math.max(props.box.y + 28, Math.min(ay, props.box.y + props.box.h - 28))
   const mx = (ax + bx) / 2
-  const n = (v: number) => v.toFixed(1)
+  const n = (v: number) => String(Math.round(v))
   path.value = `M${n(ax)} ${n(ay)} C${n(mx)} ${n(ay)} ${n(mx)} ${n(by)} ${n(bx)} ${n(by)}`
-  dot.value = { x: ax, y: ay }
+  dot.value = { x: Math.round(ax), y: Math.round(ay) }
 }
 
 function follow(): void {
@@ -42,9 +42,19 @@ function follow(): void {
   step()
 }
 
+// Once more where the ring comes to rest, however long its slide took.
+const onSettled = (event: TransitionEvent): void => {
+  if ((event.target as Element | null)?.classList?.contains('ring-window')) draw()
+}
 watch(() => [props.side, props.box.x, props.box.y, props.box.h], follow)
-onMounted(follow)
-onBeforeUnmount(() => typeof cancelAnimationFrame === 'function' && cancelAnimationFrame(frame))
+onMounted(() => {
+  follow()
+  document.addEventListener('transitionend', onSettled)
+})
+onBeforeUnmount(() => {
+  if (typeof cancelAnimationFrame === 'function') cancelAnimationFrame(frame)
+  document.removeEventListener('transitionend', onSettled)
+})
 </script>
 
 <template>

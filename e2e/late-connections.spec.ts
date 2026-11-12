@@ -30,7 +30,7 @@ async function expandPlate(page: Page): Promise<void> {
 
 /** Nothing under way: no transition, no entrance, and no class waiting to come off when one ends. */
 async function settled(page: Page): Promise<void> {
-  await page.waitForFunction(() => document.getAnimations().length === 0 && !document.querySelector('.rising, .entering'))
+  await page.waitForFunction(() => document.getAnimations().filter((a) => a.effect?.getTiming().iterations !== Infinity).length === 0 && !document.querySelector('.rising, .entering'))
 }
 
 /** The whole box of every book, as the view lays it out: a gap per book would show on one axis only. */

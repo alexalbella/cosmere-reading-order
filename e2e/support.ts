@@ -131,3 +131,10 @@ export async function storedState(page: Page): Promise<{ marks: Marks; unlocks: 
 export async function storedPrefs(page: Page): Promise<{ lang: Lang; view: View; order: string; filters: Filters }> {
   return page.evaluate(() => JSON.parse(localStorage.getItem('cosmere.prefs.v1') ?? '{}'))
 }
+
+/**
+ * True once every animation with an end has ended. The sky's drift, twinkle and comet loop for good and never touch
+ * a text's colour or a box, so they do not count. Self-contained, for `page.waitForFunction`.
+ */
+export const animationsSettled = (): boolean =>
+  document.getAnimations().filter((a) => a.effect?.getTiming().iterations !== Infinity).length === 0

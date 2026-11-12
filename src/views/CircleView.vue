@@ -36,6 +36,8 @@ import {
   type Arrangement,
 } from './circle'
 import { usePanZoom } from './panZoom'
+import RingSky from './RingSky.vue'
+import { PLANET_RADIUS, planetPoint } from './sky'
 
 const props = defineProps<{
   app: UseAppResult
@@ -356,6 +358,18 @@ const arcs = computed(() =>
   })),
 )
 
+/** Each world's planet on its band, clear of its name where the name is written. */
+const planets = computed(() => {
+  const at = new Map<string, { x: number; y: number }>()
+  for (const arc of arcs.value) {
+    const named = worldLabels.value.has(arc.key)
+    const mid = (arc.from + arc.to) / 2
+    const half = named ? labelSpan(arc.name, worldFont.value, 0.62, LABEL_RADIUS) / 2 : 0
+    at.set(arc.key, planetPoint(arc, named ? { from: mid - half, to: mid + half } : null))
+  }
+  return at
+})
+
 // Names of the worlds, written along their bands. A name may run past its band, and takes the outer lane when it
 // would meet its neighbour. The bands of the books in hand (selected, in progress, next) are named first, so they
 // are the last to go without: where you are is never an unnamed sliver.
@@ -604,6 +618,7 @@ function pick(id: BookId): void {
             </template>
           </defs>
           <g :transform="pan.transform.value">
+            <RingSky :arcs="layout.arcs" />
             <g
               class="lanes"
               aria-hidden="true"
@@ -867,6 +882,32 @@ function pick(id: BookId): void {
                 :d="arc.d"
                 :style="isRelief(arc.world) ? undefined : { '--arc-tone': `var(--tone-${arc.world})` }"
               />
+              <g
+                v-if="planets.get(arc.key)"
+                class="planet"
+                :transform="`translate(${planets.get(arc.key)!.x} ${planets.get(arc.key)!.y})`"
+                aria-hidden="true"
+              >
+                <ellipse
+                  class="planet-ring"
+                  rx="24"
+                  ry="7"
+                  transform="rotate(-18)"
+                />
+                <circle
+                  class="planet-disc"
+                  :r="PLANET_RADIUS"
+                  :fill="`url(#sky-planet-${arc.world})`"
+                />
+                <use
+                  class="planet-emblem"
+                  :href="`#emblem-${arc.world}`"
+                  x="-13"
+                  y="-13"
+                  width="26"
+                  height="26"
+                />
+              </g>
               <text
                 v-if="worldLabels.has(arc.key)"
                 class="world-name"

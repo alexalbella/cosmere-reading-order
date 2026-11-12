@@ -1,14 +1,14 @@
 import AxeBuilder from '@axe-core/playwright'
 import { expect, test, type Page } from '@playwright/test'
 import { t } from '../src/i18n'
-import { bookButton, marksOf, openSettled, withFixture } from './support'
+import { animationsSettled, bookButton, marksOf, openSettled, withFixture } from './support'
 
 const en = (key: Parameters<typeof t>[0]) => t(key, 'en')
 
 async function serious(page: Page): Promise<string[]> {
   // Colours are measured at rest: a transition under way would be read half-way.
   await page
-    .waitForFunction(() => document.getAnimations().length === 0, undefined, { timeout: 5000 })
+    .waitForFunction(animationsSettled, undefined, { timeout: 5000 })
     .catch(() => {
       throw new Error('animations did not settle in 5 s, so colours cannot be measured at rest')
     })

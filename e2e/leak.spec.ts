@@ -5,7 +5,7 @@ import { isMet, visible } from '../src/spoilers/visible'
 import type { Marks, Unlocks } from '../src/spoilers/visible'
 import type { View } from '../src/state/prefs'
 import { fixtureCatalog } from '../tests/fixtures/catalog'
-import { CATALOG_IDS, everyFilter, marksOf, openSettled, pick, storedState, unlocksOf, withFixture } from './support'
+import { animationsSettled, CATALOG_IDS, everyFilter, marksOf, openSettled, pick, storedState, unlocksOf, withFixture } from './support'
 
 const catalog = fixtureCatalog()
 const EVERYTHING_BUT_ONE = CATALOG_IDS.filter((id) => id !== 'northern-gale')
@@ -132,8 +132,14 @@ for (const view of VIEWS) {
       await pick(page, 'Ash Road')
       await expandPlate(page)
       await expect(page.locator('.plate-title')).toHaveText('Ash Road')
-      await page.waitForFunction(() => document.getAnimations().length === 0)
-      return page.locator('#app').innerHTML()
+      await page.waitForFunction(animationsSettled)
+      // The sky moves on its own (a comet, the stars under the mouse); that it is the same for every reader is
+      // proven where it is drawn. Everything else must be identical.
+      return page.evaluate(() => {
+        const app = document.querySelector('#app')!.cloneNode(true) as Element
+        app.querySelector('.sky')?.remove()
+        return app.innerHTML
+      })
     }
     const plain = await snapshot('/')
     for (const url of ['/?spoilers=1&connections=all&theories=1&unlock=all', '/?signin=1&spoilers=1&connections=all&theories=1&unlock=all']) {
