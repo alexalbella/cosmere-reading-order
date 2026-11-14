@@ -1,45 +1,143 @@
-# Cosmere Reading Order
+<p align="center">
+  <img src="public/icons/icon-192.png" width="96" height="96" alt="">
+</p>
 
-A website with the reading order of Brandon Sanderson's Cosmere: every work, from the novels to the role-playing books, in English and in the editions published in Spain. You mark what you have read, and connections between works appear only once you have read everything each one gives away.
+<h1 align="center">Cosmere Reading Order</h1>
 
-It is a Vue 3 rewrite of [17thshard/reading-order](https://github.com/17thshard/reading-order) by Marvin Rösch and the 17th Shard, MIT licensed, whose history this repository keeps. The map of worlds, the reading orders, the colour per world and the idea of drawing connections come from there.
+<p align="center">
+  <strong>What to read next in Brandon Sanderson's Cosmere,<br>and nothing you are not ready to know.</strong>
+</p>
+
+<p align="center">
+  <a href="https://github.com/alexalbella/cosmere-reading-order/actions/workflows/ci.yml"><img src="https://github.com/alexalbella/cosmere-reading-order/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/licence-MIT-e2c070" alt="MIT licence"></a>
+  <img src="https://img.shields.io/badge/Vue-3-42b883" alt="Vue 3">
+  <img src="https://img.shields.io/badge/TypeScript-strict-3178c6" alt="TypeScript">
+  <img src="https://img.shields.io/badge/fan%20project-unofficial-8a8a8a" alt="Unofficial fan project">
+</p>
+
+<p align="center">
+  <img src="docs/img/map.jpg" width="900" alt="The map: every work of the Cosmere on a ring, grouped by world, with the next book to read named at the top left.">
+</p>
+
+A website with the reading order of the Cosmere: all 105 works, from the novels to the role-playing books, in English and in the editions published in Spain. You mark what you have read, the site tells you what comes next, and whatever links one work to another stays out of sight until you have read everything it gives away.
+
+It is a Vue 3 rewrite of [17thshard/reading-order](https://github.com/17thshard/reading-order), whose history this repository keeps.
+
+## What it does
+
+- **Tells you what to read next.** One sentence at the top: the book you are on, the one after it, and whether the Spanish edition is out. It follows the order you choose, recommended or by publication.
+- **Three ways to look at the same catalogue.** A map with the works on a ring by world, the reading order as one line, and a shelf of spines by phase.
+- **A plate for every work.** Series and number, star system, format, pages and words, first publication, the Spanish publisher, and where to read it for free when the author gives it away. Works that are announced, apocryphal or role-playing books get their own facts: how far the writing is, when it is expected, who publishes it, whether it is canon.
+- **Connections, synopses and notes behind a gate.** Each one lists the works it would spoil and appears only when you have read them all. A synopsis is folded, and opens when you ask.
+- **Your marks stay with you.** They live on the device. With the full deploy they also travel between your devices; without it, export and import a file.
+- **Works offline,** installs as an app, and ships under 100 KB of JavaScript on the first load.
+- **English and Spanish,** every title in both where both exist.
+- **Built to be readable.** Text contrast of at least 4.5:1, 44 px touch targets, keyboard use throughout, and a still version when you ask for less motion.
 
 ## The spoiler promise
 
-Nothing about a work you have not read reaches the screen. Each connection lists every work it requires; it stays hidden, without a line, a count or a gap, until all of them are marked read or you unlock one by hand. A missing or broken field hides, never shows. [`docs/SPOILERS.md`](docs/SPOILERS.md) lists every rule with the tests that prove it.
+Nothing about a work you have not read reaches the screen.
 
-The data files themselves are public and readable. If you are still reading, do not open `data/connections/`.
+- One function, [`src/spoilers/visible.ts`](src/spoilers/visible.ts), is the only path from the data to the screen.
+- A connection is drawn only when **every** work in its `requires` list is read. The list holds both ends and anything else the text gives away.
+- A hidden connection leaves **no trace**: no line, no count beside a book, no gap in the layout, nothing in the page.
+- A missing or broken field **hides**, never shows.
+- A synopsis waits only on earlier works of its own series, so a lock never tells you that two series are tied.
+- Marking a book cannot happen by accident, and unlocking one by hand asks first and can be undone.
 
-## Run it
+[`docs/SPOILERS.md`](docs/SPOILERS.md) lists the twelve rules, each with the tests that prove it.
 
-Node 24 (`.nvmrc`).
+> [!WARNING]
+> The data files are public and anyone can read them. If you are still reading the books, do not open `data/connections/`, `data/synopses/` or `data/notes/`.
+
+## A closer look
+
+<table>
+  <tr>
+    <td width="50%"><img src="docs/img/card.jpg" alt="A work's plate open beside the ring, with its facts and a folded synopsis."></td>
+    <td width="50%"><img src="docs/img/shelf.jpg" alt="The shelf: the works as spines, by phase, in each world's leather."></td>
+  </tr>
+  <tr>
+    <td><strong>The plate.</strong> Touch a title and its card opens beside it; the ring makes room.</td>
+    <td><strong>The shelf.</strong> The same works as spines, in the colour of their world.</td>
+  </tr>
+</table>
+
+<p align="center">
+  <img src="docs/img/phone.jpg" width="280" alt="The reading order on a phone, in Spanish.">
+  <br>
+  <em>On a phone, here in Spanish.</em>
+</p>
+
+## Quick start
+
+You need Node 24 (see `.nvmrc`).
 
 ```bash
+git clone https://github.com/alexalbella/cosmere-reading-order.git
+cd cosmere-reading-order
 npm ci
-npm run dev             # build the data, start Vite
-npm test                # Vitest
-npm run lint
-npm run build           # type-check, build, first-load JS budget of 100 KB gzipped
-npm run e2e             # Playwright; needs `npx playwright install chromium` once
-npm run validate:data   # check the catalogue; prints codes and ids only
+npm run dev
 ```
 
-`.githooks/pre-commit` runs gitleaks, the tests and lint. Arm it once per clone with `git config core.hooksPath .githooks`.
+`npm run dev` validates the catalogue, builds it into `public/data/` and starts Vite.
 
-## Docs
+| Command | What it does |
+| --- | --- |
+| `npm run dev` | Build the data and start the dev server. |
+| `npm test` | Unit tests (Vitest). |
+| `npm run e2e` | Browser tests (Playwright). Run `npx playwright install chromium` once. |
+| `npm run lint` | ESLint. |
+| `npm run build` | Type-check, build, and check the first-load budget of 100 KB gzipped. |
+| `npm run validate:data` | Check the catalogue. Prints codes and ids only, never content. |
 
-- [`docs/DATA.md`](docs/DATA.md): every data file and field, how to add a work or a connection by hand, the validator and its codes.
-- [`docs/SPOILERS.md`](docs/SPOILERS.md): the spoiler rules as guarantees of the code.
-- [`docs/DEPLOY.md`](docs/DEPLOY.md): static hosting, or Cloudflare with Access and synced marks.
-- [`docs/DESIGN.md`](docs/DESIGN.md): colours per world, type, motion, the pieces.
+`.githooks/pre-commit` looks for secrets with gitleaks, then runs the tests and the linter. Arm it once per clone:
+
+```bash
+git config core.hooksPath .githooks
+```
+
+## Make it yours
+
+**Host it.** The build is a folder of static files: put `dist/` on any host and marks stay on each device. For marks that follow you between devices, deploy the Worker with Cloudflare KV and Access. Both ways are in [`docs/DEPLOY.md`](docs/DEPLOY.md).
+
+**Keep the catalogue.** Everything is a JSON file you can edit by hand. [`docs/DATA.md`](docs/DATA.md) describes every file and field, and how to add a work, a connection, a synopsis or a note. The validator tells you what is wrong by code and id.
 
 ## How it fits together
 
-- `data/` holds the sources; `scripts/build-data.ts` validates them and writes `public/data/`.
-- `src/spoilers/visible.ts` is the only path from connection data to the screen; `src/data/soundness.ts` defines a sound connection.
-- `src/views/` draws the map, the reading order and the shelf; `src/components/` the plate, the panels and the sentence.
-- `src/state/` keeps marks on the device; `src/sync/` and `worker/` carry them between devices through Cloudflare KV.
+```
+data/                 the sources: works, connections, synopses, notes, public facts
+scripts/              build and validate the data, generate textures and sprites
+src/
+  spoilers/           visible.ts, the one gate between data and screen
+  data/               types, and what makes an entry sound
+  views/              the map, the reading order, the shelf
+  components/         the plate, the panels, the sentence
+  imagery/            emblems, icons and covers, all drawn as SVG
+  state/  sync/       marks on the device, and their way to the server
+worker/               the Cloudflare Worker that keeps marks in KV
+tests/  e2e/          unit and browser tests, on invented fixtures
+docs/                 the guides below
+```
 
-## Licences and images
+## Docs
 
-Code: MIT (`LICENSE`). Fonts: SIL Open Font License (`public/fonts/OFL.txt`). The leather textures are generated by `scripts/make-grain.ts`. No official Dragonsteel image, cover, map or illustration is in this repository. The Cosmere and its works belong to Dragonsteel Entertainment; this is an unofficial fan project.
+| Guide | For |
+| --- | --- |
+| [`docs/DATA.md`](docs/DATA.md) | Every data file and field, editing by hand, the validator and its codes. |
+| [`docs/SPOILERS.md`](docs/SPOILERS.md) | The spoiler rules as guarantees of the code, with their tests. |
+| [`docs/DEPLOY.md`](docs/DEPLOY.md) | Static hosting, or Cloudflare with Access and synced marks. |
+| [`docs/DESIGN.md`](docs/DESIGN.md) | Colour per world, type, motion, the pieces. |
+
+## Where it comes from
+
+This is a fork of [17thshard/reading-order](https://github.com/17thshard/reading-order) by Marvin Rösch and the 17th Shard, MIT licensed. The map of worlds, the reading orders, the colour per world and the idea of drawing connections come from there, and so do many of the connections. Thank you.
+
+## Licence and disclaimer
+
+Code: MIT ([`LICENSE`](LICENSE)). Fonts: SIL Open Font License (`public/fonts/OFL.txt`).
+
+Every image here is drawn for this project: the seal, the emblems, the covers and the leather. No official Dragonsteel image, cover, map or illustration is in this repository, and no publisher's blurb: synopses are written for this site.
+
+The Cosmere and its works belong to Dragonsteel Entertainment. This is an **unofficial fan project**, not affiliated with or endorsed by Brandon Sanderson, Dragonsteel or the 17th Shard.
