@@ -132,6 +132,9 @@ for (const view of VIEWS) {
       await pick(page, 'Ash Road')
       await expandPlate(page)
       await expect(page.locator('.plate-title')).toHaveText('Ash Road')
+      // The sheet of emblems arrives in its own chunk after the first paint. It is the same for every reader, but a
+      // snapshot taken before it lands differs from one taken after: wait for it, so only the address is compared.
+      await expect(page.locator('#app svg.sprite')).toBeAttached()
       await page.waitForFunction(animationsSettled)
       // The sky moves on its own (a comet, the stars under the mouse); that it is the same for every reader is
       // proven where it is drawn. Everything else must be identical.
