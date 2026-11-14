@@ -54,6 +54,14 @@ describe('cardBox', () => {
       expect(cardBox(side, 860, CARD, cover).y).toBe(cover.h - CARD.h - CLEAR_BOTTOM)
     }
   })
+  test('told how much the foot of the cover needs, it keeps that clear instead', () => {
+    // The row of the colour layers sits above the footer: a card stops short of it.
+    for (const side of ['right', 'left'] as const) expect(cardBox(side, 860, CARD, cover, 140).y).toBe(cover.h - CARD.h - 140)
+    const tall = cardBox('right', 400, { w: CARD.w, h: 2000 }, cover, 140)
+    expect(tall.h).toBe(cover.h - CLEAR_TOP - 140)
+    // Never less than the corner medallions need.
+    expect(cardBox('right', 860, CARD, cover, 20).y).toBe(cover.h - CARD.h - CLEAR_BOTTOM)
+  })
   test('a card taller than the room between them is cut to it', () => {
     const tall = cardBox('right', 400, { w: CARD.w, h: 2000 }, cover)
     expect(tall.y).toBe(CLEAR_TOP)

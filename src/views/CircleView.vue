@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref, shallowRef, watch } from 'vue'
 import type { UseAppResult } from '../app/useApp'
-import type { Book, BookId, WorldKey } from '../data/types'
+import type { Book, BookId, MarkStatus, WorldKey } from '../data/types'
 import { t, titleOf, type Lang } from '../i18n'
 import { bookName, phaseName, seriesName, worldName } from '../i18n/labels'
 import { isRecentlyAdded } from '../reading/recent'
@@ -35,6 +35,7 @@ import {
   wedgePoints,
   type Arrangement,
 } from './circle'
+import { layerInk } from './layers'
 import { usePanZoom } from './panZoom'
 import RingSky from './RingSky.vue'
 import { PLANET_RADIUS, planetPoint } from './sky'
@@ -243,6 +244,12 @@ const typeset = computed(() => {
   )
   return new Map(books.value.map((book, i) => [book.id, set[i]!]))
 })
+
+/** The ink of the colour layer in use, as a property the stylesheet reads. With the world layer, nothing. */
+function inkStyle(book: Book, mark: MarkStatus): Record<string, string> | undefined {
+  const ink = layerInk(book, props.app.layer.value, mark)
+  return ink ? { '--layer-ink': ink } : undefined
+}
 
 const items = computed(() => {
   const { radius } = fit.value
@@ -705,6 +712,7 @@ function pick(id: BookId): void {
               class="t"
               :class="item.classes"
               :data-world="item.book.world"
+              :style="inkStyle(item.book, item.mark)"
               role="button"
               :tabindex="item.book.id === tabStop ? 0 : -1"
               :aria-pressed="app.selectedId.value === item.book.id"
@@ -1030,6 +1038,9 @@ function pick(id: BookId): void {
 .s-read .mark-dot { fill: var(--gold); stroke: var(--gold); }
 .s-skipped .t-box { font-style: italic; }
 .s-reading .t-box { color: var(--gold-hot); font-weight: 500; }
+/* A colour layer repaints the title by one public fact. The mark keeps its dot, ribbon, weight and italic, and the
+   rules after this one keep theirs: the next book, the chosen one, the one under the pointer, a world in relief. */
+:where(.app[data-layer]:not([data-layer=world])) .t .t-box { color: var(--layer-ink, var(--ink-unread)); }
 .t.sig .t-box { color: var(--bone); font-weight: 500; }
 .ribbon-mark { fill: var(--ribbon); stroke: var(--gold-hot); stroke-width: 1; }
 .next-dot { fill: var(--bone); }
@@ -1053,6 +1064,7 @@ function pick(id: BookId): void {
 .tick-foil { fill: var(--gold); }
 .s-read .tick { stroke: var(--ink-world); stroke-opacity: 1; }
 .s-reading .tick, .t.sig .tick { stroke: var(--gold-hot); stroke-opacity: 1; stroke-width: 11; }
+:where(.app[data-layer]:not([data-layer=world])) .t .tick { stroke: var(--layer-ink, var(--ink-unread)); stroke-opacity: 1; }
 .t.relief .tick { stroke: var(--relief-ring); }
 .t.unlocked .tick { stroke: var(--danger); stroke-opacity: 1; }
 .t.sel .tick { stroke: var(--bone); stroke-opacity: 1; stroke-width: 13; }

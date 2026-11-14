@@ -9,6 +9,7 @@ import { statusOf } from '../reading/status'
 import { synopsisFor, visible, visibleNotes as notesShown, type Marks, type MarkStatus, type SynopsisView } from '../spoilers/visible'
 import { build, clampFuture, mergeState, ownEntries, sameState, type ReadState } from '../state/merge'
 import { loadPrefs, savePrefs, type View } from '../state/prefs'
+import type { Layer } from '../views/layers'
 import { rekeyState } from '../state/rekey'
 import { loadState, saveState, STATE_KEY } from '../state/store'
 import { exportState, MAX_STATE_BYTES, parseImport } from '../state/transfer'
@@ -89,6 +90,7 @@ export function useApp(options: UseAppOptions = {}): UseAppResult {
   const view = ref<View>(prefs.view ?? defaultView())
   const order = ref<OrderKey>(prefs.order ?? 'recommended')
   const filters = ref<Filters>(prefs.filters ?? defaultFilters())
+  const layer = ref<Layer>(prefs.layer ?? 'world')
   const selectedId = ref<BookId | null>(null)
   const stampedId = ref<BookId | null>(null)
   const freshConnectionIds = ref<ReadonlySet<string>>(new Set())
@@ -206,8 +208,8 @@ export function useApp(options: UseAppOptions = {}): UseAppResult {
     }, true)
   }
 
-  watch([lang, view, order, filters], () => {
-    savePrefs({ lang: lang.value, view: view.value, order: order.value, filters: filters.value }, options.storage)
+  watch([lang, view, order, filters, layer], () => {
+    savePrefs({ lang: lang.value, view: view.value, order: order.value, filters: filters.value, layer: layer.value }, options.storage)
   }, { deep: true })
 
   const books = computed(() => catalog.value?.books ?? [])
@@ -361,6 +363,7 @@ export function useApp(options: UseAppOptions = {}): UseAppResult {
     view,
     order,
     filters,
+    layer,
     selectedId,
     selectionCount,
     shownBooks,
@@ -403,6 +406,8 @@ export interface UseAppResult {
   view: Ref<View>
   order: Ref<OrderKey>
   filters: Ref<Filters>
+  /** Which fact colours the titles of the ring. Kept on the device. */
+  layer: Ref<Layer>
   selectedId: Ref<BookId | null>
   selectionCount: Ref<number>
   shownBooks: ComputedRef<Book[]>

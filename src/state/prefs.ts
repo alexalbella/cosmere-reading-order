@@ -3,6 +3,7 @@ import type { OrderKey } from '../data/types'
 import { isObject } from '../data/soundness'
 import { defaultFilters, type Filters } from '../filters/filters'
 import type { Lang } from '../i18n'
+import { isLayer, type Layer } from '../views/layers'
 import { defaultStorage } from './store'
 
 const KEY = 'cosmere.prefs.v1'
@@ -16,6 +17,8 @@ export interface Prefs {
   view: View
   order: OrderKey
   filters: Filters
+  /** Which fact colours the titles of the ring. */
+  layer: Layer
 }
 
 function only<T extends string>(list: readonly T[], value: unknown, fallback: T[]): T[] {
@@ -52,6 +55,7 @@ export function loadPrefs(storage: Storage | undefined = defaultStorage()): Part
   if (ORDER_KEYS.includes(parsed.order as OrderKey)) out.order = parsed.order as OrderKey
   const filters = sanitizeFilters(parsed.filters)
   if (filters) out.filters = filters
+  if (isLayer(parsed.layer)) out.layer = parsed.layer
   return out
 }
 

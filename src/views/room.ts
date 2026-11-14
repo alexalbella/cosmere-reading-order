@@ -37,10 +37,15 @@ export function roomFor(ring: Box, open: { side: Side; box: Box } | null, cover:
   return { dx: target - centre, scale }
 }
 
-/** Where a work's card goes: on its side, centred on its title, clear of the corner medallions above and below. */
-export function cardBox(side: Side, titleY: number, card: { w: number; h: number }, cover: { w: number; h: number }): Box {
-  const h = Math.min(card.h, cover.h - CLEAR_TOP - CLEAR_BOTTOM)
-  const y = Math.max(CLEAR_TOP, Math.min(titleY - h / 2, cover.h - h - CLEAR_BOTTOM))
+/**
+ * Where a work's card goes: on its side, centred on its title, clear of the corner medallions above and below.
+ * `foot` is how much of the cover's foot must stay free when it is more than the medallions need (the row of the
+ * colour layers sits there).
+ */
+export function cardBox(side: Side, titleY: number, card: { w: number; h: number }, cover: { w: number; h: number }, foot = CLEAR_BOTTOM): Box {
+  const below = Math.max(CLEAR_BOTTOM, foot)
+  const h = Math.min(card.h, cover.h - CLEAR_TOP - below)
+  const y = Math.max(CLEAR_TOP, Math.min(titleY - h / 2, cover.h - h - below))
   return { x: side === 'right' ? cover.w - card.w - CARD_MARGIN : CARD_MARGIN, y: Math.round(y), w: card.w, h }
 }
 

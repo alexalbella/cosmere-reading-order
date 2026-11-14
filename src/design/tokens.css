@@ -98,6 +98,19 @@ ul, ol { list-style: none; }
 /* Below the corner tool, whose lower point would otherwise run under the panel's top edge. */
 .with-panel .slot { margin-top: 94px; }
 .foot-area { grid-area: foot; padding: 2px 90px 0; }
+/* The colour layers of the ring: a group of four pressed buttons and, under it, a legend that names the values
+   of the layer in use. In the flow by default: on the phone it sits under the tabs, before the ring. */
+.layer-picker { display: flex; flex-direction: column; gap: 6px; padding: 8px 16px 2px; }
+/* Two by two where four in a row would not fit their names. */
+.layers { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px; padding: 3px; border: 1px solid var(--gold-dark); border-radius: 26px; background-color: rgba(10, 8, 6, .62); }
+@media (min-width: 360px) { .layers { grid-template-columns: repeat(4, minmax(0, 1fr)); border-radius: 999px; } }
+.layers button { min-height: 44px; padding: 0 6px; border-radius: 999px; text-align: center; font: 500 14px/1 var(--face-caps); letter-spacing: .05em; color: var(--bone); }
+.layers button[aria-pressed=true] { background-color: var(--gold); color: var(--ink); }
+.layers button:focus-visible { outline: 2px solid var(--gold-hot); outline-offset: 2px; }
+.legend { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 14px; padding: 6px 16px; border-radius: 18px; background-color: rgba(10, 8, 6, .62); font: 400 14px/1.25 var(--face-text); color: var(--bone); }
+.legend li { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+.swatch { flex: none; width: 9px; height: 9px; border-radius: 50%; background-color: var(--swatch); }
+@media (hover: hover) { .layers button:not([aria-pressed=true]):hover { color: var(--gold-hot); } }
 .plate-more, .plate .plate-close { display: none; }
 .foot-btn { color: var(--blind); text-decoration: underline; text-underline-offset: .22em; text-decoration-thickness: 1px; }
 .foot-btn:hover { color: var(--gold-hot); }
@@ -373,7 +386,13 @@ a.chip { display: inline-flex; align-items: center; text-decoration: none; }
 /* The ring makes room (PC, ring views). One column: the ring fills the cover, the sentence is a headline at the top
    left, and the slot floats beside the ring where App.vue places it; the ring slides and shrinks to clear it. */
 @media (min-width: 1280px) {
-  .cover:not(.interior) { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) auto; grid-template-areas: 'area' 'foot'; }
+  .cover:not(.interior) { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) auto auto; grid-template-areas: 'area' 'layers' 'foot'; }
+  /* A row of its own between the ring and the footer: the buttons, and beside them the legend on one line. Nothing
+     floats, so nothing is ever under it, whatever the window's shape, and the footer keeps its whole row. */
+  .layer-picker { grid-area: layers; flex-direction: row; justify-content: center; align-items: center; gap: 12px; padding: 2px 96px 0; }
+  .layers { flex: none; grid-template-columns: repeat(4, auto); }
+  .layers button { padding: 0 12px; }
+  .legend { flex-wrap: nowrap; min-width: 0; gap: 0 12px; padding: 5px 12px; font-size: 13.5px; }
   .cover:not(.interior) .sentence-col, .cover.with-panel:not(.interior) .sentence-col { position: absolute; top: 20px; left: 108px; z-index: 4; display: flex; width: min(31ch, 27vw); padding: 0; transform-origin: 0 0; }
   .cover.room-open .sentence-col { transform: scale(.6); }
   .cover.room-open .sentence .line-reading ~ .line-next, .cover.room-open .sentence .edition, .cover.room-open .sentence .gaps, .cover.room-open .rest-actions { visibility: hidden; opacity: 0; }

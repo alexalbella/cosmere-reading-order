@@ -46,13 +46,27 @@ describe('prefs', () => {
   test('what was saved comes back', () => {
     const storage = fakeStorage()
     const filters = { ...defaultFilters(), series: ['Ash'], phases: [2] }
-    savePrefs({ lang: 'en', view: 'circle', order: 'publication', filters }, storage)
-    expect(loadPrefs(storage)).toEqual({ lang: 'en', view: 'circle', order: 'publication', filters })
+    savePrefs({ lang: 'en', view: 'circle', order: 'publication', filters, layer: 'status' }, storage)
+    expect(loadPrefs(storage)).toEqual({ lang: 'en', view: 'circle', order: 'publication', filters, layer: 'status' })
   })
   test('they live under cosmere.prefs.v1', () => {
     const storage = fakeStorage()
-    savePrefs({ lang: 'es', view: 'shelf', order: 'recommended', filters: defaultFilters() }, storage)
+    savePrefs({ lang: 'es', view: 'shelf', order: 'recommended', filters: defaultFilters(), layer: 'world' }, storage)
     expect(storage.getItem('cosmere.prefs.v1')).not.toBeNull()
+  })
+  test('the colour layer is remembered, and a foreign one is dropped', () => {
+    const storage = fakeStorage()
+    savePrefs({ lang: 'es', view: 'map', order: 'recommended', filters: defaultFilters(), layer: 'format' }, storage)
+    expect(loadPrefs(storage).layer).toBe('format')
+    for (const foreign of ['worlds', '', 3, null, ['read']]) {
+      storage.setItem('cosmere.prefs.v1', JSON.stringify({ lang: 'en', layer: foreign }))
+      expect(loadPrefs(storage)).toEqual({ lang: 'en' })
+    }
+  })
+  test('preferences saved before the layers existed still load', () => {
+    const storage = fakeStorage()
+    storage.setItem('cosmere.prefs.v1', JSON.stringify({ lang: 'en', view: 'map', order: 'recommended' }))
+    expect(loadPrefs(storage)).toEqual({ lang: 'en', view: 'map', order: 'recommended' })
   })
   test('corrupt or foreign values are dropped one by one', () => {
     const storage = fakeStorage()
@@ -97,7 +111,7 @@ describe('prefs', () => {
     } as unknown as Storage
     expect(loadPrefs(blocked)).toEqual({})
     expect(() =>
-      savePrefs({ lang: 'es', view: 'shelf', order: 'recommended', filters: defaultFilters() }, blocked),
+      savePrefs({ lang: 'es', view: 'shelf', order: 'recommended', filters: defaultFilters(), layer: 'world' }, blocked),
     ).not.toThrow()
   })
 })

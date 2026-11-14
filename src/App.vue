@@ -11,6 +11,7 @@ import BookPlate from './components/BookPlate.vue'
 import CoverFillet from './components/CoverFillet.vue'
 import FiltersPanel from './components/FiltersPanel.vue'
 import HowPanel from './components/HowPanel.vue'
+import LayerPicker from './components/LayerPicker.vue'
 import LeaderThread from './components/LeaderThread.vue'
 import NextSentence from './components/NextSentence.vue'
 import SettingsPanel from './components/SettingsPanel.vue'
@@ -25,6 +26,7 @@ import { countsAsRead } from './reading/status'
 import type { MarkStatus } from './spoilers/visible'
 import CircleView from './views/CircleView.vue'
 import ShelfView from './views/ShelfView.vue'
+import { layerValue } from './views/layers'
 import { cardBox, CLEAR_BOTTOM, CLEAR_TOP, roomFor, sideOf, type Box, type Side } from './views/room'
 
 // The sheet of emblems and icons is not needed for the first paint: it comes after it, in its own chunk.
@@ -83,6 +85,15 @@ const books = computed(() => app.catalog.value?.books ?? [])
 const { markOf, isUnlocked } = app
 
 const selected = computed<Book | null>(() => books.value.find((b) => b.id === app.selectedId.value) ?? null)
+/** The values of the colour layer in use that some work on show has: the legend names those and no other. */
+const layerOnShow = computed(() => {
+  const values = new Set<string>()
+  for (const b of app.shownBooks.value) {
+    const value = layerValue(b, app.layer.value, markOf(b.id))
+    if (value !== null) values.add(value)
+  }
+  return values
+})
 const worldsOnShow = computed(() => WORLD_KEYS.filter((w) => app.shownBooks.value.some((b) => b.world === w)))
 const activeWorld = computed(() => (app.currentBook.value ?? app.nextBook.value ?? app.shownBooks.value[0])?.world ?? 'otros')
 
@@ -152,19 +163,22 @@ async function place(): Promise<void> {
   const size = { w: c.width, h: c.height }
   const w = slotEl.offsetWidth
   const content = slotEl.scrollHeight
+  // The row of the colour layers sits above the footer: a card or a drawer stops short of it.
+  const layersEl = coverEl.querySelector<HTMLElement>(':scope > .layer-picker')
+  const foot = layersEl ? Math.max(CLEAR_BOTTOM, Math.ceil(c.bottom - layersEl.getBoundingClientRect().top) + 8) : CLEAR_BOTTOM
   let open: { side: Side; box: Box }
   if (panel.value) {
     const side: Side = panel.value === 'settings' ? 'left' : 'right'
-    const h = Math.min(content, size.h - CLEAR_TOP - CLEAR_BOTTOM)
-    const y = panel.value === 'filters' ? CLEAR_TOP : size.h - h - CLEAR_BOTTOM
+    const h = Math.min(content, size.h - CLEAR_TOP - foot)
+    const y = panel.value === 'filters' ? CLEAR_TOP : size.h - h - foot
     open = { side, box: { x: side === 'left' ? 22 : size.w - w - 22, y, w, h } }
   } else {
     const angle = selected.value ? (circle.value?.angleOf(selected.value.id) ?? null) : null
     const side = angle === null ? 'right' : sideOf(angle)
-    const made = roomFor(ring, { side, box: cardBox(side, size.h / 2, { w, h: content }, size) }, size, ringZoomed.value)
+    const made = roomFor(ring, { side, box: cardBox(side, size.h / 2, { w, h: content }, size, foot) }, size, ringZoomed.value)
     const cy = ring.y + ring.h / 2
     const titleY = angle === null ? cy : cy - Math.cos((angle * Math.PI) / 180) * TITLE_RADIUS * (ring.h / 2) * made.scale
-    open = { side, box: cardBox(side, titleY, { w, h: content }, size) }
+    open = { side, box: cardBox(side, titleY, { w, h: content }, size, foot) }
   }
   room.value = roomFor(ring, open, size, ringZoomed.value)
   openBox.value = open
@@ -344,6 +358,7 @@ const pendingUnlocks = computed(() => {
     class="app"
     :data-world="activeWorld"
     :data-tint="app.lifted.value ?? activeWorld"
+    :data-layer="app.layer.value"
     :data-connections="app.connectionsState.value"
     :data-content="app.contentState.value"
   >
@@ -450,6 +465,13 @@ const pendingUnlocks = computed(() => {
           {{ medallionSpoilers }}
         </button>
       </nav>
+      <LayerPicker
+        v-if="phone && app.view.value !== 'shelf'"
+        :layer="app.layer.value"
+        :lang="lang"
+        :on-show="layerOnShow"
+        @update:layer="app.layer.value = $event"
+      />
 
       <div
         class="area"
@@ -579,6 +601,13 @@ const pendingUnlocks = computed(() => {
         </section>
       </div>
 
+      <LayerPicker
+        v-if="roomy"
+        :layer="app.layer.value"
+        :lang="lang"
+        :on-show="layerOnShow"
+        @update:layer="app.layer.value = $event"
+      />
       <div
         v-if="!phone"
         class="foot-area"
