@@ -299,7 +299,9 @@ test.describe('panels and pointers carry nothing hidden', () => {
       const numbers = (text: string): string[] => text.match(/\d+/g) ?? []
 
       const read = async (marks: Marks, extra: boolean): Promise<Record<string, string[]>> => {
-        const own = await browser.newContext({ baseURL, viewport, hasTouch, serviceWorkers: 'block' })
+        // Six pages and eighteen panels: with less motion asked for, nothing has to finish before the next click.
+        // The numbers read here do not depend on it.
+        const own = await browser.newContext({ baseURL, viewport, hasTouch, serviceWorkers: 'block', reducedMotion: 'reduce' })
         const fresh = await own.newPage()
         await withFixture(fresh, { marks }, { view, lang: 'en' })
         if (extra) {

@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref, shallowRef, watch } from 'vue'
+import { takeFirstRing } from '../app/firstRing'
+import { motes } from '../app/motes'
 import type { UseAppResult } from '../app/useApp'
 import type { Book, BookId, MarkStatus, WorldKey } from '../data/types'
+import { WORLDS } from '../design/worlds'
 import { t, titleOf, type Lang } from '../i18n'
 import { bookName, phaseName, seriesName, worldName } from '../i18n/labels'
 import { isRecentlyAdded } from '../reading/recent'
@@ -197,6 +200,8 @@ const angleOf = (id: BookId): number => shown.value[id] ?? layout.value.angles[i
 // What the pointer rests on. It lasts as long as the pointer does and only ever dims: nothing is added.
 const hoverId = ref<BookId | null>(null)
 const hoverWorld = ref<WorldKey | null>(null)
+const hoverBookWorld = computed<WorldKey | null>(() => (hoverId.value === null ? null : (props.app.shownBooks.value.find((b) => b.id === hoverId.value)?.world ?? null)))
+const pulses = (world: WorldKey): boolean => pulsed.value === world || hoverBookWorld.value === world
 const byMouse = (event: PointerEvent): boolean => event.pointerType === 'mouse'
 
 const isRelief = (world: WorldKey): boolean => props.app.lifted.value !== null && props.app.lifted.value !== world
@@ -250,6 +255,40 @@ function inkStyle(book: Book, mark: MarkStatus): Record<string, string> | undefi
   const ink = layerInk(book, props.app.layer.value, mark)
   return ink ? { '--layer-ink': ink } : undefined
 }
+
+// The first ring of a visit makes its entrance, when motion is welcome: the bands and the lines of the disc draw
+// themselves and the titles take their seats one after another. It is decided once and never changes for this
+// ring, so the page reads the same however long it has been open.
+const welcome = (): boolean => typeof matchMedia === 'function' && !matchMedia('(prefers-reduced-motion: reduce)').matches
+const entering = takeFirstRing() && welcome()
+/** What a title carries for the stylesheet: its layer ink and, on an entering ring, its turn and the side it comes from. */
+function titleStyle(book: Book, mark: MarkStatus, index: number, side: number): Record<string, string> | undefined {
+  const ink = inkStyle(book, mark)
+  if (!entering) return ink
+  return { ...ink, '--seat': String(index), '--from': side > 0 ? '-240px' : '240px' }
+}
+
+// The planet of a title's world answers when the title is touched: under the pointer for as long as it rests, and
+// once when a title is chosen. Only when motion is welcome. A chosen title's pulse ends with its animation, so the
+// page is the same from the moment it is still; the timer is only a net for a planet that never animated.
+const pulsed = ref<WorldKey | null>(null)
+let pulseTimer: ReturnType<typeof setTimeout> | undefined
+watch(
+  () => props.app.selectionCount.value,
+  () => {
+    const id = props.app.selectedId.value
+    const book = id === null ? undefined : props.app.shownBooks.value.find((b) => b.id === id)
+    if (!book || !welcome()) return
+    pulsed.value = book.world
+    clearTimeout(pulseTimer)
+    pulseTimer = setTimeout(() => (pulsed.value = null), 1100)
+  },
+)
+function pulseOver(): void {
+  clearTimeout(pulseTimer)
+  pulsed.value = null
+}
+onBeforeUnmount(() => clearTimeout(pulseTimer))
 
 const items = computed(() => {
   const { radius } = fit.value
@@ -523,6 +562,21 @@ function pick(id: BookId): void {
   if (pan.dragged()) return
   props.app.selectBook(id)
 }
+
+// A book marked read sends motes off its title, in the tone of its world. Decoration only: a point and a colour.
+watch(
+  () => props.app.stampedId.value,
+  (id) => {
+    if (id === null) return
+    const index = items.value.findIndex((item) => item.book.id === id)
+    const title = index < 0 ? undefined : svg.value?.querySelectorAll('.t')[index]
+    const mark = title?.querySelector('.ink') ?? title
+    if (!mark) return
+    const box = mark.getBoundingClientRect()
+    motes({ x: box.left + box.width / 2, y: box.top + box.height / 2 }, WORLDS[items.value[index]!.book.world].tone)
+  },
+  { flush: 'post' },
+)
 </script>
 
 <template>
@@ -597,7 +651,7 @@ function pick(id: BookId): void {
         <svg
           ref="svg"
           class="ring-svg"
-          :class="{ 'with-ticks': compact, zoomed, moving, resettled, grabbing: pan.dragging.value }"
+          :class="{ 'with-ticks': compact, zoomed, moving, resettled, 'ring-entrance': entering, grabbing: pan.dragging.value }"
           viewBox="0 0 1000 1000"
           role="group"
           :aria-label="t(arrangement === 'map' ? 'ringLabelMap' : 'ringLabel', lang)"
@@ -684,12 +738,14 @@ function pick(id: BookId): void {
             />
             <circle
               class="disc-line"
+              pathLength="1"
               cx="500"
               cy="500"
               :r="DISC_RADIUS"
             />
             <circle
               class="disc-line fine"
+              pathLength="1"
               cx="500"
               cy="500"
               :r="DISC_RADIUS - 7"
@@ -712,7 +768,7 @@ function pick(id: BookId): void {
               class="t"
               :class="item.classes"
               :data-world="item.book.world"
-              :style="inkStyle(item.book, item.mark)"
+              :style="titleStyle(item.book, item.mark, index, placed(item.book.id).side)"
               role="button"
               :tabindex="item.book.id === tabStop ? 0 : -1"
               :aria-pressed="app.selectedId.value === item.book.id"
@@ -887,14 +943,18 @@ function pick(id: BookId): void {
               />
               <path
                 class="arc-band"
+                pathLength="1"
                 :d="arc.d"
                 :style="isRelief(arc.world) ? undefined : { '--arc-tone': `var(--tone-${arc.world})` }"
               />
               <g
                 v-if="planets.get(arc.key)"
                 class="planet"
+                :class="{ pulse: pulses(arc.world) }"
+                :data-planet="arc.world"
                 :transform="`translate(${planets.get(arc.key)!.x} ${planets.get(arc.key)!.y})`"
                 aria-hidden="true"
+                @animationend="pulseOver"
               >
                 <ellipse
                   class="planet-ring"
@@ -1051,6 +1111,9 @@ function pick(id: BookId): void {
 .t.relief.s-read .mark-dot { fill: var(--relief-ring); }
 .t.unlocked .mark-dot { stroke: var(--danger); stroke-width: 1.8; }
 @media (hover: hover) { .t:hover .t-box { color: var(--bone); } }
+/* Under the pointer, in focus or chosen, a title glows in the tone of its world. */
+@media (hover: hover) { .t:hover .t-box { text-shadow: 0 0 14px var(--world-tone); } }
+.t.sel .t-box, .t:focus-visible .t-box { text-shadow: 0 0 14px var(--world-tone); }
 .t.sel .t-box { font-weight: 500; color: var(--bone); }
 .t.sel .t-text { text-decoration: underline; text-decoration-thickness: 1px; }
 /* The focus ring hugs the title itself. On a ring of ticks, where there is no title, it is the tick's own wedge. */
@@ -1085,7 +1148,18 @@ function pick(id: BookId): void {
   .t.entered { animation: ring-arrive 520ms var(--ease) backwards; }
   .resettled .t-box { animation: ring-arrive 320ms var(--ease) backwards; }
   .t-ghost { animation: ring-leave 280ms ease forwards; }
+  /* The halo of a title comes and goes softly. */
+  .t .t-box { transition: color 150ms ease, text-shadow 280ms var(--ease); }
+  /* The first ring of a visit makes its entrance: the bands and the lines of the disc draw themselves, and the
+     titles take their seats one after another, from the seal outwards. A title being stamped keeps its stamp. */
+  .ring-entrance .arc-band, .ring-entrance .disc-line { stroke-dasharray: 1; animation: ring-draw 900ms var(--ease) backwards; }
+  .ring-entrance .t .ink:not(.stamped) { animation: ring-seat 720ms var(--ease) backwards; animation-delay: calc(var(--seat, 0) * 14ms + 180ms); }
+  /* The planet of a title's world answers when the title is touched. */
+  .planet.pulse .planet-disc, .planet.pulse .planet-emblem { animation: planet-pulse 900ms var(--ease) backwards; }
 }
+@keyframes ring-draw { from { stroke-dashoffset: 1; } }
+@keyframes ring-seat { from { opacity: 0; transform: translateX(var(--from, 0)); } }
+@keyframes planet-pulse { 40% { transform: scale(1.22); } }
 @keyframes ring-arrive { from { opacity: 0; } }
 @keyframes ring-leave { to { opacity: 0; } }
 @keyframes glint {

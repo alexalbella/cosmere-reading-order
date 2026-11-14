@@ -28,9 +28,17 @@ async function expandPlate(page: Page): Promise<void> {
   if ((await more.isVisible()) && (await more.getAttribute('aria-expanded')) === 'false') await more.click()
 }
 
-/** Nothing under way: no transition, no entrance, and no class waiting to come off when one ends. */
+/**
+ * Nothing under way: no transition, no entrance, no class waiting to come off when one ends, and the sheet of
+ * emblems in place (it arrives in its own chunk after the first paint, the same for every reader).
+ */
 async function settled(page: Page): Promise<void> {
-  await page.waitForFunction(() => document.getAnimations().filter((a) => a.effect?.getTiming().iterations !== Infinity).length === 0 && !document.querySelector('.rising, .entering'))
+  await page.waitForFunction(
+    () =>
+      document.querySelector('#app svg.sprite') !== null &&
+      document.getAnimations().filter((a) => a.effect?.getTiming().iterations !== Infinity).length === 0 &&
+      !document.querySelector('.rising, .entering'),
+  )
 }
 
 /** The whole box of every book, as the view lays it out: a gap per book would show on one axis only. */

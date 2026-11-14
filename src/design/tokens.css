@@ -298,6 +298,11 @@ a.chip { display: inline-flex; align-items: center; text-decoration: none; }
 @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
 @keyframes rise { from { transform: translateY(16px); opacity: 0; } to { transform: none; opacity: 1; } }
 @keyframes burn { to { transform: scaleX(0); } }
+@keyframes unfold { from { opacity: 0; transform: scale(.94) translateX(var(--unfold-from, -14px)); clip-path: inset(0 0 100% 0); } to { clip-path: inset(0 0 0 0); } }
+@keyframes drawer { from { opacity: 0; transform: scale(.86); clip-path: circle(0% at var(--corner, 100% 0%)); } to { clip-path: circle(150% at var(--corner, 100% 0%)); } }
+@keyframes ink { from { -webkit-mask-position: 100% 0; mask-position: 100% 0; filter: blur(2px); } }
+/* A mote that drifts off a title when its book is marked read. Placed against the window by src/app/motes.ts. */
+.mote { position: fixed; z-index: 50; width: 6px; height: 6px; border-radius: 50%; background-color: var(--c); box-shadow: 0 0 8px var(--c); pointer-events: none; }
 @media (prefers-reduced-motion: no-preference) {
   .sky-field { transform-box: view-box; transform-origin: 500px 500px; animation: sky-drift 260s linear infinite; }
   .sky-star.twinkle { animation: sky-twinkle 4s ease-in-out infinite; }
@@ -310,10 +315,21 @@ a.chip { display: inline-flex; align-items: center; text-decoration: none; }
   .area.entering { animation: fade-in 220ms var(--ease) both; }
   .slot.rising { animation: rise 240ms var(--ease) both; }
   .fuse { animation: burn 8s linear both; }
+  /* The card unfolds from the side of the ring it leaves, and a drawer opens from its own corner. Backwards only:
+     once it is open nothing is left running. */
+  .slot[data-side=right] > .plate { animation: unfold 440ms var(--ease) backwards; transform-origin: left center; --unfold-from: -14px; }
+  .slot[data-side=left] > .plate { animation: unfold 440ms var(--ease) backwards; transform-origin: right center; --unfold-from: 14px; }
+  .slot[data-side] > .panel { animation: drawer 380ms var(--ease) backwards; }
+  .slot[data-panel=filters] > .panel { --corner: 100% 0%; transform-origin: top right; }
+  .slot[data-panel=settings] > .panel { --corner: 0% 100%; transform-origin: bottom left; }
+  .slot[data-panel=spoilers] > .panel, .slot[data-panel=how] > .panel { --corner: 100% 100%; transform-origin: bottom right; }
+  /* A text the reader has just asked for appears like ink taking to the page. */
+  .syn-text, .note-text { animation: ink 1100ms var(--ease) backwards; -webkit-mask-image: linear-gradient(100deg, #000 40%, transparent 60%); mask-image: linear-gradient(100deg, #000 40%, transparent 60%); -webkit-mask-size: 300% 100%; mask-size: 300% 100%; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
   .fuse { display: none; }
+  .mote { display: none; }
 }
 
 @media (max-width: 1279px) {

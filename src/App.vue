@@ -517,6 +517,7 @@ const pendingUnlocks = computed(() => {
         :class="{ rising }"
         :style="slotPlace"
         :data-side="openBox?.side"
+        :data-panel="panel ?? undefined"
         @animationend.self="rising = false"
       >
         <SpoilersPanel
