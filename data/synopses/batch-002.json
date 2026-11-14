@@ -1,0 +1,226 @@
+[
+  {
+    "book": "mb1",
+    "text": {
+      "en": "For a thousand years the Lord Ruler has governed the Final Empire as an immortal god-emperor, in a land where ash falls from the sky and mists rise every night. The nobility lives in luxury while the skaa, the enslaved common people, labour and suffer. Vin, a wary teenage thief raised on the streets, is recruited by Kelsier, a charismatic and unusually gifted crew leader who dreams of the impossible: robbing the regime of its wealth and bringing the tyranny down. Vin must learn to trust, and to master Allomancy, the magic of burning metals. First book of the original Mistborn trilogy.",
+      "es": "Desde hace mil años, el lord Legislador gobierna el Imperio Final como un dios inmortal, en una tierra donde cae ceniza del cielo y cada noche se alzan las brumas. La nobleza vive entre lujos mientras los skaa, el pueblo esclavizado, trabajan y sufren. Vin, una joven ladrona recelosa criada en la calle, es reclutada por Kelsier, un carismático y poderoso jefe de banda que sueña con lo imposible: despojar al régimen de su riqueza y derribar la tiranía. Vin tendrá que aprender a confiar y a dominar la alomancia, la magia de quemar metales. Primer libro de la trilogía original de Nacidos de la bruma."
+    },
+    "open": true,
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Mistborn:_The_Final_Empire",
+        "kind": "wiki"
+      },
+      {
+        "url": "https://es.coppermind.net/wiki/Alomancia",
+        "kind": "wiki"
+      }
+    ],
+    "author": "agent:synopsis-batch-002",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "book": "11m",
+    "text": {
+      "en": "A short story set before the events of the first Mistborn novel. Kelsier, still grieving and trying to find a way forward, is being trained in the arts of Allomancy by Gemmel, a seasoned and sharp-tongued mentor. Together they travel to a city of the Final Empire where a nobleman is abusing captive people of Allomantic blood in a hunt for a metal nobody has ever documented. The pair take on the stronghold, and Kelsier gets to test what he has learned. A compact heist-and-training tale for readers of the first book.",
+      "es": "Un relato corto ambientado antes de los hechos de la primera novela de Mistborn. Kelsier, todavía de duelo y buscando la forma de seguir adelante, recibe lecciones de alomancia de Gemmel, un mentor curtido y de lengua afilada. Juntos viajan a una ciudad del Imperio Final donde un noble maltrata a cautivos de sangre alomántica en busca de un metal que nadie ha documentado nunca. Los dos asaltan la fortaleza y Kelsier pone a prueba lo aprendido. Una historia breve de golpe y aprendizaje para quienes ya han leído el primer libro."
+    },
+    "requires": [
+      "mb1"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/The_Eleventh_Metal",
+        "kind": "wiki"
+      }
+    ],
+    "author": "agent:synopsis-batch-002",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "book": "mb2",
+    "text": {
+      "en": "The Lord Ruler is gone and the Final Empire has to learn to stand without him. The crew that pulled off the impossible now faces an uglier task: governing. Elend Venture, an idealistic young king, tries to build a just society in Luthadel while rival armies gather outside its walls and factions within the city pull in every direction. Vin, the strongest Mistborn alive, struggles with doubt about what she is and what is expected of her, while the mists behave in ways nobody can explain. Second book of the original trilogy.",
+      "es": "El lord Legislador ya no está y el Imperio Final debe aprender a sostenerse sin él. La banda que logró lo imposible se enfrenta ahora a una tarea más ingrata: gobernar. Elend Venture, un joven rey idealista, intenta levantar una sociedad justa en Luthadel mientras ejércitos rivales se reúnen ante sus murallas y las facciones del interior tiran cada una por su lado. Vin, la Nacida de la bruma más fuerte que existe, lucha contra las dudas sobre lo que es y lo que se espera de ella, mientras las brumas se comportan de formas que nadie sabe explicar. Segundo libro de la trilogía original."
+    },
+    "requires": [
+      "mb1"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/The_Well_of_Ascension",
+        "kind": "wiki"
+      }
+    ],
+    "author": "agent:synopsis-batch-002",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "book": "mb3",
+    "text": {
+      "en": "The world is coming apart. Ash falls without pause, earthquakes shake the land, the mists now appear by day and kill those they touch, and armies of ravaging creatures roam freely. Elend, now an emperor with a failing grip on his realm, and Vin, the Mistborn who has stood at his side through every crisis, search for the hidden stores and answers the former tyrant left behind. They gather what allies they can and look for any chance of saving the people they love. Conclusion of the original Mistborn trilogy.",
+      "es": "El mundo se desmorona. La ceniza cae sin descanso, los terremotos sacuden la tierra, las brumas aparecen ya de día y matan a quien tocan, y ejércitos de criaturas devastadoras recorren el país a sus anchas. Elend, ahora emperador con un control cada vez más frágil de su reino, y Vin, la Nacida de la bruma que ha estado a su lado en cada crisis, buscan los almacenes ocultos y las respuestas que dejó el antiguo tirano. Reúnen a los aliados que pueden y buscan cualquier posibilidad de salvar a la gente a la que quieren. Conclusión de la trilogía original de Nacidos de la bruma."
+    },
+    "requires": [
+      "mb1",
+      "mb2"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/The_Hero_of_Ages",
+        "kind": "wiki"
+      }
+    ],
+    "author": "agent:synopsis-batch-002",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "book": "mb4",
+    "text": {
+      "en": "Centuries after the fall of the Final Empire, Scadrial has become a world of trains, electric light and towers that scrape the clouds, and its old heroes are remembered as figures of myth and faith. Waxillium Ladrian, a lawman who spent two decades keeping order on the lawless frontier, goes back to the capital, Elendel, to take charge of his family's noble house. He tries to settle into a life of social duty, but a wave of robberies drags him back into the fight beside his irreverent old partner, Wayne. Both are Twinborn, gifted with one Allomantic and one Feruchemical power. First book of the Wax and Wayne series.",
+      "es": "Siglos después de la caída del Imperio Final, Scadrial es un mundo de trenes, luz eléctrica y torres que rozan las nubes, y sus antiguos héroes se recuerdan como figuras de mito y de fe. Waxillium Ladrian, un agente de la ley que pasó dos décadas poniendo orden en la frontera sin ley, regresa a la capital, Elendel, para ponerse al frente de su casa noble. Intenta adaptarse a una vida de obligaciones sociales, pero una oleada de robos lo arrastra de nuevo a la acción junto a su irreverente viejo compañero, Wayne. Ambos poseen un don alomántico y otro feruquímico. Primer libro de la serie de Wax y Wayne."
+    },
+    "requires": [
+      "mb1",
+      "mb2",
+      "mb3"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/The_Alloy_of_Law",
+        "kind": "wiki"
+      }
+    ],
+    "author": "agent:synopsis-batch-002",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "book": "jak",
+    "text": {
+      "en": "A tall tale narrated by Jak, a boastful adventuring Allomancer, and annotated by his long-suffering steward, who keeps correcting the record. Jak wakes in a cave with no metals to burn, captured by creatures who want to make him their chief. With his girlfriend at his side, he has to bluff, improvise and dive for a legendary treasure to get out alive. The steward's footnotes make it clear that the hero's version of events should not be trusted. A comic adventure set in the Scadrial of the Wax and Wayne era.",
+      "es": "Una historia fantasiosa narrada por Jak, un alomante aventurero y fanfarrón, y anotada por su sufrido mayordomo, que no deja de corregir la versión de los hechos. Jak despierta en una cueva sin metales que quemar, prisionero de unas criaturas que quieren convertirlo en su jefe. Con su novia a su lado, tendrá que farolear, improvisar y bucear en busca de un tesoro legendario para salir con vida. Las notas del mayordomo dejan claro que no conviene fiarse de lo que cuenta el héroe. Una aventura cómica ambientada en el Scadrial de la época de Wax y Wayne."
+    },
+    "requires": [
+      "mb1",
+      "mb2",
+      "mb3",
+      "mb4"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Allomancer_Jak_and_the_Pits_of_Eltania",
+        "kind": "wiki"
+      }
+    ],
+    "author": "agent:synopsis-batch-002",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "book": "mb5",
+    "text": {
+      "en": "Waxillium Ladrian is about to marry, and the wedding preparations are the least of his worries. A mysterious killer is stalking Elendel, slipping from one identity to the next and leaving chaos in the city. As unrest between factions grows, Wax and his old friend Wayne, with the help of the sharp young investigator Marasi, set out to find a murderer who can wear anyone's face. Meanwhile, the legends of the old religion start to feel closer than anyone would like. Second book of the Wax and Wayne series.",
+      "es": "Waxillium Ladrian está a punto de casarse, y los preparativos de la boda son lo que menos le preocupa. Un asesino misterioso acecha en Elendel, pasando de una identidad a otra y sembrando el caos en la ciudad. Mientras crece la tensión entre facciones, Wax y su viejo amigo Wayne, con la ayuda de la aguda y joven investigadora Marasi, se proponen dar con un criminal capaz de ponerse la cara de cualquiera. Mientras tanto, las leyendas de la antigua religión empiezan a sentirse más cerca de lo que a nadie le gustaría. Segundo libro de la serie de Wax y Wayne."
+    },
+    "requires": [
+      "mb1",
+      "mb2",
+      "mb3",
+      "mb4"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Shadows_of_Self",
+        "kind": "wiki"
+      },
+      {
+        "url": "https://es.coppermind.net/wiki/Mistborn_(saga)",
+        "kind": "wiki"
+      }
+    ],
+    "author": "agent:synopsis-batch-002",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "book": "mb6",
+    "text": {
+      "en": "Rumour speaks of the Bands of Mourning, relics of the old empire said to hand their wearer a god's power, and almost nobody believes they exist. Then a researcher returns to Elendel with images that seem to show them, and writings no one can read. Waxillium Ladrian is asked to travel south to a distant city to investigate, with Wayne, Marasi and Steris along for the ride. On the way he finds hints of what his uncle's secret network really wants. Third book of the Wax and Wayne series.",
+      "es": "Se habla de los Brazales de Duelo, reliquias del antiguo imperio que, según dicen, otorgan a quien los lleva el poder de un dios, y casi nadie cree que existan. Entonces una investigadora regresa a Elendel con imágenes que parecen mostrarlos y escritos que nadie sabe leer. Piden a Waxillium Ladrian que viaje al sur, a una ciudad lejana, para investigar, y le acompañan Wayne, Marasi y Steris. Por el camino descubre indicios de lo que de verdad busca la red secreta de su tío. Tercer libro de la serie de Wax y Wayne."
+    },
+    "requires": [
+      "mb1",
+      "mb2",
+      "mb3",
+      "mb4",
+      "mb5"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/The_Bands_of_Mourning",
+        "kind": "wiki"
+      }
+    ],
+    "author": "agent:synopsis-batch-002",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "book": "msh",
+    "text": {
+      "en": "A novella that follows Kelsier after his death, from the moment he refuses to move on until the world is remade. It gathers the unseen side of events readers thought they knew, told from a vantage point that nobody else in the series has had. Short and fast-paced, it was released as a surprise at the end of another book, and the author warns that it carries heavy spoilers for the original trilogy and minor ones for the Wax and Wayne book released just before it.",
+      "es": "Una novela corta que sigue a Kelsier tras su muerte, desde el momento en que se niega a pasar al más allá hasta que el mundo es rehecho. Reúne la cara oculta de unos sucesos que el lector creía conocer, contada desde un punto de vista que nadie más ha tenido en la serie. Breve y trepidante, se publicó por sorpresa al final de otro libro, y el autor advierte de que contiene grandes spoilers de la trilogía original y menores del libro de Wax y Wayne publicado justo antes."
+    },
+    "requires": [
+      "mb1",
+      "mb2",
+      "mb3",
+      "mb4",
+      "mb5",
+      "mb6"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Mistborn:_Secret_History",
+        "kind": "wiki"
+      }
+    ],
+    "author": "agent:synopsis-batch-002",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "book": "mb7",
+    "text": {
+      "en": "Years after he took up the hunt, Waxillium Ladrian, who traded frontier law for a seat in the city senate, still chases the secret organization responsible for abducting people with Allomantic ancestry. A fresh trail opens when Wayne and Marasi discover a hidden shipment of weapons bound for one of the outer cities, a place already at odds with the capital. Wax also uncovers a new kind of explosive that could tip the balance of everything, and the countdown to a decisive confrontation begins. Fourth and final book of the Wax and Wayne series.",
+      "es": "Tras años de persecución, Waxillium Ladrian, que cambió la ley de la frontera por un escaño en el senado de la ciudad, sigue tras la organización secreta responsable de secuestrar a personas con ascendencia alomántica. Se abre una pista nueva cuando Wayne y Marasi descubren un cargamento oculto de armas con destino a una de las ciudades exteriores, ya enfrentada con la capital. Wax también da con un nuevo tipo de explosivo capaz de inclinar la balanza de todo, y arranca la cuenta atrás hacia un enfrentamiento decisivo. Cuarto y último libro de la serie de Wax y Wayne."
+    },
+    "requires": [
+      "mb1",
+      "mb2",
+      "mb3",
+      "mb4",
+      "mb5",
+      "mb6",
+      "msh"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/The_Lost_Metal",
+        "kind": "wiki"
+      },
+      {
+        "url": "https://es.coppermind.net/wiki/El_metal_perdido",
+        "kind": "wiki"
+      }
+    ],
+    "author": "agent:synopsis-batch-002",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-14"
+  }
+]

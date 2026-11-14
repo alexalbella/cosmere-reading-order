@@ -1,0 +1,307 @@
+[
+  {
+    "book": "sa1",
+    "text": {
+      "en": "Roshar is a continent of stone scoured by storms so violent that they have reshaped its plants, its animals and its cities. A war of many years pits a conquering kingdom against a people it blames for the murder of its king, and it is fought across a field of shattered plateaus. The story follows three lives: a surgeon turned soldier and slave, a scholar's ward with a hidden purpose, and a veteran warlord haunted by visions of a lost age. Legends of knights who once wielded miraculous powers hang over them all. First volume of a ten-book epic.",
+      "es": "Roshar es un continente de piedra azotado por tormentas tan violentas que han moldeado sus plantas, sus animales y sus ciudades. Una guerra de muchos años enfrenta a un reino conquistador con un pueblo al que culpa del asesinato de su rey, y se libra sobre un campo de mesetas quebradas. La historia sigue tres vidas: un cirujano convertido en soldado y esclavo, la pupila de una erudita con un propósito oculto y un veterano señor de la guerra atormentado por visiones de una era perdida. Sobre todos ellos pesan las leyendas de unos caballeros que empuñaron poderes milagrosos. Primer volumen de una epopeya de diez libros."
+    },
+    "open": true,
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/The_Way_of_Kings",
+        "kind": "wiki"
+      },
+      {
+        "url": "https://es.coppermind.net/wiki/El_camino_de_los_reyes",
+        "kind": "wiki"
+      }
+    ],
+    "author": "agent:synopsis-batch-001",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "book": "sa2",
+    "text": {
+      "en": "Years into the war on the Shattered Plains, the highprinces' campaign has reached a turning point, and an assassin is again striking at rulers in distant lands. The king's chief bodyguard, a darkeyed man in command of lighteyed soldiers, struggles with the burden of that rank. The scholar's ward travels with a secret and a fragile disguise. Spren grow restless and the ancient powers stir once more. The second volume widens the world and raises the price of whatever is coming back.",
+      "es": "Tras años de guerra en las Llanuras Quebradas, la campaña de los altos príncipes llega a un punto de inflexión y un asesino vuelve a golpear a gobernantes de tierras lejanas. El jefe de la guardia del rey, un hombre de ojos oscuros al mando de soldados de ojos claros, lleva mal el peso de ese rango. La pupila de la erudita viaja con un secreto y un disfraz frágil. Los spren se inquietan y los antiguos poderes se agitan de nuevo. El segundo volumen amplía el mundo y encarece lo que está regresando."
+    },
+    "requires": [
+      "sa1"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Words_of_Radiance",
+        "kind": "wiki"
+      },
+      {
+        "url": "https://es.coppermind.net/wiki/Palabras_radiantes",
+        "kind": "wiki"
+      }
+    ],
+    "author": "agent:synopsis-batch-001",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "book": "elsecaller",
+    "text": {
+      "en": "A short story set during the second volume. After an attack on a ship at sea, a brilliant scholar and her spren escape into the other realm of Roshar, the one made of thought and spren, to heal. She is badly short of the power she needs to return, and the way back means crossing a hostile landscape where the spren themselves are not friendly. Part of a pair of tales written to fill in gaps in the first two volumes, it follows her journey across that strange world and the company she meets on the way.",
+      "es": "Un relato corto ambientado durante el segundo volumen. Tras un ataque a un barco en alta mar, una brillante erudita y su spren escapan al otro reino de Roshar, el hecho de pensamiento y de spren, para curarse. Le falta mucho del poder que necesita para volver, y el camino de regreso pasa por un paisaje hostil donde los propios spren no son amistosos. Parte de una pareja de historias escritas para llenar huecos de los dos primeros volúmenes, sigue su travesía por ese mundo extraño y la compañía que encuentra por el camino."
+    },
+    "requires": [
+      "sa1",
+      "sa2"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Elsecaller_(short_story)",
+        "kind": "wiki"
+      },
+      {
+        "url": "https://www.brandonsanderson.com/blogs/blog/story-deck-faq",
+        "kind": "official"
+      }
+    ],
+    "author": "agent:synopsis-batch-001",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "book": "lopen",
+    "text": {
+      "en": "A short story set during the second volume. After an attempt on his life, the king takes refuge in a Herdazian neighbourhood, hiding among a boisterous family far from the privileges of the court. There he must learn who he is without a crown. Meanwhile the family's irrepressible son, a cheerful soldier with a gift for tall tales, decides that the best way to protect the king is to play at being king himself. Comic and warm, it is one of a pair of tales written to fill in gaps in the first two volumes.",
+      "es": "Un relato corto ambientado durante el segundo volumen. Tras un intento de asesinato, el rey se refugia en un barrio herdaziano y se esconde entre una familia bulliciosa, lejos de los privilegios de la corte. Allí debe averiguar quién es sin corona. Mientras tanto, el hijo incontenible de la familia, un soldado alegre con talento para las historias exageradas, decide que la mejor forma de proteger al rey es jugar a ser rey él mismo. Cómico y cálido, es una de las dos historias escritas para llenar huecos de los dos primeros volúmenes."
+    },
+    "requires": [
+      "sa1",
+      "sa2"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/King_Lopen_the_First_of_Alethkar",
+        "kind": "wiki"
+      },
+      {
+        "url": "https://www.brandonsanderson.com/blogs/blog/story-deck-faq",
+        "kind": "official"
+      }
+    ],
+    "author": "agent:synopsis-batch-001",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "book": "sa2-5",
+    "text": {
+      "en": "Lift, a young street thief with a gift for slipping out of reach, has found shelter at the court of a new emperor but finds palace life stifling. When word reaches her that a relentless hunter of people like her is working in a distant city, she sets off with her spren, as hungry as ever and determined to help whoever needs it. Set between the second and third volumes, the novella is a fast, light-hearted adventure about pancakes, cranky caretakers and what being a protector really asks of someone so unlikely.",
+      "es": "Lift, una joven ladrona callejera con el don de escabullirse de todo, ha encontrado refugio en la corte de un nuevo emperador, pero la vida de palacio la ahoga. Cuando le llega la noticia de que un cazador implacable de gente como ella actúa en una ciudad lejana, parte con su spren, tan hambrienta como siempre y decidida a ayudar a quien lo necesite. Ambientada entre el segundo y el tercer volumen, esta novela corta es una aventura ágil y desenfadada sobre tortitas, cuidadoras gruñonas y lo que exige de verdad ser protectora a alguien tan improbable."
+    },
+    "requires": [
+      "sa1",
+      "sa2"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Edgedancer_(novella)",
+        "kind": "wiki"
+      }
+    ],
+    "author": "agent:synopsis-batch-001",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "book": "sa3",
+    "text": {
+      "en": "The armies of Alethkar won a costly victory, and its price is a storm of a new kind that sweeps the world from the opposite direction, bringing consequences nobody planned for. In a tower city high in the mountains, survivors set out to make an ancient stronghold their own and discover how much it still holds. The warlord at the head of the effort is pushed to face a past he had buried, while those around him carry old wounds and divided loyalties.",
+      "es": "Los ejércitos de Alezkar lograron una victoria muy cara, y su precio es una tormenta de un tipo nuevo que recorre el mundo en sentido contrario y trae consecuencias que nadie había previsto. En una ciudad torre en lo alto de las montañas, los supervivientes se proponen hacer suya una antigua fortaleza y descubren cuánto guarda todavía. El señor de la guerra que encabeza el esfuerzo se ve empujado a enfrentarse a un pasado que había enterrado, mientras quienes lo rodean cargan con viejas heridas y lealtades divididas."
+    },
+    "requires": [
+      "sa1",
+      "sa2"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Oathbringer",
+        "kind": "wiki"
+      },
+      {
+        "url": "https://es.coppermind.net/wiki/Juramentada",
+        "kind": "wiki"
+      }
+    ],
+    "author": "agent:synopsis-batch-001",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "book": "sa3-5",
+    "text": {
+      "en": "After a ship drifts home with no crew aboard, an expedition is ordered to a mysterious island hidden inside a permanent storm, a place that magic cannot approach safely. A shipowner who cannot walk joins it for a personal reason: her unusual animal companion is ill, and the island may be its only hope. With a crew of sailors and Radiants she sails into dangerous waters. Set a few months after the third volume, the novella is a seafaring adventure about what the island hides and who else has an interest in it.",
+      "es": "Cuando un barco regresa a puerto sin tripulación, se ordena una expedición a una isla misteriosa oculta en una tormenta permanente, a la que la magia no puede acercarse sin riesgo. Una naviera que no puede caminar se une por una razón personal: su extraño animal de compañía está enfermo y la isla quizá sea su única esperanza. Con una tripulación de marineros y Radiantes, se adentra en aguas peligrosas. Ambientada unos meses después del tercer volumen, esta novela corta es una aventura marinera sobre lo que esconde la isla y sobre quién más tiene interés en ella."
+    },
+    "requires": [
+      "sa1",
+      "sa2",
+      "sa3"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Dawnshard_(novella)",
+        "kind": "wiki"
+      }
+    ],
+    "author": "agent:synopsis-batch-001",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "book": "sa4",
+    "text": {
+      "en": "A year into the coalition's war, neither side can break the other, and the alliance is uneasy: the loyalty of one powerful partner is in doubt. Scholars serving the Radiants make technological discoveries that begin to change how battles are fought, while the enemy readies a daring stroke of its own. The arms race that follows puts the Radiants' own ideals under strain. The fourth volume turns on technology, trust and the cost of winning.",
+      "es": "Tras un año de guerra de la coalición, ningún bando logra imponerse y la alianza es frágil: se duda de la lealtad de uno de los socios más poderosos. Los eruditos al servicio de los Radiantes hacen descubrimientos tecnológicos que empiezan a cambiar la forma de combatir, mientras el enemigo apresta un golpe audaz por su cuenta. La carrera armamentística que sigue pone bajo tensión los propios ideales de los Radiantes. El cuarto volumen gira en torno a la tecnología, la confianza y el coste de ganar."
+    },
+    "requires": [
+      "sa1",
+      "sa2",
+      "sa3"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Rhythm_of_War",
+        "kind": "wiki"
+      },
+      {
+        "url": "https://es.coppermind.net/wiki/El_ritmo_de_la_guerra",
+        "kind": "wiki"
+      }
+    ],
+    "author": "agent:synopsis-batch-001",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "book": "sa5",
+    "text": {
+      "en": "The first half of the series reaches its final stretch. A deadline is set for a contest between two champions that will decide the fate of the world, and the Radiants have only days to prepare while the opposing god's forces gather. As the war goes on at once in many places, the characters followed since the first volume face the choices and old wounds that have been building all along. The fifth volume closes the opening arc of the planned ten-book series.",
+      "es": "La primera mitad de la serie llega a su recta final. Se fija un plazo para un duelo entre dos campeones que decidirá el destino del mundo, y los Radiantes tienen solo unos días para prepararse mientras se reúnen las fuerzas del dios rival. Con la guerra librándose a la vez en muchos lugares, los personajes a los que se sigue desde el primer volumen se enfrentan a las decisiones y a las viejas heridas que se han ido acumulando. El quinto volumen cierra el primer arco de la serie planificada de diez libros."
+    },
+    "requires": [
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa4"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Wind_and_Truth",
+        "kind": "wiki"
+      },
+      {
+        "url": "https://es.coppermind.net/wiki/Viento_y_verdad",
+        "kind": "wiki"
+      }
+    ],
+    "author": "agent:synopsis-batch-001",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "book": "chasmfriends",
+    "text": {
+      "en": "A deliberately silly picture-book story told from the point of view of a group of young, talking creatures of the Rosharan wilderness. When one of them captures a loud, frightened creature that none of them understands, they try everything they can think of to make it happy, and misunderstandings pile up at every turn. The author's own site says it is not canon. It began as one of three stories on collectible cards from a convention, and later received a full illustrated edition.",
+      "es": "Una historia ilustrada deliberadamente disparatada, contada desde el punto de vista de un grupo de criaturas jóvenes y parlantes de la naturaleza de Roshar. Cuando una de ellas captura a una criatura ruidosa y asustada que ninguna entiende, prueban todo lo que se les ocurre para hacerla feliz, y los malentendidos se suceden a cada paso. La página del autor aclara que no es canon. Nació como una de las tres historias de unas cartas coleccionables de una convención y después recibió una edición ilustrada completa."
+    },
+    "requires": [
+      "sa1"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/The_ChasmFriends_Get_a_Pet!",
+        "kind": "wiki"
+      },
+      {
+        "url": "https://www.brandonsanderson.com/blogs/blog/story-deck-faq",
+        "kind": "official"
+      }
+    ],
+    "author": "agent:synopsis-batch-001",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "book": "tdatd",
+    "text": {
+      "en": "A short illustrated fable about a dog who sets his heart on becoming a dragon, which everybody agrees cannot happen. Whether he gets there matters less in the telling than what he turns into while trying. It first turns up in the fourth book, where a character offers it to someone sunk in despair, and it later received its own illustrated edition in a collection of picture-book tales.",
+      "es": "Una breve fábula ilustrada sobre un perro empeñado en convertirse en dragón, algo que todos coinciden en que no puede ser. Que llegue o no a conseguirlo importa menos, al contarla, que aquello en lo que se convierte mientras lo intenta. Aparece por primera vez en el cuarto libro, donde un personaje se la ofrece a alguien hundido en la desesperación, y más tarde recibió su propia edición ilustrada dentro de una colección de cuentos ilustrados."
+    },
+    "requires": [
+      "sa1",
+      "sa2",
+      "sa3",
+      "sa4"
+    ],
+    "sources": [
+      {
+        "url": "https://www.dragonsteelbooks.com/blogs/the-cognitive-realm/introducing-the-dog-and-the-dragon-from-hoids-storybook-collection",
+        "kind": "official"
+      },
+      {
+        "url": "https://www.backerkit.com/c/projects/dragonsteel/hoids-storybook-collection",
+        "kind": "official"
+      }
+    ],
+    "author": "agent:synopsis-batch-001",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "book": "tgwlu",
+    "text": {
+      "en": "A folk tale of Roshar about a girl whose village sits in the shadow of a vast wall that nobody there will acknowledge. She keeps asking what the wall is for and what lies on the other side, and the answers she gets only make her ask more. The tale is first heard in the third volume, where a character stages it as a play, and this edition retells it as an illustrated book alongside other tales in a storybook collection.",
+      "es": "Un cuento popular de Roshar sobre una niña cuya aldea vive a la sombra de un muro inmenso que nadie allí quiere reconocer. Ella no deja de preguntar para qué sirve el muro y qué hay al otro lado, y las respuestas que recibe solo le hacen preguntar más. La historia se oye por primera vez en el tercer volumen, donde un personaje la representa como una obra de teatro, y esta edición la cuenta de nuevo como libro ilustrado junto a otros cuentos de una colección."
+    },
+    "requires": [
+      "sa1",
+      "sa2",
+      "sa3"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/The_Girl_Who_Looked_Up",
+        "kind": "wiki"
+      },
+      {
+        "url": "https://www.backerkit.com/c/projects/dragonsteel/hoids-storybook-collection",
+        "kind": "official"
+      }
+    ],
+    "author": "agent:synopsis-batch-001",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "book": "twokp",
+    "text": {
+      "en": "The Way of Kings Prime is the author's original draft of the first volume, written in 2002, years before he rebuilt the project into the published book. It is an alternate version, so different in plot that he asks readers to think of it as set in another universe, and to read the 2010 book first. Dragonsteel released it in 2020 as a free ebook and a limited hardcover, the first of his raw drafts shared as curiosities. It is not part of the official story.",
+      "es": "El camino de los reyes Prime es el borrador original del primer volumen, escrito en 2002, años antes de que el autor reconstruyera el proyecto hasta dar con el libro publicado. Es una versión alternativa, tan distinta en la trama que el propio autor pide imaginarla en otro universo y leer antes el libro de 2010. Dragonsteel la publicó en 2020 como ebook gratuito y tapa dura limitada, la primera de sus versiones en bruto compartidas como curiosidad. No forma parte de la historia oficial."
+    },
+    "requires": [
+      "sa1"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/The_Way_of_Kings_Prime",
+        "kind": "wiki"
+      },
+      {
+        "url": "https://www.brandonsanderson.com/pages/the-way-of-kings-prime",
+        "kind": "official"
+      }
+    ],
+    "author": "agent:synopsis-batch-001",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-14"
+  }
+]

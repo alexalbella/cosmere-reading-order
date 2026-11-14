@@ -1,0 +1,109 @@
+[
+  {
+    "book": "elantris",
+    "open": true,
+    "text": {
+      "en": "Elantris is a fantasy novel set in the kingdom of Arelon, on the planet Sel, where the magic called AonDor has not worked for ten years. The story follows three viewpoints: Raoden, the crown prince, who is struck by a sudden transformation and thrown into the city of Elantris; Sarene, a princess from a neighbouring kingdom who was engaged to him and plunges into the country's politics; and Hrathen, a priest from a foreign empire who sets out to convert everyone to his religion. Little by little their paths draw together.",
+      "es": "Elantris es una novela de fantasía ambientada en el reino de Arelon, en el planeta Sel, donde la magia llamada AonDor lleva diez años sin funcionar. La historia sigue a tres personajes: Raoden, el príncipe heredero, a quien alcanza de pronto la Shaod y es arrojado a la ciudad de Elantris; Sarene, princesa de un reino vecino que estaba prometida con él y se mete de lleno en la política del país; y Hrathen, un sacerdote de un imperio extranjero que se propone convertir a todos a su religión. Poco a poco, sus caminos se van acercando."
+    },
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Elantris_(book)",
+        "kind": "wiki"
+      },
+      {
+        "url": "https://es.coppermind.net/wiki/Elantris_(libro)",
+        "kind": "wiki"
+      }
+    ],
+    "author": "agent:synopsis-batch-004",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "book": "thoe",
+    "requires": [
+      "elantris"
+    ],
+    "text": {
+      "en": "A short companion piece that runs alongside the events of the novel, seen from a different angle. It is told as an evening conversation: one of the novel's rulers sits waiting at dinner while a small floating companion fills in what happened elsewhere during the last hours of the crisis. The focus falls on the children and the craftspeople who lived in the shadow of the ruined city, and on how ordinary people held things together. The author calls it a story that makes little sense unless the novel has been read first, and wrote it as a thank-you to a young reader.",
+      "es": "Un relato breve que acompaña a la novela y mira sus acontecimientos desde otro ángulo. Se cuenta como una conversación nocturna: uno de los gobernantes de la novela espera sentado a la mesa mientras un pequeño compañero flotante le relata lo ocurrido en otro lugar durante las últimas horas de la crisis. El protagonismo recae en los niños y los artesanos que vivían a la sombra de la ciudad en ruinas, y en cómo la gente corriente logró mantener todo en pie. El autor advierte de que el relato apenas tiene sentido sin haber leído antes la novela, y lo escribió como agradecimiento a una joven lectora."
+    },
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/The_Hope_of_Elantris",
+        "kind": "wiki"
+      },
+      {
+        "url": "https://www.brandonsanderson.com/blogs/blog/the-hope-of-elantris",
+        "kind": "official"
+      }
+    ],
+    "author": "agent:synopsis-batch-004",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "book": "tes",
+    "open": true,
+    "text": {
+      "en": "Shai is an artist of a despised craft, Forgery, which rewrites an object's history until a copy becomes the real thing. After a failed theft she is facing execution when officials offer her a way out. The emperor survived an attack but is no longer himself, and his court needs him restored within a hundred days. Her job is to forge him a new soul. Kept in a cramped cell and distrusted by the people who need her, she has to finish the work and find a way to get free.",
+      "es": "Shai practica un oficio despreciado, la falsificación, que reescribe la historia de un objeto hasta que la copia pasa por ser el original. Tras un robo fallido está a punto de ser ejecutada cuando unos funcionarios le ofrecen una salida. El emperador sobrevivió a un atentado, pero ya no es él mismo, y la corte necesita que se recupere en cien días. Su encargo es falsificarle un alma nueva. Encerrada en una celda angosta y mirada con recelo por quienes dependen de ella, tiene que terminar la obra y encontrar la manera de escapar."
+    },
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/The_Emperor's_Soul",
+        "kind": "wiki"
+      },
+      {
+        "url": "https://es.coppermind.net/wiki/El_alma_del_emperador",
+        "kind": "wiki"
+      }
+    ],
+    "author": "agent:synopsis-batch-004",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "book": "wb",
+    "open": true,
+    "text": {
+      "en": "Two sisters, princesses of the small kingdom of Idris, have grown up under an old treaty: one of them must be sent to wed the God King of its rival, Hallandren, to keep the peace. The elder has trained for it all her life, but the king sends his rebellious younger daughter instead, and the elder soon follows her to Hallandren's capital. There, plots on both sides push the two lands towards war. The book also follows a Returned god of the court who is searching for the truth behind his religion, and a mysterious man who carries a sentient sword.",
+      "es": "Dos hermanas, princesas del pequeño reino de Idris, han crecido bajo un viejo tratado: una de ellas debe ser enviada a casarse con el rey-dios de Hallandren, su reino rival, para mantener la paz. La mayor se ha preparado para ello toda la vida, pero el rey manda en su lugar a la menor, rebelde e independiente, y la mayor no tarda en seguirla hasta la capital de Hallandren. Allí, las intrigas de ambos bandos empujan a los dos países hacia la guerra. El libro sigue además a un dios Retornado de la corte que busca la verdad tras su religión y a un hombre misterioso que lleva una espada parlante."
+    },
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Warbreaker",
+        "kind": "wiki"
+      },
+      {
+        "url": "https://es.wikipedia.org/wiki/El_aliento_de_los_dioses",
+        "kind": "wiki"
+      },
+      {
+        "url": "https://es.coppermind.net/wiki/El_aliento_de_los_dioses",
+        "kind": "wiki"
+      }
+    ],
+    "author": "agent:synopsis-batch-004",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "book": "imperial-fool",
+    "open": true,
+    "text": {
+      "en": "A deleted prologue from one of the author's novellas, posted free on his website with a note saying it is best read after the novella itself. It is a brief scene in a prison cell, where a prisoner studies the stones around her and a mocking visitor comments on her chances of getting out. It was never part of the published story, so it works as a curiosity for readers who already know the finished work.",
+      "es": "Un prólogo eliminado de una de las novelas cortas del autor, publicado gratis en su web con una nota que recomienda leerlo después de la novela. Es una escena breve en una celda, donde una prisionera examina las piedras que la rodean y un visitante burlón comenta sus posibilidades de salir de allí. Nunca formó parte del relato publicado, así que sirve de curiosidad para quien ya conoce la obra terminada."
+    },
+    "sources": [
+      {
+        "url": "https://www.brandonsanderson.com/blogs/blog/the-emperors-soul-deleted-prologue-imperial-fool",
+        "kind": "official"
+      }
+    ],
+    "author": "agent:synopsis-batch-004",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-14"
+  }
+]

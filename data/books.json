@@ -76,7 +76,13 @@
     "order": {},
     "phase": null,
     "seriesIndex": 3,
-    "place": 3
+    "place": 3,
+    "writing": {
+      "stage": "idea",
+      "source": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+      "asOf": "2025-12-18"
+    },
+    "announcedIn": "https://faq.brandonsanderson.com/knowledge-base/will-you-ever-write-an-elantris-sequel/"
   },
   {
     "id": "elantris3",
@@ -466,7 +472,12 @@
     "subseries": "Mistborn Era 2",
     "seriesIndex": 7,
     "place": 17,
-    "aside": true
+    "aside": true,
+    "writing": {
+      "stage": "revising",
+      "source": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2024",
+      "asOf": "2024-12-19"
+    }
   },
   {
     "id": "mb8",
@@ -485,7 +496,18 @@
     "phase": null,
     "subseries": "Mistborn Era 3",
     "seriesIndex": 1,
-    "place": 18
+    "place": 18,
+    "writing": {
+      "stage": "revising",
+      "source": "https://www.brandonsanderson.com/",
+      "asOf": "2026-11-14"
+    },
+    "expected": {
+      "when": "2028-12",
+      "official": false,
+      "source": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025"
+    },
+    "announcedIn": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2023"
   },
   {
     "id": "mb9",
@@ -504,7 +526,13 @@
     "phase": null,
     "subseries": "Mistborn Era 3",
     "seriesIndex": 2,
-    "place": 19
+    "place": 19,
+    "expected": {
+      "when": "2029-12",
+      "official": false,
+      "source": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025"
+    },
+    "announcedIn": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2024"
   },
   {
     "id": "mb10",
@@ -523,7 +551,13 @@
     "phase": null,
     "subseries": "Mistborn Era 3",
     "seriesIndex": 3,
-    "place": 20
+    "place": 20,
+    "expected": {
+      "when": "2030-12",
+      "official": false,
+      "source": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025"
+    },
+    "announcedIn": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2024"
   },
   {
     "id": "mb11",
@@ -702,7 +736,12 @@
     "order": {},
     "phase": null,
     "seriesIndex": 2,
-    "place": 40
+    "place": 40,
+    "writing": {
+      "stage": "idea",
+      "source": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+      "asOf": "2025-12-18"
+    }
   },
   {
     "id": "sa1",
@@ -983,7 +1022,13 @@
     ],
     "seriesIndex": 11,
     "place": 50,
-    "aside": true
+    "aside": true,
+    "writing": {
+      "stage": "idea",
+      "source": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+      "asOf": "2025-12-18"
+    },
+    "announcedIn": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2024"
   },
   {
     "id": "sa6",
@@ -1001,7 +1046,17 @@
     "order": {},
     "phase": null,
     "seriesIndex": 12,
-    "place": 51
+    "place": 51,
+    "writing": {
+      "stage": "idea",
+      "source": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+      "asOf": "2025-12-18"
+    },
+    "expected": {
+      "when": "2031-12",
+      "official": false,
+      "source": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2024"
+    }
   },
   {
     "id": "sa7",
@@ -1096,7 +1151,12 @@
     ],
     "subseries": "Stormlight Lost Tales",
     "place": 56,
-    "aside": true
+    "aside": true,
+    "apocryphal": {
+      "reason": "not-canon",
+      "source": "https://www.brandonsanderson.com/blogs/blog/story-deck-faq"
+    },
+    "publisher": "Dragonsteel Entertainment"
   },
   {
     "id": "tdatd",
@@ -1118,7 +1178,13 @@
     ],
     "seriesIndex": 8,
     "place": 57,
-    "aside": true
+    "aside": true,
+    "writing": {
+      "stage": "done",
+      "source": "https://hoids-storybook.backerkit.com/hosted_preorders/project_updates",
+      "asOf": "2026-10-21"
+    },
+    "announcedIn": "https://www.backerkit.com/c/projects/dragonsteel/hoids-storybook-collection"
   },
   {
     "id": "tgwlu",
@@ -1140,7 +1206,13 @@
     ],
     "seriesIndex": 9,
     "place": 58,
-    "aside": true
+    "aside": true,
+    "writing": {
+      "stage": "done",
+      "source": "https://hoids-storybook.backerkit.com/hosted_preorders/project_updates",
+      "asOf": "2026-10-21"
+    },
+    "announcedIn": "https://www.backerkit.com/c/projects/dragonsteel/hoids-storybook-collection"
   },
   {
     "id": "wsgn",
@@ -1185,7 +1257,8 @@
     "order": {},
     "phase": null,
     "seriesIndex": 2,
-    "place": 70
+    "place": 70,
+    "announcedIn": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2023"
   },
   {
     "id": "arcanist",
@@ -1250,7 +1323,13 @@
     "status": "planned",
     "order": {},
     "phase": null,
-    "place": 73
+    "place": 73,
+    "writing": {
+      "stage": "idea",
+      "source": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+      "asOf": "2025-12-19"
+    },
+    "announcedIn": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2022"
   },
   {
     "id": "sotd",
@@ -1325,7 +1404,8 @@
     "status": "planned",
     "order": {},
     "phase": null,
-    "place": 76
+    "place": 76,
+    "announcedIn": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2020"
   },
   {
     "id": "aether1",
@@ -1343,7 +1423,13 @@
     "order": {},
     "phase": null,
     "seriesIndex": 1,
-    "place": 77
+    "place": 77,
+    "writing": {
+      "stage": "idea",
+      "source": "https://brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+      "asOf": "2025-12-18"
+    },
+    "announcedIn": "https://brandonsanderson.com/blogs/blog/state-of-the-sanderson-2019"
   },
   {
     "id": "aether2",
@@ -1361,7 +1447,13 @@
     "order": {},
     "phase": null,
     "seriesIndex": 2,
-    "place": 78
+    "place": 78,
+    "writing": {
+      "stage": "idea",
+      "source": "https://brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+      "asOf": "2025-12-18"
+    },
+    "announcedIn": "https://brandonsanderson.com/blogs/blog/state-of-the-sanderson-2019"
   },
   {
     "id": "aether3",
@@ -1379,7 +1471,13 @@
     "order": {},
     "phase": null,
     "seriesIndex": 3,
-    "place": 79
+    "place": 79,
+    "writing": {
+      "stage": "idea",
+      "source": "https://brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+      "asOf": "2025-12-18"
+    },
+    "announcedIn": "https://brandonsanderson.com/blogs/blog/state-of-the-sanderson-2019"
   },
   {
     "id": "mythos1",
@@ -1397,7 +1495,13 @@
     "order": {},
     "phase": null,
     "seriesIndex": 1,
-    "place": 80
+    "place": 80,
+    "writing": {
+      "stage": "idea",
+      "source": "https://brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+      "asOf": "2025-12-18"
+    },
+    "announcedIn": "https://brandonsanderson.com/blogs/blog/state-of-the-sanderson-2022"
   },
   {
     "id": "mythos2",
@@ -1415,7 +1519,13 @@
     "order": {},
     "phase": null,
     "seriesIndex": 2,
-    "place": 81
+    "place": 81,
+    "writing": {
+      "stage": "idea",
+      "source": "https://brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+      "asOf": "2025-12-18"
+    },
+    "announcedIn": "https://brandonsanderson.com/blogs/blog/state-of-the-sanderson-2022"
   },
   {
     "id": "mythos3",
@@ -1433,7 +1543,13 @@
     "order": {},
     "phase": null,
     "seriesIndex": 3,
-    "place": 82
+    "place": 82,
+    "writing": {
+      "stage": "idea",
+      "source": "https://brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+      "asOf": "2025-12-18"
+    },
+    "announcedIn": "https://brandonsanderson.com/blogs/blog/state-of-the-sanderson-2022"
   },
   {
     "id": "d1",
@@ -1451,7 +1567,12 @@
     "order": {},
     "phase": null,
     "seriesIndex": 1,
-    "place": 83
+    "place": 83,
+    "writing": {
+      "stage": "idea",
+      "source": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+      "asOf": "2025-12-19"
+    }
   },
   {
     "id": "d2",
@@ -1469,7 +1590,12 @@
     "order": {},
     "phase": null,
     "seriesIndex": 2,
-    "place": 84
+    "place": 84,
+    "writing": {
+      "stage": "idea",
+      "source": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+      "asOf": "2025-12-19"
+    }
   },
   {
     "id": "d3",
@@ -1487,7 +1613,12 @@
     "order": {},
     "phase": null,
     "seriesIndex": 3,
-    "place": 85
+    "place": 85,
+    "writing": {
+      "stage": "idea",
+      "source": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+      "asOf": "2025-12-19"
+    }
   },
   {
     "id": "au",
@@ -1611,7 +1742,13 @@
     "status": "planned",
     "order": {},
     "phase": null,
-    "place": 90
+    "place": 90,
+    "writing": {
+      "stage": "idea",
+      "source": "https://brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+      "asOf": "2025-12-18"
+    },
+    "announcedIn": "https://brandonsanderson.com/blogs/blog/4787-2"
   },
   {
     "id": "untitled-cosmere-novel",
@@ -1645,7 +1782,12 @@
     "status": "planned",
     "order": {},
     "phase": null,
-    "place": 92
+    "place": 92,
+    "writing": {
+      "stage": "idea",
+      "source": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+      "asOf": "2025-12-18"
+    }
   },
   {
     "id": "dan",
@@ -1679,7 +1821,12 @@
     "status": "planned",
     "order": {},
     "phase": null,
-    "place": 94
+    "place": 94,
+    "writing": {
+      "stage": "idea",
+      "source": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+      "asOf": "2025-12-18"
+    }
   },
   {
     "id": "untitled-cosmere-novella",
@@ -1749,7 +1896,11 @@
     "order": {},
     "phase": null,
     "year": 2009,
-    "place": 98
+    "place": 98,
+    "apocryphal": {
+      "reason": "not-canon",
+      "source": "https://coppermind.net/wiki/Aether_of_Night"
+    }
   },
   {
     "id": "imperial-fool",
@@ -1768,7 +1919,12 @@
     "phase": null,
     "year": 2012,
     "place": 99,
-    "readFree": "https://www.brandonsanderson.com/blogs/blog/the-emperors-soul-deleted-prologue-imperial-fool"
+    "readFree": "https://www.brandonsanderson.com/blogs/blog/the-emperors-soul-deleted-prologue-imperial-fool",
+    "apocryphal": {
+      "reason": "superseded",
+      "source": "https://www.brandonsanderson.com/blogs/blog/the-emperors-soul-deleted-prologue-imperial-fool"
+    },
+    "publisher": "Brandon Sanderson's blog"
   },
   {
     "id": "dsp",
@@ -1805,7 +1961,12 @@
     "phase": null,
     "year": 2020,
     "place": 101,
-    "readFree": "https://www.brandonsanderson.com/pages/the-way-of-kings-prime"
+    "readFree": "https://www.brandonsanderson.com/pages/the-way-of-kings-prime",
+    "apocryphal": {
+      "reason": "superseded",
+      "source": "https://www.brandonsanderson.com/pages/the-way-of-kings-prime"
+    },
+    "publisher": "Dragonsteel Entertainment"
   },
   {
     "id": "sa-deleted-scene",
@@ -1867,7 +2028,10 @@
     "seriesIndex": 1,
     "place": 28,
     "publication": "2011-12-16",
-    "pages": 584
+    "pages": 584,
+    "publisher": "Crafty Games",
+    "line": "Mistborn Adventure Game",
+    "rpgKind": "core"
   },
   {
     "id": "fires-of-december",
@@ -1908,7 +2072,18 @@
     "status": "announced",
     "order": {},
     "phase": null,
-    "place": 104
+    "place": 104,
+    "writing": {
+      "stage": "done",
+      "source": "https://hoids-storybook.backerkit.com/hosted_preorders/project_updates",
+      "asOf": "2026-10-21"
+    },
+    "expected": {
+      "when": "2026-11",
+      "official": false,
+      "source": "https://hoids-storybook.backerkit.com/hosted_preorders/project_updates"
+    },
+    "announcedIn": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025"
   },
   {
     "id": "wandersail",
@@ -1929,7 +2104,18 @@
       "hoids-storybook-collection"
     ],
     "seriesIndex": 10,
-    "place": 59
+    "place": 59,
+    "writing": {
+      "stage": "done",
+      "source": "https://hoids-storybook.backerkit.com/hosted_preorders/project_updates",
+      "asOf": "2026-10-21"
+    },
+    "expected": {
+      "when": "2026-11",
+      "official": false,
+      "source": "https://hoids-storybook.backerkit.com/hosted_preorders/project_updates"
+    },
+    "announcedIn": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025"
   },
   {
     "id": "stormlight-rpg-handbook",
@@ -1956,7 +2142,15 @@
     "subseries": "Cosmere RPG: Stormlight",
     "seriesIndex": 2,
     "place": 61,
-    "publication": "2025-07-23"
+    "publication": "2025-07-23",
+    "publisher": "Brotherwise Games",
+    "line": "Cosmere Roleplaying Game",
+    "rpgKind": "core",
+    "crowdfunding": "https://www.kickstarter.com/projects/brotherwise/the-stormlight-archive-rpg",
+    "canon": {
+      "value": "partly",
+      "source": "https://coppermind.net/wiki/Cosmere_Roleplaying_Game"
+    }
   },
   {
     "id": "stormlight-rpg-world-guide",
@@ -1983,7 +2177,15 @@
     "subseries": "Cosmere RPG: Stormlight",
     "seriesIndex": 3,
     "place": 62,
-    "publication": "2025-07-23"
+    "publication": "2025-07-23",
+    "publisher": "Brotherwise Games",
+    "line": "Cosmere Roleplaying Game",
+    "rpgKind": "world-guide",
+    "crowdfunding": "https://www.kickstarter.com/projects/brotherwise/the-stormlight-archive-rpg",
+    "canon": {
+      "value": "partly",
+      "source": "https://coppermind.net/wiki/Cosmere_Roleplaying_Game"
+    }
   },
   {
     "id": "stormlight-rpg-welcome-to-roshar",
@@ -2010,7 +2212,14 @@
     "subseries": "Cosmere RPG: Stormlight",
     "seriesIndex": 4,
     "place": 63,
-    "publication": "2025"
+    "publication": "2025",
+    "publisher": "Brotherwise Games",
+    "line": "Cosmere Roleplaying Game",
+    "rpgKind": "starter",
+    "canon": {
+      "value": "partly",
+      "source": "https://coppermind.net/wiki/Cosmere_Roleplaying_Game"
+    }
   },
   {
     "id": "stormlight-rpg-bridge-nine",
@@ -2036,7 +2245,14 @@
     "subseries": "Cosmere RPG: Stormlight",
     "seriesIndex": 5,
     "place": 64,
-    "publication": "2025-07-23"
+    "publication": "2025-07-23",
+    "publisher": "Brotherwise Games",
+    "line": "Cosmere Roleplaying Game",
+    "rpgKind": "adventure",
+    "canon": {
+      "value": "partly",
+      "source": "https://coppermind.net/wiki/Cosmere_Roleplaying_Game"
+    }
   },
   {
     "id": "stonewalkers",
@@ -2063,7 +2279,15 @@
     "subseries": "Cosmere RPG: Stormlight",
     "seriesIndex": 6,
     "place": 65,
-    "publication": "2025"
+    "publication": "2025",
+    "publisher": "Brotherwise Games",
+    "line": "Cosmere Roleplaying Game",
+    "rpgKind": "adventure",
+    "crowdfunding": "https://www.kickstarter.com/projects/brotherwise/the-stormlight-archive-rpg",
+    "canon": {
+      "value": "partly",
+      "source": "https://coppermind.net/wiki/Cosmere_Roleplaying_Game"
+    }
   },
   {
     "id": "mistborn-rpg-handbook",
@@ -2090,7 +2314,15 @@
     "subseries": "Cosmere RPG: Mistborn",
     "seriesIndex": 1,
     "place": 34,
-    "publication": "2026-09"
+    "publication": "2026-09",
+    "publisher": "Brotherwise Games",
+    "line": "Cosmere Roleplaying Game",
+    "rpgKind": "core",
+    "crowdfunding": "https://www.kickstarter.com/projects/brotherwise/the-stormlight-archive-rpg",
+    "canon": {
+      "value": "partly",
+      "source": "https://coppermind.net/wiki/Cosmere_Roleplaying_Game"
+    }
   },
   {
     "id": "mistborn-rpg-world-guide",
@@ -2117,7 +2349,15 @@
     "subseries": "Cosmere RPG: Mistborn",
     "seriesIndex": 2,
     "place": 35,
-    "publication": "2026-09"
+    "publication": "2026-09",
+    "publisher": "Brotherwise Games",
+    "line": "Cosmere Roleplaying Game",
+    "rpgKind": "world-guide",
+    "crowdfunding": "https://www.kickstarter.com/projects/brotherwise/the-stormlight-archive-rpg",
+    "canon": {
+      "value": "partly",
+      "source": "https://coppermind.net/wiki/Cosmere_Roleplaying_Game"
+    }
   },
   {
     "id": "mistborn-rpg-legacy",
@@ -2144,7 +2384,15 @@
     "subseries": "Cosmere RPG: Mistborn",
     "seriesIndex": 4,
     "place": 37,
-    "publication": "2026"
+    "publication": "2026",
+    "publisher": "Brotherwise Games",
+    "line": "Cosmere Roleplaying Game",
+    "rpgKind": "adventure",
+    "crowdfunding": "https://www.kickstarter.com/projects/brotherwise/the-stormlight-archive-rpg",
+    "canon": {
+      "value": "partly",
+      "source": "https://coppermind.net/wiki/Cosmere_Roleplaying_Game"
+    }
   },
   {
     "id": "mistborn-adventure-game-terris",
@@ -2168,7 +2416,10 @@
     "subseries": "Mistborn Adventure Game",
     "seriesIndex": 2,
     "place": 29,
-    "publication": "2014-03-03"
+    "publication": "2014-03-03",
+    "publisher": "Crafty Games",
+    "line": "Mistborn Adventure Game",
+    "rpgKind": "supplement"
   },
   {
     "id": "mistborn-adventure-game-alloy-of-law",
@@ -2192,7 +2443,10 @@
     "subseries": "Mistborn Adventure Game",
     "seriesIndex": 3,
     "place": 30,
-    "publication": "2014-08-03"
+    "publication": "2014-08-03",
+    "publisher": "Crafty Games",
+    "line": "Mistborn Adventure Game",
+    "rpgKind": "supplement"
   },
   {
     "id": "mistborn-adventure-game-skaa",
@@ -2217,7 +2471,10 @@
     "seriesIndex": 4,
     "place": 31,
     "publication": "2015-11-16",
-    "pages": 220
+    "pages": 220,
+    "publisher": "Crafty Games",
+    "line": "Mistborn Adventure Game",
+    "rpgKind": "supplement"
   },
   {
     "id": "mistborn-adventure-game-masks-of-the-past",
@@ -2241,7 +2498,10 @@
     "subseries": "Mistborn Adventure Game",
     "seriesIndex": 5,
     "place": 32,
-    "publication": "2017-08-08"
+    "publication": "2017-08-08",
+    "publisher": "Crafty Games",
+    "line": "Mistborn Adventure Game",
+    "rpgKind": "supplement"
   },
   {
     "id": "mistborn-adventure-game-nobles",
@@ -2266,7 +2526,10 @@
     "seriesIndex": 6,
     "place": 33,
     "publication": "2023",
-    "pages": 208
+    "pages": 208,
+    "publisher": "Crafty Games",
+    "line": "Mistborn Adventure Game",
+    "rpgKind": "supplement"
   },
   {
     "id": "stormlight-rpg-first-step",
@@ -2292,7 +2555,14 @@
     "subseries": "Cosmere RPG: Stormlight",
     "seriesIndex": 1,
     "place": 60,
-    "publication": "2025-07-23"
+    "publication": "2025-07-23",
+    "publisher": "Brotherwise Games",
+    "line": "Cosmere Roleplaying Game",
+    "rpgKind": "adventure",
+    "canon": {
+      "value": "partly",
+      "source": "https://coppermind.net/wiki/Cosmere_Roleplaying_Game"
+    }
   },
   {
     "id": "stormlight-rpg-scenarios",
@@ -2318,7 +2588,14 @@
     "subseries": "Cosmere RPG: Stormlight",
     "seriesIndex": 7,
     "place": 66,
-    "publication": "2025-09-24"
+    "publication": "2025-09-24",
+    "publisher": "Brotherwise Games",
+    "line": "Cosmere Roleplaying Game",
+    "rpgKind": "supplement",
+    "canon": {
+      "value": "partly",
+      "source": "https://coppermind.net/wiki/Cosmere_Roleplaying_Game"
+    }
   },
   {
     "id": "stormlight-rpg-advanced-adversaries",
@@ -2344,7 +2621,14 @@
     "subseries": "Cosmere RPG: Stormlight",
     "seriesIndex": 8,
     "place": 67,
-    "publication": "2025-09-24"
+    "publication": "2025-09-24",
+    "publisher": "Brotherwise Games",
+    "line": "Cosmere Roleplaying Game",
+    "rpgKind": "supplement",
+    "canon": {
+      "value": "partly",
+      "source": "https://coppermind.net/wiki/Cosmere_Roleplaying_Game"
+    }
   },
   {
     "id": "stormlight-rpg-law-and-obligation",
@@ -2368,7 +2652,14 @@
     "subseries": "Cosmere RPG: Stormlight",
     "seriesIndex": 9,
     "place": 68,
-    "publication": "2026-06-27"
+    "publication": "2026-06-27",
+    "publisher": "Brotherwise Games",
+    "line": "Cosmere Roleplaying Game",
+    "rpgKind": "adventure",
+    "canon": {
+      "value": "partly",
+      "source": "https://coppermind.net/wiki/Cosmere_Roleplaying_Game"
+    }
   },
   {
     "id": "mistborn-rpg-welcome-to-scadrial",
@@ -2394,7 +2685,14 @@
     "subseries": "Cosmere RPG: Mistborn",
     "seriesIndex": 3,
     "place": 36,
-    "publication": "2026"
+    "publication": "2026",
+    "publisher": "Brotherwise Games",
+    "line": "Cosmere Roleplaying Game",
+    "rpgKind": "starter",
+    "canon": {
+      "value": "partly",
+      "source": "https://coppermind.net/wiki/Cosmere_Roleplaying_Game"
+    }
   },
   {
     "id": "mistborn-rpg-scenarios",
@@ -2418,6 +2716,13 @@
     "subseries": "Cosmere RPG: Mistborn",
     "seriesIndex": 5,
     "place": 38,
-    "publication": "2026-10-01"
+    "publication": "2026-10-01",
+    "publisher": "Brotherwise Games",
+    "line": "Cosmere Roleplaying Game",
+    "rpgKind": "supplement",
+    "canon": {
+      "value": "partly",
+      "source": "https://coppermind.net/wiki/Cosmere_Roleplaying_Game"
+    }
   }
 ]

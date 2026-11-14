@@ -1,0 +1,74 @@
+[
+  {
+    "book": "sfs",
+    "text": {
+      "en": "A novella set in the Forests of Hell, on the planet Threnody, where nights are deadly and travellers stay close to the roads. Silence Montane keeps a waystop there and, in secret, holds a reputation as a legendary bounty hunter. Short of money and owing a creditor who covets her inn, she takes a risky contract to hunt a notorious highwayman and his gang. What starts as a single job grows complicated as the dark hours pass. The tale has a grim, haunted frontier flavour and first appeared in an anthology built around formidable women.",
+      "es": "Una novela corta ambientada en los Bosques del Infierno, en el planeta Threnody, donde las noches son mortales y quienes viajan se mantienen pegados a los caminos. Silence Montane regenta allí una posada de postas y, en secreto, tiene fama de ser una legendaria cazarrecompensas. Corta de dinero y en deuda con un acreedor que codicia su local, acepta un contrato arriesgado: dar caza a un conocido salteador de caminos y a su banda. Lo que empieza como un único encargo se complica según pasan las horas oscuras. Es un relato de frontera, sombrío y encantado, publicado por primera vez en una antología sobre mujeres temibles."
+    },
+    "open": true,
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Shadows_for_Silence_in_the_Forests_of_Hell",
+        "kind": "wiki"
+      }
+    ],
+    "author": "agent:synopsis-batch-005",
+    "verifiedBy": "agent:verify-batch-005",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "book": "sotd",
+    "text": {
+      "en": "Sixth of the Dusk is a trapper on Patji, an island where even the jungle seems out to get you. He works alone with aviar, birds with remarkable gifts that help him stay alive, and abides by the rules and grudges of his trade. News of a coming disaster reaches him, and although he cannot make sense of it, he sets out to defend the place he calls home. The novella is a survival adventure about a stubborn, practical man, the distrust between island trappers and people from the mainland, and a homeland he both loves and dreads. He also crosses paths with a well-schooled noblewoman who travels with explorers.",
+      "es": "Sexto del Ocaso es un trampero de Patji, una isla donde hasta la jungla parece querer acabar con uno. Trabaja solo con aviares, aves de dones extraordinarios que le ayudan a seguir con vida, y respeta las normas y los rencores de su oficio. Le llega la noticia de un desastre cercano y, aunque no logra entenderla, se echa al camino para defender el lugar al que llama hogar. La novela corta es una aventura de supervivencia sobre un hombre testarudo y práctico, la desconfianza entre los traperos de la isla y la gente del continente, y una tierra a la que ama y teme a la vez. También se cruza con una noble instruida que viaja con exploradores."
+    },
+    "open": true,
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Sixth_of_the_Dusk_(novella)",
+        "kind": "wiki"
+      }
+    ],
+    "author": "agent:synopsis-batch-005",
+    "verifiedBy": "agent:verify-batch-005",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "book": "iote",
+    "text": {
+      "en": "A full-length novel told in two threads. In one, a man whose people live far from the great powers worries about what is coming for them and sets out to look for help. In the other, a young captain whose crew is deep in debt comes across an old map and sees a chance to change their luck. As the book goes on, the two threads move toward each other, and each of the travellers may turn out to hold something the other badly needs.",
+      "es": "Una novela extensa narrada en dos hilos. En uno, un hombre cuyo pueblo vive lejos de las grandes potencias teme lo que se les viene encima y parte en busca de ayuda. En el otro, una joven capitana cuya tripulación está hasta el cuello de deudas da con un mapa antiguo y ve la ocasión de cambiar su suerte. A medida que avanza el libro, los dos hilos se acercan entre sí, y cada uno de los viajeros puede resultar tener justo lo que el otro necesita con desesperación."
+    },
+    "open": true,
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Isles_of_the_Emberdark",
+        "kind": "wiki"
+      },
+      {
+        "url": "https://es.coppermind.net/wiki/Islas_de_la_Ascuaoscura",
+        "kind": "wiki"
+      }
+    ],
+    "author": "agent:synopsis-batch-005",
+    "verifiedBy": "agent:verify-batch-005",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "book": "traveler",
+    "text": {
+      "en": "A very short piece that the author read aloud at a convention in 2018 and never issued as a regular book. In a forest of white trees, a ragged wanderer sitting on the moss is visited by an old companion in grey robes. They trade barbs about promises and choices from long ago, and the wanderer insists he will keep on with what he is doing. It is a dialogue scene rather than a plotted story, and reading it aloud takes only a few minutes.",
+      "es": "Una pieza brevísima que el autor leyó en voz alta en una convención en 2018 y que nunca se publicó como libro corriente. En un bosque de árboles blancos, un vagabundo andrajoso sentado sobre el musgo recibe la visita de un viejo compañero de túnica gris. Se lanzan pullas sobre promesas y decisiones de hace mucho, y el vagabundo asegura que seguirá con lo que está haciendo. Es una escena de diálogo más que un relato con trama, y leerla en voz alta lleva apenas unos minutos."
+    },
+    "open": true,
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/332-jordancon-2018/",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:synopsis-batch-005",
+    "verifiedBy": "agent:verify-batch-005",
+    "verifiedOn": "2026-11-14"
+  }
+]

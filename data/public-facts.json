@@ -76,7 +76,13 @@
     },
     "readFree": null,
     "inUpstream": true,
-    "source": []
+    "source": [],
+    "writing": {
+      "stage": "idea",
+      "source": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+      "asOf": "2025-12-18"
+    },
+    "announcedIn": "https://faq.brandonsanderson.com/knowledge-base/will-you-ever-write-an-elantris-sequel/"
   },
   "elantris3": {
     "world": "sel",
@@ -450,7 +456,12 @@
     },
     "readFree": null,
     "inUpstream": true,
-    "source": []
+    "source": [],
+    "writing": {
+      "stage": "revising",
+      "source": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2024",
+      "asOf": "2024-12-19"
+    }
   },
   "mb8": {
     "world": "scadrial",
@@ -473,7 +484,18 @@
     },
     "readFree": null,
     "inUpstream": true,
-    "source": []
+    "source": [],
+    "writing": {
+      "stage": "revising",
+      "source": "https://www.brandonsanderson.com/",
+      "asOf": "2026-11-14"
+    },
+    "expected": {
+      "when": "2028-12",
+      "official": false,
+      "source": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025"
+    },
+    "announcedIn": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2023"
   },
   "mb9": {
     "world": "scadrial",
@@ -496,7 +518,13 @@
     },
     "readFree": null,
     "inUpstream": true,
-    "source": []
+    "source": [],
+    "expected": {
+      "when": "2029-12",
+      "official": false,
+      "source": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025"
+    },
+    "announcedIn": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2024"
   },
   "mb10": {
     "world": "scadrial",
@@ -519,7 +547,13 @@
     },
     "readFree": null,
     "inUpstream": true,
-    "source": []
+    "source": [],
+    "expected": {
+      "when": "2030-12",
+      "official": false,
+      "source": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025"
+    },
+    "announcedIn": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2024"
   },
   "mb11": {
     "world": "scadrial",
@@ -730,7 +764,12 @@
     },
     "readFree": null,
     "inUpstream": true,
-    "source": []
+    "source": [],
+    "writing": {
+      "stage": "idea",
+      "source": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+      "asOf": "2025-12-18"
+    }
   },
   "sa1": {
     "world": "roshar",
@@ -997,7 +1036,13 @@
     },
     "readFree": null,
     "inUpstream": true,
-    "source": []
+    "source": [],
+    "writing": {
+      "stage": "idea",
+      "source": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+      "asOf": "2025-12-18"
+    },
+    "announcedIn": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2024"
   },
   "sa6": {
     "world": "roshar",
@@ -1020,7 +1065,17 @@
     },
     "readFree": null,
     "inUpstream": true,
-    "source": []
+    "source": [],
+    "writing": {
+      "stage": "idea",
+      "source": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+      "asOf": "2025-12-18"
+    },
+    "expected": {
+      "when": "2031-12",
+      "official": false,
+      "source": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2024"
+    }
   },
   "sa7": {
     "world": "roshar",
@@ -1137,7 +1192,12 @@
     "inUpstream": true,
     "source": [
       "https://coppermind.net/wiki/The_ChasmFriends_Get_a_Pet!"
-    ]
+    ],
+    "apocryphal": {
+      "reason": "not-canon",
+      "source": "https://www.brandonsanderson.com/blogs/blog/story-deck-faq"
+    },
+    "publisher": "Dragonsteel Entertainment"
   },
   "tdatd": {
     "world": "roshar",
@@ -1163,7 +1223,13 @@
     "source": [
       "https://hoids-storybook.backerkit.com/hosted_preorders/project_updates",
       "https://coppermind.net/wiki/The_ChasmFriends_Get_a_Pet!"
-    ]
+    ],
+    "announcedIn": "https://www.backerkit.com/c/projects/dragonsteel/hoids-storybook-collection",
+    "writing": {
+      "stage": "done",
+      "source": "https://hoids-storybook.backerkit.com/hosted_preorders/project_updates",
+      "asOf": "2026-10-21"
+    }
   },
   "tgwlu": {
     "world": "roshar",
@@ -1189,7 +1255,13 @@
     "source": [
       "https://hoids-storybook.backerkit.com/hosted_preorders/project_updates",
       "https://coppermind.net/wiki/The_ChasmFriends_Get_a_Pet!"
-    ]
+    ],
+    "announcedIn": "https://www.backerkit.com/c/projects/dragonsteel/hoids-storybook-collection",
+    "writing": {
+      "stage": "done",
+      "source": "https://hoids-storybook.backerkit.com/hosted_preorders/project_updates",
+      "asOf": "2026-10-21"
+    }
   },
   "wsgn": {
     "world": "taldain",
@@ -1244,7 +1316,8 @@
     },
     "readFree": null,
     "inUpstream": true,
-    "source": []
+    "source": [],
+    "announcedIn": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2023"
   },
   "arcanist": {
     "world": "taldain",
@@ -1317,7 +1390,13 @@
     },
     "readFree": null,
     "inUpstream": true,
-    "source": []
+    "source": [],
+    "writing": {
+      "stage": "idea",
+      "source": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+      "asOf": "2025-12-19"
+    },
+    "announcedIn": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2022"
   },
   "sotd": {
     "world": "first-of-the-sun",
@@ -1395,7 +1474,8 @@
     },
     "readFree": null,
     "inUpstream": true,
-    "source": []
+    "source": [],
+    "announcedIn": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2020"
   },
   "aether1": {
     "world": "aether-homeworld",
@@ -1418,7 +1498,13 @@
     },
     "readFree": null,
     "inUpstream": true,
-    "source": []
+    "source": [],
+    "writing": {
+      "stage": "idea",
+      "source": "https://brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+      "asOf": "2025-12-18"
+    },
+    "announcedIn": "https://brandonsanderson.com/blogs/blog/state-of-the-sanderson-2019"
   },
   "aether2": {
     "world": "aether-homeworld",
@@ -1441,7 +1527,13 @@
     },
     "readFree": null,
     "inUpstream": true,
-    "source": []
+    "source": [],
+    "writing": {
+      "stage": "idea",
+      "source": "https://brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+      "asOf": "2025-12-18"
+    },
+    "announcedIn": "https://brandonsanderson.com/blogs/blog/state-of-the-sanderson-2019"
   },
   "aether3": {
     "world": "aether-homeworld",
@@ -1464,7 +1556,13 @@
     },
     "readFree": null,
     "inUpstream": true,
-    "source": []
+    "source": [],
+    "writing": {
+      "stage": "idea",
+      "source": "https://brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+      "asOf": "2025-12-18"
+    },
+    "announcedIn": "https://brandonsanderson.com/blogs/blog/state-of-the-sanderson-2019"
   },
   "mythos1": {
     "world": "mythos",
@@ -1487,7 +1585,13 @@
     },
     "readFree": null,
     "inUpstream": true,
-    "source": []
+    "source": [],
+    "writing": {
+      "stage": "idea",
+      "source": "https://brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+      "asOf": "2025-12-18"
+    },
+    "announcedIn": "https://brandonsanderson.com/blogs/blog/state-of-the-sanderson-2022"
   },
   "mythos2": {
     "world": "mythos",
@@ -1510,7 +1614,13 @@
     },
     "readFree": null,
     "inUpstream": true,
-    "source": []
+    "source": [],
+    "writing": {
+      "stage": "idea",
+      "source": "https://brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+      "asOf": "2025-12-18"
+    },
+    "announcedIn": "https://brandonsanderson.com/blogs/blog/state-of-the-sanderson-2022"
   },
   "mythos3": {
     "world": "mythos",
@@ -1533,7 +1643,13 @@
     },
     "readFree": null,
     "inUpstream": true,
-    "source": []
+    "source": [],
+    "writing": {
+      "stage": "idea",
+      "source": "https://brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+      "asOf": "2025-12-18"
+    },
+    "announcedIn": "https://brandonsanderson.com/blogs/blog/state-of-the-sanderson-2022"
   },
   "d1": {
     "world": "yolen",
@@ -1556,7 +1672,12 @@
     },
     "readFree": null,
     "inUpstream": true,
-    "source": []
+    "source": [],
+    "writing": {
+      "stage": "idea",
+      "source": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+      "asOf": "2025-12-19"
+    }
   },
   "d2": {
     "world": "yolen",
@@ -1579,7 +1700,12 @@
     },
     "readFree": null,
     "inUpstream": true,
-    "source": []
+    "source": [],
+    "writing": {
+      "stage": "idea",
+      "source": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+      "asOf": "2025-12-19"
+    }
   },
   "d3": {
     "world": "yolen",
@@ -1602,7 +1728,12 @@
     },
     "readFree": null,
     "inUpstream": true,
-    "source": []
+    "source": [],
+    "writing": {
+      "stage": "idea",
+      "source": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+      "asOf": "2025-12-19"
+    }
   },
   "au": {
     "world": null,
@@ -1743,7 +1874,13 @@
     },
     "readFree": null,
     "inUpstream": true,
-    "source": []
+    "source": [],
+    "writing": {
+      "stage": "idea",
+      "source": "https://brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+      "asOf": "2025-12-18"
+    },
+    "announcedIn": "https://brandonsanderson.com/blogs/blog/4787-2"
   },
   "untitled-cosmere-novel": {
     "world": null,
@@ -1789,7 +1926,12 @@
     },
     "readFree": null,
     "inUpstream": true,
-    "source": []
+    "source": [],
+    "writing": {
+      "stage": "idea",
+      "source": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+      "asOf": "2025-12-18"
+    }
   },
   "dan": {
     "world": null,
@@ -1835,7 +1977,12 @@
     },
     "readFree": null,
     "inUpstream": true,
-    "source": []
+    "source": [],
+    "writing": {
+      "stage": "idea",
+      "source": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+      "asOf": "2025-12-18"
+    }
   },
   "untitled-cosmere-novella": {
     "world": null,
@@ -1935,6 +2082,10 @@
     "publicationNote": {
       "en": "Unpublished manuscript, available on request since this date.",
       "es": "Manuscrito sin publicar, disponible bajo petición desde esta fecha."
+    },
+    "apocryphal": {
+      "reason": "not-canon",
+      "source": "https://coppermind.net/wiki/Aether_of_Night"
     }
   },
   "imperial-fool": {
@@ -1958,7 +2109,12 @@
     },
     "readFree": "https://www.brandonsanderson.com/blogs/blog/the-emperors-soul-deleted-prologue-imperial-fool",
     "inUpstream": true,
-    "source": []
+    "source": [],
+    "apocryphal": {
+      "reason": "superseded",
+      "source": "https://www.brandonsanderson.com/blogs/blog/the-emperors-soul-deleted-prologue-imperial-fool"
+    },
+    "publisher": "Brandon Sanderson's blog"
   },
   "dsp": {
     "world": "yolen",
@@ -2008,7 +2164,12 @@
     "inUpstream": true,
     "source": [
       "https://coppermind.net/wiki/The_Way_of_Kings_Prime"
-    ]
+    ],
+    "apocryphal": {
+      "reason": "superseded",
+      "source": "https://www.brandonsanderson.com/pages/the-way-of-kings-prime"
+    },
+    "publisher": "Dragonsteel Entertainment"
   },
   "sa-deleted-scene": {
     "world": "roshar",
@@ -2082,7 +2243,10 @@
       "https://www.gmsmagazine.com/crafty-games-proudly-brings-the-mistborn-adventure-game-to-gen-con-2011",
       "https://bookwyrm.social/book/869805/s/mistborn-adventure-game"
     ],
-    "worldBasis": "own-listing"
+    "worldBasis": "own-listing",
+    "publisher": "Crafty Games",
+    "line": "Mistborn Adventure Game",
+    "rpgKind": "core"
   },
   "fires-of-december": {
     "world": null,
@@ -2137,7 +2301,18 @@
     "source": [
       "https://hoids-storybook.backerkit.com/hosted_preorders/project_updates",
       "https://www.dragonsteelbooks.com/blogs/the-cognitive-realm/hoids-storybook-collection-backerkit"
-    ]
+    ],
+    "writing": {
+      "stage": "done",
+      "source": "https://hoids-storybook.backerkit.com/hosted_preorders/project_updates",
+      "asOf": "2026-10-21"
+    },
+    "expected": {
+      "when": "2026-11",
+      "official": false,
+      "source": "https://hoids-storybook.backerkit.com/hosted_preorders/project_updates"
+    },
+    "announcedIn": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025"
   },
   "wandersail": {
     "world": null,
@@ -2163,7 +2338,18 @@
     "source": [
       "https://hoids-storybook.backerkit.com/hosted_preorders/project_updates",
       "https://www.dragonsteelbooks.com/blogs/the-cognitive-realm/wandersail-hoids-storybook-collection"
-    ]
+    ],
+    "writing": {
+      "stage": "done",
+      "source": "https://hoids-storybook.backerkit.com/hosted_preorders/project_updates",
+      "asOf": "2026-10-21"
+    },
+    "expected": {
+      "when": "2026-11",
+      "official": false,
+      "source": "https://hoids-storybook.backerkit.com/hosted_preorders/project_updates"
+    },
+    "announcedIn": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025"
   },
   "stormlight-rpg-handbook": {
     "world": "roshar",
@@ -2191,7 +2377,15 @@
       "https://www.dragonsteelbooks.com/products/stormlight-handbook",
       "https://devir.es/manual-del-archivo-de-las-tormentas"
     ],
-    "worldBasis": "own-listing"
+    "worldBasis": "own-listing",
+    "publisher": "Brotherwise Games",
+    "line": "Cosmere Roleplaying Game",
+    "rpgKind": "core",
+    "canon": {
+      "value": "partly",
+      "source": "https://coppermind.net/wiki/Cosmere_Roleplaying_Game"
+    },
+    "crowdfunding": "https://www.kickstarter.com/projects/brotherwise/the-stormlight-archive-rpg"
   },
   "stormlight-rpg-world-guide": {
     "world": "roshar",
@@ -2219,7 +2413,15 @@
       "https://www.dragonsteelbooks.com/products/bw-stormlight-world-guide",
       "https://devir.es/guia-del-mundo-del-archivo-de-las-tormentas"
     ],
-    "worldBasis": "own-listing"
+    "worldBasis": "own-listing",
+    "publisher": "Brotherwise Games",
+    "line": "Cosmere Roleplaying Game",
+    "rpgKind": "world-guide",
+    "canon": {
+      "value": "partly",
+      "source": "https://coppermind.net/wiki/Cosmere_Roleplaying_Game"
+    },
+    "crowdfunding": "https://www.kickstarter.com/projects/brotherwise/the-stormlight-archive-rpg"
   },
   "stormlight-rpg-welcome-to-roshar": {
     "world": "roshar",
@@ -2246,7 +2448,14 @@
       "https://www.dragonsteelbooks.com/products/bw-welcome-to-roshar-guide-book",
       "https://devir.es/el-archivo-de-las-tormentas-bienvenidos-a-roshar"
     ],
-    "worldBasis": "own-listing"
+    "worldBasis": "own-listing",
+    "publisher": "Brotherwise Games",
+    "line": "Cosmere Roleplaying Game",
+    "rpgKind": "starter",
+    "canon": {
+      "value": "partly",
+      "source": "https://coppermind.net/wiki/Cosmere_Roleplaying_Game"
+    }
   },
   "stormlight-rpg-bridge-nine": {
     "world": "roshar",
@@ -2274,7 +2483,14 @@
       "https://www.dragonsteelbooks.com/products/stormlight-handbook",
       "https://devir.es/el-archivo-de-las-tormentas-puente-nueve"
     ],
-    "worldBasis": "product-line"
+    "worldBasis": "product-line",
+    "publisher": "Brotherwise Games",
+    "line": "Cosmere Roleplaying Game",
+    "rpgKind": "adventure",
+    "canon": {
+      "value": "partly",
+      "source": "https://coppermind.net/wiki/Cosmere_Roleplaying_Game"
+    }
   },
   "stonewalkers": {
     "world": "roshar",
@@ -2301,7 +2517,15 @@
       "https://www.dragonsteelbooks.com/products/bw-stormlight-stonewalkers-adventure",
       "https://devir.es/el-archivo-de-las-tormentas-caminapiedras"
     ],
-    "worldBasis": "own-listing"
+    "worldBasis": "own-listing",
+    "publisher": "Brotherwise Games",
+    "line": "Cosmere Roleplaying Game",
+    "rpgKind": "adventure",
+    "canon": {
+      "value": "partly",
+      "source": "https://coppermind.net/wiki/Cosmere_Roleplaying_Game"
+    },
+    "crowdfunding": "https://www.kickstarter.com/projects/brotherwise/the-stormlight-archive-rpg"
   },
   "mistborn-rpg-handbook": {
     "world": "scadrial",
@@ -2329,7 +2553,15 @@
       "https://dungeonmister.com/news/mistborn-setting-digital-launch-today/",
       "https://devir.es/pdf-manual-de-nacidos-de-la-bruma"
     ],
-    "worldBasis": "own-listing"
+    "worldBasis": "own-listing",
+    "publisher": "Brotherwise Games",
+    "line": "Cosmere Roleplaying Game",
+    "rpgKind": "core",
+    "canon": {
+      "value": "partly",
+      "source": "https://coppermind.net/wiki/Cosmere_Roleplaying_Game"
+    },
+    "crowdfunding": "https://www.kickstarter.com/projects/brotherwise/the-stormlight-archive-rpg"
   },
   "mistborn-rpg-world-guide": {
     "world": "scadrial",
@@ -2357,7 +2589,15 @@
       "https://dungeonmister.com/news/mistborn-setting-digital-launch-today/",
       "https://devir.es/pdf-guia-del-mundo-de-nacidos-de-la-bruma"
     ],
-    "worldBasis": "own-listing"
+    "worldBasis": "own-listing",
+    "publisher": "Brotherwise Games",
+    "line": "Cosmere Roleplaying Game",
+    "rpgKind": "world-guide",
+    "canon": {
+      "value": "partly",
+      "source": "https://coppermind.net/wiki/Cosmere_Roleplaying_Game"
+    },
+    "crowdfunding": "https://www.kickstarter.com/projects/brotherwise/the-stormlight-archive-rpg"
   },
   "mistborn-rpg-legacy": {
     "world": "scadrial",
@@ -2385,7 +2625,15 @@
       "https://www.dragonsteelbooks.com/products/mistborn-rpg-handbook",
       "https://devir.es/pdf-nacidos-de-la-bruma-legado"
     ],
-    "worldBasis": "product-line"
+    "worldBasis": "product-line",
+    "publisher": "Brotherwise Games",
+    "line": "Cosmere Roleplaying Game",
+    "rpgKind": "adventure",
+    "canon": {
+      "value": "partly",
+      "source": "https://coppermind.net/wiki/Cosmere_Roleplaying_Game"
+    },
+    "crowdfunding": "https://www.kickstarter.com/projects/brotherwise/the-stormlight-archive-rpg"
   },
   "mistborn-adventure-game-terris": {
     "world": "scadrial",
@@ -2412,7 +2660,10 @@
       "https://coppermind.net/wiki/Terris:_Wrought_of_Copper",
       "https://www.gmsmagazine.com/crafty-games-proudly-brings-the-mistborn-adventure-game-to-gen-con-2011"
     ],
-    "worldBasis": "product-line"
+    "worldBasis": "product-line",
+    "publisher": "Crafty Games",
+    "line": "Mistborn Adventure Game",
+    "rpgKind": "supplement"
   },
   "mistborn-adventure-game-alloy-of-law": {
     "world": "scadrial",
@@ -2439,7 +2690,10 @@
       "https://coppermind.net/wiki/Alloy_of_Law_(rule_book)",
       "https://www.gmsmagazine.com/crafty-games-proudly-brings-the-mistborn-adventure-game-to-gen-con-2011"
     ],
-    "worldBasis": "product-line"
+    "worldBasis": "product-line",
+    "publisher": "Crafty Games",
+    "line": "Mistborn Adventure Game",
+    "rpgKind": "supplement"
   },
   "mistborn-adventure-game-skaa": {
     "world": "scadrial",
@@ -2467,7 +2721,10 @@
       "https://www.gmsmagazine.com/crafty-games-proudly-brings-the-mistborn-adventure-game-to-gen-con-2011",
       "https://nobleknight.com/P/2147614444/Skaa---Tin-and-Ash"
     ],
-    "worldBasis": "product-line"
+    "worldBasis": "product-line",
+    "publisher": "Crafty Games",
+    "line": "Mistborn Adventure Game",
+    "rpgKind": "supplement"
   },
   "mistborn-adventure-game-masks-of-the-past": {
     "world": "scadrial",
@@ -2494,7 +2751,10 @@
       "https://coppermind.net/wiki/Alloy_of_Law:_Masks_of_the_Past",
       "https://www.gmsmagazine.com/crafty-games-proudly-brings-the-mistborn-adventure-game-to-gen-con-2011"
     ],
-    "worldBasis": "product-line"
+    "worldBasis": "product-line",
+    "publisher": "Crafty Games",
+    "line": "Mistborn Adventure Game",
+    "rpgKind": "supplement"
   },
   "mistborn-adventure-game-nobles": {
     "world": "scadrial",
@@ -2521,7 +2781,10 @@
       "https://nobleknight.com/P/2148112371/Nobles---The-Golden-Mandate",
       "https://www.gmsmagazine.com/crafty-games-proudly-brings-the-mistborn-adventure-game-to-gen-con-2011"
     ],
-    "worldBasis": "product-line"
+    "worldBasis": "product-line",
+    "publisher": "Crafty Games",
+    "line": "Mistborn Adventure Game",
+    "rpgKind": "supplement"
   },
   "stormlight-rpg-first-step": {
     "world": "roshar",
@@ -2549,7 +2812,14 @@
       "https://www.dragonsteelbooks.com/products/stormlight-handbook",
       "https://devir.es/el-archivo-de-las-tormentas-el-primer-paso"
     ],
-    "worldBasis": "product-line"
+    "worldBasis": "product-line",
+    "publisher": "Brotherwise Games",
+    "line": "Cosmere Roleplaying Game",
+    "rpgKind": "adventure",
+    "canon": {
+      "value": "partly",
+      "source": "https://coppermind.net/wiki/Cosmere_Roleplaying_Game"
+    }
   },
   "stormlight-rpg-scenarios": {
     "world": "roshar",
@@ -2577,7 +2847,14 @@
       "https://www.dragonsteelbooks.com/products/stormlight-handbook",
       "https://devir.es/archivo-de-las-tormentas-escenarios"
     ],
-    "worldBasis": "product-line"
+    "worldBasis": "product-line",
+    "publisher": "Brotherwise Games",
+    "line": "Cosmere Roleplaying Game",
+    "rpgKind": "supplement",
+    "canon": {
+      "value": "partly",
+      "source": "https://coppermind.net/wiki/Cosmere_Roleplaying_Game"
+    }
   },
   "stormlight-rpg-advanced-adversaries": {
     "world": "roshar",
@@ -2605,7 +2882,14 @@
       "https://www.dragonsteelbooks.com/products/stormlight-handbook",
       "https://devir.es/archivo-de-las-tormentas-adversarios-avanzados"
     ],
-    "worldBasis": "product-line"
+    "worldBasis": "product-line",
+    "publisher": "Brotherwise Games",
+    "line": "Cosmere Roleplaying Game",
+    "rpgKind": "supplement",
+    "canon": {
+      "value": "partly",
+      "source": "https://coppermind.net/wiki/Cosmere_Roleplaying_Game"
+    }
   },
   "stormlight-rpg-law-and-obligation": {
     "world": "roshar",
@@ -2632,7 +2916,14 @@
       "https://coppermind.net/wiki/Law_and_Obligation",
       "https://www.dragonsteelbooks.com/products/stormlight-handbook"
     ],
-    "worldBasis": "product-line"
+    "worldBasis": "product-line",
+    "publisher": "Brotherwise Games",
+    "line": "Cosmere Roleplaying Game",
+    "rpgKind": "adventure",
+    "canon": {
+      "value": "partly",
+      "source": "https://coppermind.net/wiki/Cosmere_Roleplaying_Game"
+    }
   },
   "mistborn-rpg-welcome-to-scadrial": {
     "world": "scadrial",
@@ -2659,7 +2950,14 @@
       "https://www.dragonsteelbooks.com/products/mistborn-rpg-handbook",
       "https://devir.es/pdf-nacidos-de-la-bruma-bienvenidos-a-scadrial"
     ],
-    "worldBasis": "product-line"
+    "worldBasis": "product-line",
+    "publisher": "Brotherwise Games",
+    "line": "Cosmere Roleplaying Game",
+    "rpgKind": "starter",
+    "canon": {
+      "value": "partly",
+      "source": "https://coppermind.net/wiki/Cosmere_Roleplaying_Game"
+    }
   },
   "mistborn-rpg-scenarios": {
     "world": "scadrial",
@@ -2686,6 +2984,13 @@
       "https://coppermind.net/wiki/Mistborn_Scenarios",
       "https://www.dragonsteelbooks.com/products/mistborn-rpg-handbook"
     ],
-    "worldBasis": "product-line"
+    "worldBasis": "product-line",
+    "publisher": "Brotherwise Games",
+    "line": "Cosmere Roleplaying Game",
+    "rpgKind": "supplement",
+    "canon": {
+      "value": "partly",
+      "source": "https://coppermind.net/wiki/Cosmere_Roleplaying_Game"
+    }
   }
 }

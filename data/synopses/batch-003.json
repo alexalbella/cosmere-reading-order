@@ -1,0 +1,502 @@
+[
+ {
+  "book": "mistborn-adventure-game",
+  "text": {
+   "en": "The core rulebook of the first Mistborn tabletop game, published by Crafty Games. It places players in the Final Empire as a crew of heroes and gives them a rules system built around telling a story together. The volume is divided into three parts: the game itself, a reference on the three Metallic Arts, and a section for the Narrator about running stories and keeping secrets. It also opens with a short piece of official fiction by the author of the series. It suits readers who want to play in the world of the novels, not only read about it.",
+   "es": "El manual básico del primer juego de rol de Nacidos de la bruma, publicado por Crafty Games. Coloca a los jugadores en el Imperio Final como una banda de héroes y les ofrece un sistema de reglas pensado para contar una historia entre todos. El volumen se divide en tres partes: el juego en sí, una referencia sobre las tres Artes Metálicas y una sección para el Narrador sobre cómo dirigir historias y guardar secretos. Además, se abre con un relato corto oficial del autor de la saga. Resulta ideal para quien quiera jugar en el mundo de las novelas, y no solo leer sobre él."
+  },
+  "requires": [
+   "mb1",
+   "mb2",
+   "mb3"
+  ],
+  "sources": [
+   {
+    "url": "https://coppermind.net/wiki/Mistborn_Adventure_Game_(rule_book)",
+    "kind": "wiki"
+   },
+   {
+    "url": "https://www.gmsmagazine.com/crafty-games-proudly-brings-the-mistborn-adventure-game-to-gen-con-2011",
+    "kind": "official"
+   }
+  ],
+  "author": "agent:synopsis-batch-003",
+  "verifiedBy": "agent:verify-batch-003",
+  "verifiedOn": "2026-11-14"
+ },
+ {
+  "book": "mistborn-adventure-game-terris",
+  "text": {
+   "en": "A supplement for the Mistborn Adventure Game about the Terris people: their history, their homeland and the metal-storing magic they practise. It describes their principal city, a secretive council and a growing resistance, and it adds rules for creating Terris heroes, with new stunts, equipment and an ability called Networks. The book ends with a complete adventure, a murder investigation that leads a crew from the imperial capital to the farthest corners of the Terris lands. It was developed together with the author of the novels and widens the setting's background for players and Narrators.",
+   "es": "Un suplemento para el juego de rol de Nacidos de la bruma dedicado al pueblo terris: su historia, su tierra natal y la magia de almacenar metales que practican. Describe su ciudad principal, un consejo reservado y una resistencia incipiente, y añade reglas para crear héroes terris, con nuevas proezas, equipo y una habilidad llamada Redes. El libro se cierra con una aventura completa, una investigación por asesinato que lleva a la banda desde la capital imperial hasta los rincones más remotos de las tierras terris. Se desarrolló junto con el autor de las novelas y amplía el trasfondo del mundo para jugadores y Narradores."
+  },
+  "requires": [
+   "mb1",
+   "mb2",
+   "mb3"
+  ],
+  "sources": [
+   {
+    "url": "https://coppermind.net/wiki/Terris:_Wrought_of_Copper",
+    "kind": "wiki"
+   }
+  ],
+  "author": "agent:synopsis-batch-003",
+  "verifiedBy": "agent:verify-batch-003",
+  "verifiedOn": "2026-11-14"
+ },
+ {
+  "book": "mistborn-adventure-game-alloy-of-law",
+  "text": {
+   "en": "A supplement that moves the Mistborn Adventure Game to the setting's second era, three centuries after the first, where lawkeepers, gunslingers and bounty hunters have replaced rebels and thieving crews. It updates character and crew creation, adds new character types, and covers technology, firearms that mix with metal magic, a gazetteer covering the Elendel Basin and its frontier, and advice for Narrators running campaigns in this period. It includes a new short story by the author of the series and a gallery of notable figures from the fourth novel.",
+   "es": "Un suplemento que traslada el juego de rol de Nacidos de la bruma a la segunda era del mundo, trescientos años después de la primera, cuando alguaciles, pistoleros y cazarrecompensas han sustituido a los rebeldes y las bandas de ladrones. Actualiza la creación de personajes y de bandas, añade nuevos tipos de personaje y trata la tecnología, las armas de fuego con un toque mágico, un gazetero de la Cuenca de Elendel y sus tierras fronterizas, y consejos para que el Narrador dirija campañas en esta época. Incluye un relato inédito del autor de la saga y una galería de personajes destacados de la cuarta novela."
+  },
+  "requires": [
+   "mb1",
+   "mb2",
+   "mb3",
+   "mb4"
+  ],
+  "sources": [
+   {
+    "url": "https://coppermind.net/wiki/Alloy_of_Law_(rule_book)",
+    "kind": "wiki"
+   }
+  ],
+  "author": "agent:synopsis-batch-003",
+  "verifiedBy": "agent:verify-batch-003",
+  "verifiedOn": "2026-11-14"
+ },
+ {
+  "book": "mistborn-adventure-game-skaa",
+  "text": {
+   "en": "A supplement centred on the skaa, the labouring underclass of the Final Empire. It covers their beliefs and history, everyday life in the cities, on the canals and on the plantations, and the criminal and political underground. Players receive rules for creating skaa heroes, with new stunts, equipment, Networks and places to explore. The book closes with a full adventure set in the slums of the imperial capital, in which the crew looks for a missing friend and runs into a ruthless syndicate. It was written in cooperation with the author of the novels.",
+   "es": "Un suplemento centrado en los skaa, la clase trabajadora y oprimida del Imperio Final. Trata sus creencias y su historia, la vida cotidiana en las ciudades, los canales y las plantaciones, y el submundo criminal y político. Los jugadores reciben reglas para crear héroes skaa, con nuevas proezas, equipo, Redes y lugares que explorar. El libro termina con una aventura completa ambientada en los barrios bajos de la capital imperial, en la que la banda busca a un amigo desaparecido y se topa con un sindicato implacable. Se escribió en colaboración con el autor de las novelas."
+  },
+  "requires": [
+   "mb1",
+   "mb2",
+   "mb3"
+  ],
+  "sources": [
+   {
+    "url": "https://coppermind.net/wiki/Skaa:_Tin_%26_Ash",
+    "kind": "wiki"
+   }
+  ],
+  "author": "agent:synopsis-batch-003",
+  "verifiedBy": "agent:verify-batch-003",
+  "verifiedOn": "2026-11-14"
+ },
+ {
+  "book": "mistborn-adventure-game-masks-of-the-past",
+  "text": {
+   "en": "A supplement for the Alloy of Law setting of the Mistborn Adventure Game, revised to take in the later novels of that era. It brings the maps and characters up to date and adds background and rules for new kinds of characters, along with relics, universal metalminds, specialised gear and airships. It also guides players through the city of Elendel, New Seran and the Terris enclaves, and it offers eight short story seeds for quick pick-up games or for launching a longer campaign.",
+   "es": "Un suplemento para la ambientación de La aleación de la ley del juego de rol de Nacidos de la bruma, revisado para incorporar las novelas posteriores de esa era. Pone al día los mapas y los personajes, y añade trasfondo y reglas para nuevos tipos de personaje, además de reliquias, metalmentes universales, equipo especializado y dirigibles. También guía a los jugadores por la ciudad de Elendel, Nueva Seran y los enclaves terris, y ofrece ocho semillas de historia breves para partidas rápidas o para arrancar una campaña más larga."
+  },
+  "requires": [
+   "mb1",
+   "mb2",
+   "mb3",
+   "mb4",
+   "mb5",
+   "mb6"
+  ],
+  "sources": [
+   {
+    "url": "https://coppermind.net/wiki/Alloy_of_Law:_Masks_of_the_Past",
+    "kind": "wiki"
+   }
+  ],
+  "author": "agent:synopsis-batch-003",
+  "verifiedBy": "agent:verify-batch-003",
+  "verifiedOn": "2026-11-14"
+ },
+ {
+  "book": "mistborn-adventure-game-nobles",
+  "text": {
+   "en": "Last of the supplements released for the Mistborn Adventure Game, devoted to the nobility of the Final Empire. It covers the ten Great Houses and the ambitious Lesser Houses, drawing on the novels and on material first created for the board game Mistborn: House War. Players get rules for noble heroes, including traits, stunts and a Family power, plus options for playing a Hazekiller and advice on adding nobles to a skaa crew. For Narrators there is a multi-session adventure that takes the crew into the Eastern Dominance.",
+   "es": "El último suplemento del juego de rol de Nacidos de la bruma, dedicado a la nobleza del Imperio Final. Trata las diez Grandes Casas y las ambiciosas Casas Menores, y se nutre de las novelas y del trasfondo desarrollado para el juego de mesa Mistborn: House War. Los jugadores obtienen reglas para héroes nobles, con rasgos, proezas y un poder de Familia, además de opciones para interpretar a un Hazekiller y consejos para incorporar nobles a una banda skaa. Para el Narrador hay una aventura de varias sesiones que lleva a la banda al Dominio Oriental."
+  },
+  "requires": [
+   "mb1",
+   "mb2",
+   "mb3"
+  ],
+  "sources": [
+   {
+    "url": "https://nobleknight.com/P/2148112371/Nobles---The-Golden-Mandate",
+    "kind": "official"
+   }
+  ],
+  "author": "agent:synopsis-batch-003",
+  "verifiedBy": "agent:verify-batch-003",
+  "verifiedOn": "2026-11-14"
+ },
+ {
+  "book": "mistborn-rpg-handbook",
+  "text": {
+   "en": "The main rulebook for the Mistborn setting of the Cosmere Roleplaying Game, by Brotherwise Games. Players build characters for either of the setting's two eras: one a dark world of crews, rebels and noble soirées, the other a frontier of gunslingers and conspiracies. The book teaches the Metallic Arts and how a character gains power as levels rise. It is the volume a group needs before any other for this setting, and it points game masters on to the World Guide and the Legacy campaign.",
+   "es": "El libro de reglas principal de la ambientación de Nacidos de la bruma dentro del Juego de rol del Cosmere, obra de Brotherwise Games. Los jugadores crean personajes de cualquiera de las dos eras del mundo: una oscura, de bandas, rebeldes y veladas nobles, y otra fronteriza, de pistoleros y conspiraciones. Enseña las Artes Metálicas y cómo gana poder un personaje al subir de nivel. Es el volumen que un grupo necesita antes que ningún otro para esta ambientación, y remite a quien dirige a la Guía del mundo y a la campaña Legado."
+  },
+  "requires": [
+   "mb1",
+   "mb2",
+   "mb3",
+   "mb4",
+   "mb5",
+   "mb6",
+   "mb7"
+  ],
+  "sources": [
+   {
+    "url": "https://www.dragonsteelbooks.com/products/mistborn-rpg-handbook",
+    "kind": "official"
+   },
+   {
+    "url": "https://dungeonmister.com/news/mistborn-setting-digital-launch-today/",
+    "kind": "official"
+   },
+   {
+    "url": "https://devir.es/pdf-manual-de-nacidos-de-la-bruma",
+    "kind": "official"
+   }
+  ],
+  "author": "agent:synopsis-batch-003",
+  "verifiedBy": "agent:verify-batch-003",
+  "verifiedOn": "2026-11-14"
+ },
+ {
+  "book": "mistborn-rpg-world-guide",
+  "text": {
+   "en": "A large illustrated reference on the world of Scadrial, written for the Cosmere Roleplaying Game and covering its first two eras. It goes through the history and peoples of the setting and introduces notable figures, and game masters also find adversary options in it. The publisher calls it the first official art book of the series. It is designed to sit next to the Mistborn Handbook, and anyone who simply wants more background on the novels' world can read it too.",
+   "es": "Un voluminoso libro de consulta ilustrado sobre el mundo de Scadrial, escrito para el Juego de rol del Cosmere y centrado en sus dos primeras eras. Recorre la historia y los pueblos de la ambientación, presenta a personajes destacados y ofrece a los directores de juego opciones de adversarios. La editorial lo presenta como el primer libro oficial de ilustraciones de la serie. Está pensado para usarse junto al Manual, aunque también sirve a quien solo busque más trasfondo sobre el universo de las novelas."
+  },
+  "requires": [
+   "mb1",
+   "mb2",
+   "mb3",
+   "mb4",
+   "mb5",
+   "mb6",
+   "mb7"
+  ],
+  "sources": [
+   {
+    "url": "https://www.dragonsteelbooks.com/products/mistborn-rpg-world-guide",
+    "kind": "official"
+   },
+   {
+    "url": "https://devir.es/pdf-guia-del-mundo-de-nacidos-de-la-bruma",
+    "kind": "official"
+   }
+  ],
+  "author": "agent:synopsis-batch-003",
+  "verifiedBy": "agent:verify-batch-003",
+  "verifiedOn": "2026-11-14"
+ },
+ {
+  "book": "mistborn-rpg-legacy",
+  "text": {
+   "en": "A campaign adventure for the Cosmere Roleplaying Game that runs through both eras of the Mistborn setting with two different groups of characters. The first group, at levels 1 to 6, deals with noble society, dark secrets and a city under siege. The second, at levels 3 to 9, arrives centuries later on a treasure hunt, and what happened in the earlier play carries over into it. A copy of the Mistborn Handbook is required, and downloadable resources come with the book. It is aimed at a game master with many sessions to fill.",
+   "es": "Una aventura de campaña dentro del Juego de rol del Cosmere, que atraviesa las dos eras de Nacidos de la bruma con dos grupos de personajes distintos. El primero, de niveles 1 a 6, se mueve entre la alta sociedad, secretos oscuros y una ciudad bajo asedio. El segundo, de niveles 3 a 9, aparece siglos después en una búsqueda del tesoro, y lo ocurrido en la primera parte repercute en ella. Para jugarla se necesita el Manual de la ambientación, y el libro incluye recursos descargables. Va dirigida a un director de juego con muchas sesiones por delante."
+  },
+  "requires": [
+   "mb1",
+   "mb2",
+   "mb3",
+   "mb4",
+   "mb5",
+   "mb6",
+   "mb7"
+  ],
+  "sources": [
+   {
+    "url": "https://www.dragonsteelbooks.com/products/mistborn-legacy-adventure-cosmere-rpg",
+    "kind": "official"
+   },
+   {
+    "url": "https://devir.es/pdf-nacidos-de-la-bruma-legado",
+    "kind": "official"
+   }
+  ],
+  "author": "agent:synopsis-batch-003",
+  "verifiedBy": "agent:verify-batch-003",
+  "verifiedOn": "2026-11-14"
+ },
+ {
+  "book": "mistborn-rpg-welcome-to-scadrial",
+  "text": {
+   "en": "A slim illustrated booklet that gives a first look at the world of Scadrial. It sketches the world's history, its faiths and its peoples in pictures, and it avoids spoiling the plot of the novels. It is written for readers about to start the books and for players about to start the Cosmere Roleplaying Game, and it leads on to the Mistborn Handbook and World Guide for the full rules and setting information.",
+   "es": "Un folleto ilustrado y breve con una primera mirada al mundo de Scadrial. Resume en imágenes su historia, sus creencias y sus pueblos, y evita desvelar giros de la trama de las novelas. Está escrito tanto para quien va a empezar a leer la saga como para quien va a jugar al Juego de rol del Cosmere, y da paso al Manual y a la Guía del mundo de la ambientación, que traen las reglas completas y el material de ambientación."
+  },
+  "requires": [
+   "mb1"
+  ],
+  "sources": [
+   {
+    "url": "https://devir.es/pdf-nacidos-de-la-bruma-bienvenidos-a-scadrial",
+    "kind": "official"
+   },
+   {
+    "url": "https://www.dragonsteelbooks.com/products/mistborn-rpg-handbook",
+    "kind": "official"
+   }
+  ],
+  "author": "agent:synopsis-batch-003",
+  "verifiedBy": "agent:verify-batch-003",
+  "verifiedOn": "2026-11-14"
+ },
+ {
+  "book": "mistborn-rpg-scenarios",
+  "text": {
+   "en": "A supplement of six short scenarios for the Mistborn setting of the Cosmere Roleplaying Game, built for sessions with little preparation and spread across both eras. They can be played on their own or added to a larger campaign. The missions include a prisoner rescue from a stronghold, a dinner-party assassination that goes sideways, an armoured carriage under attack, a hostage negotiation aboard an airship, an investigation of tainted metals, and a covert interception in a hidden club.",
+   "es": "Un suplemento con seis escenarios cortos para la ambientación de Nacidos de la bruma del Juego de rol del Cosmere, pensados para sesiones con poca preparación y repartidos entre las dos eras. Se pueden jugar por separado o añadir a una campaña mayor. Las misiones incluyen el rescate de un prisionero en una fortaleza, un asesinato en una cena que se tuerce, un carruaje blindado bajo ataque, una negociación de rehenes a bordo de un dirigible, la investigación de unos metales adulterados y una interceptación encubierta en un club secreto."
+  },
+  "requires": [
+   "mb1",
+   "mb2",
+   "mb3",
+   "mb4",
+   "mb5",
+   "mb6",
+   "mb7"
+  ],
+  "sources": [
+   {
+    "url": "https://coppermind.net/wiki/Mistborn_Scenarios",
+    "kind": "wiki"
+   }
+  ],
+  "author": "agent:synopsis-batch-003",
+  "verifiedBy": "agent:verify-batch-003",
+  "verifiedOn": "2026-11-14"
+ },
+ {
+  "book": "stormlight-rpg-first-step",
+  "text": {
+   "en": "A short adventure for the Stormlight setting of the Cosmere Roleplaying Game, run as a session zero: players start with empty character sheets and fill them in as the story goes. What each player chooses shapes who the character becomes and what happens to a convoy attacked on the road. The booklet carries the basic rules, though the Stormlight Handbook rounds things out, and it can double as a lead-in to the Stonewalkers adventure.",
+   "es": "Una aventura breve ambientada en Roshar, dentro del Juego de rol del Cosmere, que se juega como sesión cero: los jugadores arrancan con la hoja de personaje vacía y la rellenan a medida que avanza la historia. Lo que elige cada uno define en quién se convierte su personaje y qué le sucede a una caravana atacada en el camino. Trae las reglas básicas, aunque el Manual completa la experiencia, y puede servir de preludio a la aventura Caminapiedras."
+  },
+  "requires": [
+   "sa1"
+  ],
+  "sources": [
+   {
+    "url": "https://devir.es/el-archivo-de-las-tormentas-el-primer-paso",
+    "kind": "official"
+   },
+   {
+    "url": "https://coppermind.net/wiki/Cosmere_Roleplaying_Game",
+    "kind": "wiki"
+   }
+  ],
+  "author": "agent:synopsis-batch-003",
+  "verifiedBy": "agent:verify-batch-003",
+  "verifiedOn": "2026-11-14"
+ },
+ {
+  "book": "stormlight-rpg-handbook",
+  "text": {
+   "en": "The main rulebook for the Stormlight setting of the Cosmere Roleplaying Game. Players and game masters use it to create characters of many kinds, from soldiers and scholars to wielders of Shardblades and users of Surgebinding, and it sets out the oaths through which a hero becomes a Radiant. The World Guide, the Stonewalkers adventure and the later Stormlight books are all written to be used with it.",
+   "es": "El libro de reglas principal de la ambientación de Roshar dentro del Juego de rol del Cosmere. Con él, jugadores y directores de juego crean personajes de todo tipo, desde soldados y eruditos hasta portadores de Esquilas y Potenciadores, y encuentran los juramentos con los que un héroe pasa a ser Radiante. La Guía del mundo, la aventura Caminapiedras y el resto de libros posteriores de la serie están pensados para usarse con él, y todos dan por hecho que se tiene."
+  },
+  "requires": [
+   "sa1",
+   "sa2",
+   "sa3",
+   "sa4",
+   "sa5"
+  ],
+  "sources": [
+   {
+    "url": "https://www.dragonsteelbooks.com/products/stormlight-handbook",
+    "kind": "official"
+   },
+   {
+    "url": "https://devir.es/manual-del-archivo-de-las-tormentas",
+    "kind": "official"
+   }
+  ],
+  "author": "agent:synopsis-batch-003",
+  "verifiedBy": "agent:verify-batch-003",
+  "verifiedOn": "2026-11-14"
+ },
+ {
+  "book": "stormlight-rpg-world-guide",
+  "text": {
+   "en": "A richly illustrated sourcebook on Roshar for the Cosmere Roleplaying Game. It surveys the world's history, its cultures and its leading figures, and for game masters it adds adversary options. The publisher describes it as the first official art book of the series. Used together with the Handbook, it supplies what a group needs to start a campaign, and readers of the novels can treat it as extra background on the world.",
+   "es": "Un libro de consulta con abundantes ilustraciones sobre Roshar para el Juego de rol del Cosmere. Repasa la historia, las culturas y los personajes principales del mundo, y suma opciones de adversarios para quien dirige la partida. La editorial lo describe como el primer libro oficial de ilustraciones de la saga. Junto con el Manual aporta lo necesario para iniciar una campaña, y quien lea las novelas puede aprovecharlo como trasfondo adicional del mundo."
+  },
+  "requires": [
+   "sa1",
+   "sa2",
+   "sa3",
+   "sa4",
+   "sa5"
+  ],
+  "sources": [
+   {
+    "url": "https://www.dragonsteelbooks.com/products/bw-stormlight-world-guide",
+    "kind": "official"
+   },
+   {
+    "url": "https://devir.es/guia-del-mundo-del-archivo-de-las-tormentas",
+    "kind": "official"
+   }
+  ],
+  "author": "agent:synopsis-batch-003",
+  "verifiedBy": "agent:verify-batch-003",
+  "verifiedOn": "2026-11-14"
+ },
+ {
+  "book": "stormlight-rpg-welcome-to-roshar",
+  "text": {
+   "en": "A short illustrated booklet offering a first look at Roshar, written for readers of the novels and for players of the Cosmere Roleplaying Game alike. In pictures it presents the world's flora and fauna, its peoples and its magic, and it deliberately avoids spoiling the plot. It points on to the Stormlight Handbook and the World Guide for the full rules and the deeper background.",
+   "es": "Un folleto ilustrado y breve que ofrece una primera mirada a Roshar, escrito por igual para quien lee las novelas y para quien juega al Juego de rol del Cosmere. Muestra con imágenes las plantas, los animales, los pueblos y la magia del mundo, y evita adrede destripar la trama. Remite al Manual y a la Guía del mundo de la serie para consultar las reglas completas y el trasfondo más profundo."
+  },
+  "requires": [
+   "sa1"
+  ],
+  "sources": [
+   {
+    "url": "https://www.dragonsteelbooks.com/products/bw-welcome-to-roshar-guide-book",
+    "kind": "official"
+   },
+   {
+    "url": "https://devir.es/el-archivo-de-las-tormentas-bienvenidos-a-roshar",
+    "kind": "official"
+   }
+  ],
+  "author": "agent:synopsis-batch-003",
+  "verifiedBy": "agent:verify-batch-003",
+  "verifiedOn": "2026-11-14"
+ },
+ {
+  "book": "stormlight-rpg-bridge-nine",
+  "text": {
+   "en": "An introductory adventure for first-level characters in the Stormlight setting of the Cosmere Roleplaying Game. Set during the war on the Shattered Plains, it follows an expedition whose few survivors must find their way home through the chasms and across a dangerous night. For the game master it is a run of scenes designed to teach the rules, and it comes with six pregenerated characters and adversary profiles. The Stormlight Handbook is needed to play.",
+   "es": "Una aventura de iniciación para personajes de nivel 1 en Roshar, dentro del Juego de rol del Cosmere. Transcurre durante la guerra en las Llanuras Quebradas y sigue a una expedición que sufre una desgracia: los pocos supervivientes deben regresar a casa por los abismos y aguantar una noche peligrosa. Para quien dirige, es una cadena de escenas pensadas para enseñar las reglas; incluye seis personajes ya preparados y perfiles de adversarios. Hace falta el Manual para jugar."
+  },
+  "requires": [
+   "sa1"
+  ],
+  "sources": [
+   {
+    "url": "https://coppermind.net/wiki/Bridge_Nine_(adventure)",
+    "kind": "wiki"
+   },
+   {
+    "url": "https://www.dragonsteelbooks.com/products/bw-stormlight-bridge-nine-adventure",
+    "kind": "official"
+   },
+   {
+    "url": "https://devir.es/el-archivo-de-las-tormentas-puente-nueve",
+    "kind": "official"
+   }
+  ],
+  "author": "agent:synopsis-batch-003",
+  "verifiedBy": "agent:verify-batch-003",
+  "verifiedOn": "2026-11-14"
+ },
+ {
+  "book": "stonewalkers",
+  "text": {
+   "en": "A long adventure for the Cosmere Roleplaying Game that takes characters from first to eighth level across Roshar. It was created in close partnership with the author of the series and a co-writer. The party pursues a corrupted Radiant, tries to recover a stolen legendary weapon, and eventually faces the choice of whether to swear Radiant oaths. The Stormlight Handbook is required to play, and The First Step can serve as a prologue.",
+   "es": "Una larga aventura de campaña, dentro del Juego de rol del Cosmere, que acompaña a los personajes del nivel 1 al 8 por todo Roshar. Se creó en estrecha colaboración con el autor de la saga y con un coautor. El grupo persigue a un Radiante corrupto, intenta recuperar un arma legendaria robada y acaba ante la decisión de pronunciar o no los juramentos radiantes. Para jugarla hace falta el Manual, y El primer paso puede servir de prólogo."
+  },
+  "requires": [
+   "sa1",
+   "sa2",
+   "sa3",
+   "sa4",
+   "sa5"
+  ],
+  "sources": [
+   {
+    "url": "https://www.dragonsteelbooks.com/products/bw-stormlight-stonewalkers-adventure",
+    "kind": "official"
+   },
+   {
+    "url": "https://devir.es/el-archivo-de-las-tormentas-caminapiedras",
+    "kind": "official"
+   }
+  ],
+  "author": "agent:synopsis-batch-003",
+  "verifiedBy": "agent:verify-batch-003",
+  "verifiedOn": "2026-11-14"
+ },
+ {
+  "book": "stormlight-rpg-scenarios",
+  "text": {
+   "en": "A supplement of seven short scenarios for the Stormlight setting, written for sessions with little preparation. They vary in tone, level, place and kind of scene, and they can be played alone or slotted into a larger campaign. The stories range from a light-hearted caper and a mystery among travellers to the exploration of a vast ruin and a dangerous mission through a highstorm. The Stormlight Handbook and World Guide are needed to play.",
+   "es": "Un suplemento con siete escenarios cortos para la ambientación de Roshar, pensados para sesiones con poca preparación. Varían en tono, nivel, lugar y tipo de escena, y pueden jugarse solos o encajarse en una campaña mayor. Las historias van desde una travesura desenfadada y un misterio entre viajeros hasta la exploración de unas ruinas inmensas y una misión peligrosa en plena tormenta. Para jugar se necesitan los dos libros base, el Manual y la Guía del mundo."
+  },
+  "requires": [
+   "sa1",
+   "sa2",
+   "sa3",
+   "sa4"
+  ],
+  "sources": [
+   {
+    "url": "https://coppermind.net/wiki/Stormlight_Scenarios",
+    "kind": "wiki"
+   },
+   {
+    "url": "https://devir.es/archivo-de-las-tormentas-escenarios",
+    "kind": "official"
+   }
+  ],
+  "author": "agent:synopsis-batch-003",
+  "verifiedBy": "agent:verify-batch-003",
+  "verifiedOn": "2026-11-14"
+ },
+ {
+  "book": "stormlight-rpg-advanced-adversaries",
+  "text": {
+   "en": "A short Stormlight supplement for higher-tier play and more varied combat encounters. It adds new enemy profiles, stronger and weaker variants of existing ones, and modular Surgebinding abilities that can be attached to adversaries that lack them. It is a slim volume of about twenty pages that builds on the core Stormlight books, and game masters need those books in order to use it at the table.",
+   "es": "Un suplemento breve de El Archivo de las Tormentas para partidas de nivel alto y combates más variados. Añade nuevos perfiles de enemigos, variantes más fuertes y más débiles de los ya existentes, y módulos de potenciación que se pueden acoplar a adversarios que no los tienen. Ocupa unas veinte páginas y se apoya en los libros básicos de la ambientación, que el director de juego necesita para sacarle partido."
+  },
+  "requires": [
+   "sa1",
+   "sa2",
+   "sa3",
+   "sa4",
+   "sa5"
+  ],
+  "sources": [
+   {
+    "url": "https://coppermind.net/wiki/Advanced_Adversaries",
+    "kind": "wiki"
+   },
+   {
+    "url": "https://devir.es/archivo-de-las-tormentas-adversarios-avanzados",
+    "kind": "official"
+   }
+  ],
+  "author": "agent:synopsis-batch-003",
+  "verifiedBy": "agent:verify-batch-003",
+  "verifiedOn": "2026-11-14"
+ },
+ {
+  "book": "stormlight-rpg-law-and-obligation",
+  "text": {
+   "en": "An introductory adventure for third-level characters in the Stormlight setting, set around the end of the second novel. A party sent to the city of Kharbranth with a message for a runaway ends up having to shield a budding Radiant from a capable and determined pursuer. It comes with seven pregenerated characters and an optional extra one, and it is designed for six or fewer players.",
+   "es": "Una aventura introductoria para personajes de nivel 3, situada en Roshar hacia el final de la segunda novela. Un grupo enviado a entregar un mensaje a un fugitivo en la ciudad de Kharbranth acaba teniendo que proteger a un Radiante en ciernes de un perseguidor hábil y decidido. Incluye siete personajes ya preparados y uno opcional adicional, y está pensada para seis jugadores o menos."
+  },
+  "requires": [
+   "sa1",
+   "sa2"
+  ],
+  "sources": [
+   {
+    "url": "https://coppermind.net/wiki/Law_and_Obligation",
+    "kind": "wiki"
+   }
+  ],
+  "author": "agent:synopsis-batch-003",
+  "verifiedBy": "agent:verify-batch-003",
+  "verifiedOn": "2026-11-14"
+ }
+]

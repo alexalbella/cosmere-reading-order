@@ -1,0 +1,82 @@
+[
+  {
+    "book": "au",
+    "text": {
+      "en": "A collection of Brandon Sanderson's shorter Cosmere fiction, released in late 2016. It gathers seven stories that had appeared earlier in scattered places and adds one new novella. The pieces are grouped by planetary system, each section opening with a short in-world essay by a scholar who studies these worlds, together with a chart of the system. The book also has a star map of the whole setting and fresh illustrations for every story. It works as a sampler of the shared universe and its different magics, with no need to read anything else first.",
+      "es": "Una colección de la narrativa corta del Cosmere de Brandon Sanderson, publicada a finales de 2016. Reúne siete relatos aparecidos antes en lugares dispersos y suma una novela corta inédita. Las piezas se agrupan por sistema planetario, y cada sección se abre con un breve ensayo escrito desde dentro del universo por una erudita que estudia esos mundos, junto con una carta del sistema. El volumen incluye además un mapa estelar de todo el escenario e ilustraciones nuevas para cada historia. Funciona como muestrario del universo compartido y de sus distintas magias, sin exigir lecturas previas."
+    },
+    "open": true,
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Arcanum_Unbounded",
+        "kind": "wiki"
+      }
+    ],
+    "author": "agent:synopsis-batch-007",
+    "verifiedBy": "agent:verify-batch-007",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "book": "fires-of-december",
+    "text": {
+      "en": "A 2026 stand-alone Cosmere novel, first issued in a premium illustrated edition for crowdfunding backers and later to the general public. It takes place in a kingdom whose rivers carry a vivid, unusual liquid that the land depends on. The central figure is an orphan from a modest riverside town who has spent her life trying to meet what others expect of her. A strange experience leaves her certain that a calamity is coming for the realm. Few will listen to someone of her standing, so she travels upriver toward the king's court with two new friends, meeting sceptical officials along the way. It can be read first.",
+      "es": "Una novela independiente del Cosmere de 2026, publicada primero en una edición ilustrada premium para los mecenas de una campaña y más tarde para el público general. Transcurre en un reino cuyos ríos arrastran un líquido vistoso y fuera de lo común del que depende la tierra. La figura central es una huérfana de un modesto pueblo ribereño que se ha pasado la vida intentando cumplir lo que los demás esperan de ella. Una vivencia extraña la deja convencida de que una calamidad se cierne sobre el reino. Pocos escucharán a alguien de su condición, así que viaja río arriba hacia la corte del rey con dos nuevas amigas y se topa con funcionarios escépticos. Puede leerse sin lecturas previas."
+    },
+    "open": true,
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/The_Fires_of_December",
+        "kind": "wiki"
+      },
+      {
+        "url": "https://www.dragonsteelbooks.com/products/the-fires-of-december-ebook",
+        "kind": "official"
+      }
+    ],
+    "author": "agent:synopsis-batch-007",
+    "verifiedBy": "agent:verify-batch-007",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "book": "aon",
+    "text": {
+      "en": "An early, unpublished novel by Brandon Sanderson, the tenth he wrote, now regarded as non-canon. It was shelved because its tone swung between near-comic court scheming and the ruin of a whole world. The premise follows the passed-over elder son of an emperor in a setting built on a magic called aether. When war with an overwhelming enemy breaks out and the heir falls, he secretly takes the heir's place, facing a senate, a war council and rival suitors. Copies once circulated by request under a promise of privacy.",
+      "es": "Una novela temprana e inédita de Brandon Sanderson, la décima que escribió, considerada hoy no canónica. Quedó aparcada porque su tono oscilaba entre unas intrigas cortesanas casi cómicas y la destrucción de un mundo entero. La premisa sigue al hijo mayor, relegado, de un emperador en un escenario construido sobre una magia llamada éter. Cuando estalla la guerra contra un enemigo abrumador y cae el heredero, ocupa en secreto su lugar y se enfrenta a un senado, a un consejo de guerra y a pretendientes rivales. Antaño circularon copias bajo petición y con promesa de no difundirlas."
+    },
+    "open": true,
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/Aether_of_Night",
+        "kind": "wiki"
+      }
+    ],
+    "author": "agent:synopsis-batch-007",
+    "verifiedBy": "agent:verify-batch-007",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "book": "hoids-storybook-collection",
+    "text": {
+      "en": "A premium illustrated collection of picture books, funded through a Dragonsteel crowdfunding campaign in 2026. Each book retells a tale presented as told by a wandering storyteller, with new artwork and a special edition format; the campaign also offered extras such as a flute, plush figures and pins. Backers' copies shipped in autumn 2026, and some books are meant to reach other editions later. It suits readers who like story-within-a-story fables, and it asks nothing of the reader beforehand.",
+      "es": "Una colección ilustrada de álbumes, de edición cuidada, financiada mediante una campaña de micromecenazgo de Dragonsteel en 2026. Cada libro recupera un cuento presentado como relato de un narrador errante, con ilustraciones nuevas y un formato de edición especial; la campaña ofreció además extras como una flauta, peluches y pins. Los ejemplares de los mecenas se enviaron en otoño de 2026, y algunos títulos llegarán más adelante en otras ediciones. Encaja con quien disfruta de fábulas de historias dentro de historias, y no pide ninguna lectura previa."
+    },
+    "open": true,
+    "sources": [
+      {
+        "url": "https://www.dragonsteelbooks.com/blogs/the-cognitive-realm/hoids-storybook-collection-backerkit",
+        "kind": "official"
+      },
+      {
+        "url": "https://hoids-storybook.backerkit.com/hosted_preorders/project_updates",
+        "kind": "official"
+      },
+      {
+        "url": "https://www.brandonsanderson.com/blogs/blog/state-of-the-sanderson-2025",
+        "kind": "official"
+      }
+    ],
+    "author": "agent:synopsis-batch-007",
+    "verifiedBy": "agent:verify-batch-007",
+    "verifiedOn": "2026-11-14"
+  }
+]
