@@ -3,7 +3,7 @@ import { spawnSync } from 'node:child_process'
 import { mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test, vi } from 'vitest'
 import { placeholdersIn } from '../../scripts/check-deploy-config'
 import { fillDeployConfig } from '../../scripts/fill-deploy-config'
 
@@ -36,6 +36,9 @@ describe('fillDeployConfig', () => {
     expect(() => fillDeployConfig(TEMPLATE, { ...ALL, accessAud: 'a b' })).toThrow('bad: ACCESS_AUD')
   })
 })
+
+// These start the real script in a process of its own: past the default five seconds when the whole suite runs beside them.
+vi.setConfig({ testTimeout: 30_000 })
 
 describe('the script', () => {
   const run = (env: Record<string, string>) => {
