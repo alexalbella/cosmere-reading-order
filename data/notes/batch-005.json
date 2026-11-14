@@ -1,0 +1,285 @@
+[
+  {
+    "id": "n-5000",
+    "kind": "wob",
+    "books": [
+      "wsgn"
+    ],
+    "requires": [
+      "wsgn",
+      "wsp"
+    ],
+    "text": {
+      "en": "The graphic novel adaptation was planned as three volumes, and Brandon said the adapter trimmed everything the story did not need.",
+      "es": "La adaptación a novela gráfica se planeó en tres volúmenes, y Brandon dijo que el guionista recortó todo lo que la historia no necesitaba."
+    },
+    "quote": {
+      "en": "The person that we gave it to to do the adaptation, the writer, took my words and cut out all of the crap that it didn’t need",
+      "es": "La persona a la que le dimos la adaptación, el guionista, cogió mis palabras y eliminó toda la morralla que no hacía falta"
+    },
+    "sources": [
+      {
+        "kind": "word-of-brandon",
+        "url": "https://wob.coppermind.net/events/69/#e6088",
+        "label": "Arcanum: Shadows of Self release party, 2015-10-05"
+      }
+    ],
+    "author": "agent:notes-batch-005",
+    "verifiedBy": "agent:verify-batch-005",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-5001",
+    "kind": "wob",
+    "books": [
+      "sfs"
+    ],
+    "requires": [
+      "sfs"
+    ],
+    "text": {
+      "en": "Brandon confirmed that the magic system is only loosely based on Sabbath observance: it began stricter and loosened as he wrote.",
+      "es": "Brandon confirmó que el sistema de magia se basa solo de forma muy libre en la observancia del sabbat: empezó siendo más estricto y se fue aflojando al escribir."
+    },
+    "quote": {
+      "en": "Yes. Very loose!",
+      "es": "Sí. ¡Muy libre!"
+    },
+    "sources": [
+      {
+        "kind": "word-of-brandon",
+        "url": "https://wob.coppermind.net/events/395/#e13075",
+        "label": "Arcanum: ICon 2019, 2019-10-15"
+      }
+    ],
+    "author": "agent:notes-batch-005",
+    "verifiedBy": "agent:verify-batch-005",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-5002",
+    "kind": "wob",
+    "books": [
+      "sfs"
+    ],
+    "requires": [
+      "sfs",
+      "tnb"
+    ],
+    "text": {
+      "en": "Asked about the future of the survivors, Brandon said they could find a way toward more stability, and that he might one day write a full novel on their world.",
+      "es": "Al preguntarle por el futuro de los supervivientes, Brandon dijo que podrían hallar una salida hacia una mayor estabilidad, y que quizá algún día escriba una novela completa sobre su mundo."
+    },
+    "quote": {
+      "en": "I would say that there is a way out for them, a way toward more stability.",
+      "es": "Yo diría que hay una salida para ellos, un camino hacia más estabilidad."
+    },
+    "sources": [
+      {
+        "kind": "word-of-brandon",
+        "url": "https://wob.coppermind.net/events/508/#e15867",
+        "label": "Arcanum: Dragonsteel 2022, 2022-11-14"
+      }
+    ],
+    "author": "agent:notes-batch-005",
+    "verifiedBy": "agent:audit-wave2",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-5003",
+    "kind": "wob",
+    "books": [
+      "sotd"
+    ],
+    "requires": [
+      "sotd",
+      "iote"
+    ],
+    "text": {
+      "en": "In 2015 Brandon placed this novella at the far future end of the Cosmere stories he had written so far.",
+      "es": "En 2015 Brandon situó esta novela corta en el extremo más futuro de las historias del Cosmere que había escrito hasta entonces."
+    },
+    "quote": {
+      "en": "It is probably the furthest future of any of the cosmere stories I’ve done.",
+      "es": "Es probablemente el futuro más lejano de cualquiera de las historias del cosmere que he escrito."
+    },
+    "sources": [
+      {
+        "kind": "word-of-brandon",
+        "url": "https://wob.coppermind.net/events/61/#e1286",
+        "label": "Arcanum: Firefight Seattle UBooks signing, 2015-01-06"
+      }
+    ],
+    "author": "agent:notes-batch-005",
+    "verifiedBy": "agent:audit-wave2",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-5004",
+    "kind": "wob",
+    "books": [
+      "sotd"
+    ],
+    "requires": [
+      "sotd"
+    ],
+    "text": {
+      "en": "Brandon said the Krell of this novella are unrelated to the Krell of his Skyward books; he simply liked the name.",
+      "es": "Brandon dijo que los krell de esta novela corta no tienen relación con los krell de sus libros de Skyward; simplemente le gustaba el nombre."
+    },
+    "quote": {
+      "en": "Krell in Sixth of the Dusk is just me looking for a thing that sounds like the right name for the thing.",
+      "es": "Los krell de Sexto del ocaso son solo yo buscando algo que sonara como el nombre adecuado para esa cosa."
+    },
+    "sources": [
+      {
+        "kind": "word-of-brandon",
+        "url": "https://wob.coppermind.net/events/364/#e11535",
+        "label": "Arcanum: The Great American Read: Other Worlds with Brandon Sanderson, 2018-10-25"
+      }
+    ],
+    "author": "agent:notes-batch-005",
+    "verifiedBy": "agent:verify-batch-005",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-5005",
+    "kind": "wob",
+    "books": [
+      "iote"
+    ],
+    "requires": [
+      "iote"
+    ],
+    "text": {
+      "en": "The title was chosen after Brandon polled readers: they preferred the longer form to the bare working title, and a cover mockup sealed it.",
+      "es": "El título se eligió tras consultar Brandon a los lectores: preferían la forma larga al título provisional a secas, y una maqueta de portada lo decidió."
+    },
+    "quote": {
+      "en": "everyone likes Isles of the Emberdark better than just Emberdark",
+      "es": "a todo el mundo le gusta más Isles of the Emberdark que solo Emberdark"
+    },
+    "sources": [
+      {
+        "kind": "word-of-brandon",
+        "url": "https://wob.coppermind.net/events/533/#e16513",
+        "label": "Arcanum: Secret Project #5 Reveal and Livestream, 2024-03-22"
+      }
+    ],
+    "author": "agent:notes-batch-005",
+    "verifiedBy": "agent:verify-batch-005",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-5006",
+    "kind": "wob",
+    "books": [
+      "wsp"
+    ],
+    "requires": [
+      "wsp"
+    ],
+    "text": {
+      "en": "Brandon explained in 2014 why this novel stayed unpublished: its protagonist lacked depth by his current standards and the narrative wandered.",
+      "es": "En 2014 Brandon explicó por qué esta novela siguió sin publicarse: su protagonista carecía de profundidad según sus estándares actuales y la narración divagaba."
+    },
+    "quote": {
+      "en": "Beyond that I feel that White Sand as a narrative meanders a little too much.",
+      "es": "Además, siento que White Sand como narración divaga un poco demasiado."
+    },
+    "sources": [
+      {
+        "kind": "word-of-brandon",
+        "url": "https://wob.coppermind.net/events/221/#e6228",
+        "label": "Arcanum: Words of Radiance Omaha signing, 2014-03-13"
+      }
+    ],
+    "author": "agent:notes-batch-005",
+    "verifiedBy": "agent:verify-batch-005",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-5007",
+    "kind": "wob",
+    "books": [
+      "dsp"
+    ],
+    "requires": [
+      "dsp"
+    ],
+    "text": {
+      "en": "In 2020 Brandon said this early novel could now be released without spoiling anything, and he was tempted to include it in a coming Kickstarter.",
+      "es": "En 2020 Brandon dijo que esta novela temprana ya podía publicarse sin destripar nada, y que le tentaba incluirla en un próximo Kickstarter."
+    },
+    "quote": {
+      "en": "We’ve reached a point where Dragonsteel, however, wouldn’t be a spoiler. So I’m tempted to release that one in the next kickstarter.",
+      "es": "Hemos llegado a un punto en que Dragonsteel, en cambio, no sería un spoiler. Así que me tienta publicar ese en el próximo kickstarter."
+    },
+    "sources": [
+      {
+        "kind": "word-of-brandon",
+        "url": "https://wob.coppermind.net/events/445/#e14220",
+        "label": "Arcanum: Rhythm of War Preview Q&As, 2020-10-08"
+      }
+    ],
+    "author": "agent:notes-batch-005",
+    "verifiedBy": "agent:verify-batch-005",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-5008",
+    "kind": "wob",
+    "books": [
+      "dsp"
+    ],
+    "requires": [
+      "dsp"
+    ],
+    "text": {
+      "en": "In 2007 Brandon judged the original draft unpublishable as it stood: it held good ideas, but he lacked the skill at the time to make them work.",
+      "es": "En 2007 Brandon consideró que el borrador original no se podía publicar tal cual: tenía buenas ideas, pero entonces no tenía la destreza para hacerlas funcionar."
+    },
+    "quote": {
+      "en": "Dragonsteel Prime, the original, just isn’t publishable as is. There were some great ideas, but I didn’t have the skill at the time to make them work.",
+      "es": "Dragonsteel Prime, el original, simplemente no se puede publicar tal cual. Había ideas geniales, pero entonces no tenía la habilidad para hacer que funcionaran."
+    },
+    "sources": [
+      {
+        "kind": "word-of-brandon",
+        "url": "https://wob.coppermind.net/events/291/#e7825",
+        "label": "Arcanum: TWG Posts, 2007-02-12"
+      }
+    ],
+    "author": "agent:notes-batch-005",
+    "verifiedBy": "agent:verify-batch-005",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-5009",
+    "kind": "wob",
+    "books": [
+      "traveler"
+    ],
+    "requires": [
+      "traveler"
+    ],
+    "text": {
+      "en": "Brandon described this unfinished piece as old, begun around 2010, and written with an insider's knowledge of the Cosmere, a little self-indulgent.",
+      "es": "Brandon describió esta pieza inacabada como antigua, empezada hacia 2010, y escrita por alguien que conoce el Cosmere por dentro, algo autocomplaciente."
+    },
+    "quote": {
+      "en": "I wrote this thing that is very cosmere-aware. It’s very kind of inside-- sort of a little bit self indulgent.",
+      "es": "Escribí esto, que es muy consciente del cosmere. Es bastante endogámico, algo autocomplaciente."
+    },
+    "sources": [
+      {
+        "kind": "word-of-brandon",
+        "url": "https://wob.coppermind.net/events/332/#e9536",
+        "label": "Arcanum: JordanCon 2018, 2018-04-22"
+      }
+    ],
+    "author": "agent:notes-batch-005",
+    "verifiedBy": "agent:verify-batch-005",
+    "verifiedOn": "2026-11-14"
+  }
+]

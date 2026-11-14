@@ -1,0 +1,56 @@
+[
+ {
+  "id": "n-3000",
+  "kind": "wob",
+  "books": [
+   "mistborn-adventure-game"
+  ],
+  "text": {
+   "en": "Sanderson says he let the game's designers go further than he would have himself, so its added world detail counts as canon until his own books contradict it, and some of it will end up contradicted.",
+   "es": "Sanderson cuenta que dejó a los diseñadores del juego llegar más lejos de lo que él habría llegado, así que el material de mundo que añaden vale como canon hasta que sus propios libros lo contradigan, y parte acabará contradicho."
+  },
+  "quote": {
+   "en": "I say that it is canon until I contradict it. And some of it I will end up contradicting because they needed to be able to make the game the best way they could",
+   "es": "Yo digo que es canon hasta que yo lo contradiga. Y parte de ello acabaré contradiciéndolo porque necesitaban poder hacer el juego de la mejor manera posible."
+  },
+  "requires": [
+   "mistborn-adventure-game"
+  ],
+  "sources": [
+   {
+    "url": "https://wob.coppermind.net/events/77/#e6603",
+    "kind": "word-of-brandon"
+   }
+  ],
+  "author": "agent:notes-batch-003",
+  "verifiedBy": "agent:verify-batch-003",
+  "verifiedOn": "2026-11-14"
+ },
+ {
+  "id": "n-3001",
+  "kind": "wob",
+  "books": [
+   "mistborn-adventure-game"
+  ],
+  "text": {
+   "en": "The later supplements of the line open with a notice that they are not canon, only canon for each group's own table; Sanderson left them to his assistants and kept his direct involvement for the core book.",
+   "es": "Los suplementos posteriores de la línea abren con un aviso de que no son canon, solo canon para la mesa de cada grupo; Sanderson los dejó en manos de sus ayudantes y reservó su implicación directa para el libro básico."
+  },
+  "quote": {
+   "en": "This isn't canon, guys. It's canon for your version of the universe, that you're roleplaying.",
+   "es": "Esto no es canon, chicos. Es canon para vuestra versión del universo, la que jugáis."
+  },
+  "requires": [
+   "mistborn-adventure-game"
+  ],
+  "sources": [
+   {
+    "url": "https://wob.coppermind.net/events/46/#e9710",
+    "kind": "word-of-brandon"
+   }
+  ],
+  "author": "agent:notes-batch-003",
+  "verifiedBy": "agent:verify-batch-003",
+  "verifiedOn": "2026-11-14"
+ }
+]

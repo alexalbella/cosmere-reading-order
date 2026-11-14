@@ -1,0 +1,50 @@
+[
+  {
+    "id": "c-1300",
+    "from": "tes",
+    "to": "elantris",
+    "type": "minor",
+    "tier": "confirmed",
+    "description": {
+      "en": "The author places the novella in a similar period to the novel, a little after it.",
+      "es": "El autor sitúa la novela corta en una época similar a la de la novela, algo posterior a ella."
+    },
+    "requires": [
+      "tes",
+      "elantris"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/249/#e7312",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:research-batch-019",
+    "verifiedBy": "agent:verify-batch-019",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "c-1301",
+    "from": "tes",
+    "to": "wb",
+    "type": "minor",
+    "tier": "confirmed",
+    "description": {
+      "en": "Both works share the same idea about their magic: how others perceive a thing affects how it takes, a factor the author confirmed.",
+      "es": "Ambas obras comparten una misma idea sobre su magia: cómo perciben los demás una cosa influye en cómo cuaja, un factor que el autor confirmó."
+    },
+    "requires": [
+      "tes",
+      "wb"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/190/#e4055",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:research-batch-019",
+    "verifiedBy": "agent:verify-batch-019",
+    "verifiedOn": "2026-11-14"
+  }
+]

@@ -1,0 +1,277 @@
+[
+  {
+    "id": "n-7000",
+    "kind": "wob",
+    "books": [
+      "au"
+    ],
+    "text": {
+      "en": "Sanderson describes the collection as his own version of the interludes between the Stormlight books: short detours into one idea, with no sequels promised.",
+      "es": "Sanderson presenta la colección como su versión particular de los interludios de los libros de Stormlight: desvíos breves por una sola idea, sin prometer secuelas."
+    },
+    "quote": {
+      "en": "Arcanum Unbounded is my attempt to kind of do like the interludes in Stormlight in my own career. Little interludes where I take an idea and I dig into it and I explore some part, often of the cosmere, without promising sequels.",
+      "es": "Arcanum ilimitado es mi intento de hacer algo parecido a los interludios de Stormlight en mi propia carrera. Pequeños interludios en los que tomo una idea, profundizo en ella y exploro una parte, a menudo del cosmere, sin prometer secuelas."
+    },
+    "requires": [
+      "au",
+      "sa1"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/371/#e11912",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-007",
+    "verifiedBy": "agent:verify-batch-007",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-7001",
+    "kind": "wob",
+    "books": [
+      "au"
+    ],
+    "text": {
+      "en": "Asked how far the in-world essays can be trusted, the author says they are reliable, about as much as a specialist scholar of today.",
+      "es": "Preguntado por cuánto se puede uno fiar de los ensayos del libro, el autor responde que son bastante fiables, como lo sería un erudito actual experto en su campo."
+    },
+    "quote": {
+      "en": "They're pretty trustworthy, as much as you would trust a scholar nowadays who's an expert in their field.",
+      "es": "Son bastante fiables, tanto como te fiarías hoy de un erudito experto en su campo."
+    },
+    "requires": [
+      "au"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/36/#e1491",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-007",
+    "verifiedBy": "agent:verify-batch-007",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-7002",
+    "kind": "wob",
+    "books": [
+      "au"
+    ],
+    "text": {
+      "en": "The author plans to keep publishing short fiction on its own and to gather it into a new collection roughly once a decade.",
+      "es": "El autor piensa seguir publicando relatos por separado y reunirlos en una nueva colección más o menos cada diez años."
+    },
+    "quote": {
+      "en": "I'll release short stories and every, you know, decade or so I'll collect them all into a collection.",
+      "es": "Publicaré relatos cortos y, más o menos cada década, los recopilaré todos en una colección."
+    },
+    "requires": [
+      "au"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/175/#e8355",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-007",
+    "verifiedBy": "agent:verify-batch-007",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-7003",
+    "kind": "wob",
+    "books": [
+      "au"
+    ],
+    "text": {
+      "en": "Asked which story in the collection he likes best and which is the most aware of the wider Cosmere, the author names one of each.",
+      "es": "Preguntado por su relato favorito de la colección y por el que más conciencia tiene del Cosmere en conjunto, el autor nombra uno para cada caso."
+    },
+    "quote": {
+      "en": "My favorite is Emperor's Soul. Probably the most Cosmere aware is Sixth of the Dusk.",
+      "es": "Mi favorito es El alma del Emperador. Probablemente el que más conciencia tiene del Cosmere es Sexto del Ocaso."
+    },
+    "requires": [
+      "au",
+      "tes",
+      "sotd"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/358/#e10898",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-007",
+    "verifiedBy": "agent:verify-batch-007",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-7004",
+    "kind": "wob",
+    "books": [
+      "aon"
+    ],
+    "text": {
+      "en": "The author calls the book two good books merged that do not fit together well.",
+      "es": "El autor describe el libro como dos buenos libros mezclados que no encajan bien entre sí."
+    },
+    "quote": {
+      "en": "Aether of Night is two good books put together that don't intertwine very well.",
+      "es": "Aether of Night son dos buenos libros unidos que no se entrelazan muy bien."
+    },
+    "requires": [
+      "aon"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/60/#e6940",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-007",
+    "verifiedBy": "agent:verify-batch-007",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-7005",
+    "kind": "wob",
+    "books": [
+      "aon"
+    ],
+    "text": {
+      "en": "The author states that what happens in the story is not canon to the Cosmere.",
+      "es": "El autor afirma que lo que ocurre en la historia no es canon del Cosmere."
+    },
+    "quote": {
+      "en": "The events that are happening in that book are not canon.",
+      "es": "Los sucesos de ese libro no son canon."
+    },
+    "requires": [
+      "aon"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/435/#e14128",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-007",
+    "verifiedBy": "agent:verify-batch-007",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-7006",
+    "kind": "wob",
+    "books": [
+      "aon"
+    ],
+    "text": {
+      "en": "The author says this unpublished novel was where he first explored a bond between a person and a sentient piece of magic.",
+      "es": "El autor dice que esta novela inédita fue donde exploró por primera vez un vínculo entre una persona y una pieza de magia consciente."
+    },
+    "quote": {
+      "en": "the other big one during that era that I wrote is a book called Aether of Night, which kind of pioneered the idea for me of the bond between a sapient piece of magic and a person.",
+      "es": "la otra gran novela de aquella época es un libro llamado Aether of Night, que de algún modo fue pionero para mí en la idea del vínculo entre un fragmento de magia con conciencia y una persona."
+    },
+    "requires": [
+      "aon",
+      "sa1",
+      "wb"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/490/#e15430",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-007",
+    "verifiedBy": "agent:verify-batch-007",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-7007",
+    "kind": "wob",
+    "books": [
+      "aon"
+    ],
+    "text": {
+      "en": "A character in the book carries the name of the author's brother, as a cameo.",
+      "es": "Un personaje del libro lleva el nombre del hermano del autor, a modo de cameo."
+    },
+    "quote": {
+      "en": "my brother's cameo is in this book. Darro is named after my brother, Jordo.",
+      "es": "El cameo de mi hermano está en este libro. Darro se llama así por mi hermano, Jordo."
+    },
+    "requires": [
+      "aon"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/90/#e5550",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-007",
+    "verifiedBy": "agent:verify-batch-007",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-7008",
+    "kind": "wob",
+    "books": [
+      "fires-of-december"
+    ],
+    "text": {
+      "en": "The novel was written over Christmas 2024 as a secret project, free of deadlines and of anyone's expectations.",
+      "es": "La novela se escribió en la Navidad de 2024 como proyecto secreto, sin plazos y sin que nadie la esperase."
+    },
+    "quote": {
+      "en": "I wanted to write a secret project; I wanted to write something that I didn't have anyone expecting me to write, and that I didn't have any deadlines for, and it was just free and liberating and I could approach as something brand new.",
+      "es": "Quería escribir un proyecto secreto; quería escribir algo que nadie esperase de mí y sin ningún plazo, y fue algo libre y liberador que podía abordar como algo completamente nuevo."
+    },
+    "requires": [
+      "fires-of-december"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/552/#e17180",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-007",
+    "verifiedBy": "agent:verify-batch-007",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-7009",
+    "kind": "wob",
+    "books": [
+      "fires-of-december"
+    ],
+    "text": {
+      "en": "The author invented the world while writing the book and built it around the story.",
+      "es": "El autor inventó el mundo mientras escribía el libro y lo construyó alrededor de la historia."
+    },
+    "quote": {
+      "en": "This is one of those where I came up with the world as I was writing the book. Basically, Fires of December kind of just came into my head completely as a \"this is a story you need to write,\" and I built the world around it.",
+      "es": "Este es uno de esos casos en los que se me ocurrió el mundo mientras escribía el libro. Básicamente, Fires of December me vino a la cabeza entera como un «esta es una historia que tienes que escribir», y construí el mundo a su alrededor."
+    },
+    "requires": [
+      "fires-of-december"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/552/#e17181",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-007",
+    "verifiedBy": "agent:verify-batch-007",
+    "verifiedOn": "2026-11-14"
+  }
+]

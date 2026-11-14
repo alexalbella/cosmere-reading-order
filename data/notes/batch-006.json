@@ -1,0 +1,218 @@
+[
+  {
+    "id": "n-6000",
+    "kind": "wob",
+    "books": [
+      "tress"
+    ],
+    "text": {
+      "en": "The author explains why the book carries a poetic colour in its title while the sea has a more technical name: the title simply sounded better, so both names are used for the seas.",
+      "es": "El autor explica por qué el título lleva un color poético mientras que el mar tiene un nombre más técnico: el título sonaba mejor, así que se usan ambos nombres para los mares."
+    },
+    "quote": {
+      "en": "Emerald Sea made a better title, so I went ahead and let them use both terms for all of the seas.",
+      "es": "\"Mar esmeralda\" quedaba mejor como título, así que dejé que se usaran ambos términos para todos los mares."
+    },
+    "requires": [
+      "tress"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/490/#e15450",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-006",
+    "verifiedBy": "agent:verify-batch-006",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-6001",
+    "kind": "wob",
+    "books": [
+      "tress"
+    ],
+    "text": {
+      "en": "Asked about a sequel, the author says he sees this book as a one-off and does not plan to return to its protagonist.",
+      "es": "Preguntado por una secuela, el autor dice que considera este libro una obra independiente y que no piensa volver a su protagonista."
+    },
+    "quote": {
+      "en": "My intent is for Tress of the Emerald Sea to remain as a standalone book. And I have no intentions to go back to Tress or her story.",
+      "es": "Mi intención es que Trenza del mar esmeralda siga siendo un libro independiente. Y no tengo intención de volver a Trenza ni a su historia."
+    },
+    "requires": [
+      "tress"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/526/#e16372",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-006",
+    "verifiedBy": "agent:verify-batch-006",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-6002",
+    "kind": "wob",
+    "books": [
+      "tress"
+    ],
+    "text": {
+      "en": "The author says the number of Cosmere references stayed about the same between drafts; what changed most in revision was the ending, which he rebuilt.",
+      "es": "El autor cuenta que la cantidad de referencias al Cosmere apenas cambió entre borradores; lo que más se modificó en la revisión fue el final, que reconstruyó."
+    },
+    "quote": {
+      "en": "It was roughly exactly as it is. The later drafts of Tress fixed the ending. All the pieces were there, but it just wasn't quite clicking. So I rebuilt the ending; that's the biggest thing that I did.",
+      "es": "Era más o menos exactamente como es ahora. Los borradores posteriores de Trenza arreglaron el final. Estaban todas las piezas, pero no terminaba de encajar. Así que reconstruí el final; eso fue lo más importante que hice."
+    },
+    "requires": [
+      "tress"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/515/#e16138",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-006",
+    "verifiedBy": "agent:verify-batch-006",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-6003",
+    "kind": "wob",
+    "books": [
+      "tress"
+    ],
+    "text": {
+      "en": "The author says he drew the practical, considerate side of the title heroine from his wife, and admits that the talkative storyteller owes something to himself.",
+      "es": "El autor dice que el lado práctico y considerado de la protagonista lo tomó de su esposa, y admite que el narrador charlatán tiene algo de él mismo."
+    },
+    "quote": {
+      "en": "My wife definitely has some Tress-like attributes, and I definitely have some Charlie-like attributes.",
+      "es": "Mi mujer tiene sin duda algunos rasgos de Trenza, y yo tengo sin duda algunos rasgos de Charlie."
+    },
+    "requires": [
+      "tress"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/490/#e15464",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-006",
+    "verifiedBy": "agent:verify-batch-006",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-6004",
+    "kind": "wob",
+    "books": [
+      "yumi"
+    ],
+    "text": {
+      "en": "The author says the two leads were always meant to see each other as themselves while others see the body, so each could watch the other live their life; he adds that he did not want to simply remake a famous film he admires.",
+      "es": "El autor dice que desde el principio los dos protagonistas debían verse como ellos mismos mientras los demás ven el cuerpo, para que cada uno viera al otro vivir su vida; añade que no quería rehacer sin más una película famosa que admira."
+    },
+    "quote": {
+      "en": "So, the idea for this was always to be able to have them see each other as themselves.",
+      "es": "Así que la idea siempre fue que pudieran verse el uno al otro como ellos mismos."
+    },
+    "requires": [
+      "yumi"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/524/#e16505",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-006",
+    "verifiedBy": "agent:verify-batch-006",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-6005",
+    "kind": "wob",
+    "books": [
+      "yumi"
+    ],
+    "text": {
+      "en": "The painters' very long brushes are a stylistic choice rooted in Korean tradition, where length signals elegance and even virtue; the author checked this with people who know the lore.",
+      "es": "Los larguísimos pinceles de los pintores son una decisión estética basada en la tradición coreana, donde la longitud indica elegancia e incluso virtud; el autor lo consultó con personas que conocen ese folclore."
+    },
+    "quote": {
+      "en": "The very long brush is seen as, like, a mark of elegance, and even morality in some cases.",
+      "es": "El pincel muy largo se ve como una marca de elegancia, y en algunos casos incluso de moralidad."
+    },
+    "requires": [
+      "yumi"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/522/#e16286",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-006",
+    "verifiedBy": "agent:verify-batch-006",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-6006",
+    "kind": "wob",
+    "books": [
+      "tsm"
+    ],
+    "text": {
+      "en": "The author reveals that a character based on his late grandmother, an English teacher and fantasy reader, appears in this book.",
+      "es": "El autor revela que en este libro aparece un personaje inspirado en su difunta abuela, profesora de inglés y lectora de fantasía."
+    },
+    "quote": {
+      "en": "She shows up; Grandma shows up in The Sunlit Man.",
+      "es": "Aparece; la abuela aparece en El hombre iluminado."
+    },
+    "requires": [
+      "tsm"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/533/#e16541",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-006",
+    "verifiedBy": "agent:verify-batch-006",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-6007",
+    "kind": "wob",
+    "books": [
+      "tsm"
+    ],
+    "text": {
+      "en": "The author credits his team of arcanist readers with pushing him to make the book's tiny, constantly traveled world work in a consistent way, even when the answer was a magical one.",
+      "es": "El autor atribuye a su equipo de arcanistas la insistencia en que el diminuto mundo del libro, que se recorre sin parar, funcionara de forma coherente, aunque la respuesta fuera mágica."
+    },
+    "quote": {
+      "en": "They have a lot of influence over Sunlit Man and my weird little tiny planet, my Little Prince planet, that you're traveling around.",
+      "es": "Tienen mucha influencia sobre El hombre iluminado y sobre mi extraño planeta diminuto, mi planeta del Principito, por el que viajas."
+    },
+    "requires": [
+      "tsm"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/522/#e16309",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-006",
+    "verifiedBy": "agent:verify-batch-006",
+    "verifiedOn": "2026-11-14"
+  }
+]

@@ -1,0 +1,334 @@
+[
+  {
+    "id": "n-4000",
+    "kind": "wob",
+    "books": [
+      "elantris"
+    ],
+    "text": {
+      "en": "Before it was Elantris, the city had a different name that the author dropped when his writing group pointed out an unfortunate association it carried.",
+      "es": "Antes de llamarse Elantris, la ciudad tenía otro nombre que el autor descartó cuando su grupo de escritura le hizo notar una asociación poco afortunada."
+    },
+    "quote": {
+      "en": "the city \"Elantris\" was actually originally named \"Adonis.\"",
+      "es": "la ciudad «Elantris» se llamaba en origen «Adonis»."
+    },
+    "requires": [
+      "elantris"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/133-elantris-annotations/#e1881",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-004",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-4001",
+    "kind": "wob",
+    "books": [
+      "elantris"
+    ],
+    "text": {
+      "en": "The opening line of the book was reworked at the editor's request; the author admits he still prefers the more flowing first version.",
+      "es": "La primera frase del libro se retocó a petición del editor; el autor confiesa que sigue prefiriendo la versión original, más fluida."
+    },
+    "quote": {
+      "en": "The original first line of the book was \"Whispered are the days when Elantris was beautiful.\"",
+      "es": "La primera frase original del libro era «Whispered are the days when Elantris was beautiful»."
+    },
+    "requires": [
+      "elantris"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/133-elantris-annotations/#e1884",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-004",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-4002",
+    "kind": "wob",
+    "books": [
+      "elantris"
+    ],
+    "text": {
+      "en": "One of the main characters carried a different name in the early drafts, changed when the author shaped the language and culture of his homeland.",
+      "es": "Uno de los personajes principales tenía otro nombre en los primeros borradores, que cambió al definir el idioma y la cultura de su tierra natal."
+    },
+    "quote": {
+      "en": "In the original draft, Galladon was actually named Galerion.",
+      "es": "En el borrador original, Galladon se llamaba en realidad Galerion."
+    },
+    "requires": [
+      "elantris"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/133-elantris-annotations/#e1925",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-004",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-4003",
+    "kind": "wob",
+    "books": [
+      "elantris"
+    ],
+    "text": {
+      "en": "Although it was the first novel the author published, it was far from the first he wrote: it sits sixth among the fifteen he had finished by release day.",
+      "es": "Aunque fue la primera novela que publicó, ni de lejos fue la primera que escribió: ocupa el sexto lugar entre las quince que tenía terminadas el día de su salida."
+    },
+    "quote": {
+      "en": "of the fifteen, Elantris is actually number six.",
+      "es": "de las quince, Elantris es en realidad la número seis."
+    },
+    "requires": [
+      "elantris"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/133-elantris-annotations/#e1936",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-004",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-4004",
+    "kind": "wob",
+    "books": [
+      "thoe",
+      "elantris"
+    ],
+    "text": {
+      "en": "The short story grew out of a gift: a student's handmade report on the novel inspired the author to write a story that includes a character named after her.",
+      "es": "El relato nació como un regalo: el trabajo artesanal de una alumna sobre la novela inspiró al autor a escribir una historia con un personaje que lleva su nombre."
+    },
+    "quote": {
+      "en": "I decided that I would name a character after her.",
+      "es": "Decidí ponerle su nombre a un personaje."
+    },
+    "requires": [
+      "thoe",
+      "elantris"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/140-the-hope-of-elantris-annotations/#e2242",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-004",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-4005",
+    "kind": "wob",
+    "books": [
+      "thoe",
+      "elantris"
+    ],
+    "text": {
+      "en": "The author himself warns that the story only works for people who already know the novel, and that it is no way to start with his books.",
+      "es": "El propio autor advierte de que el relato solo funciona para quien ya conoce la novela y de que no es una buena puerta de entrada a su obra."
+    },
+    "quote": {
+      "en": "I certainly wouldn't suggest it to anyone who hasn't read Elantris itself",
+      "es": "Desde luego no se lo recomendaría a nadie que no haya leído Elantris"
+    },
+    "requires": [
+      "thoe",
+      "elantris"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/140-the-hope-of-elantris-annotations/#e2243",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-004",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-4006",
+    "kind": "wob",
+    "books": [
+      "tes"
+    ],
+    "text": {
+      "en": "The novella came out of a trip: the author wrote it as a response to travelling in Taiwan, drawing on the culture he knew from living abroad.",
+      "es": "La novela corta salió de un viaje: el autor la escribió como respuesta a su visita a Taiwán, apoyándose en la cultura que conocía por haber vivido en el extranjero."
+    },
+    "quote": {
+      "en": "Famously, the Emperor's Soul came after I went to Taiwan one time.",
+      "es": "Es bien sabido que El alma del emperador llegó después de que fuera a Taiwán una vez."
+    },
+    "requires": [
+      "tes"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/117/#e1616",
+        "kind": "word-of-brandon"
+      },
+      {
+        "url": "https://wob.coppermind.net/events/99/#e1395",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-004",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-4007",
+    "kind": "wob",
+    "books": [
+      "tes"
+    ],
+    "text": {
+      "en": "Asked about a sequel, the author said the story turned out so well alone that it may not need one.",
+      "es": "Preguntado por una secuela, el autor respondió que la historia salió tan bien por sí sola que quizá no necesite ninguna."
+    },
+    "quote": {
+      "en": "It turned out so well, that it feels like it's one of those things that may not need a sequel.",
+      "es": "Salió tan bien que parece una de esas cosas que quizá no necesiten una secuela."
+    },
+    "requires": [
+      "tes"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/99/#e1395",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-004",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-4008",
+    "kind": "wob",
+    "books": [
+      "wb"
+    ],
+    "text": {
+      "en": "The author posted the rough drafts online chapter by chapter while writing, to show the process, offer a free read and get feedback like a writing group.",
+      "es": "El autor fue publicando los borradores en su web capítulo a capítulo mientras escribía, para enseñar el proceso, ofrecer una lectura gratuita y recibir opiniones como en un grupo de escritura."
+    },
+    "quote": {
+      "en": "I posted drafts of the novel online as I was writing it.",
+      "es": "Publiqué borradores de la novela en internet mientras la escribía."
+    },
+    "requires": [
+      "wb"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/250-warbreaker-annotations/#e6011",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-004",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-4009",
+    "kind": "wob",
+    "books": [
+      "wb"
+    ],
+    "text": {
+      "en": "One main character's name went through several versions from a first notebook sketch before settling.",
+      "es": "El nombre de uno de los protagonistas pasó por varias versiones desde un primer boceto en un cuaderno hasta quedar fijado."
+    },
+    "quote": {
+      "en": "I tweaked the name to Vancer, but that just didn't sound right, though I used it for a while. The next incarnation was Vasher.",
+      "es": "Retoqué el nombre a Vancer, pero no sonaba bien, aunque lo usé un tiempo. La siguiente encarnación fue Vasher."
+    },
+    "requires": [
+      "wb"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/250-warbreaker-annotations/#e6013",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-004",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-4010",
+    "kind": "wob",
+    "books": [
+      "wb"
+    ],
+    "text": {
+      "en": "The royal family's emotion-coloured hair was an old story seed the author had tried in other projects before it found a home here.",
+      "es": "El pelo de la familia real, que cambia de color con las emociones, era una vieja semilla de historia que el autor había probado en otros proyectos antes de encontrarle sitio aquí."
+    },
+    "quote": {
+      "en": "A group of people whose hair changes color based on their emotions is another one of those little story seeds that had been bouncing around in my head for years before I wrote this book.",
+      "es": "Un grupo de gente cuyo pelo cambia de color según sus emociones es otra de esas pequeñas semillas de historia que llevaban años rondándome la cabeza antes de escribir este libro."
+    },
+    "requires": [
+      "wb"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/250-warbreaker-annotations/#e6711",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-004",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-4011",
+    "kind": "wob",
+    "books": [
+      "wb"
+    ],
+    "text": {
+      "en": "The first line of the book changed in revision because the original no longer made sense once the situation behind it was altered.",
+      "es": "La primera frase del libro cambió en la revisión porque la original dejó de tener sentido al modificarse la situación que la motivaba."
+    },
+    "quote": {
+      "en": "So, it became \"It's funny how many things begin with my getting thrown into prison.\"",
+      "es": "Así que pasó a ser «It's funny how many things begin with my getting thrown into prison»."
+    },
+    "requires": [
+      "wb"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/250-warbreaker-annotations/#e6014",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-004",
+    "verifiedBy": "agent:verify-batch-004",
+    "verifiedOn": "2026-11-14"
+  }
+]

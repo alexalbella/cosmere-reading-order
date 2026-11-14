@@ -1,0 +1,116 @@
+[
+  {
+    "id": "n-1000",
+    "kind": "wob",
+    "books": [
+      "sa1"
+    ],
+    "text": {
+      "en": "Brandon Sanderson has explained that the Shattered Plains were brought into this book from an older, unpublished project, and that this setting gave him the answer to what one of the main characters should be doing, which let him write the book.",
+      "es": "Brandon Sanderson ha explicado que las Llanuras Quebradas llegaron a este libro desde un proyecto anterior sin publicar, y que ese escenario le dio la respuesta a qué debía hacer uno de los personajes principales, lo que le permitió escribir el libro."
+    },
+    "quote": {
+      "en": "was unable to write the book until I mashed in the Shattered Plains and said, \"Ah, that was what he needed to be doing all along.\"",
+      "es": "no pude escribir el libro hasta que incorporé las Llanuras Quebradas y dije: «Ah, esto era lo que tenía que estar haciendo desde siempre»."
+    },
+    "requires": [
+      "sa1"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/210/#e4650",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-001",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-1001",
+    "kind": "wob",
+    "books": [
+      "sa1"
+    ],
+    "text": {
+      "en": "A listing for this book appeared on Amazon years before it was published, although Sanderson had not yet written the version that came out.",
+      "es": "Una ficha de este libro apareció en Amazon años antes de su publicación, aunque Sanderson aún no había escrito la versión que acabó saliendo."
+    },
+    "quote": {
+      "en": "The fandom found out about The Way of Kings pretty early on. I don't know how this happened, but Amazon put up a listing for it in like, 2006. The book was eventually published four years later.",
+      "es": "Los fans supieron de El camino de los reyes bastante pronto. No sé cómo ocurrió, pero Amazon puso una ficha en 2006 más o menos. El libro se publicó al final cuatro años después."
+    },
+    "requires": [
+      "sa1"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/352/#e10309",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-001",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-1002",
+    "kind": "wob",
+    "books": [
+      "sa2-5"
+    ],
+    "text": {
+      "en": "Sanderson says he watches figure skating while writing the Edgedancers' movement, as the closest real-world thing to it.",
+      "es": "Sanderson cuenta que mira patinaje artístico mientras escribe el movimiento de los Danzantes del filo, por ser lo más parecido que existe en la vida real."
+    },
+    "quote": {
+      "en": "Oh, yeah. I go watch figure skating when I'm writing Edgedancers. It's the closest thing we've got.",
+      "es": "Sí, claro. Voy a ver patinaje artístico cuando escribo sobre los Danzantes del filo. Es lo más cercano que tenemos."
+    },
+    "requires": [
+      "sa1",
+      "sa2",
+      "sa2-5"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/31/#e9686",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-001",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-1003",
+    "kind": "wob",
+    "books": [
+      "sa2-5"
+    ],
+    "text": {
+      "en": "Sanderson notes that many readers expect this novella to be light, but says it carries real weight for the main series.",
+      "es": "Sanderson señala que muchos lectores esperan que esta novela corta sea ligera, pero asegura que tiene un peso real para la serie principal."
+    },
+    "quote": {
+      "en": "a lot of people are expecting Edgedancer to be light and fluffy because it's about Lift. They're not expecting the deep Stormlight Archive relevance that the story has.",
+      "es": "mucha gente espera que Danzante del filo sea ligera y tierna porque trata de Lift. No esperan la profunda relevancia para El archivo de las tormentas que tiene la historia."
+    },
+    "requires": [
+      "sa1",
+      "sa2",
+      "sa2-5",
+      "sa3",
+      "sa4"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/31/#e9701",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-001",
+    "verifiedBy": "agent:verify-batch-001",
+    "verifiedOn": "2026-11-14"
+  }
+]

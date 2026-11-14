@@ -1,0 +1,570 @@
+[
+  {
+    "id": "n-2000",
+    "kind": "wob",
+    "books": [
+      "mb1"
+    ],
+    "text": {
+      "en": "Brandon credits his editor with the limelights of the book: earlier drafts lit the scenes with bonfires outside instead.",
+      "es": "Brandon atribuye a su editor las luces de calcio del libro: en los primeros borradores la iluminación venía de hogueras en el exterior."
+    },
+    "quote": {
+      "en": "The limelights were added at Moshe's suggestion. In the original drafts of the book, I had bonfires burning outside.",
+      "es": "Las luces de calcio se añadieron por sugerencia de Moshe. En los borradores originales, yo tenía hogueras ardiendo en el exterior."
+    },
+    "requires": [
+      "mb1"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/141/#e2329",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-002",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-2001",
+    "kind": "wob",
+    "books": [
+      "mb1"
+    ],
+    "text": {
+      "en": "The canals and longboats of the setting came from an editor's enthusiasm for canal technology; convoys and longboats replaced the usual caravans and horses.",
+      "es": "Los canales y las barcazas del mundo salen del entusiasmo de su editor por la tecnología de los canales: convoyes y barcazas sustituyeron a las caravanas y los caballos habituales."
+    },
+    "quote": {
+      "en": "You can thank my editor Moshe for the canals in this book.",
+      "es": "Hay que agradecerle a mi editor, Moshe, los canales de este libro."
+    },
+    "requires": [
+      "mb1"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/141/#e2371",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-002",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-2002",
+    "kind": "wob",
+    "books": [
+      "mb1"
+    ],
+    "text": {
+      "en": "The clergy of the empire was first called a priesthood; Brandon renamed it to avoid a stereotypical feel for religion and government.",
+      "es": "El clero del imperio se llamó al principio sacerdocio; Brandon lo renombró para que religión y gobierno no resultaran tan estereotipados."
+    },
+    "quote": {
+      "en": "I made the change to Steel Ministry and obligators because I didn't want the religion and government in the Final Empire to feel so stereotypical.",
+      "es": "Hice el cambio a Ministerio de Acero y obligadores porque no quería que la religión y el gobierno del Imperio Final resultaran tan estereotipados."
+    },
+    "requires": [
+      "mb1"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/141/#e2331",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-002",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-2003",
+    "kind": "wob",
+    "books": [
+      "mb2"
+    ],
+    "text": {
+      "en": "Brandon planned this title from the first chapters of the first book, and admits he keeps misspelling it.",
+      "es": "Brandon tenía previsto este título desde los primeros capítulos del primer libro, y reconoce que siempre lo escribe mal."
+    },
+    "quote": {
+      "en": "I have a devil of a time spelling Ascension. I always want to spell it \"Ascention\" instead.",
+      "es": "Me cuesta horrores escribir «Ascension». Siempre quiero escribirlo «Ascention»."
+    },
+    "requires": [
+      "mb1",
+      "mb2"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/142/#e2493",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-002",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-2004",
+    "kind": "wob",
+    "books": [
+      "mb2"
+    ],
+    "text": {
+      "en": "The book's ending was rewritten after Brandon decided the Well could not stay in the mountains of the original plan.",
+      "es": "El final del libro se reescribió cuando Brandon decidió que el Pozo no podía seguir en las montañas del plan original."
+    },
+    "quote": {
+      "en": "Originally, the Well of Ascension WAS in the mountains. That's the big reason for the rewrite of the ending.",
+      "es": "Originalmente, el Pozo de la Ascensión ESTABA en las montañas. Es la gran razón de la reescritura del final."
+    },
+    "requires": [
+      "mb1",
+      "mb2",
+      "mb3"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/142/#e5450",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-002",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-2005",
+    "kind": "wob",
+    "books": [
+      "mb3"
+    ],
+    "text": {
+      "en": "Brandon calls this title fine but not his favourite of the three; he prefers the second one.",
+      "es": "Brandon dice que está satisfecho con este título, pero que no es su favorito de los tres: prefiere el del segundo libro."
+    },
+    "quote": {
+      "en": "The Well of Ascension is actually my favorite title of the three, I think. So I toyed around with other words and terms I could use. Eventually, I settled on The Hero of Ages. I'm satisfied with it, but it's not my favorite title.",
+      "es": "El pozo de la ascensión es en realidad mi título favorito de los tres, creo. Así que estuve jugando con otras palabras y términos que podía usar. Al final me decidí por El héroe de las eras. Estoy satisfecho con él, pero no es mi título favorito."
+    },
+    "requires": [
+      "mb1",
+      "mb2",
+      "mb3"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/270/#e7483",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-002",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-2006",
+    "kind": "wob",
+    "books": [
+      "mb4"
+    ],
+    "text": {
+      "en": "While Brandon was writing the early chapters, the book went by a pun-based working title, which he knew would not last.",
+      "es": "Mientras escribía los primeros capítulos, el libro tenía un título de trabajo basado en un juego de palabras que Brandon sabía que no duraría."
+    },
+    "quote": {
+      "en": "The working book title was simply Wax and Wayne.",
+      "es": "El título de trabajo del libro era sencillamente Wax y Wayne."
+    },
+    "requires": [
+      "mb4"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/40/#e704",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-002",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-2007",
+    "kind": "wob",
+    "books": [
+      "mb4"
+    ],
+    "text": {
+      "en": "Brandon acknowledges Sherlock Holmes as an influence but aimed for a police-procedural feel, with a Pratchett watchman as a second model.",
+      "es": "Brandon reconoce la influencia de Sherlock Holmes, pero buscó un tono de novela policial de procedimiento, con un guardia de Pratchett como segundo modelo."
+    },
+    "quote": {
+      "en": "In my head, however, I decided this book would be more police procedural and less quirky-genius-does-deduction. I wanted Waxillium to be a cop, through and through, not an eccentric who solves cases out of curiosity. In that regard, Sam Vimes—from Terry Pratchett's books—was almost as much of an inspiration as Holmes was.",
+      "es": "En mi cabeza, sin embargo, decidí que este libro sería más novela policial de procedimiento y menos genio excéntrico que deduce. Quería que Waxillium fuera un policía de pies a cabeza, no un excéntrico que resuelve casos por curiosidad. En ese sentido, Sam Vimes, de los libros de Terry Pratchett, fue casi tanta inspiración como Holmes."
+    },
+    "requires": [
+      "mb4"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/40/#e693",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-002",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-2008",
+    "kind": "wob",
+    "books": [
+      "mb4"
+    ],
+    "text": {
+      "en": "Brandon has mused about rewriting this book and calls it his weakest Cosmere novel.",
+      "es": "Brandon ha comentado que a veces se plantea reescribir este libro y lo considera su novela más floja del Cosmere."
+    },
+    "quote": {
+      "en": "I wonder sometimes if I should do a full-on rewrite of Alloy. It would also be my vote for weakest Cosmere novel. (I think it's probably my weakest novel overall.)",
+      "es": "A veces me pregunto si debería hacer una reescritura completa de Alloy. También sería mi voto para la novela más débil del Cosmere. (Creo que probablemente es mi novela más débil en general.)"
+    },
+    "requires": [
+      "mb4"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/529/#e16471",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-002",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-2009",
+    "kind": "wob",
+    "books": [
+      "mb4"
+    ],
+    "text": {
+      "en": "One of the two leads was the first character Brandon imagined for the series, in very early notes as a hatmaker.",
+      "es": "Uno de los dos protagonistas fue el primer personaje que Brandon imaginó para la serie; en las primeras notas era sombrerero."
+    },
+    "quote": {
+      "en": "Wayne was the first person I imagined for this series. In very early notes I scribbled down, he was actually going to be a hatmaker.",
+      "es": "Wayne fue la primera persona que imaginé para esta serie. En unas notas muy tempranas que garabateé, en realidad iba a ser sombrerero."
+    },
+    "requires": [
+      "mb4"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/40/#e691",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-002",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-2010",
+    "kind": "wob",
+    "books": [
+      "jak"
+    ],
+    "text": {
+      "en": "Asked whether the bickering pair in the story drew on his own working relationship, Brandon says his editor's habit of questioning him was a big part of the inspiration.",
+      "es": "Preguntado si la pareja de la historia se inspiraba en su propia relación de trabajo, Brandon dice que el hábito de su editor de cuestionarle fue buena parte de la inspiración."
+    },
+    "quote": {
+      "en": "Peter is not nearly as biting toward me, but always having an editor looking over my shoulder and saying, \"Uh...is that actually RATIONAL Brandon?\" is probably a big part of my inspiration here.",
+      "es": "Peter no es ni de lejos tan mordaz conmigo, pero tener siempre a un editor mirando por encima de mi hombro y diciendo: «Eh... ¿eso es realmente RACIONAL, Brandon?» probablemente es buena parte de mi inspiración aquí."
+    },
+    "requires": [
+      "mb4",
+      "jak"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/100/#e9070",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-002",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-2011",
+    "kind": "wob",
+    "books": [
+      "mb5"
+    ],
+    "text": {
+      "en": "Brandon explains what the title refers to in the book.",
+      "es": "Brandon explica a qué se refiere el título dentro del libro."
+    },
+    "quote": {
+      "en": "What it is referencing in this book is the different roles that each person plays in their life. That is the core meaning of Shadows of Self.",
+      "es": "A lo que hace referencia en este libro es a los diferentes papeles que cada persona desempeña en su vida. Ese es el significado central de Sombras de identidad."
+    },
+    "requires": [
+      "mb4",
+      "mb5"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/62/#e3069",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-002",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-2012",
+    "kind": "wob",
+    "books": [
+      "mb5"
+    ],
+    "text": {
+      "en": "On release day Brandon said he wanted this book to dig into its main lead.",
+      "es": "El día del lanzamiento, Brandon dijo que quería que este libro profundizara en su protagonista principal."
+    },
+    "quote": {
+      "en": "Wax is the heart of these books, though it has been tough to get past his rough exterior. I wanted to really dig into who he is.",
+      "es": "Wax es el corazón de estos libros, aunque ha sido difícil pasar de su dura apariencia. Quería meterme de lleno en quién es."
+    },
+    "requires": [
+      "mb4",
+      "mb5"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/91/#e803",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-002",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-2013",
+    "kind": "wob",
+    "books": [
+      "mb5"
+    ],
+    "text": {
+      "en": "Brandon described this book as focused on its lead and light on wider Cosmere content, with more of it arriving in the next one.",
+      "es": "Brandon describió este libro como centrado en su protagonista y con poco contenido del Cosmere en general; el siguiente trae bastante más."
+    },
+    "quote": {
+      "en": "Shadows of Self is not terribly cosmere-significant, the next book has a lot more.",
+      "es": "Sombras de identidad no es muy relevante para el Cosmere; el siguiente libro tiene mucho más."
+    },
+    "requires": [
+      "mb4",
+      "mb5",
+      "mb6"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/80/#e5317",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-002",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-2014",
+    "kind": "wob",
+    "books": [
+      "mb5"
+    ],
+    "text": {
+      "en": "Brandon says writing this book was painful.",
+      "es": "Brandon cuenta que escribir este libro fue doloroso."
+    },
+    "quote": {
+      "en": "It was kind of a painful book to write, so I--I sympathize.",
+      "es": "Fue un libro bastante doloroso de escribir, así que... te compadezco."
+    },
+    "requires": [
+      "mb5"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/126/#e2370",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-002",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-2015",
+    "kind": "wob",
+    "books": [
+      "mb6"
+    ],
+    "text": {
+      "en": "Asked what happens to a person without magic who holds the Bands for a long time, Brandon says it would affect them like anyone else, in similar though not identical ways.",
+      "es": "Preguntado qué le ocurre a una persona sin magia que sostiene los Brazales durante mucho tiempo, Brandon dice que le afectarían como a cualquiera, de forma parecida aunque no idéntica."
+    },
+    "quote": {
+      "en": "Same thing that would happen to someone else, um, it would have a definite effect on them.",
+      "es": "Lo mismo que le pasaría a otra persona, eh, tendría un efecto claro sobre ella."
+    },
+    "requires": [
+      "mb1",
+      "mb2",
+      "mb3",
+      "mb4",
+      "mb5",
+      "mb6",
+      "mb7"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/332/#e9494",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-002",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-2016",
+    "kind": "wob",
+    "books": [
+      "11m"
+    ],
+    "text": {
+      "en": "Brandon explains the design logic of the eleventh metal as a counterpart to another metal, giving information rather than power.",
+      "es": "Brandon explica la lógica de diseño del undécimo metal como contrapunto de otro metal: ofrece información, no poder."
+    },
+    "quote": {
+      "en": "I devised the eleventh metal as a counterpoint to atium (which shows the future) with the eleventh metal showing the past.",
+      "es": "Concebí el undécimo metal como contrapunto del atium (que muestra el futuro), con el undécimo metal mostrando el pasado."
+    },
+    "requires": [
+      "mb1",
+      "mb2",
+      "mb3",
+      "11m"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/508/#e15881",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-002",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-2017",
+    "kind": "wob",
+    "books": [
+      "mb7"
+    ],
+    "text": {
+      "en": "Brandon explains why the era has four books: the first was an experiment and he liked the characters enough to outline a trilogy after it.",
+      "es": "Brandon explica por qué la era tiene cuatro libros: el primero fue un experimento y le gustaron tanto los personajes que planeó una trilogía a continuación."
+    },
+    "quote": {
+      "en": "I wrote the first book as an experiment during the Wheel of Time days, when I worried about the cosmere (and Mistborn in particular) languishing while I saw to the needs of Randland. The book turned out well--and I liked the characters so much that I outlined a trilogy to follow up Alloy of Law. Hence the four books--and this WILL be the final one.",
+      "es": "Escribí el primer libro como un experimento en los días de La Rueda del Tiempo, cuando me preocupaba que el Cosmere (y Mistborn en particular) languideciera mientras yo atendía las necesidades de Randland. El libro salió bien, y me gustaron tanto los personajes que esbocé una trilogía para continuar Aleación de ley. De ahí los cuatro libros, y este SERÁ el último."
+    },
+    "requires": [
+      "mb4",
+      "mb5",
+      "mb6",
+      "mb7"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/469/#e14798",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-002",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-2018",
+    "kind": "wob",
+    "books": [
+      "mb7"
+    ],
+    "text": {
+      "en": "Brandon confirms one of the supporting leads narrates chapters, as she did in an earlier book.",
+      "es": "Brandon confirma que una de las secundarias principales narra capítulos, como ya hizo en un libro anterior."
+    },
+    "quote": {
+      "en": "Yes she will. I don't have to RAFO that, because I have already written a couple of them. I'm pretty sure she got a couple in Bands of Mourning, she will have more in Lost Metal.",
+      "es": "Sí, los tendrá. No tengo que hacerle RAFO a esto, porque ya he escrito un par. Estoy bastante seguro de que tuvo un par en Brazales de duelo; tendrá más en El metal perdido."
+    },
+    "requires": [
+      "mb4",
+      "mb5",
+      "mb6",
+      "mb7"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/470/#e14818",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-002",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-2019",
+    "kind": "wob",
+    "books": [
+      "mb7"
+    ],
+    "text": {
+      "en": "Brandon confirms this book is a true conclusion to the story of its lead pair, not an epilogue.",
+      "es": "Brandon confirma que este libro es una conclusión real de la historia de su pareja protagonista, no un epílogo."
+    },
+    "quote": {
+      "en": "It is an actual conclusion.",
+      "es": "Es una conclusión de verdad."
+    },
+    "requires": [
+      "mb4",
+      "mb5",
+      "mb6",
+      "mb7"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/178/#e3721",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-002",
+    "verifiedBy": "agent:verify-batch-002",
+    "verifiedOn": "2026-11-14"
+  }
+]
