@@ -10,9 +10,5 @@ public/data/
 test-results/
 playwright-report/
 .lighthouse.json
-.impeccable/questions/
-.impeccable/mocks/
-.impeccable/critique/
-.impeccable/review/
 .e2e-dist/
 .quarantine/

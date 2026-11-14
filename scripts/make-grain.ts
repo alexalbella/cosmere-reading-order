@@ -4,7 +4,7 @@ import { crc32, deflateSync } from 'node:zlib'
 
 // Writes public/textures/leather-grain-{a,b}.png: two seamless tiles of leather pebbling, black with alpha, so they
 // can only ever darken what is under them. Worked out here from fixed seeds, with no image as a source.
-// Run: npx tsx scripts/make-grain.ts, then record their provenance again with `impeccable embed-prompt`.
+// Run: npx tsx scripts/make-grain.ts
 //
 // Two small tiles of coprime sizes, laid over each other: together they repeat only every 3233 px, and each stays
 // too small to compete with the page's text as its largest paint, which a single big tile did.

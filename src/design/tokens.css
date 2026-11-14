@@ -1,5 +1,4 @@
-/* The approved convergence (docs/superpowers/variants/2026-11-04-cosmere-encuadernacion/converge):
-   Cuero vivo for colour, La prensa for motion, La orilla for structure. Values are in tokens.md.
+/* A bound book: living leather for colour, the press for motion, the shore for structure.
    The finished state is always the base state: animations only add, under no-preference. */
 @font-face { font-family: Marcellus; src: url(/fonts/marcellus-latin-400-normal.woff2) format('woff2'); font-display: swap; }
 @font-face { font-family: Alegreya; src: url(/fonts/alegreya-latin-400-normal.woff2) format('woff2'); font-weight: 400; font-display: swap; }

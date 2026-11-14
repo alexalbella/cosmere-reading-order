@@ -189,6 +189,17 @@ describe('the deploy job', () => {
     expect(step).toContain('"$code" = 6')
   })
 
+  // The deploy tool lists the worker's bindings with their values, cut short. A secret is masked in a public log
+  // only when it is printed whole, so that list never reaches the log; a failed deploy still fails the step.
+  test('the deploy never prints the bindings it lists, and its failure still fails the step', () => {
+    const start = workflow.lastIndexOf('- if: steps.gate.outputs.go', workflow.indexOf('npx wrangler deploy'))
+    const step = workflow.slice(start, workflow.indexOf('- if: steps.gate.outputs.go', start + 1))
+    expect(workflow.match(/npx wrangler deploy/g)).toHaveLength(1)
+    expect(step).toContain('set -o pipefail')
+    expect(step).toMatch(/npx wrangler deploy 2>&1 \| \{ grep -v 'env\\\.' \|\| true; \}/)
+    expect(step.indexOf('set -o pipefail')).toBeLessThan(step.indexOf('npx wrangler deploy'))
+  })
+
   test('that check runs with no token, and never prints a body', () => {
     const step = workflow.slice(workflow.indexOf('npx wrangler deploy') + 'npx wrangler deploy'.length)
     expect(step).not.toContain('CLOUDFLARE_API_TOKEN')

@@ -171,7 +171,7 @@ export function run(options: Options): Counts {
       : {}
   const batch = migrate(upstream, 1, buildIdMap(books, extra))
   if (!options.dryRun) {
-    // Authoring agents edit this file next: a rerun must never replace their work silently.
+    // This file is edited by hand next: a rerun must never replace that work silently.
     if (existsSync(options.outFile) && !options.force) throw new Error('EXISTS')
     mkdirSync(dirname(options.outFile), { recursive: true })
     writeFileSync(options.outFile, JSON.stringify(batch, null, 2) + '\n')
