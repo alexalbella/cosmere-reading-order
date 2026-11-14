@@ -503,7 +503,7 @@ describe('synopses and notes in the catalogue', () => {
   test('an unsound synopsis is reported as syn:<book> with its code', () => {
     const c = withContent()
     c.synopses[1]!.requires = ['ash-road']
-    expect(validateCatalog(c)).toEqual([{ code: 'SYNOPSIS_OUTSIDE_SERIES', id: 'syn:orchard-dusk' }])
+    expect(validateCatalog(c)).toEqual([{ code: 'SYNOPSIS_REQUIRES_NOT_EARLIER', id: 'syn:orchard-dusk' }])
   })
   test('a malformed synopsis is named by position', () => {
     const c = withContent()
@@ -596,6 +596,8 @@ describe('plate facts for works not published, apocryphal and role-playing', () 
     ['an announcement that is not an https link', { announcedIn: 'http://source.example.test/p' }, 'BAD_FIELD'],
     ['a writing source that is not a link', { writing: { stage: 'idea', source: 'free text here', asOf: '2026-11-01' } }, 'BAD_FIELD'],
     ['an expected source that is not a link', { expected: { when: '2027', official: true, source: 'free text here' } }, 'BAD_FIELD'],
+    ['writing with a field of its own making', { writing: { stage: 'idea', source: SRC, asOf: '2026-11-01', note: 'free text here' } }, 'BAD_FIELD'],
+    ['an expected date with a field of its own making', { expected: { when: '2027', official: true, source: SRC, note: 'free text here' } }, 'BAD_FIELD'],
   ])('%s', (_name, extra, code) => {
     expect(codes(withBook('low-tide-atlas', extra), 'low-tide-atlas')).toEqual([code])
   })
@@ -611,6 +613,14 @@ describe('plate facts for works not published, apocryphal and role-playing', () 
     ['a canon value without its source', { canon: { value: 'yes' } }, 'BAD_FIELD'],
     ['a canon source that is not a link', { canon: { value: 'yes', source: 'free text here' } }, 'BAD_FIELD'],
     ['an apocryphal source that is not a link', { apocryphal: { reason: 'parody', source: 'free text here' } }, 'BAD_FIELD'],
+    // A name is a name: one short line. Prose in it would reach the plate, where no gate reads it.
+    ['a publisher that is a sentence', { publisher: 'A press that prints the tale of the keeper who loses the lantern at the very end of the road' }, 'BAD_FIELD'],
+    ['a publisher over two lines', { publisher: 'Lantern Press\nand more' }, 'BAD_FIELD'],
+    ['a line that is a sentence', { line: 'The line in which the keeper finds out who lit the lantern before her time' }, 'BAD_FIELD'],
+    ['a name with space round it', { line: ' Lantern Tales' }, 'BAD_FIELD'],
+    // A fact holds its own fields and nothing else: an extra key would be copied into the catalogue as it is.
+    ['a canon value with a field of its own making', { canon: { value: 'yes', source: SRC, note: 'free text here' } }, 'BAD_FIELD'],
+    ['an apocryphal reason with a field of its own making', { apocryphal: { reason: 'parody', source: SRC, why: 'free text here' } }, 'BAD_FIELD'],
   ])('%s', (_name, extra, code) => {
     expect(codes(withBook('paper-wolves', extra), 'paper-wolves')).toEqual([code])
   })

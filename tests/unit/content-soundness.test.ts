@@ -31,7 +31,9 @@ describe('synopsis soundness', () => {
     ['someone else verifies', () => ({ ...syn('glass-harbour'), verifiedBy: 'Agent-A' }), 'SELF_VERIFIED'],
     ['open and requires at once', () => ({ ...syn('glass-harbour'), requires: ['ash-road'] }), 'SYNOPSIS_OPEN_AND_REQUIRES'],
     ['neither open nor gated', () => ({ ...syn('orchard-dusk'), requires: [] }), 'SYNOPSIS_NOT_GATED'],
-    ['a required work of another series', () => ({ ...syn('orchard-dusk'), requires: ['ash-road'] }), 'SYNOPSIS_OUTSIDE_SERIES'],
+    // The same code as a later work of its own series: a line that named this case apart would tell whoever
+    // reads the log that the writer saw a tie to another series.
+    ['a required work of another series', () => ({ ...syn('orchard-dusk'), requires: ['ash-road'] }), 'SYNOPSIS_REQUIRES_NOT_EARLIER'],
     [
       'a work with no series that is not open',
       () => ({ ...without(syn('glass-harbour'), 'open'), requires: ['ash-road'] }),
@@ -61,6 +63,35 @@ describe('synopsis soundness', () => {
   test('open on a work of a series whose order is not known', () => {
     const map = reshaped('orchard-dusk', { order: {} })
     expect(synopsisProblems(syn('copper-orchard'), map)).toEqual(['SYNOPSIS_OPEN_LATER'])
+  })
+  // A work that is not out (planned, announced) or never was canon (apocryphal) has no place in the publication
+  // order. It comes after every work that has one: it never stops the first work from being open, it may wait on
+  // the works that are out, and nothing waits on it. A published work with no place still fails closed (above).
+  const withUnplaced = (status: Book['status']) => {
+    const map = fixtureBookMap()
+    map.set('orchard-third', { ...map.get('orchard-dusk')!, id: 'orchard-third', status, order: {} })
+    return map
+  }
+  test.each(['planned', 'announced', 'apocryphal'] as const)('the first work of a series is open though a %s sibling has no place yet', (status) => {
+    expect(synopsisProblems(syn('copper-orchard'), withUnplaced(status))).toEqual([])
+    expect(synopsisProblems(syn('orchard-dusk'), withUnplaced(status))).toEqual([])
+  })
+  test('a work that is not out waits on the works of its series that are', () => {
+    const third = { ...syn('orchard-dusk'), book: 'orchard-third', requires: ['copper-orchard', 'orchard-dusk'] }
+    expect(synopsisProblems(third, withUnplaced('planned'))).toEqual([])
+  })
+  test('a work that is not out is never open inside a series', () => {
+    const third = { ...without(syn('orchard-dusk'), 'requires'), book: 'orchard-third', open: true }
+    expect(synopsisProblems(third, withUnplaced('planned'))).toEqual(['SYNOPSIS_OPEN_LATER'])
+  })
+  test('nothing waits on a work that is not out', () => {
+    expect(synopsisProblems({ ...syn('orchard-dusk'), requires: ['orchard-third'] }, withUnplaced('planned'))).toEqual(['SYNOPSIS_REQUIRES_NOT_EARLIER'])
+  })
+  test('two works that are not out never wait on each other', () => {
+    const map = withUnplaced('planned')
+    map.set('orchard-fourth', { ...map.get('orchard-third')!, id: 'orchard-fourth' })
+    const fourth = { ...syn('orchard-dusk'), book: 'orchard-fourth', requires: ['orchard-third'] }
+    expect(synopsisProblems(fourth, map)).toEqual(['SYNOPSIS_REQUIRES_NOT_EARLIER'])
   })
   test('a required work that comes after it in the series', () => {
     expect(synopsisProblems({ ...without(syn('copper-orchard'), 'open'), requires: ['orchard-dusk'] }, books)).toEqual(['SYNOPSIS_REQUIRES_NOT_EARLIER'])

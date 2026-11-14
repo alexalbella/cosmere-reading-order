@@ -59,7 +59,7 @@ All optional. Each is a list value or a link, never free text, so a fact cannot 
 | `expected` | `{ when, official, source }` | An official date or the window the author gave: `2027`, `2027-03`, `2027-03-15`, `2027-H2` or `2027-Q4`. `official: false` reads as an estimate. Announced and planned works still never carry a `year`. |
 | `announcedIn` | https url | Where the work was announced. |
 | `apocryphal` | `{ reason, source }` | Why it is apocryphal: `not-canon`, `parody`, `superseded` or `unfinished`. |
-| `publisher`, `line` | string | Publisher and product line (role-playing books; `publisher` also says where an apocryphal work appeared). |
+| `publisher`, `line` | string | Publisher and product line (role-playing books; `publisher` also says where an apocryphal work appeared). A name only: one line of at most 60 characters, never a sentence. |
 | `rpgKind` | `core` \| `world-guide` \| `adventure` \| `supplement` \| `screen` \| `starter` | Kind of role-playing book. |
 | `crowdfunding` | https url | The crowdfunding campaign. |
 | `canon` | `{ value, source }` | Whether a role-playing book is canon: `yes`, `partly`, `no` or `unknown`. |
@@ -132,8 +132,8 @@ One per work, in our own words: never a publisher's blurb, never text copied or 
 | --- | --- | --- |
 | `book` | book id | The work. One synopsis per work: two for one work hide both. |
 | `text.en`, `text.es` | string | The synopsis in both languages. |
-| `requires` | book id[] | The works it would spoil. **Only earlier works of the same series** (earlier by `order.publication`), never another series and never the work itself, so a locked synopsis never tells a reader that two series are linked. |
-| `open` | `true` | Instead of `requires`, for a synopsis that waits for nothing: the first work of the whole series by `order.publication` (not the first of a part), or a work with no series (which must be open). Where the order is not known, it cannot be open. |
+| `requires` | book id[] | The works it would spoil. **Only earlier works of the same series** (earlier by `order.publication`), never another series and never the work itself, so a locked synopsis never tells a reader that two series are linked. A work that is not out (planned, announced) or never was canon (apocryphal) has no place in that order yet: it comes after every work that has one, so it may wait on those, and nothing waits on it. |
+| `open` | `true` | Instead of `requires`, for a synopsis that waits for nothing: the first work of the whole series by `order.publication` (not the first of a part), or a work with no series (which must be open). A work without a place in the order is never open inside a series; siblings that are not out and have no place yet do not stop the first work from being open. |
 | `sources`, `author`, `verifiedBy`, `verifiedOn` | | As for connections, except that `kind: upstream` is never allowed. |
 
 Exactly one of `open: true` or a non-empty `requires`. An empty `requires` without `open` hides the synopsis, like an empty `requires` hides a connection. The plate says one of three things: the folded synopsis, opened on request; the same line on every work saying it opens once the earlier works of its series are read; or «Sin sinopsis todavía» / «No synopsis yet».
@@ -233,12 +233,11 @@ Output is one line per problem, `CODE id`, never content. A synopsis is named `s
 | `ALIAS_MISMATCH` | With `--against`: a removed work's heir (the work holding its id as an alias) has another format or world. |
 | `EMPTY_CATALOGUE` | No books at all. |
 | `BAD_META` | `data/meta.json` is malformed. |
-| `SYNOPSIS_OUTSIDE_SERIES` | A synopsis requires a work of another series. |
 | `SYNOPSIS_NOT_GATED` | A synopsis has neither `open: true` nor a non-empty `requires`. |
 | `SYNOPSIS_OPEN_AND_REQUIRES` | A synopsis has both. |
 | `SYNOPSIS_OPEN_LATER` | `open: true` on a work that is not the first of its whole series by `order.publication`, or whose place there is not known. |
 | `SYNOPSIS_NO_SERIES_NOT_OPEN` | A work with no series whose synopsis is not open. |
-| `SYNOPSIS_REQUIRES_NOT_EARLIER` | A synopsis requires its own work, a later work of its series, or one whose place is not known. |
+| `SYNOPSIS_REQUIRES_NOT_EARLIER` | A synopsis requires something that is not an earlier work of its own series: its own work, a later one, a work of another series, or one whose place is not known. One code for all of them on purpose, so the report never says which. |
 | `NOTE_NO_BOOKS` | A note hangs on no work. |
 | `NOTE_REQUIRES_MISSING_BOOK` | A note's `requires` lacks one of its `books`. |
 | `NOTE_QUOTE_MISSING` | A `wob` without its quote in both languages. |

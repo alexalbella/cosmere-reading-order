@@ -44,6 +44,10 @@ const isNumber = (value: unknown): boolean => typeof value === 'number' && Numbe
 const isText = (value: unknown): boolean => typeof value === 'string' && value.trim() !== ''
 const absentOr = (value: unknown, ok: (v: unknown) => boolean): boolean => value === undefined || ok(value)
 const isHttps = (v: unknown): boolean => typeof v === 'string' && /^https:\/\/\S+$/.test(v)
+/** A name (a publisher, a line of books): one short line, so prose can never reach the plate in its place. */
+const isName = (v: unknown): boolean => typeof v === 'string' && v === v.trim() && /^[^\n\r\t]{1,60}$/.test(v)
+/** An object that holds its own fields and no other: an extra one would be copied into the catalogue as it is. */
+const only = (v: Record<string, unknown>, keys: readonly string[]): boolean => Object.keys(v).every((k) => keys.includes(k))
 const EXPECTED_WHEN = /^\d{4}(?:-(?:0[1-9]|1[0-2])(?:-\d{2})?|-H[12]|-Q[1-4])?$/
 
 /** The shape of each plate fact. Whether its value is in its list is the enum rule's job. */
@@ -55,6 +59,7 @@ function plateFactProblems(b: Book): boolean {
   return (
     !absentOr(writing, (w) =>
       isObject(w) &&
+      only(w, ['stage', 'percent', 'source', 'asOf']) &&
       typeof w.stage === 'string' &&
       absentOr(w.percent, (p) => isNumber(p) && (p as number) >= 0 && (p as number) <= 100) &&
       isHttps(w.source) &&
@@ -62,6 +67,7 @@ function plateFactProblems(b: Book): boolean {
     ) ||
     !absentOr(expected, (e) =>
       isObject(e) &&
+      only(e, ['when', 'official', 'source']) &&
       typeof e.when === 'string' &&
       EXPECTED_WHEN.test(e.when) &&
       (e.when.length !== 10 || isCalendarDate(e.when)) &&
@@ -69,12 +75,12 @@ function plateFactProblems(b: Book): boolean {
       isHttps(e.source),
     ) ||
     !absentOr(b.announcedIn, isHttps) ||
-    !absentOr(apocryphal, (a) => isObject(a) && typeof a.reason === 'string' && isHttps(a.source)) ||
-    !absentOr(b.publisher, isText) ||
-    !absentOr(b.line, isText) ||
+    !absentOr(apocryphal, (a) => isObject(a) && only(a, ['reason', 'source']) && typeof a.reason === 'string' && isHttps(a.source)) ||
+    !absentOr(b.publisher, isName) ||
+    !absentOr(b.line, isName) ||
     !absentOr(b.rpgKind, (k) => typeof k === 'string') ||
     !absentOr(b.crowdfunding, isHttps) ||
-    !absentOr(canon, (c) => isObject(c) && typeof c.value === 'string' && isHttps(c.source))
+    !absentOr(canon, (c) => isObject(c) && only(c, ['value', 'source']) && typeof c.value === 'string' && isHttps(c.source))
   )
 }
 

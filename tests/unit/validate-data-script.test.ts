@@ -3,9 +3,13 @@ import { execFileSync, spawnSync } from 'node:child_process'
 import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { afterEach, beforeEach, describe, expect, test } from 'vitest'
+import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest'
 import { fixtureCatalog } from '../fixtures/catalog'
 import { fixtureNotes, fixtureSynopses } from '../fixtures/content'
+
+// Every test here starts the real script in a process of its own, some of them several times and with git: about
+// a second and a half each on an idle machine, and past the default five seconds when the whole suite runs beside it.
+vi.setConfig({ testTimeout: 30_000 })
 
 const TSX = join(process.cwd(), 'node_modules', 'tsx', 'dist', 'cli.mjs')
 const SCRIPT = join(process.cwd(), 'scripts', 'validate-data.ts')
@@ -285,7 +289,7 @@ describe('synopses and notes', () => {
     write('data/synopses/batch-001.json', s)
     const r = run(SCRIPT)
     expect(r.code).toBe(1)
-    expect(r.out).toContain('SYNOPSIS_OUTSIDE_SERIES')
+    expect(r.out).toContain('SYNOPSIS_REQUIRES_NOT_EARLIER')
     expect(r.out).toContain('syn:orchard-dusk')
     expect(r.out).not.toContain('LEAK')
   })

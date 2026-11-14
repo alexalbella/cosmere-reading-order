@@ -175,13 +175,22 @@ function collector(): { problems: Set<ProblemCode>; when: When } {
 const list = (value: unknown): unknown[] => (Array.isArray(value) ? Array.from(value) : [])
 const bothLanguages = (value: unknown): boolean => !isBlank(field(value, 'en')) && !isBlank(field(value, 'es'))
 
+const placeOf = (b: Book): unknown => (isObject(b.order) ? b.order.publication : undefined)
+
 /**
- * Whether `a` came out before `b`, by the catalogue's publication order. Null when either has no place in it:
- * the series rules then fail closed. A number inside a series restarts in each part, so it cannot say this.
+ * Whether `a` came out before `b`, by the catalogue's publication order. A number inside a series restarts in
+ * each part, so it cannot say this.
+ *
+ * A work that is not out (planned, announced) or never was canon (apocryphal) has no place in that order, and
+ * comes after every work that has one. Anything else without a place is not known, and the answer is null: the
+ * series rules then fail closed. So two works without a place are never ordered, and a published work without
+ * one orders nothing.
  */
 function cameBefore(a: Book, b: Book): boolean | null {
-  const pa = isObject(a.order) ? a.order.publication : undefined
-  const pb = isObject(b.order) ? b.order.publication : undefined
+  const pa = placeOf(a)
+  const pb = placeOf(b)
+  const notOut = b.status === 'planned' || b.status === 'announced' || b.status === 'apocryphal'
+  if (typeof pa === 'number' && pb === undefined && notOut) return true
   if (typeof pa !== 'number' || typeof pb !== 'number' || pa === pb) return null
   return pa < pb
 }
@@ -208,8 +217,9 @@ export function synopsisProblems(s: unknown, books: ReadonlyMap<BookId, Book>): 
     when(series === null && !open, 'SYNOPSIS_NO_SERIES_NOT_OPEN')
     if (series !== null) {
       const sameSeries = (b: Book | undefined): b is Book => b !== undefined && b.series === series
-      when(requires.some((ref) => other(ref) !== undefined && !sameSeries(other(ref))), 'SYNOPSIS_OUTSIDE_SERIES')
-      when(requires.some((ref) => sameSeries(other(ref)) && cameBefore(other(ref)!, book) !== true), 'SYNOPSIS_REQUIRES_NOT_EARLIER')
+      // One code for every required work that is not an earlier work of this series, another series included:
+      // a code of its own for that case would tell whoever reads the log that the writer saw a tie between two.
+      when(requires.some((ref) => other(ref) !== undefined && (!sameSeries(other(ref)) || cameBefore(other(ref)!, book) !== true)), 'SYNOPSIS_REQUIRES_NOT_EARLIER')
       const siblings = [...books.values()].filter((b) => b.id !== book.id && sameSeries(b))
       when(open && siblings.some((b) => cameBefore(book, b) !== true), 'SYNOPSIS_OPEN_LATER')
     }
