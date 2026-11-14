@@ -17,3 +17,12 @@ describe('world tokens', () => {
     expect(css).toContain(`--tone-${key}: ${w.tone}`)
   })
 })
+
+describe('the engraved atlas', () => {
+  test('the atlas takes no pointer events and lies behind everything on the cover', () => {
+    const rule = /\.atlas\s*\{([^}]*)\}/.exec(css)?.[1] ?? ''
+    expect(rule).toContain('pointer-events: none')
+    expect(rule).toContain('z-index: -1')
+    expect(/\.cover\s*\{[^}]*isolation: isolate/.test(css)).toBe(true)
+  })
+})

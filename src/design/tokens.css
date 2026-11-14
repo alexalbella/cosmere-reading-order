@@ -57,8 +57,34 @@ ul, ol { list-style: none; }
 /* Shell: spine strip, framed cover, one rail for the sentence and the plate */
 .app { display: grid; grid-template-columns: 92px minmax(0, 1fr); height: 100dvh; background-image: var(--grain); }
 .cover { position: relative; isolation: isolate; min-height: 0; margin: 18px; border: 1px solid var(--gold); outline: 3px solid var(--gold); outline-offset: 5px; display: grid; grid-template-columns: minmax(0, 1fr) clamp(320px, 25vw, 400px); grid-template-rows: auto minmax(0, 1fr) auto; grid-template-areas: 'area sentence' 'area slot' 'foot foot'; column-gap: 26px; padding: 14px 30px 8px 22px; }
-.cover:not(.interior) { background-image: radial-gradient(ellipse at center, transparent 58%, rgba(0, 0, 0, .24)); }
+.cover:not(.interior) { background-color: color-mix(in oklab, var(--field) 60%, var(--tint, var(--field))); background-image: radial-gradient(ellipse at center, transparent 50%, rgba(0, 0, 0, .42)), url(/textures/grain-pebble.svg), url(/textures/mottle.svg); background-size: auto, 300px 300px, 900px 900px; background-blend-mode: normal, soft-light, soft-light; }
+/* The tint of the leather: the leather of the world lifted, or else of the world in hand (App.vue sets data-tint).
+   One dark leather mixed into another, so a tint never lightens the ground under the text. */
+.app[data-tint=sel] { --tint: #013f2a; }
+.app[data-tint=scadrial] { --tint: #282e35; }
+.app[data-tint=nalthis] { --tint: #5f0818; }
+.app[data-tint=taldain] { --tint: #453507; }
+.app[data-tint=threnody] { --tint: #2b1657; }
+.app[data-tint=sol] { --tint: #003e4c; }
+.app[data-tint=roshar] { --tint: #0b1f54; }
+.app[data-tint=yolen] { --tint: #232f3c; }
+.app[data-tint=lumar] { --tint: #00372a; }
+.app[data-tint=komashi] { --tint: #461e36; }
+.app[data-tint=canticle] { --tint: #492109; }
+.app[data-tint=ashyn] { --tint: #412525; }
+.app[data-tint=aether] { --tint: #3a253b; }
+.app[data-tint=mythos] { --tint: #362e00; }
+.app[data-tint=otros] { --tint: #272f35; }
 .cover.interior { background-color: var(--wood); background-image: var(--grain); }
+/* The star atlas, tooled blind: a dark cut over a lit lip. Behind everything on the cover, and never in the way. */
+.atlas { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; overflow: hidden; pointer-events: none; }
+.atlas path { fill: none; stroke-width: 1.3; }
+.atlas .atlas-line { stroke-width: .8; }
+.atlas-lip { transform: translateY(1.1px); }
+.atlas-lip path { stroke: rgba(255, 238, 200, .13); }
+.atlas-cut path { stroke: rgba(0, 0, 0, .46); }
+.atlas-star { fill: rgba(0, 0, 0, .5); }
+.atlas-star-lip { fill: rgba(255, 238, 200, .15); }
 .controls { display: contents; }
 .controls .medallion { position: absolute; z-index: 2; }
 .m-lang { top: 10px; left: 10px; } .m-filters { top: 10px; right: 10px; } .m-settings { bottom: 10px; left: 10px; } .m-spoilers { bottom: 10px; right: 10px; }

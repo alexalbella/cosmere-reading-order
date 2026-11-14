@@ -6,6 +6,7 @@ import { reload } from './app/reload'
 import { PHONE_QUERY } from './app/viewport'
 import { useApp, type ImportOutcome, type ImportPlan, type UseAppResult } from './app/useApp'
 import AppFooter from './components/AppFooter.vue'
+import AtlasEngraving from './components/AtlasEngraving.vue'
 import BookPlate from './components/BookPlate.vue'
 import CoverFillet from './components/CoverFillet.vue'
 import FiltersPanel from './components/FiltersPanel.vue'
@@ -342,6 +343,7 @@ const pendingUnlocks = computed(() => {
     v-else
     class="app"
     :data-world="activeWorld"
+    :data-tint="app.lifted.value ?? activeWorld"
     :data-connections="app.connectionsState.value"
     :data-content="app.contentState.value"
   >
@@ -362,6 +364,7 @@ const pendingUnlocks = computed(() => {
       class="cover"
       :class="{ interior: app.view.value === 'shelf', 'with-panel': panel, 'room-open': roomOpen }"
     >
+      <AtlasEngraving v-if="roomy" />
       <CoverFillet v-if="app.view.value !== 'shelf'" />
       <LeaderThread
         v-if="roomy && showPlate && !panel && openBox"

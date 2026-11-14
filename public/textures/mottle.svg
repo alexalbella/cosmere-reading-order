@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900">
+  <!-- The slow changes of tone a hide has: very low-frequency noise, for soft-light. Tileable.
+       The table keeps the dark clouds deep and holds the light ones just above mid-grey (never past 0.58),
+       so the leather never lightens enough to weaken the text that sits on it. -->
+  <filter id="f" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.0042" numOctaves="4" seed="21" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer><feFuncR type="table" tableValues="0 0 0 0.06 0.28 0.5 0.54 0.57 0.58 0.58 0.58"/><feFuncG type="table" tableValues="0 0 0 0.06 0.28 0.5 0.54 0.57 0.58 0.58 0.58"/><feFuncB type="table" tableValues="0 0 0 0.06 0.28 0.5 0.54 0.57 0.58 0.58 0.58"/></feComponentTransfer>
+  </filter>
+  <rect width="900" height="900" filter="url(#f)"/>
+</svg>
