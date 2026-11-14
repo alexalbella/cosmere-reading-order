@@ -26,32 +26,32 @@ It is a Vue 3 rewrite of [17thshard/reading-order](https://github.com/17thshard/
 
 ## What it does
 
-- **Tells you what to read next.** One sentence at the top: the book you are on, the one after it, and whether the Spanish edition is out. It follows the order you choose, recommended or by publication.
-- **Three ways to look at the same catalogue.** A map with the works on a ring by world, the reading order as one line, and a shelf of spines by phase.
-- **A plate for every work.** Series and number, star system, format, pages and words, first publication, the Spanish publisher, and where to read it for free when the author gives it away. Works that are announced, apocryphal or role-playing books get their own facts: how far the writing is, when it is expected, who publishes it, whether it is canon.
-- **Connections, synopses and notes behind a gate.** Each one lists the works it would spoil and appears only when you have read them all. A synopsis is folded, and opens when you ask.
-- **Your marks stay with you.** They live on the device. With the full deploy they also travel between your devices; without it, export and import a file.
-- **Works offline,** installs as an app, and ships under 100 KB of JavaScript on the first load.
-- **English and Spanish,** every title in both where both exist.
-- **Built to be readable.** Text contrast of at least 4.5:1, 44 px touch targets, keyboard use throughout, and a still version when you ask for less motion.
+- A sentence at the top says which book you are on, which comes next and whether its Spanish edition is out. It follows the order you choose, recommended or by publication.
+- You can look at the same catalogue three ways: as a map with the works on a ring by world, as the reading order in one line, or as a shelf of spines by phase.
+- Every work has a plate with its series and number, star system, format, pages and words, first publication, Spanish publisher, and a link to read it for free when the author gives it away. Works that are announced, apocryphal or role-playing books add their own facts: how far the writing is, when it is expected, who publishes it, whether it is canon.
+- Connections, synopses and notes each list the works they would spoil, and appear only when you have read them all. A synopsis stays folded until you ask for it.
+- Your marks live on the device. With the full deploy they also travel between your devices; without it, you can export them to a file and import it elsewhere.
+- It works offline, installs as an app, and loads with under 100 KB of JavaScript.
+- The interface is in English and Spanish, and every title appears in both where both exist.
+- Text contrast is at least 4.5:1, touch targets are 44 px, everything works from the keyboard, and motion stops when you ask for less.
 
 ## The spoiler promise
 
 Nothing about a work you have not read reaches the screen.
 
 - One function, [`src/spoilers/visible.ts`](src/spoilers/visible.ts), is the only path from the data to the screen.
-- A connection is drawn only when **every** work in its `requires` list is read. The list holds both ends and anything else the text gives away.
-- A hidden connection leaves **no trace**: no line, no count beside a book, no gap in the layout, nothing in the page.
-- A missing or broken field **hides**, never shows.
+- A connection is drawn only when every work in its `requires` list is read. The list holds both ends and anything else the text gives away.
+- A hidden connection leaves nothing behind: there is no line, no count beside a book, no gap in the layout and no element in the page.
+- An entry with a missing or broken field stays hidden.
 - A synopsis waits only on earlier works of its own series, so a lock never tells you that two series are tied.
-- Marking a book cannot happen by accident, and unlocking one by hand asks first and can be undone.
+- Marking a book takes a deliberate tap on its plate, and unlocking one by hand asks first and can be undone.
 
 [`docs/SPOILERS.md`](docs/SPOILERS.md) lists the twelve rules, each with the tests that prove it.
 
 > [!WARNING]
 > The data files are public and anyone can read them. If you are still reading the books, do not open `data/connections/`, `data/synopses/` or `data/notes/`.
 
-## A closer look
+## Screenshots
 
 <table>
   <tr>
@@ -59,8 +59,8 @@ Nothing about a work you have not read reaches the screen.
     <td width="50%"><img src="docs/img/shelf.jpg" alt="The shelf: the works as spines, by phase, in each world's leather."></td>
   </tr>
   <tr>
-    <td><strong>The plate.</strong> Touch a title and its card opens beside it; the ring makes room.</td>
-    <td><strong>The shelf.</strong> The same works as spines, in the colour of their world.</td>
+    <td>Touch a title and its plate opens beside it, while the ring moves over to make room.</td>
+    <td>The shelf shows the same works as spines, in the colour of their world.</td>
   </tr>
 </table>
 
@@ -98,11 +98,11 @@ npm run dev
 git config core.hooksPath .githooks
 ```
 
-## Make it yours
+## Run your own copy
 
-**Host it.** The build is a folder of static files: put `dist/` on any host and marks stay on each device. For marks that follow you between devices, deploy the Worker with Cloudflare KV and Access. Both ways are in [`docs/DEPLOY.md`](docs/DEPLOY.md).
+The build is a folder of static files. Put `dist/` on any host and marks stay on each device. For marks that follow you between devices, deploy the Worker with Cloudflare KV and Access. [`docs/DEPLOY.md`](docs/DEPLOY.md) covers both.
 
-**Keep the catalogue.** Everything is a JSON file you can edit by hand. [`docs/DATA.md`](docs/DATA.md) describes every file and field, and how to add a work, a connection, a synopsis or a note. The validator tells you what is wrong by code and id.
+The catalogue is a set of JSON files you can edit by hand. [`docs/DATA.md`](docs/DATA.md) describes every file and field, and how to add a work, a connection, a synopsis or a note. The validator reports what is wrong by code and id.
 
 ## How it fits together
 
@@ -132,12 +132,12 @@ docs/                 the guides below
 
 ## Where it comes from
 
-This is a fork of [17thshard/reading-order](https://github.com/17thshard/reading-order) by Marvin Rösch and the 17th Shard, MIT licensed. The map of worlds, the reading orders, the colour per world and the idea of drawing connections come from there, and so do many of the connections. Thank you.
+This is a fork of [17thshard/reading-order](https://github.com/17thshard/reading-order) by Marvin Rösch and the 17th Shard, MIT licensed. The map of worlds, the reading orders, the colour per world and the idea of drawing connections come from there, and so do many of the connections themselves.
 
 ## Licence and disclaimer
 
-Code: MIT ([`LICENSE`](LICENSE)). Fonts: SIL Open Font License (`public/fonts/OFL.txt`).
+The code is MIT licensed ([`LICENSE`](LICENSE)) and the fonts are under the SIL Open Font License (`public/fonts/OFL.txt`).
 
-Every image here is drawn for this project: the seal, the emblems, the covers and the leather. No official Dragonsteel image, cover, map or illustration is in this repository, and no publisher's blurb: synopses are written for this site.
+The seal, the emblems, the covers and the leather are all drawn for this project. The repository holds no official Dragonsteel image, cover, map or illustration, and the synopses are written for this site instead of taken from a publisher.
 
 The Cosmere and its works belong to Dragonsteel Entertainment. This is an **unofficial fan project**, not affiliated with or endorsed by Brandon Sanderson, Dragonsteel or the 17th Shard.
