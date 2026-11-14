@@ -9,7 +9,8 @@ import { fixtureNotes, fixtureSynopses } from '../fixtures/content'
 
 // Every test here starts the real script in a process of its own, some of them several times and with git: about
 // a second and a half each on an idle machine, and past the default five seconds when the whole suite runs beside it.
-vi.setConfig({ testTimeout: 30_000 })
+// The setup of each test starts a git repository, which can pass its own ten seconds the same way.
+vi.setConfig({ testTimeout: 30_000, hookTimeout: 30_000 })
 
 const TSX = join(process.cwd(), 'node_modules', 'tsx', 'dist', 'cli.mjs')
 const SCRIPT = join(process.cwd(), 'scripts', 'validate-data.ts')
