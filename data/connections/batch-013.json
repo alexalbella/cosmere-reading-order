@@ -6,8 +6,8 @@
     "type": "significant",
     "tier": "confirmed",
     "description": {
-      "en": "Hemalurgy, the Scadrial art of impaling and moving attributes via spikes, is the technique the Prophet employed on Miral: a silver stake hammered into the Megalith to restrain it.",
-      "es": "La hemalurgia, arte scadriano que consiste en clavar púas y traspasar atributos, constituye la técnica que empleó el Profeta en Miral: una púa de plata hincada en el Megalito para retenerlo."
+      "en": "Hemalurgy, the Scadrial art of impaling and moving attributes via spikes, is the technique the Prophet used on Miral: a silver stake hammered into the Megalith to restrain it.",
+      "es": "La hemalurgia, arte scadriano que consiste en clavar púas y traspasar atributos, es la técnica que usó el Profeta en Miral: una púa de plata hincada en el Megalito para retenerlo."
     },
     "requires": [
       "fires-of-december",
@@ -69,8 +69,8 @@
     "type": "minor",
     "tier": "confirmed",
     "description": {
-      "en": "The bond on the spike relies on an Aon, namely Aon Reo; Aons constitute a script used on Sel.",
-      "es": "El vínculo del clavo emplea un aon, concretamente el aon Reo; los aones constituyen un tipo de escritura propio de Sel."
+      "en": "The bond on the spike relies on an Aon, namely Aon Reo; Aons are a script used on Sel.",
+      "es": "El vínculo del clavo emplea un aon, concretamente el aon Reo; los aones son un tipo de escritura propio de Sel."
     },
     "requires": [
       "fires-of-december",
@@ -159,8 +159,8 @@
     "type": "significant",
     "tier": "confirmed",
     "description": {
-      "en": "Hoid's visit to Miral belongs to the hunt for Valor, which he embarks upon once he finishes assisting Waxillium.",
-      "es": "La visita de Hoid a Miral se inscribe en la persecución de Valentía que inicia después de prestar auxilio a Waxillium."
+      "en": "Hoid's visit to Miral is part of the hunt for Valor, which he begins after he finishes assisting Waxillium.",
+      "es": "La visita de Hoid a Miral forma parte de la persecución de Valentía que inicia tras ayudar a Waxillium."
     },
     "requires": [
       "fires-of-december",
@@ -191,8 +191,8 @@
     "type": "appearance",
     "tier": "confirmed",
     "description": {
-      "en": "Hoid shows up in this volume, visiting Miral.",
-      "es": "Hoid comparece en este volumen, de visita en Miral."
+      "en": "Hoid appears in this volume, on a visit to Miral.",
+      "es": "Hoid aparece en este volumen, de visita en Miral."
     },
     "requires": [
       "fires-of-december"

@@ -6,8 +6,8 @@
     "type": "significant",
     "tier": "confirmed",
     "description": {
-      "en": "According to Brandon, Lumar's spore seas found their footing as a narrative only after he linked them to the magic of White Sand. That sand responds to water thanks to a minuscule lichen-like organism that covers each grain, while the spores represent a far untamed take on the very same concept.",
-      "es": "Según Brandon, los mares de esporas de Lumar cobraron sentido narrativo únicamente cuando los vinculó a la magia de Arena blanca. Esa arena responde al agua gracias a un minúsculo organismo semejante a un liquen que recubre cada grano, mientras que las esporas representan una versión bastante más indómita del mismo concepto."
+      "en": "According to Brandon, Lumar's spore seas found their footing as a narrative only after he linked them to the magic of White Sand. That sand responds to water thanks to a minuscule lichen-like organism that covers each grain, while the spores are a much more untamed version of the same concept.",
+      "es": "Según Brandon, los mares de esporas de Lumar cobraron sentido narrativo solo cuando los vinculó a la magia de Arena blanca. Esa arena responde al agua gracias a un minúsculo organismo semejante a un liquen que recubre cada grano, mientras que las esporas son una versión bastante más indómita del mismo concepto."
     },
     "requires": [
       "tress",
@@ -95,8 +95,8 @@
     "type": "significant",
     "tier": "confirmed",
     "description": {
-      "en": "The Fires of December forms the third installment of the Stories of Hoid's Travails series, which Tress of the Emerald Sea launched, and Hoid once more serves as narrator.",
-      "es": "Los fuegos de Diciembre constituye el tercer tomo de la serie Las desventuras de Hoid, iniciada por Trenza del mar Esmeralda, y vuelve a estar narrado por Hoid."
+      "en": "The Fires of December is the third installment of the Stories of Hoid's Travails series, which Tress of the Emerald Sea launched, and Hoid narrates it again.",
+      "es": "Los fuegos de Diciembre es el tercer tomo de la serie Las desventuras de Hoid, iniciada por Trenza del mar Esmeralda, y vuelve a estar narrado por Hoid."
     },
     "requires": [
       "tress",
@@ -124,7 +124,7 @@
     "type": "minor",
     "tier": "confirmed",
     "description": {
-      "en": "Lumar's aethers originate in Aether of Night, an unreleased early novel by Brandon that first presented them. He explains that his aim was to make the aethers canon by weaving them into the core Cosmere novels.",
+      "en": "Lumar's aethers come from Aether of Night, an unreleased early novel by Brandon that first presented them. He explains that his aim was to make the aethers canon by putting them in the core Cosmere novels.",
       "es": "El origen de los éteres de Lumar está en Aether of Night, una obra inédita de sus inicios con la que Brandon los presentó por primera vez. Según él, su meta era canonizarlos incorporándolos a las novelas centrales del Cosmere."
     },
     "requires": [
@@ -229,7 +229,7 @@
     "type": "significant",
     "tier": "confirmed",
     "description": {
-      "en": "Ulaam, the kandra introduced in Tress, shows up in Wind and Truth, where he serves as the figure who preserved a living cell culture of Hoid so that Hoid was able to reconstruct his body.",
+      "en": "Ulaam, the kandra introduced in Tress, shows up in Wind and Truth, as the one who preserved a living cell culture of Hoid so that Hoid could rebuild his body.",
       "es": "Ulaam, el kandra que aparece por primera vez en Trenza del mar Esmeralda, figura en Viento y verdad como el personaje que mantuvo con vida un cultivo celular de Hoid con el que este pudiera rehacer su cuerpo."
     },
     "requires": [

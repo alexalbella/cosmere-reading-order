@@ -130,7 +130,7 @@
     "type": "appearance",
     "description": {
       "en": "Hoid is Wax's coachman, named in Chapter 7.",
-      "es": "Hoid es el cochero de Wax, mencionado por su nombre en el capítulo 7."
+      "es": "Hoid es el cochero de Wax y se le nombra en el capítulo 7."
     },
     "requires": [
       "mb5"

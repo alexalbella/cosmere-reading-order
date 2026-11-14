@@ -225,7 +225,7 @@
     "type": "significant",
     "tier": "confirmed",
     "description": {
-      "en": "Hoid's Allomancy derives from a lerasium bead that he took from the Well of Ascension, granting him power on a par with the ancient Allomancers.",
+      "en": "Hoid's Allomancy comes from a lerasium bead that he took from the Well of Ascension, and his power is on a par with the ancient Allomancers.",
       "es": "La alomancia de Hoid tiene su origen en una cuenta de lerasium sustraída del Pozo de la Ascensión, y su poder iguala al de los alomantes de la antigüedad."
     },
     "requires": [
@@ -459,7 +459,7 @@
     "type": "significant",
     "tier": "confirmed",
     "description": {
-      "en": "Galladon the Elantrian makes a trip back to Roshar alongside two companions to pick up a letter from Hoid.",
+      "en": "Galladon the Elantrian goes back to Roshar with two companions to pick up a letter from Hoid.",
       "es": "Galladon, el elantrino, regresa a Roshar acompañado de dos compañeros y se hace con una carta de Hoid."
     },
     "requires": [
@@ -493,7 +493,7 @@
     "type": "significant",
     "tier": "confirmed",
     "description": {
-      "en": "Demoux, hailing from the Final Empire, travels back to Roshar accompanied by a pair of companions and retrieves a letter from Hoid.",
+      "en": "Demoux, from the Final Empire, goes back to Roshar with two companions and picks up a letter from Hoid.",
       "es": "Demoux, oriundo del Imperio Final, vuelve a Roshar junto a dos compañeros y recupera una carta de Hoid."
     },
     "requires": [
@@ -530,7 +530,7 @@
     "type": "significant",
     "tier": "confirmed",
     "description": {
-      "en": "Baon, a sand master originally from Taldain, heads back to Roshar along with two companions and picks up a letter from Hoid.",
+      "en": "Baon, a sand master originally from Taldain, goes back to Roshar with two companions and picks up a letter from Hoid.",
       "es": "Baon, maestro de arena originario de Taldain, retorna a Roshar en compañía de otros dos y obtiene una carta de Hoid."
     },
     "requires": [

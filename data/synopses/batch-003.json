@@ -2,8 +2,8 @@
  {
   "book": "mistborn-adventure-game",
   "text": {
-   "en": "The core rulebook of the first Mistborn tabletop game, published by Crafty Games. It places players in the Final Empire as a crew of heroes and gives them a rules system built around telling a story together. The volume is divided into three parts: the game itself, a reference on the three Metallic Arts, and a section for the Narrator about running stories and keeping secrets. It also opens with a short piece of official fiction by the author of the series. It suits readers who want to play in the world of the novels, not only read about it.",
-   "es": "El manual básico del primer juego de rol de Nacidos de la bruma, publicado por Crafty Games. Coloca a los jugadores en el Imperio Final como una banda de héroes y les ofrece un sistema de reglas pensado para contar una historia entre todos. El volumen se divide en tres partes: el juego en sí, una referencia sobre las tres Artes Metálicas y una sección para el Narrador sobre cómo dirigir historias y guardar secretos. Además, se abre con un relato corto oficial del autor de la saga. Resulta ideal para quien quiera jugar en el mundo de las novelas, y no solo leer sobre él."
+   "en": "The core rulebook of the first Mistborn tabletop game, published by Crafty Games. It places players in the Final Empire as a crew of heroes and gives them a rules system built around telling a story together. The volume is divided into three parts: the game itself, a reference on the three Metallic Arts, and a section for the Narrator about running stories and keeping secrets. It also opens with a short piece of official fiction by the author of the series. It is for readers who want to play in the world of the novels.",
+   "es": "El manual básico del primer juego de rol de Nacidos de la bruma, publicado por Crafty Games. Coloca a los jugadores en el Imperio Final como una banda de héroes y les ofrece un sistema de reglas pensado para contar una historia entre todos. El volumen se divide en tres partes: el juego en sí, una referencia sobre las tres Artes Metálicas y una sección para el Narrador sobre cómo dirigir historias y guardar secretos. Además, se abre con un relato corto oficial del autor de la saga. Está pensado para quien quiera jugar en el mundo de las novelas."
   },
   "requires": [
    "mb1",
@@ -325,8 +325,8 @@
  {
   "book": "stormlight-rpg-world-guide",
   "text": {
-   "en": "A richly illustrated sourcebook on Roshar for the Cosmere Roleplaying Game. It surveys the world's history, its cultures and its leading figures, and for game masters it adds adversary options. The publisher describes it as the first official art book of the series. Used together with the Handbook, it supplies what a group needs to start a campaign, and readers of the novels can treat it as extra background on the world.",
-   "es": "Un libro de consulta con abundantes ilustraciones sobre Roshar para el Juego de rol del Cosmere. Repasa la historia, las culturas y los personajes principales del mundo, y suma opciones de adversarios para quien dirige la partida. La editorial lo describe como el primer libro oficial de ilustraciones de la saga. Junto con el Manual aporta lo necesario para iniciar una campaña, y quien lea las novelas puede aprovecharlo como trasfondo adicional del mundo."
+   "en": "An illustrated sourcebook on Roshar for the Cosmere Roleplaying Game. It surveys the world's history, its cultures and its leading figures, and for game masters it adds adversary options. The publisher describes it as the first official art book of the series. With the Handbook, it has what a group needs to start a campaign, and readers of the novels can treat it as extra background on the world.",
+   "es": "Un libro de consulta ilustrado sobre Roshar para el Juego de rol del Cosmere. Repasa la historia, las culturas y los personajes principales del mundo, y suma opciones de adversarios para quien dirige la partida. La editorial lo describe como el primer libro oficial de ilustraciones de la saga. Junto con el Manual aporta lo necesario para iniciar una campaña, y quien lea las novelas puede aprovecharlo como trasfondo adicional del mundo."
   },
   "requires": [
    "sa1",

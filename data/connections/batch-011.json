@@ -96,7 +96,7 @@
     "type": "minor",
     "tier": "confirmed",
     "description": {
-      "en": "According to Brandon, cinderhearts follow the identical fundamental Cosmere law that befell Amaram: the force draws on someone's Identity and Connection, gradually transforming them into a spren, just as the Unmade seize control of individuals. He notes that magically the pair share no lineage.",
+      "en": "According to Brandon, cinderhearts follow the same fundamental Cosmere law that befell Amaram: the force draws on someone's Identity and Connection, gradually transforming them into a spren, just as the Unmade seize control of individuals. He notes that magically the pair share no lineage.",
       "es": "Según Brandon, las ascuas corazón obedecen al mismo fundamento del Cosmere que sufrió Amaram: la fuerza extrae su Identidad y su Conexión, transformando poco a poco a la víctima en un spren, igual que los Deshechos toman el control de alguien. Señala que ambos casos no comparten linaje a nivel mágico."
     },
     "requires": [
@@ -128,7 +128,7 @@
     "type": "significant",
     "tier": "confirmed",
     "description": {
-      "en": "In The Way of Kings, Sigzil appears as the bridge crewman whom Hoid once mentored as a Worldsinger trainee, and Hoid conveys that the young man has completed his training. Nomad, identical to that Sigzil, despises Hoid in The Sunlit Man because Hoid stood idle while Nomad was held captive on the Shattered Plains.",
+      "en": "In The Way of Kings, Sigzil appears as the bridge crewman whom Hoid once mentored as a Worldsinger trainee, and Hoid conveys that the young man has completed his training. Nomad, who is that same Sigzil, despises Hoid in The Sunlit Man because Hoid stood idle while Nomad was held captive on the Shattered Plains.",
       "es": "En El camino de los reyes, Sigzil figura como el encargado del puente a quien Hoid tomó bajo su tutela como aprendiz de cantamundos; luego Hoid informa de que el joven ha completado su formación. Nómada, que es ese mismo Sigzil, guarda rencor a Hoid en El Hombre Iluminado por permanecer inactivo mientras él estaba cautivo en las Llanuras Quebradas."
     },
     "requires": [

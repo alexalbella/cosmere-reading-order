@@ -6,7 +6,7 @@
     "type": "major",
     "tier": "confirmed",
     "description": {
-      "en": "Isles of the Emberdark retells Sixth of the Dusk as a novel, preserving the novella as a flashback, and includes a second narrative in the Cosmere's space era that tracks Dusk following the novella's events.",
+      "en": "Isles of the Emberdark retells Sixth of the Dusk as a novel, keeping the novella as a flashback, and includes a second narrative in the Cosmere's space era that follows Dusk after the novella's events.",
       "es": "Islas de la Ascuaoscura reelabora Sexto del ocaso en formato novela: la novela corta permanece como un flashback y se suma una segunda narración en la Era Espacial del Cosmere, donde se sigue a Ocaso con posterioridad a lo acontecido en aquella."
     },
     "requires": [
@@ -103,8 +103,8 @@
     "type": "appearance",
     "tier": "confirmed",
     "description": {
-      "en": "Hoid features in this book: Starling serves as his pupil, and he once acted as navigator of the Dynamic.",
-      "es": "Hoid tiene presencia en este libro: Astrífera le sirve de aprendiz y él ejerció de navegante de la Dinámica."
+      "en": "Hoid is in this book: Starling is his pupil, and he was once navigator of the Dynamic.",
+      "es": "Hoid aparece en este libro: Astrífera es su aprendiz y él fue navegante de la Dinámica."
     },
     "requires": [
       "iote"
@@ -131,8 +131,8 @@
     "type": "appearance",
     "tier": "confirmed",
     "description": {
-      "en": "Nazh belongs to the Dynamic's team, working as its security chief.",
-      "es": "Nazh integra el equipo de a bordo de la Dinámica en calidad de responsable de seguridad."
+      "en": "Nazh is on the Dynamic's team as its security chief.",
+      "es": "Nazh forma parte del equipo de a bordo de la Dinámica como responsable de seguridad."
     },
     "requires": [
       "iote"
@@ -210,8 +210,8 @@
     "type": "significant",
     "tier": "confirmed",
     "description": {
-      "en": "The Malwish Empire, the Scadrian space-faring state featured in The Sunlit Man, is the colonizing force oppressing the Eelakin and tracking down the perpendicularity located on First of the Sun.",
-      "es": "El Imperio Malwish, la fuerza espacial scadriana presente en El Hombre Iluminado, actúa como metrópoli colonizadora que oprime a los eelakin y rastrea la perpendicularidad de Primero del Sol."
+      "en": "The Malwish Empire, the Scadrian space-faring state featured in The Sunlit Man, is the colonizing force that oppresses the Eelakin and tracks down the perpendicularity located on First of the Sun.",
+      "es": "El Imperio Malwish, la fuerza espacial scadriana presente en El Hombre Iluminado, es la metrópoli colonizadora que oprime a los eelakin y rastrea la perpendicularidad de Primero del Sol."
     },
     "requires": [
       "iote",
@@ -285,8 +285,8 @@
     "type": "minor",
     "tier": "confirmed",
     "description": {
-      "en": "Frost, Starling's dragon uncle and the one who brought her up, is identical to the Frost whose correspondence with Hoid is reproduced as epigraphs within the Stormlight Archive.",
-      "es": "Escarcha, tío dragón de Astrífera y quien se encargó de criarla, coincide con el Escarcha cuya correspondencia dirigida a Hoid se reproduce en forma de epígrafes dentro de El Archivo de las Tormentas."
+      "en": "Frost, Starling's dragon uncle and the one who brought her up, is the same Frost whose correspondence with Hoid is reproduced as epigraphs in the Stormlight Archive.",
+      "es": "Escarcha, tío dragón de Astrífera y quien se encargó de criarla, es el mismo Escarcha cuya correspondencia dirigida a Hoid se reproduce en forma de epígrafes en El Archivo de las Tormentas."
     },
     "requires": [
       "iote",
