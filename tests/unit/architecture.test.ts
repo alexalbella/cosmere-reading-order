@@ -248,3 +248,22 @@ describe('the browser install in CI', () => {
     expect(workflow).toMatch(/for i in 1 2 3; do npx playwright install --with-deps chromium && break/)
   })
 })
+
+describe('the pages written for people', () => {
+  // The repository's own address names an account. It does not go into a file: a file travels with every fork
+  // and every copy. The only GitHub address these pages give is the project this one forks.
+  const pages = ['README.md', 'docs/DATA.md', 'docs/SPOILERS.md', 'docs/DEPLOY.md', 'docs/DESIGN.md']
+
+  test.each(pages)('%s names no account but the project this one forks', (page) => {
+    const text = readFileSync(join(ROOT, page), 'utf8')
+    const owners = [...text.matchAll(/github(?:usercontent)?\.com\/([\w.-]+)/g)].map((m) => m[1])
+    for (const owner of owners) expect(owner, `${page} gives an address under «${owner}»`).toBe('17thshard')
+    expect(text).not.toMatch(/github\.io/)
+  })
+
+  test('the README asks for no badge and no command that needs the address of the repository', () => {
+    const text = readFileSync(join(ROOT, 'README.md'), 'utf8')
+    expect(text).not.toMatch(/actions\/workflows/)
+    expect(text).not.toMatch(/git clone https?:/)
+  })
+})

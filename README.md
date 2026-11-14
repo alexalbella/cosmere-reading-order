@@ -9,7 +9,6 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/alexalbella/cosmere-reading-order/actions/workflows/ci.yml"><img src="https://github.com/alexalbella/cosmere-reading-order/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/licence-MIT-e2c070" alt="MIT licence"></a>
   <img src="https://img.shields.io/badge/Vue-3-42b883" alt="Vue 3">
   <img src="https://img.shields.io/badge/TypeScript-strict-3178c6" alt="TypeScript">
@@ -28,6 +27,7 @@ It is a Vue 3 rewrite of [17thshard/reading-order](https://github.com/17thshard/
 
 - A sentence at the top says which book you are on, which comes next and whether its Spanish edition is out. It follows the order you choose, recommended or by publication.
 - You can look at the same catalogue three ways: as a map with the works on a ring by world, as the reading order in one line, or as a shelf of spines by phase.
+- The titles on the ring wear the colour of their world. A row of four buttons under the ring repaints them by publication status, by format or by what you have read, and a legend names each colour.
 - Every work has a plate with its series and number, star system, format, pages and words, first publication, Spanish publisher, and a link to read it for free when the author gives it away. Works that are announced, apocryphal or role-playing books add their own facts: how far the writing is, when it is expected, who publishes it, whether it is canon.
 - Connections, synopses and notes each list the works they would spoil, and appear only when you have read them all. A synopsis stays folded until you ask for it.
 - Your marks live on the device. With the full deploy they also travel between your devices; without it, you can export them to a file and import it elsewhere.
@@ -72,11 +72,9 @@ Nothing about a work you have not read reaches the screen.
 
 ## Quick start
 
-You need Node 24 (see `.nvmrc`).
+You need Node 24 (see `.nvmrc`). Clone the repository, then from its folder:
 
 ```bash
-git clone https://github.com/alexalbella/cosmere-reading-order.git
-cd cosmere-reading-order
 npm ci
 npm run dev
 ```
