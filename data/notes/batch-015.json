@@ -1,0 +1,162 @@
+[
+  {
+    "id": "n-5500",
+    "kind": "confirmed-theory",
+    "books": [
+      "sfs"
+    ],
+    "text": {
+      "en": "In 2024 Peter Ahlstrom told of asking Brandon about a figure he had spotted in this story. Brandon confirmed it is Hoid and said he had forgotten putting him in.",
+      "es": "En 2024 Peter Ahlstrom contó que había preguntado a Brandon por un personaje que creía haber reconocido en este relato. Brandon confirmó que es Hoid y dijo que se le había olvidado que lo había incluido."
+    },
+    "requires": [
+      "sfs",
+      "sa1",
+      "sa2",
+      "au",
+      "sa3"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/529/#e16671",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-015",
+    "verifiedBy": "agent:audit-wave3",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-5501",
+    "kind": "relation",
+    "books": [
+      "wsgn"
+    ],
+    "text": {
+      "en": "Brandon said the graphic novel is one of the very earliest stories in the Cosmere timeline. He also said its place there is fixed and will not change.",
+      "es": "Brandon dijo que la novela gráfica Arena blanca es una de las historias más antiguas de la cronología del Cosmere. Añadió que su lugar está fijado y no cambiará."
+    },
+    "requires": [
+      "wsgn",
+      "elantris",
+      "sa1",
+      "au"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/108/#e1355",
+        "kind": "word-of-brandon"
+      },
+      {
+        "url": "https://wob.coppermind.net/events/182/#e3878",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-015",
+    "verifiedBy": "agent:audit-wave3",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-5502",
+    "kind": "relation",
+    "books": [
+      "wsp"
+    ],
+    "text": {
+      "en": "Brandon said he has always considered this novel canon, and that nothing in it disrupts the rest of the canon.",
+      "es": "Brandon dijo que siempre ha considerado canon esta novela y que nada de lo que ocurre en ella altera el resto del canon."
+    },
+    "requires": [
+      "wsp",
+      "wsgn",
+      "sa1"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/530/#e16493",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-015",
+    "verifiedBy": "agent:verify-batch-015",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-5503",
+    "kind": "relation",
+    "books": [
+      "dsp"
+    ],
+    "text": {
+      "en": "Brandon considers this book lightly canon: its main events mostly happen, but its worldbuilding has been refined a great deal since. He expects to write a different version of it one day.",
+      "es": "Brandon considera esta novela en parte canon: sus sucesos principales ocurren en su mayoría, pero la ambientación se ha refinado mucho desde entonces. Espera escribir algún día otra versión."
+    },
+    "requires": [
+      "dsp",
+      "sa1"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/530/#e16493",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-015",
+    "verifiedBy": "agent:verify-batch-015",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-5504",
+    "kind": "relation",
+    "books": [
+      "traveler"
+    ],
+    "text": {
+      "en": "Brandon said Yolen has what he would call a perpendicularity, though no Shard resides there.",
+      "es": "Brandon dijo que Yolen tiene lo que él llamaría una perpendicularidad, aunque allí no reside ninguna Esquirla."
+    },
+    "requires": [
+      "traveler",
+      "mb3",
+      "au",
+      "sa3",
+      "sa4"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/472/#e14885",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-015",
+    "verifiedBy": "agent:verify-batch-015",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-5505",
+    "kind": "relation",
+    "books": [
+      "sotd"
+    ],
+    "text": {
+      "en": "Brandon said no Shard was ever in residence on the planet of this novella, including during its events.",
+      "es": "Brandon dijo que ninguna Esquirla residió nunca en el planeta de esta novela corta, tampoco durante sus sucesos."
+    },
+    "requires": [
+      "sotd",
+      "mb3",
+      "au",
+      "sa3",
+      "sa4"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/315/#e9385",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-015",
+    "verifiedBy": "agent:verify-batch-015",
+    "verifiedOn": "2026-11-14"
+  }
+]

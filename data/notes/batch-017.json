@@ -1,0 +1,80 @@
+[
+  {
+    "id": "n-7500",
+    "kind": "relation",
+    "books": [
+      "aon"
+    ],
+    "text": {
+      "en": "Brandon has said he does not count this unpublished draft as part of the Cosmere's main continuity.",
+      "es": "Brandon ha dicho que no considera este borrador inédito parte de la continuidad principal del Cosmere."
+    },
+    "requires": [
+      "aon"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/530/#e16493",
+        "kind": "word-of-brandon"
+      },
+      {
+        "url": "https://wob.coppermind.net/events/377/#e12314",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-017",
+    "verifiedBy": "agent:verify-batch-017",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-7502",
+    "kind": "relation",
+    "books": [
+      "au"
+    ],
+    "text": {
+      "en": "At JordanCon 2016 Brandon said the collection would carry a star chart of the Cosmere.",
+      "es": "En JordanCon 2016, Brandon dijo que la colección llevaría un mapa estelar del Cosmere."
+    },
+    "requires": [
+      "au"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/2/#e194",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-017",
+    "verifiedBy": "agent:verify-batch-017",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-7503",
+    "kind": "relation",
+    "books": [
+      "fires-of-december"
+    ],
+    "text": {
+      "en": "The Fires of December is set on Miral, a world that is new to Brandon's fiction.",
+      "es": "Los fuegos de diciembre transcurre en Miral, un mundo nuevo en la obra de Brandon."
+    },
+    "requires": [
+      "fires-of-december"
+    ],
+    "sources": [
+      {
+        "url": "https://coppermind.net/wiki/The_Fires_of_December",
+        "kind": "wiki",
+        "cites": "The Fires of December, chapter III"
+      },
+      {
+        "url": "https://wob.coppermind.net/events/551/#e17035",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-017",
+    "verifiedBy": "agent:verify-batch-017",
+    "verifiedOn": "2026-11-14"
+  }
+]

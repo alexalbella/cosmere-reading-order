@@ -1,0 +1,98 @@
+[
+  {
+    "id": "n-1500",
+    "kind": "egg",
+    "books": [
+      "sa1"
+    ],
+    "text": {
+      "en": "The map of Roshar hides an easter egg. At a 2014 signing Brandon said that finding it takes math, not linguistics, and that it says something about the history of the world.",
+      "es": "El mapa de Roshar esconde un huevo de Pascua. En una firma de 2014, Brandon dijo que para dar con él hace falta matemáticas, no lingüística, y que cuenta algo sobre la historia del mundo."
+    },
+    "requires": [
+      "sa1"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/217/#e7272",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-011",
+    "verifiedBy": "agent:verify-batch-011",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-1501",
+    "kind": "confirmed-theory",
+    "books": [
+      "sa2"
+    ],
+    "text": {
+      "en": "Jasnah is alive at the end of Words of Radiance. Brandon confirmed it at a 2014 signing.",
+      "es": "Jasnah está viva al final de Palabras radiantes. Brandon lo confirmó en una firma de 2014."
+    },
+    "requires": [
+      "sa2",
+      "elsecaller"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/218/#e6624",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-011",
+    "verifiedBy": "agent:verify-batch-011",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-1502",
+    "kind": "relation",
+    "books": [
+      "sa3-5"
+    ],
+    "text": {
+      "en": "Brandon treats any novella he writes as optional reading. It widens the context and usually fills in the past of a minor character.",
+      "es": "Brandon considera opcional cualquier novela corta que escribe. Amplía el contexto y suele dar trasfondo a algún personaje secundario."
+    },
+    "requires": [
+      "sa3-5",
+      "sa1",
+      "sa2",
+      "sa3"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/444/#e14311",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-011",
+    "verifiedBy": "agent:verify-batch-011",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-1503",
+    "kind": "relation",
+    "books": [
+      "twokp"
+    ],
+    "text": {
+      "en": "Brandon described this book as a non-canon alternate novel, so it is not part of the official story.",
+      "es": "Brandon describió este libro como una novela alternativa no canónica, así que no forma parte de la historia oficial."
+    },
+    "requires": [
+      "twokp"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/453/#e14570",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-011",
+    "verifiedBy": "agent:verify-batch-011",
+    "verifiedOn": "2026-11-14"
+  }
+]

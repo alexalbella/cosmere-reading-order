@@ -1,0 +1,51 @@
+[
+  {
+    "id": "n-2500",
+    "kind": "relation",
+    "books": [
+      "mb4"
+    ],
+    "text": {
+      "en": "Sanderson placed The Alloy of Law after the first Mistborn trilogy. Its technology level is around the 18th and 19th centuries, with steam power.",
+      "es": "Sanderson sitúa Aleación de ley después de la primera trilogía de Nacidos de la bruma. Su nivel tecnológico ronda los siglos XVIII y XIX, con máquinas de vapor."
+    },
+    "requires": [
+      "mb1",
+      "mb2",
+      "mb3",
+      "mb4"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/266/#e7258",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-012",
+    "verifiedBy": "agent:verify-batch-012",
+    "verifiedOn": "2026-11-14"
+  },
+  {
+    "id": "n-2501",
+    "kind": "relation",
+    "books": [
+      "jak"
+    ],
+    "text": {
+      "en": "Sanderson confirmed that this story is canon.",
+      "es": "Sanderson confirmó que este relato es canon."
+    },
+    "requires": [
+      "jak"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/10/#e6546",
+        "kind": "word-of-brandon"
+      }
+    ],
+    "author": "agent:notes-batch-012",
+    "verifiedBy": "agent:verify-batch-012",
+    "verifiedOn": "2026-11-14"
+  }
+]

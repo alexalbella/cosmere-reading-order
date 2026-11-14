@@ -1,0 +1,30 @@
+[
+  {
+    "id": "n-6501",
+    "kind": "egg",
+    "books": [
+      "yumi"
+    ],
+    "text": {
+      "en": "Yumi's name comes from Yuna, a main character of Final Fantasy X, a game Brandon names among the inspirations for the book.",
+      "es": "El nombre de Yumi viene de Yuna, una de las protagonistas de Final Fantasy X, un juego que Brandon cita entre las inspiraciones del libro."
+    },
+    "requires": [
+      "yumi"
+    ],
+    "sources": [
+      {
+        "url": "https://wob.coppermind.net/events/493/#e15474",
+        "kind": "word-of-brandon"
+      },
+      {
+        "url": "https://coppermind.net/wiki/Yumi_and_the_Nightmare_Painter",
+        "kind": "wiki",
+        "cites": "Note 5 of the page: Secret Project #3 Reveal and Livestream, 2022-03-17 (Arcanum-15474)"
+      }
+    ],
+    "author": "agent:notes-batch-016",
+    "verifiedBy": "agent:verify-batch-016",
+    "verifiedOn": "2026-11-14"
+  }
+]
